@@ -1,0 +1,576 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="44be890f-35aa-4f6c-a571-8f834fa2126d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Календарь</ID>
+  <Name>01 Даты</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3923" scrolltop="-3188" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10504" y="15663" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Calendar" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3175" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000670c000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="olap_Calendar" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3923</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3188</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="148">
+            <Shape Id="Date" Expanded="true">
+              <Attributes>
+                <Attribute Id="Date" />
+                <Attribute Id="Day Of Year" />
+                <Attribute Id="Day Of Month" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Name Of Month" Expanded="true">
+              <Attributes>
+                <Attribute Id="Name Of Month" />
+                <Attribute Id="Month" />
+              </Attributes>
+              <Position x="237" y="19" />
+            </Shape>
+            <Shape Id="Name Quarter" Expanded="true">
+              <Attributes>
+                <Attribute Id="Name Quarter" />
+                <Attribute Id="Quarter" />
+              </Attributes>
+              <Position x="441" y="19" />
+            </Shape>
+            <Shape Id="Year" Expanded="false">
+              <Attributes>
+                <Attribute Id="Year" />
+              </Attributes>
+              <Position x="677" y="16" />
+            </Shape>
+            <Shape Id="Weekday Name" Expanded="true">
+              <Attributes>
+                <Attribute Id="Weekday Name" />
+                <Attribute Id="Weekday" />
+              </Attributes>
+              <Position x="239" y="108" />
+            </Shape>
+            <Shape Id="Week" Expanded="true">
+              <Attributes>
+                <Attribute Id="Week" />
+              </Attributes>
+              <Position x="443" y="109" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="f8ef484e-844d-4600-97cb-bdc140571d83">
+    <DataSourceViewID>UASD</DataSourceViewID>
+  </Source>
+  <Type>Time</Type>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="04508a9a-b89b-4fbd-8130-a5570339dddb">
+    <KeyErrorAction>DiscardRecord</KeyErrorAction>
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <ddl200:CalculationError>ReportAndStop</ddl200:CalculationError>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="3f658a0d-5a2a-4be1-b8de-8b7e4eb3fcf8">
+      <ID>Date</ID>
+      <Name>Дата</Name>
+      <Type>Date</Type>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9240d547-0ba2-4dd6-ac60-a7d2b29d37ba">
+          <DataType>Date</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="caef3f9c-9639-4521-a70e-407024c8ebdb">
+            <TableID>olap_Calendar</TableID>
+            <ColumnID>Date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="4e802ded-3add-4991-ad68-9325deab64a0">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1e23f3ab-78a5-4a3a-9da1-192e1d9a6f89">
+          <TableID>olap_Calendar</TableID>
+          <ColumnID>Date</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4339b11f-3bd0-469c-80c9-9a1f2510f30a">
+          <AttributeID>Weekday Name</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>День недели</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="239fb4e3-dd2f-408e-ab95-d0f44a373656">
+          <AttributeID>Day Of Year</AttributeID>
+          <Name>День года</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="71e667e3-a294-4f78-881c-3a17450930a6">
+          <AttributeID>Day Of Month</AttributeID>
+          <Name>День месяца</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="611a1027-e74d-4a95-8b0b-18add35763ce">
+          <AttributeID>Name Of Month</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Месяц</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="fc3dccc2-9f88-4434-833c-bd9ac345d0af">
+        <DataType>Date</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c51df4b6-205e-4abe-a7ea-793b21850c05">
+          <TableID>olap_Calendar</TableID>
+          <ColumnID>Date</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2e32c4d9-5ef6-4532-8ac3-579a734634f3">
+      <ID>Year</ID>
+      <Name>Год</Name>
+      <Type>Years</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7d9bf11a-b639-4ec1-9858-059dce364609">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca06d2a4-2e06-48e0-8769-bff2207181ec">
+            <TableID>olap_Calendar</TableID>
+            <ColumnID>Year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="790fc0ad-034a-45a3-a9e6-718a6e344200">
+      <ID>Quarter</ID>
+      <Name>Квартал года</Name>
+      <Type>QuarterOfYear</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="46c834bb-63ee-4d7e-97fd-a060a7ecfc7c">
+          <DataType>WChar</DataType>
+          <DataSize>16</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7a67fd03-9cf2-4abb-a018-ab625be4d22b">
+            <TableID>olap_Calendar</TableID>
+            <ColumnID>NameQuarter</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="47351f11-9c1b-48c3-9944-de1f312b60f3">
+      <ID>Name Quarter</ID>
+      <Name>Квартал</Name>
+      <Type>Quarters</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2719b302-0f04-4187-b655-7cf70b62a2c9">
+          <DataType>WChar</DataType>
+          <DataSize>16</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8c4d836b-30de-4757-b4c0-7af7cbbd5ab7">
+            <TableID>olap_Calendar</TableID>
+            <ColumnID>NameQuarter</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a05676fa-448d-4c9a-b627-3663be91c094">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="94273fc7-0e8f-495e-8c0d-f5bf1f7effa5">
+            <TableID>olap_Calendar</TableID>
+            <ColumnID>Year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="c4843fb1-f793-4835-b4de-a566ff4512fa">
+        <DataType>WChar</DataType>
+        <DataSize>16</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c668447c-2127-48f8-b637-316364ccec57">
+          <TableID>olap_Calendar</TableID>
+          <ColumnID>NameQuarter</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ae4e4485-1b03-40a8-bb61-71e6a9e8a7d4">
+          <AttributeID>Year</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Год</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cf5dd477-78e3-4f17-bbc7-2d00529a4d3c">
+          <AttributeID>Quarter</AttributeID>
+          <Name>Квартал года</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>AttributeKey</OrderBy>
+      <OrderByAttributeID>Quarter</OrderByAttributeID>
+      <ValueColumn dwd:design-time-name="cfce177a-4647-42b9-ae1b-83db7321104f">
+        <DataType>UnsignedTinyInt</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="49a92f9f-32ba-4fe3-be43-6ce20325d2fb">
+          <TableID>olap_Calendar</TableID>
+          <ColumnID>Quarter</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c05e2df5-022c-4ed1-aab6-8b46b1e36a90">
+      <ID>Month</ID>
+      <Name>Месяц года</Name>
+      <Type>MonthOfYear</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="40267948-1d14-4f46-9d0e-aec8109c69c7">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cfc0866a-ab4c-4034-9e7d-059a8322acbd">
+            <TableID>olap_Calendar</TableID>
+            <ColumnID>Month</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c568011e-9689-4020-ba17-8b183333aa0a">
+      <ID>Name Of Month</ID>
+      <Name>Месяц</Name>
+      <Type>Months</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c8bca6ba-efa5-4940-9f96-6b490e192394">
+          <DataType>WChar</DataType>
+          <DataSize>16</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0a0cc1cf-1c84-40c6-8f00-5eed71ba8939">
+            <TableID>olap_Calendar</TableID>
+            <ColumnID>NameOfMonth</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="43e08cb8-116d-4e13-aca5-bf2f347213c3">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c2041cb2-bd0d-4269-9124-1fdf24ddb416">
+            <TableID>olap_Calendar</TableID>
+            <ColumnID>Year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="40c6624c-b9d4-460f-b05c-1a050442641b">
+        <DataType>WChar</DataType>
+        <DataSize>16</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0507b32a-4524-46ef-a812-2d4184fed90d">
+          <TableID>olap_Calendar</TableID>
+          <ColumnID>NameOfMonth</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ffa7c0e0-8fb1-44e7-a8af-7be8d807c1ae">
+          <AttributeID>Name Quarter</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Квартал</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="199b0a26-f3a8-4d56-b8fd-6c7aa096ba8f">
+          <AttributeID>Month</AttributeID>
+          <Name>Месяц года</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>AttributeKey</OrderBy>
+      <OrderByAttributeID>Month</OrderByAttributeID>
+      <ValueColumn dwd:design-time-name="1b9df8c7-75c8-44ee-b5c5-bec89f231076">
+        <DataType>SmallInt</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="bfbdf06e-ae32-4fe1-9bcd-4b8abdfd36a1">
+          <TableID>olap_Calendar</TableID>
+          <ColumnID>Month</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="16b3b17a-6005-4d61-a93d-3be5d90a2424">
+      <ID>Week</ID>
+      <Name>Неделя года</Name>
+      <Type>WeekOfYear</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c461ff90-1d47-41d3-8bfc-6c2555eb671d">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3d564b7c-4715-405f-a161-76e1415d0c46">
+            <TableID>olap_Calendar</TableID>
+            <ColumnID>Week</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="b5c1890e-e75e-45e6-aac8-f68876036a89">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c7ea7677-2fc0-4fa1-ac6e-3b0ad1fa7bd4">
+            <TableID>olap_Calendar</TableID>
+            <ColumnID>Year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ef752e2e-0ac4-4223-8d54-53053c912c2d">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c794e79a-c73d-4f12-b483-f9a9a6d1d86c">
+          <TableID>olap_Calendar</TableID>
+          <ColumnID>Week</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d7254b0e-4536-4dba-9ff8-a03b704d05c0">
+          <AttributeID>Year</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Год</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="a53bb143-bb14-4076-b753-262a6c4c93c4">
+        <DataType>UnsignedTinyInt</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8160f813-e2f9-4bf7-a5e5-a44bb1914df1">
+          <TableID>olap_Calendar</TableID>
+          <ColumnID>Week</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8b0f42e3-e218-4f12-aac7-89965c2825d2">
+      <ID>Day Of Year</ID>
+      <Name>День года</Name>
+      <Type>DayOfYear</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aa9965ed-7f6a-41dc-b0d0-1e426481134e">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="59ea8ca9-c257-4583-ab43-9006b0bf6bd5">
+            <TableID>olap_Calendar</TableID>
+            <ColumnID>DayOfYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="32d673e2-cd1c-434a-a34d-fb1cd1fa0cb2">
+      <ID>Day Of Month</ID>
+      <Name>День месяца</Name>
+      <Type>DayOfMonth</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ebc36a92-5a4e-4efe-ac67-8472ffb287b6">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e7620d3c-4382-45bf-b6e9-499f7f95244e">
+            <TableID>olap_Calendar</TableID>
+            <ColumnID>DayOfMonth</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d3965997-5153-4563-9643-ec1f8c22a0ea">
+      <ID>Weekday</ID>
+      <Name>Номер дня недели</Name>
+      <Type>DayOfWeek</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8049ad43-ecdd-44d2-991d-f86e68cdcb41">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f1181f55-fcc7-4727-912b-0194e3d5f3f2">
+            <TableID>olap_Calendar</TableID>
+            <ColumnID>Weekday</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1297cb54-f264-446e-9f9e-379007161bc4">
+      <ID>Weekday Name</ID>
+      <Name>День недели</Name>
+      <Type>Weeks</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="26504c53-45d0-4341-b559-c7d81a0246ea">
+          <DataType>WChar</DataType>
+          <DataSize>16</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="778393a6-03fa-4d71-ba1f-4022605ef878">
+            <TableID>olap_Calendar</TableID>
+            <ColumnID>WeekdayName</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="3bdc18ae-be72-4541-a934-32a604119e0e">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f27c0000-af1e-4f64-9fb7-6cda68865079">
+            <TableID>olap_Calendar</TableID>
+            <ColumnID>Year</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="8c5470db-48b7-468b-9267-d2b1a76cfffd">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="941610a2-3734-44a6-a4fb-a91d0b8de58e">
+            <TableID>olap_Calendar</TableID>
+            <ColumnID>Week</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="36b94505-a1ab-4bfd-bf5a-dfaa6fbc02eb">
+        <DataType>WChar</DataType>
+        <DataSize>16</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1dcddd12-63bb-4df7-885f-ed91ae619499">
+          <TableID>olap_Calendar</TableID>
+          <ColumnID>WeekdayName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="497c847d-35b0-4571-b6f0-674e3b7d8fdf">
+          <AttributeID>Weekday</AttributeID>
+          <Name>Номер дня недели</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d8c08aa7-965a-45ff-82d9-b5ea579ca264">
+          <AttributeID>Week</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Неделя года</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>AttributeKey</OrderBy>
+      <OrderByAttributeID>Weekday</OrderByAttributeID>
+      <ValueColumn dwd:design-time-name="96b88c4e-667b-4ee9-b929-ba453801ab05">
+        <DataType>UnsignedTinyInt</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7e7f9b12-c5f7-4563-bffa-fe75d2efb3ce">
+          <TableID>olap_Calendar</TableID>
+          <ColumnID>Weekday</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="382f80e4-89e2-4e14-915d-a81cd486d638">
+      <ID>Иерархия</ID>
+      <Name>Год - Месяц - Дата</Name>
+      <Levels>
+        <Level dwd:design-time-name="81483da8-5de4-469a-9aa1-0fdeae746127">
+          <ID>Год</ID>
+          <Name>Год</Name>
+          <SourceAttributeID>Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="e6c2c0c8-970e-487c-ade4-b183b99f19e0">
+          <ID>Месяц</ID>
+          <Name>Месяц</Name>
+          <SourceAttributeID>Name Of Month</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="cb2e0f6e-6388-4292-839e-9f88be1b3945">
+          <ID>Дата</ID>
+          <Name>Дата</Name>
+          <SourceAttributeID>Date</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="dc54e3c7-6486-41e2-a64a-4b61ea4fe201">
+      <ID>Иерархия 1</ID>
+      <Name>Год - Квартал - Месяц - Дата</Name>
+      <Levels>
+        <Level dwd:design-time-name="003d6a73-0b75-490b-a612-c1c0584ec854">
+          <ID>Год</ID>
+          <Name>Год</Name>
+          <SourceAttributeID>Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="e322a48c-f57f-443c-a771-aee1c98035a6">
+          <ID>Квартал</ID>
+          <Name>Квартал</Name>
+          <SourceAttributeID>Name Quarter</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="7982ef24-2fda-40f0-8f8a-c0c84c42b168">
+          <ID>Месяц</ID>
+          <Name>Месяц</Name>
+          <SourceAttributeID>Name Of Month</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2f67f34a-40ac-4f64-9364-699b4353c49d">
+          <ID>Дата</ID>
+          <Name>Дата</Name>
+          <SourceAttributeID>Date</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="38622dd6-8c4b-4da2-a024-34bea3a05bb2">
+      <ID>Иерархия 2</ID>
+      <Name>Год -  Неделя - Дата</Name>
+      <Levels>
+        <Level dwd:design-time-name="175389e4-3c21-498c-baa9-cf08006f255a">
+          <ID>Год</ID>
+          <Name>Год</Name>
+          <SourceAttributeID>Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="e833d13c-484d-405f-bf82-9c3f3eff7919">
+          <ID>Неделя</ID>
+          <Name>Неделя</Name>
+          <SourceAttributeID>Week</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="322d5d0f-d22d-4314-aa45-84e17b4e947a">
+          <ID>Дата</ID>
+          <Name>Дата</Name>
+          <SourceAttributeID>Date</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:StringStoresCompatibilityLevel>1100</ddl300:StringStoresCompatibilityLevel>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

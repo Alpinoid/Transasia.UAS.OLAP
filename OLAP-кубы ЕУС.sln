@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "OLAP-кубы ЕУС", "OLAP-кубы ЕУС.dwproj", "{51347A1D-0838-4734-8FEE-27F2D9080B6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51347A1D-0838-4734-8FEE-27F2D9080B6A}.Development|Default.ActiveCfg = Development
+		{51347A1D-0838-4734-8FEE-27F2D9080B6A}.Development|Default.Build.0 = Development
+		{51347A1D-0838-4734-8FEE-27F2D9080B6A}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

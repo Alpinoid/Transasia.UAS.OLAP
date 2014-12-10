@@ -1,0 +1,248 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d0aed68d-95d2-40e2-81e8-89b5175e7d79" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>v 03 Филиалы</ID>
+  <Name>03 Филиалы</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3512" scrolltop="-6045" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8652" y="16034" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_03_Филиалы" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3440" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000700d0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="olap_v_03_Филиалы" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3512</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6045</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="136">
+            <Shape Id="ID" Expanded="true">
+              <Attributes>
+                <Attribute Id="ID" />
+                <Attribute Id="Description" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Child Description" Expanded="true">
+              <Attributes>
+                <Attribute Id="Child Description" />
+              </Attributes>
+              <Position x="195" y="20" />
+            </Shape>
+            <Shape Id="Parent Description" Expanded="false">
+              <Attributes>
+                <Attribute Id="Parent Description" />
+              </Attributes>
+              <Position x="370" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="5e5fb6a5-1b8d-4375-a4ea-6f244bbed74e">
+    <DataSourceViewID>UASD</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="c0ab99d1-4098-4013-82ba-10648ec80199">
+    <KeyErrorAction>DiscardRecord</KeyErrorAction>
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <UnknownMemberName>Без филиала</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="1ad7ec52-8b0f-4cfb-afbf-a22d092582f9">
+      <ID>ID</ID>
+      <Name>ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a5852367-4352-471d-83c7-6111b8bc73bd">
+          <DataType>WChar</DataType>
+          <DataSize>32</DataSize>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="41f38d73-a6f7-422d-af30-41fa89257858">
+            <TableID>olap_v_03_Филиалы</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="5e79f9b4-c582-4419-bbed-62713f4f7850">
+          <AttributeID>Child Description</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Child Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e26ec8b2-4aee-49e8-904c-f3845ddd92fd">
+          <AttributeID>Description</AttributeID>
+          <Name>Филиал</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="604bba6a-fbc4-4aa3-9daf-cf789b07ce7b">
+      <ID>Child Description</ID>
+      <Name>Child Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3ec61871-7ba8-457c-9b82-99fa4b3e6a84">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="73f6a3da-5f36-4d39-8797-919fe5730f34">
+            <TableID>olap_v_03_Филиалы</TableID>
+            <ColumnID>ChildDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="e83b8c63-6640-426e-9b59-d55cbb610c1e">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <NullProcessing>ZeroOrBlank</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="80fc8364-304c-4b0a-a3b9-b4b08e631ca2">
+            <TableID>olap_v_03_Филиалы</TableID>
+            <ColumnID>ParentDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="924b51b0-b0b1-478f-96f6-62c7d05d7706">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0e289f9e-1487-406f-a6ca-8e774a98642b">
+          <TableID>olap_v_03_Филиалы</TableID>
+          <ColumnID>ChildDescription</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="c96294d6-843a-4c59-92b6-b2fbe72bca95">
+          <AttributeID>Parent Description</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent Description</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ValueColumn dwd:design-time-name="7266bb30-4cc9-46d9-9594-b8497a8b7e97">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4a322d00-3368-48c2-a651-48b368937254">
+          <TableID>olap_v_03_Филиалы</TableID>
+          <ColumnID>ChildDescription</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="aed02609-7f06-43bd-8912-6bd2d7ea2aa3">
+      <ID>Description</ID>
+      <Name>Филиал</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="31dde4e8-33f1-441a-a531-813a6b82bf20">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca56bdb7-d921-4c80-82f5-0ad24ffad1d1">
+            <TableID>olap_v_03_Филиалы</TableID>
+            <ColumnID>Description</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="12778504-835c-405a-943f-d64cf70c23e9">
+      <ID>Parent Description</ID>
+      <Name>Parent Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ad319dd6-b7d8-448d-b864-1c697fbb7ac8">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0b33b66e-c940-4077-8cc5-3e6d272c3670">
+            <TableID>olap_v_03_Филиалы</TableID>
+            <ColumnID>ParentDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="6f816505-4f91-4e80-a516-3a4c82c78b13">
+      <ID>Иерархия</ID>
+      <Name>Филиалы</Name>
+      <Levels>
+        <Level dwd:design-time-name="0bdecafa-1922-4d19-ba84-aa507edacbf2">
+          <ID>Parent Description</ID>
+          <Name>Parent Description</Name>
+          <SourceAttributeID>Parent Description</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="0e0e0e46-6d53-4e8f-b547-37d2db27d939">
+          <ID>Child Description</ID>
+          <Name>Child Description</Name>
+          <SourceAttributeID>Child Description</SourceAttributeID>
+          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:StringStoresCompatibilityLevel>1100</ddl300:StringStoresCompatibilityLevel>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
