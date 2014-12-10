@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="28" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7187" scrolltop="4720" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23786" y="16034" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="28" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7187" scrolltop="2101" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23786" y="16034" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -52,7 +52,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_04_Организации" left="20" top="6685" logicalid="17" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_04_Организации" left="-1567" top="6288" logicalid="17" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000b80b000057070000" />
             </control>
@@ -145,7 +145,7 @@
               <point x="6450" y="10125" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="7225" logicalid="23" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1133" top="6828" logicalid="23" controlid="10" masterid="0" hint1="0" hint2="0" width="4587" height="1097" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -159,8 +159,8 @@
               </ddsxmlobj>
             </layoutobject>
             <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="5" sourceattachpoint="13" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="3020" y="7624" />
-              <point x="4220" y="7624" />
+              <point x="1433" y="7227" />
+              <point x="4220" y="7227" />
               <point x="4220" y="7625" />
               <point x="5420" y="7625" />
             </connector>
@@ -238,11 +238,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>4720</Value>
+      <Value>2101</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>20</Value>
+      <Value>-1567</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
@@ -256,43 +256,6 @@
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
-    <Dimension dwd:design-time-name="5eb7f0ae-f774-440f-a57d-56db8b2817a2">
-      <ID>02 Направления бизнеса</ID>
-      <Name>02 Направления бизнеса</Name>
-      <DimensionID>02 Направления бизнеса</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="5b1fea82-5705-40b1-a1b2-e65cd28f345f">
-          <AttributeID>ID</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="4249d11c-98cf-44da-80a9-2637fe8025d5">
-          <AttributeID>Description</AttributeID>
-        </Attribute>
-      </Attributes>
-    </Dimension>
-    <Dimension dwd:design-time-name="a0304adb-f790-44f1-b77b-4d32ae2c0a02">
-      <ID>v 03 Филиалы</ID>
-      <Name>03 Филиалы</Name>
-      <DimensionID>v 03 Филиалы</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="0dea651b-243f-4708-a661-a278262bebf3">
-          <AttributeID>ID</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="11bdb298-8408-44f4-a484-afe485a370a3">
-          <AttributeID>Child Description</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="618f36dd-3eae-4b2a-859f-2696b7a3ef4c">
-          <AttributeID>Description</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="b58e9593-9e4f-4f06-a6a6-199990f85021">
-          <AttributeID>Parent Description</AttributeID>
-        </Attribute>
-      </Attributes>
-      <Hierarchies>
-        <Hierarchy dwd:design-time-name="780019e8-4427-4c14-a85d-ffe6dd1b977c">
-          <HierarchyID>Иерархия</HierarchyID>
-        </Hierarchy>
-      </Hierarchies>
-    </Dimension>
     <Dimension dwd:design-time-name="878b553e-49dc-4834-8c28-2b164fd38db9">
       <ID>01 Даты</ID>
       <Name>01 Даты</Name>
@@ -343,6 +306,56 @@
           <HierarchyID>Иерархия 2</HierarchyID>
         </Hierarchy>
       </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="5eb7f0ae-f774-440f-a57d-56db8b2817a2">
+      <ID>02 Направления бизнеса</ID>
+      <Name>02 Направления бизнеса</Name>
+      <DimensionID>02 Направления бизнеса</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5b1fea82-5705-40b1-a1b2-e65cd28f345f">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4249d11c-98cf-44da-80a9-2637fe8025d5">
+          <AttributeID>Description</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a0304adb-f790-44f1-b77b-4d32ae2c0a02">
+      <ID>v 03 Филиалы</ID>
+      <Name>03 Филиалы</Name>
+      <DimensionID>v 03 Филиалы</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0dea651b-243f-4708-a661-a278262bebf3">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="11bdb298-8408-44f4-a484-afe485a370a3">
+          <AttributeID>Child Description</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="618f36dd-3eae-4b2a-859f-2696b7a3ef4c">
+          <AttributeID>Description</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b58e9593-9e4f-4f06-a6a6-199990f85021">
+          <AttributeID>Parent Description</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="780019e8-4427-4c14-a85d-ffe6dd1b977c">
+          <HierarchyID>Иерархия</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="396a4a74-c9a3-4d58-ae85-a330b64a8cea">
+      <ID>04 Организации</ID>
+      <Name>04 Организации</Name>
+      <DimensionID>v 04 Организации</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a32c6cbb-79e1-47df-a02d-31a2d6efcfcc">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a6a0c61d-82cf-4a8a-a6ea-13da50768321">
+          <AttributeID>Description</AttributeID>
+        </Attribute>
+      </Attributes>
     </Dimension>
   </Dimensions>
   <MeasureGroups>
@@ -490,6 +503,26 @@
                   <Source xsi:type="ColumnBinding" dwd:design-time-name="bfdb04da-9f96-49af-809d-e4d3aa689ffc">
                     <TableID>olap_v_01_Продажи</TableID>
                     <ColumnID>TransactionDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="00d196ef-3da9-47f1-9de9-1a79d773aa0b">
+          <CubeDimensionID>04 Организации</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="85322561-0aa4-4b09-a18a-20ef3eb82ae3">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3a3810ed-9c19-4d80-b95b-daf2907ebde7">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6a4317bb-42d5-4206-863f-e0446b20b24f">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>CompanyID</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>

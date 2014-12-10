@@ -91,6 +91,7 @@
           <Result sourcePath="[Календарь]" sourceType="Dimension" rule="14"></Result>
           <Result sourcePath="[02 Направления бизнеса]" sourceType="Dimension" rule="11"></Result>
           <Result sourcePath="[01 Даты]" sourceType="Dimension" rule="14"></Result>
+          <Result sourcePath="[04 Организации]" sourceType="Dimension" rule="11"></Result>
         </Results>
       </Value>
     </Annotation>

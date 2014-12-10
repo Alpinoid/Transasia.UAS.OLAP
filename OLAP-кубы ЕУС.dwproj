@@ -31,6 +31,10 @@
       <Name>03 Филиалы.dim</Name>
       <FullPath>03 Филиалы.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>04 Организации.dim</Name>
+      <FullPath>04 Организации.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
