@@ -52,7 +52,7 @@
       <FullPath>07-01 Команды торговых агентов.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>07-01-01 Системы Мобильных Продаж.dim</Name>
+      <Name>07-01-01 Системы мобильных продаж.dim</Name>
       <FullPath>07-01-01 Системы Мобильных Продаж.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
@@ -62,6 +62,10 @@
     <ProjectItem>
       <Name>09 Склады.dim</Name>
       <FullPath>09 Склады.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>10 Типы цен номенклатуры.dim</Name>
+      <FullPath>10 Типы цен номенклатуры.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
