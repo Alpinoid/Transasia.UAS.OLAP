@@ -87,6 +87,10 @@
       <Name>13-02 Способы оплаты.dim</Name>
       <FullPath>13-02 Способы оплаты.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>14 Документы.dim</Name>
+      <FullPath>14 Документы.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
