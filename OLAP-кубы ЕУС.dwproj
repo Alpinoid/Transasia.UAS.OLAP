@@ -83,6 +83,10 @@
       <Name>13-01 Типы документов.dim</Name>
       <FullPath>13-01 Типы Документов.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>13-02 Способы оплаты.dim</Name>
+      <FullPath>13-02 Способы оплаты.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
