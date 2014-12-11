@@ -43,6 +43,10 @@
       <Name>06 Торговые точки.dim</Name>
       <FullPath>06 Торговые Точки.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>07 Маршруты.dim</Name>
+      <FullPath>07 Маршруты.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>

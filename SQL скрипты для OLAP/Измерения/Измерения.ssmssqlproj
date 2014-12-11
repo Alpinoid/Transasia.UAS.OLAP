@@ -55,10 +55,29 @@
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>olap.v_05_Контрагенты.sql</FullPath>
         </FileNode>
+        <FileNode Name="olap.v_06_Маршруты.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-APP8283:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-APP8283</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>olap.v_06_Маршруты.sql</FullPath>
+        </FileNode>
+        <FileNode Name="olap.v_06_ТорговыеТочки.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-APP8283:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-APP8283</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>olap.v_06_ТорговыеТочки.sql</FullPath>
+        </FileNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Разное" Type="3" Sorted="true">
-      <Items />
+      <Items>
+        <FileNode Name="TODO-лист.txt">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>TODO-лист.txt</FullPath>
+        </FileNode>
+      </Items>
     </LogicalFolder>
   </Items>
 </SqlWorkbenchSqlProject>

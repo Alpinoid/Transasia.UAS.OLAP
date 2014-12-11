@@ -27,7 +27,7 @@
             <Name>_ALL_TABLES_</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="60" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2213" scrolltop="1984" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="24315" y="17542" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="61" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5000" scrolltop="5477" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="24315" y="17542" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
                     <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                   </font>
@@ -280,9 +280,9 @@
                   </layoutobject>
                   <shape groupshapeid="0" groupnode="0" />
                 </ddscontrol>
-                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_07_Маршруты" left="30214" top="9598" logicalid="52" controlid="23" masterid="0" hint1="0" hint2="0" width="3000" height="2787" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_07_Маршруты" left="122" top="22088" logicalid="52" controlid="23" masterid="0" hint1="0" hint2="0" width="7869" height="2787" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                   <control>
-                    <ddsxmlobjectstreaminitwrapper binary="000a0000b80b0000e30a0000" />
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000bd1e0000e30a0000" />
                   </control>
                   <layoutobject>
                     <ddsxmlobj>
@@ -391,7 +391,7 @@
                     <point x="11127" y="13205" />
                   </connector>
                 </ddscontrol>
-                <ddscontrol controlprogid="MSDDS.Polyline" left="7710" top="13298" logicalid="58" controlid="29" masterid="0" hint1="0" hint2="0" width="4145" height="7090" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <ddscontrol controlprogid="MSDDS.Polyline" left="7710" top="13298" logicalid="58" controlid="29" masterid="0" hint1="0" hint2="0" width="4695" height="7090" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                   <control>
                     <ddsxmlobj>
                       <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -404,9 +404,28 @@
                       <property name="VisibleAP" value="0" vartype="3" />
                     </ddsxmlobj>
                   </layoutobject>
-                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="18" destid="2" sourceattachpoint="35" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="18" destid="2" sourceattachpoint="35" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
                     <point x="8010" y="19988" />
-                    <point x="11555" y="19988" />
+                    <point x="12105" y="19988" />
+                    <point x="12105" y="13598" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="7691" top="13298" logicalid="60" controlid="31" masterid="0" hint1="0" hint2="0" width="4164" height="10583" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[v_01_Продажи-v_07_Маршруты]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="23" destid="2" sourceattachpoint="31" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="7991" y="23481" />
+                    <point x="11555" y="23481" />
                     <point x="11555" y="13598" />
                   </connector>
                 </ddscontrol>
@@ -414,8 +433,8 @@
 </DiagramLayout>
             <ShowRelationshipNames>False</ShowRelationshipNames>
             <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
-            <DiagramViewPortLeft>-2213</DiagramViewPortLeft>
-            <DiagramViewPortTop>1984</DiagramViewPortTop>
+            <DiagramViewPortLeft>-5000</DiagramViewPortLeft>
+            <DiagramViewPortTop>5477</DiagramViewPortTop>
             <DiagramBoundingLeft>0</DiagramBoundingLeft>
             <DiagramBoundingTop>0</DiagramBoundingTop>
             <DiagramZoom>75</DiagramZoom>
@@ -1069,14 +1088,14 @@
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="CodeDescription" msprop:DbColumnName="CodeDescription" msprop:design-time-name="3ea1b76b-7563-4b65-9b29-6e32499e2c2a" minOccurs="0">
+                  <xs:element name="CodeDescription" msprop:design-time-name="3ea1b76b-7563-4b65-9b29-6e32499e2c2a" msprop:DbColumnName="CodeDescription" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="113" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="DescriptionCode" msprop:DbColumnName="DescriptionCode" msprop:design-time-name="5399558f-b68f-435f-b21c-5a1b14b8c25f" minOccurs="0">
+                  <xs:element name="DescriptionCode" msprop:design-time-name="5399558f-b68f-435f-b21c-5a1b14b8c25f" msprop:DbColumnName="DescriptionCode" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="114" />
@@ -1183,7 +1202,7 @@
             <xs:element name="olap_v_07_Маршруты" msprop:design-time-name="97cf6604-8d59-41e2-88fa-3af6abf3fe13" msprop:FriendlyName="v_07_Маршруты" msprop:DbSchemaName="olap" msprop:DbTableName="v_07_Маршруты" msprop:TableType="View">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID" msdata:ReadOnly="true" msprop:design-time-name="6a9bd73e-087a-4af9-ae59-4b2fb15c476f" msprop:DbColumnName="ID" msprop:FriendlyName="ID" minOccurs="0">
+                  <xs:element name="ID" msdata:ReadOnly="true" msprop:design-time-name="6a9bd73e-087a-4af9-ae59-4b2fb15c476f" msprop:DbColumnName="ID" msprop:FriendlyName="ID">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="32" />
@@ -1240,6 +1259,10 @@
           <xs:selector xpath=".//olap_v_02_НаправленияБизнеса" />
           <xs:field xpath="ID" />
         </xs:unique>
+        <xs:unique name="olap_v_07_Маршруты_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//olap_v_07_Маршруты" />
+          <xs:field xpath="ID" />
+        </xs:unique>
       </xs:element>
       <xs:annotation>
         <xs:appinfo>
@@ -1249,6 +1272,7 @@
           <msdata:Relationship name="v_01_Продажи-v_04_Организации" msdata:parent="olap_v_04_Организации" msdata:child="olap_v_01_Продажи" msdata:parentkey="ID" msdata:childkey="CompanyID" msprop:IsLogical="True" msprop:Description="" />
           <msdata:Relationship name="v_01_Продажи-v_05_Контрагенты" msdata:parent="olap_v_05_Контрагенты" msdata:child="olap_v_01_Продажи" msdata:parentkey="ID" msdata:childkey="CustomerID" msprop:IsLogical="True" msprop:Description="" />
           <msdata:Relationship name="v_01_Продажи-v_06_ТорговыеТочки" msdata:parent="olap_v_06_ТорговыеТочки" msdata:child="olap_v_01_Продажи" msdata:parentkey="ID" msdata:childkey="TardeShopID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="v_01_Продажи-v_07_Маршруты" msdata:parent="olap_v_07_Маршруты" msdata:child="olap_v_01_Продажи" msdata:parentkey="ID" msdata:childkey="RouteID" msprop:IsLogical="True" msprop:Description="" />
         </xs:appinfo>
       </xs:annotation>
     </xs:schema>
