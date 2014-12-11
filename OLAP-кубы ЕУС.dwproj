@@ -51,6 +51,10 @@
       <Name>07-01 Команды торговых агентов.dim</Name>
       <FullPath>07-01 Команды торговых агентов.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>07-01-01 Системы Мобильных Продаж.dim</Name>
+      <FullPath>07-01-01 Системы Мобильных Продаж.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
