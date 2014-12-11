@@ -67,6 +67,10 @@
       <Name>10 Типы цен номенклатуры.dim</Name>
       <FullPath>10 Типы цен номенклатуры.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>11 Сотрудники.dim</Name>
+      <FullPath>11 Сотрудники.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
