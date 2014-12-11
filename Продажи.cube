@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="28" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7187" scrolltop="2101" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23786" y="16034" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="28" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7187" scrolltop="-518" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23786" y="10610" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -238,7 +238,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>2101</Value>
+      <Value>-518</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -356,6 +356,51 @@
           <AttributeID>Description</AttributeID>
         </Attribute>
       </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7928d0ca-37d7-467c-a8de-96c5c02678dc">
+      <ID>05 Контрагенты</ID>
+      <Name>05 Контрагенты</Name>
+      <DimensionID>v 05 Контрагенты</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="106d81c7-0d84-42e3-9b2f-6bd64bcd9c13">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="60fea5b0-a179-40f5-a29f-fa38578a912c">
+          <AttributeID>Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="57585a78-4a43-4203-b555-007ffd441e11">
+          <AttributeID>INN</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="551d9609-3741-4d86-9b19-2bd14624828b">
+          <AttributeID>Description</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0fc41a7a-a0cc-47a9-8b0e-2a319448af7b">
+          <AttributeID>Code Description</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d8093ba9-5312-48b8-be78-1bfb54d7ec06">
+          <AttributeID>Description Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="598e9a13-989f-427b-be74-6e27c8f34ad7">
+          <AttributeID>INN Description</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a4ca6304-5867-43b9-a5aa-fc370a80618d">
+          <AttributeID>Description INN</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="66aab38d-32e2-4789-ab54-9f93ec92b581">
+          <HierarchyID>Иерархия</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="b4d40143-5905-47ed-9ef1-ca6ec353b220">
+          <HierarchyID>Иерархия 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="a084e4cb-f575-44c4-99cf-67e2fc33e093">
+          <HierarchyID>Иерархия 2</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="d80858b1-40cc-4814-8502-968d7fe01a77">
+          <HierarchyID>Иерархия 3</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
     </Dimension>
   </Dimensions>
   <MeasureGroups>
@@ -523,6 +568,26 @@
                   <Source xsi:type="ColumnBinding" dwd:design-time-name="6a4317bb-42d5-4206-863f-e0446b20b24f">
                     <TableID>olap_v_01_Продажи</TableID>
                     <ColumnID>CompanyID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="93b8747c-b956-4825-97e5-6f96dfbe9bbd">
+          <CubeDimensionID>05 Контрагенты</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ffc20634-134c-4d51-a6bb-b2e30bcb4bcb">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="11b6750d-6714-4c33-b0d9-40950e4aaa99">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2a12cc89-2678-4cc6-aa68-af052faa2695">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>CustomerID</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
