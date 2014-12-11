@@ -55,6 +55,10 @@
       <Name>07-01-01 Системы Мобильных Продаж.dim</Name>
       <FullPath>07-01-01 Системы Мобильных Продаж.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>08 Кредитные направления.dim</Name>
+      <FullPath>08 Кредитные направления.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
