@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="28" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7187" scrolltop="-518" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23786" y="10610" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="28" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7187" scrolltop="-518" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23786" y="16219" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -402,6 +402,45 @@
         </Hierarchy>
       </Hierarchies>
     </Dimension>
+    <Dimension dwd:design-time-name="eb61cc2a-c02f-4d3a-86a5-6e8dd642e2d3">
+      <ID>06 Торговые Точки</ID>
+      <Name>06 Торговые точки</Name>
+      <DimensionID>v 06 Торговые Точки</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="57b4e0a6-d4a7-4edb-bcc8-ceffb6f5f6f3">
+          <AttributeID>Branch</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ca987c85-80ed-4058-9b67-c400f7e8b4ea">
+          <AttributeID>Description</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6682fc3d-c408-433a-9c6c-5ef5bd6fa9da">
+          <AttributeID>Code Description</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d3247c01-b631-4df7-8155-564f24a8adc5">
+          <AttributeID>Description Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f4867a51-d9d7-4c08-9b32-34fe6deb6cee">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="0113d2f6-7d8b-4d44-af68-d4f0da839719">
+          <HierarchyID>Иерархия</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="ad920943-2da5-4963-9dc7-5c5227074763">
+          <HierarchyID>Иерархия 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="9b642957-11b1-4bdb-8608-efc899dc6aab">
+          <HierarchyID>Иерархия 2</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="809ca569-2432-4daf-bd19-db9ce21244fb">
+          <HierarchyID>Иерархия 3</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="bc46a31d-1879-486b-923f-3557df36f0fb">
+          <HierarchyID>Иерархия 4</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
   </Dimensions>
   <MeasureGroups>
     <MeasureGroup dwd:design-time-name="0e539d74-2c0f-47d3-aff0-2bc548a0f137">
@@ -588,6 +627,26 @@
                   <Source xsi:type="ColumnBinding" dwd:design-time-name="2a12cc89-2678-4cc6-aa68-af052faa2695">
                     <TableID>olap_v_01_Продажи</TableID>
                     <ColumnID>CustomerID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ef3efd0f-f7ec-4d59-8b55-d09e2fa03c70">
+          <CubeDimensionID>06 Торговые Точки</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="39771ce7-8ca0-436c-a97a-51deb846a17d">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="48e42df6-d293-4194-bcba-b70c324eac65">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6dc330fe-23b6-48c3-b893-a9cdb3b5b06e">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>TardeShopID</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
