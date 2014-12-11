@@ -47,6 +47,10 @@
       <Name>07 Маршруты.dim</Name>
       <FullPath>07 Маршруты.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>07-01 Команды торговых агентов.dim</Name>
+      <FullPath>07-01 Команды торговых агентов.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
