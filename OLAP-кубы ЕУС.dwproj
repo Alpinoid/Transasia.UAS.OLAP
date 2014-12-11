@@ -71,6 +71,10 @@
       <Name>11 Сотрудники.dim</Name>
       <FullPath>11 Сотрудники.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>12 Виды Операций.dim</Name>
+      <FullPath>12 Виды Операций.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
