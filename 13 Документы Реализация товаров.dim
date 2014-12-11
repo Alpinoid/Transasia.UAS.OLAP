@@ -1,0 +1,322 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4ff7fb00-ac16-49e4-9f79-aba774e2abb3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>v 13 Документы Реализация Товаров</ID>
+  <Name>13 Документы Реализация товаров</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2534" scrolltop="-5900" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8652" y="16219" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_13_ДокументыРеализацияТоваров" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3545" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000d90d000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="olap_v_13_ДокументыРеализацияТоваров" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2534</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5900</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="214">
+            <Shape Id="ID" Expanded="false">
+              <Attributes>
+                <Attribute Id="ID" />
+                <Attribute Id="Document Type ID" />
+                <Attribute Id="Is Bonus Doc" />
+                <Attribute Id="Payment Method ID" />
+                <Attribute Id="Doc Date" />
+                <Attribute Id="Doc Delivery Date" />
+                <Attribute Id="Doc Payment Day" />
+                <Attribute Id="Doc Number" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Description" Expanded="false">
+              <Attributes>
+                <Attribute Id="Description" />
+              </Attributes>
+              <Position x="292" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="569e9b0d-022b-40aa-8c2f-1ebac2196a9f">
+    <DataSourceViewID>UASD</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="fb58c581-30f9-46b8-9239-d4e8a4c110e9">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <UnknownMemberName>Без документа</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="c5ca5cd7-4716-4b1c-90e4-6bd81e4af772">
+      <ID>ID</ID>
+      <Name>ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d87fec71-2e9f-43ae-b1ae-ffe7678d247f">
+          <DataType>WChar</DataType>
+          <DataSize>32</DataSize>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4f9e3176-478c-4bb2-82eb-d7853241bf78">
+            <TableID>olap_v_13_ДокументыРеализацияТоваров</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="b37d5568-36d7-48ed-b46b-aac452eb5877">
+        <DataType>WChar</DataType>
+        <DataSize>16</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="69c02970-e064-4bcd-8f01-75eab51e6a2d">
+          <TableID>olap_v_13_ДокументыРеализацияТоваров</TableID>
+          <ColumnID>DocNumber</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="18b29acf-2ac6-4f5a-863a-b13a574f5782">
+          <AttributeID>Doc Date</AttributeID>
+          <Name>Дата документа</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9ca8e40d-a595-462b-9e6d-20660322e3c5">
+          <AttributeID>Document Type ID</AttributeID>
+          <Name>Document Type ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="aee1ade2-a186-4d25-a7b1-ec41e0f4f48b">
+          <AttributeID>Payment Method ID</AttributeID>
+          <Name>Payment Method ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e8f8acc1-dcbc-4ace-b29d-aa5e3fdc7a63">
+          <AttributeID>Doc Delivery Date</AttributeID>
+          <Name>Дата доставки документа</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="821c3f6c-b202-434b-bd28-aea9f6499542">
+          <AttributeID>Doc Payment Day</AttributeID>
+          <Name>Дата оплаты документа</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d211ee30-1e9d-427d-a623-1fff453605e8">
+          <AttributeID>Is Bonus Doc</AttributeID>
+          <Name>Бонусный документ</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d0ebeedc-a286-4236-85db-fd6b41db256e">
+          <AttributeID>Description</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Документ Реализация товаров</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1406d7a1-ea43-4a52-8eb6-bf1e75cd0117">
+          <AttributeID>Doc Number</AttributeID>
+          <Name>Номер документа</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2e4739df-6ef8-487c-8f25-01aff179ab3d">
+      <ID>Doc Date</ID>
+      <Name>Дата документа</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e042bc68-c6c3-47c5-b010-043d98a74e38">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bbc52d1d-85c2-4ffc-b5b4-1347ab981b2d">
+            <TableID>olap_v_13_ДокументыРеализацияТоваров</TableID>
+            <ColumnID>DocDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9ddcee7e-8c2b-4409-9f59-f8f999f81bcb">
+      <ID>Document Type ID</ID>
+      <Name>Document Type ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="01c4ed34-9533-4b6f-87b4-a806be4bd29e">
+          <DataType>WChar</DataType>
+          <DataSize>32</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6d79e27e-351b-48e8-ac91-57c1dea43290">
+            <TableID>olap_v_13_ДокументыРеализацияТоваров</TableID>
+            <ColumnID>DocumentTypeID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1d54a8fd-f296-40f1-bcca-cf63e4b24205">
+      <ID>Payment Method ID</ID>
+      <Name>Payment Method ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b5ace3e9-3c1e-4b8d-b12e-f24c85bb85fa">
+          <DataType>WChar</DataType>
+          <DataSize>32</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="44d7888b-1233-464b-af93-36c4847614fc">
+            <TableID>olap_v_13_ДокументыРеализацияТоваров</TableID>
+            <ColumnID>PaymentMethodID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7590e37a-9c86-4adb-bfcd-57857513c644">
+      <ID>Doc Delivery Date</ID>
+      <Name>Дата доставки документа</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="daca83fc-4050-4427-be92-9e85345246f1">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b5e02c6-f8d0-4f2c-9d50-2b387aa985ac">
+            <TableID>olap_v_13_ДокументыРеализацияТоваров</TableID>
+            <ColumnID>DocDeliveryDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6140f555-24cd-4e39-9d23-861c338f9389">
+      <ID>Doc Payment Day</ID>
+      <Name>Дата оплаты документа</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d284b07a-9b8f-4352-ae1f-f8f16dfdac32">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="53c66df7-081e-46b6-b37c-f7dedd62b315">
+            <TableID>olap_v_13_ДокументыРеализацияТоваров</TableID>
+            <ColumnID>DocPaymentDay</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c78ac70f-4721-4af7-8e3e-b24cfb663979">
+      <ID>Is Bonus Doc</ID>
+      <Name>Бонусный документ</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d574c67c-553b-4cf1-8355-1ab4873e6c53">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5ecba019-64fd-476b-b981-8d94bfd661e0">
+            <TableID>olap_v_13_ДокументыРеализацияТоваров</TableID>
+            <ColumnID>IsBonusDoc</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c9025f06-bea7-4dc8-9db3-e9fabf8e968e">
+      <ID>Description</ID>
+      <Name>Документ Реализация товаров</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3917d0eb-018b-4008-a23a-ec2d2b3c0ccf">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="17594c71-bc77-4986-9726-ec1fee8f76e8">
+            <TableID>olap_v_13_ДокументыРеализацияТоваров</TableID>
+            <ColumnID>Description</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7085a3e5-4804-434f-a1d4-af1fa91c68e2">
+      <ID>Doc Number</ID>
+      <Name>Номер документа</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="904af0eb-741e-4a4b-8594-e5cc4c19db11">
+          <DataType>WChar</DataType>
+          <DataSize>16</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="149b9616-d988-45c5-97ab-7ac2a32f4bc5">
+            <TableID>olap_v_13_ДокументыРеализацияТоваров</TableID>
+            <ColumnID>DocNumber</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="d4fff3d5-62b9-47f1-a5f8-4acc2b2cfbeb">
+      <ID>Иерархия</ID>
+      <Name>Документы</Name>
+      <Levels>
+        <Level dwd:design-time-name="4b10a738-6bcf-44a7-810a-f66b5c4da0e1">
+          <ID>Документ Реализация товаров</ID>
+          <Name>Документ Реализация товаров</Name>
+          <SourceAttributeID>Description</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:StringStoresCompatibilityLevel>1100</ddl300:StringStoresCompatibilityLevel>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

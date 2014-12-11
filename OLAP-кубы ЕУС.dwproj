@@ -75,6 +75,10 @@
       <Name>12 Виды Операций.dim</Name>
       <FullPath>12 Виды Операций.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>13 Документы Реализация товаров.dim</Name>
+      <FullPath>13 Документы Реализация товаров.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>

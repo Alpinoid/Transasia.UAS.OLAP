@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="44" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5250" scrolltop="-928" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23786" y="16219" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="46" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5250" scrolltop="3658" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23786" y="16219" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -421,7 +421,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="7766" top="7269" logicalid="41" controlid="28" masterid="0" hint1="0" hint2="0" width="3033" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7766" top="7269" logicalid="41" controlid="28" masterid="0" hint1="0" hint2="0" width="3033" height="1858" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -434,11 +434,11 @@
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="27" destid="5" sourceattachpoint="18" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="27" destid="5" sourceattachpoint="18" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
               <point x="10499" y="7668" />
               <point x="9283" y="7668" />
-              <point x="9283" y="7727" />
-              <point x="8066" y="7727" />
+              <point x="9283" y="8827" />
+              <point x="8066" y="8827" />
             </connector>
           </ddscontrol>
           <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_12_ВидыОпераций" left="10560" top="9435" logicalid="42" controlid="29" masterid="0" hint1="0" hint2="0" width="5434" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
@@ -455,7 +455,7 @@
           <ddscontrol controlprogid="MSDDS.Polyline" left="7766" top="9425" logicalid="43" controlid="30" masterid="0" hint1="0" hint2="0" width="3094" height="802" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
-                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
               </ddsxmlobj>
             </control>
             <layoutobject>
@@ -470,6 +470,37 @@
               <point x="9260" y="9824" />
               <point x="9260" y="9927" />
               <point x="8066" y="9927" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_13_ДокументыРеализацияТоваров" left="10573" top="11746" logicalid="44" controlid="31" masterid="0" hint1="0" hint2="0" width="5424" height="4604" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a000030150000fc110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="olap_v_13_ДокументыРеализацияТоваров" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7766" top="11449" logicalid="45" controlid="32" masterid="0" hint1="0" hint2="0" width="3107" height="978" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[v_01_Продажи-v_13_ДокументыРеализацияТоваров]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="31" destid="5" sourceattachpoint="18" destattachpoint="35" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10573" y="11848" />
+              <point x="9320" y="11848" />
+              <point x="9320" y="12127" />
+              <point x="8066" y="12127" />
             </connector>
           </ddscontrol>
         </dds>
@@ -493,7 +524,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-928</Value>
+      <Value>3658</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -870,6 +901,46 @@
         </Hierarchy>
       </Hierarchies>
     </Dimension>
+    <Dimension dwd:design-time-name="069c0dfe-fdbf-42e6-b006-90ef3d9ce83a">
+      <ID>13 Документы Реализация товаров</ID>
+      <Name>13 Документы Реализация товаров</Name>
+      <DimensionID>v 13 Документы Реализация Товаров</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ecd12252-4bec-4830-9541-b9046f9cc1f5">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aa837504-4b7e-4695-8ae5-ad5116c8c784">
+          <AttributeID>Doc Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7844cace-4ea8-4e6e-9810-13c0cd1d138b">
+          <AttributeID>Document Type ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="548eac3c-9f1e-4320-b118-e76d276ff4a1">
+          <AttributeID>Payment Method ID</AttributeID>
+          <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+        </Attribute>
+        <Attribute dwd:design-time-name="77ba2dab-2054-4657-a12f-4b77a51d5882">
+          <AttributeID>Doc Delivery Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="201a575f-95ff-4fa1-956e-fae4f8109431">
+          <AttributeID>Doc Payment Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="29d671b1-2e18-47dd-9a3e-289cfa0f662e">
+          <AttributeID>Is Bonus Doc</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cac513d6-42c0-4dd1-a98a-a5d880d38197">
+          <AttributeID>Description</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="301fdf04-2e47-4a57-a536-048ee050be75">
+          <AttributeID>Doc Number</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="3c0c888f-322f-45aa-8da4-41c711f69f86">
+          <HierarchyID>Иерархия</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
   </Dimensions>
   <MeasureGroups>
     <MeasureGroup dwd:design-time-name="0e539d74-2c0f-47d3-aff0-2bc548a0f137">
@@ -1196,6 +1267,26 @@
                   <Source xsi:type="ColumnBinding" dwd:design-time-name="c7cb9103-2544-4e80-b657-4eacfd8cbd0e">
                     <TableID>olap_v_01_Продажи</TableID>
                     <ColumnID>TransactionTypeID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ff9b8534-efb8-4906-a2af-ef195d59a956">
+          <CubeDimensionID>13 Документы Реализация товаров</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="874ec28a-ee9d-4dee-bd2b-dc2bd8ca89b3">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1828d0a0-6692-47b5-95b1-f7a983086c85">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="babda5b8-859d-4608-a902-b2653849046f">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>SalesDocumentID</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
