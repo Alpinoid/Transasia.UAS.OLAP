@@ -91,6 +91,10 @@
       <Name>14 Документы.dim</Name>
       <FullPath>14 Документы.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>16 Номенклатура.dim</Name>
+      <FullPath>16 Номенклатура.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
