@@ -1,0 +1,373 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="87dce51c-3b5e-44c9-baa0-fa98ca76ec0c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>v 16-01 Единицы Измерения</ID>
+  <Name>16-01 Единицы Измерения</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2692" scrolltop="-8348" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8652" y="21696" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_16-01_ЕдиницыИзмерения" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3228" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a00009c0c000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="olap_v_16-01_ЕдиницыИзмерения" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2692</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8348</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="144">
+            <Shape Id="ID" Expanded="false">
+              <Attributes>
+                <Attribute Id="ID" />
+                <Attribute Id="Code EAN" />
+                <Attribute Id="Factor" />
+                <Attribute Id="Gross Weight" />
+                <Attribute Id="Height" />
+                <Attribute Id="Is Basic Unit" />
+                <Attribute Id="Lenght" />
+                <Attribute Id="Net Weight" />
+                <Attribute Id="Volume" />
+                <Attribute Id="Widt" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Description" Expanded="true">
+              <Attributes>
+                <Attribute Id="Description" />
+              </Attributes>
+              <Position x="205" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="9492ceb1-a4e6-46a8-871a-5369ab03d636">
+    <DataSourceViewID>UASD</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="a4cd7b09-5bb7-4e53-9fcd-4c6a2a8bb395">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <UnknownMemberName>Без единицы измерения</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="3be95bf1-9147-4bc3-9ab2-6d9dfac2f936">
+      <ID>ID</ID>
+      <Name>ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="74438392-de69-4df2-b06a-d650e6b21d61">
+          <DataType>WChar</DataType>
+          <DataSize>32</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="df0d8d56-b08a-4e2d-9012-bacb381b6961">
+            <TableID>olap_v_16-01_ЕдиницыИзмерения</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="69552b2f-7544-496b-9e31-1700793be6f2">
+        <DataType>WChar</DataType>
+        <DataSize>25</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="62d36b8c-9c30-44c0-91db-d8bc9c5b3099">
+          <TableID>olap_v_16-01_ЕдиницыИзмерения</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="820734d4-03c6-4350-94b3-60c75b307b53">
+          <AttributeID>Volume</AttributeID>
+          <Name>Volume</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="92ffa18a-0d07-46f7-90a5-52847a6b4777">
+          <AttributeID>Net Weight</AttributeID>
+          <Name>Net Weight</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e76389e3-6b09-4393-b93b-79418a043bf0">
+          <AttributeID>Gross Weight</AttributeID>
+          <Name>Gross Weight</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1e304f2e-0bfb-47f4-8ee3-57d78b5e24f1">
+          <AttributeID>Lenght</AttributeID>
+          <Name>Lenght</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="040b048a-1f2e-4c1b-86fe-5c591c01be84">
+          <AttributeID>Widt</AttributeID>
+          <Name>Widt</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2af68e06-ee68-4f29-b5c8-f7994c9d9df3">
+          <AttributeID>Height</AttributeID>
+          <Name>Height</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c4b2f820-2b7c-4857-bcc5-82d8c4ae0b29">
+          <AttributeID>Code EAN</AttributeID>
+          <Name>Code EAN</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5fd315bc-afe7-41bc-b3a7-1490d9eb3398">
+          <AttributeID>Is Basic Unit</AttributeID>
+          <Name>Is Basic Unit</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d40bce8d-7202-45da-bee9-84db4abac9bc">
+          <AttributeID>Factor</AttributeID>
+          <Name>Factor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4741e62e-a796-49b7-aa48-f60601089728">
+          <AttributeID>Description</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Единица измерения</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="85832382-5a92-4b54-929c-0c243a2cbe92">
+      <ID>Factor</ID>
+      <Name>Factor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bc128180-d454-49cc-b5ad-81de91f24d09">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c0188421-1792-4e11-81ac-c646634a37ef">
+            <TableID>olap_v_16-01_ЕдиницыИзмерения</TableID>
+            <ColumnID>Factor</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="1b3d5ef3-e6f2-4e4f-bc8b-cd99358073bd">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d6554e8a-e733-4101-b8b3-e4cd6c6371cf">
+          <TableID>olap_v_16-01_ЕдиницыИзмерения</TableID>
+          <ColumnID>Factor</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="1b1de3c6-5990-49b0-b0b4-1ee612df2676">
+        <DataType>Double</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="be9f33b0-7a2e-4d91-9d1b-83daa8a9b197">
+          <TableID>olap_v_16-01_ЕдиницыИзмерения</TableID>
+          <ColumnID>Factor</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="761a0985-b3c9-4ab1-a5ae-3062bc95fda8">
+      <ID>Volume</ID>
+      <Name>Volume</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a15f83b1-8565-40b7-a1b1-bca04f38e7e4">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ae8e6411-a20c-4de4-8364-84c2f0c579d0">
+            <TableID>olap_v_16-01_ЕдиницыИзмерения</TableID>
+            <ColumnID>Volume</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8e0f5166-7c2d-460a-9ef4-865db4f91152">
+      <ID>Net Weight</ID>
+      <Name>Net Weight</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="888c7271-240c-41c7-9b95-962b0c374985">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="52ccc000-6658-4baf-9c59-7d48651decdd">
+            <TableID>olap_v_16-01_ЕдиницыИзмерения</TableID>
+            <ColumnID>NetWeight</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1cd09a87-70d1-4a65-9082-62400b96f34b">
+      <ID>Gross Weight</ID>
+      <Name>Gross Weight</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3d36dba5-8b13-4cc7-8063-7c638e57e339">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab8dbca9-3619-48b7-82a9-f4de19b358e7">
+            <TableID>olap_v_16-01_ЕдиницыИзмерения</TableID>
+            <ColumnID>GrossWeight</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fe47ea50-e69c-4442-81ba-69c507809e64">
+      <ID>Lenght</ID>
+      <Name>Lenght</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5424c7a4-bade-4712-855b-07d8d244e2b9">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3a3e6e23-1138-420e-aa71-bf9c77a179b5">
+            <TableID>olap_v_16-01_ЕдиницыИзмерения</TableID>
+            <ColumnID>Lenght</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ef26f0e7-c24f-4c3c-9c44-9bd24f6f3b8c">
+      <ID>Widt</ID>
+      <Name>Widt</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2412b493-5f19-46b7-aa6a-cdd89e5d825a">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f8989da4-5081-473a-a745-8fbd51ed3378">
+            <TableID>olap_v_16-01_ЕдиницыИзмерения</TableID>
+            <ColumnID>Widt</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9ade1f49-8f53-4a83-a82e-883d37930867">
+      <ID>Height</ID>
+      <Name>Height</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="45b361ad-2527-4430-b2bd-d2aacd323755">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="60256afb-5d1e-4a35-8212-8e50a7eb9f80">
+            <TableID>olap_v_16-01_ЕдиницыИзмерения</TableID>
+            <ColumnID>Height</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5ff2188c-01d2-4f8a-8332-707ec1a0417b">
+      <ID>Code EAN</ID>
+      <Name>Code EAN</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="579dcf77-a462-4bc6-aec7-c0489484263a">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2b2e6e42-5b8f-42b1-afc3-afc51b071b21">
+            <TableID>olap_v_16-01_ЕдиницыИзмерения</TableID>
+            <ColumnID>CodeEAN</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d92705de-6395-4c67-bbee-949d9a451f96">
+      <ID>Is Basic Unit</ID>
+      <Name>Is Basic Unit</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="07c4ca46-0c35-483b-b4e4-df0d3c5a83f1">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="64b9e862-fca3-46c9-b7dd-361616e6537d">
+            <TableID>olap_v_16-01_ЕдиницыИзмерения</TableID>
+            <ColumnID>IsBasicUnit</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a7ab090d-3c5d-4838-8556-fc92af5095e0">
+      <ID>Description</ID>
+      <Name>Единица измерения</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f31706a1-5c88-4f87-b0be-7397b68339e4">
+          <DataType>WChar</DataType>
+          <DataSize>25</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8c8866f1-81fe-4ff8-b026-63b2d021fa5a">
+            <TableID>olap_v_16-01_ЕдиницыИзмерения</TableID>
+            <ColumnID>Description</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="4a2981e2-b1ed-4221-ac9f-33c4b4fb952a">
+      <ID>Иерархия</ID>
+      <Name>Единицы измерения</Name>
+      <Levels>
+        <Level dwd:design-time-name="6bf8a2b7-5b1a-487b-a585-9b3c5ea22a2e">
+          <ID>Единица измерения</ID>
+          <Name>Единица измерения</Name>
+          <SourceAttributeID>Description</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:StringStoresCompatibilityLevel>1100</ddl300:StringStoresCompatibilityLevel>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -27,7 +27,7 @@
             <Name>_ALL_TABLES_</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="156" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="5682" scrolltop="-724" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="24315" y="23019" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="159" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5753" scrolltop="4885" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="24315" y="23019" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
                     <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                   </font>
@@ -71,9 +71,9 @@
                   </layoutobject>
                   <shape groupshapeid="0" groupnode="0" />
                 </ddscontrol>
-                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_16-01_ЕдиницыИзмерения" left="25924" top="22154" logicalid="116" controlid="46" masterid="0" hint1="0" hint2="0" width="3704" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_16-01_ЕдиницыИзмерения" left="4652" top="24872" logicalid="116" controlid="46" masterid="0" hint1="0" hint2="0" width="7937" height="6447" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                   <control>
-                    <ddsxmlobjectstreaminitwrapper binary="000a0000780e000088130000" />
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000011f00002f190000" />
                   </control>
                   <layoutobject>
                     <ddsxmlobj>
@@ -93,9 +93,9 @@
                   </layoutobject>
                   <shape groupshapeid="0" groupnode="0" />
                 </ddscontrol>
-                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_16-01-01_КлассификаторЕдиницИзмерения" left="16711" top="26353" logicalid="118" controlid="48" masterid="0" hint1="0" hint2="0" width="7975" height="2787" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_16-01-01_КлассификаторЕдиницИзмерения" left="-5515" top="29104" logicalid="118" controlid="48" masterid="0" hint1="0" hint2="0" width="7975" height="2152" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                   <control>
-                    <ddsxmlobjectstreaminitwrapper binary="000a0000271f0000e30a0000" />
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000271f000068080000" />
                   </control>
                   <layoutobject>
                     <ddsxmlobj>
@@ -673,12 +673,56 @@
                     <point x="11590" y="17267" />
                   </connector>
                 </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="12170" top="23618" logicalid="156" controlid="86" masterid="0" hint1="0" hint2="0" width="2609" height="1554" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[v_16-01_ЕдиницыИзмерения-v_16_Номенклатура]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="59" destid="46" sourceattachpoint="11" destattachpoint="28" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="14379" y="24117" />
+                    <point x="14379" y="24688" />
+                    <point x="14394" y="24688" />
+                    <point x="14394" y="24331" />
+                    <point x="12470" y="24331" />
+                    <point x="12470" y="24872" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="2160" top="29231" logicalid="157" controlid="87" masterid="0" hint1="0" hint2="0" width="3047" height="814" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[v_16-01_ЕдиницыИзмерения-v_16-01-01_КлассификаторЕдиницИзмерения]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="48" destid="46" sourceattachpoint="31" destattachpoint="46" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="2460" y="29630" />
+                    <point x="4907" y="29630" />
+                    <point x="4907" y="29617" />
+                    <point x="4252" y="29617" />
+                    <point x="4252" y="29745" />
+                    <point x="4652" y="29745" />
+                  </connector>
+                </ddscontrol>
               </dds>
 </DiagramLayout>
             <ShowRelationshipNames>False</ShowRelationshipNames>
             <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
-            <DiagramViewPortLeft>5682</DiagramViewPortLeft>
-            <DiagramViewPortTop>-724</DiagramViewPortTop>
+            <DiagramViewPortLeft>-5753</DiagramViewPortLeft>
+            <DiagramViewPortTop>4885</DiagramViewPortTop>
             <DiagramBoundingLeft>-6906</DiagramBoundingLeft>
             <DiagramBoundingTop>-353</DiagramBoundingTop>
             <DiagramZoom>75</DiagramZoom>
@@ -862,7 +906,7 @@
             <xs:element name="olap_v_16-01_ЕдиницыИзмерения" msprop:design-time-name="d4529fc9-f0e5-4449-8455-be85720638e0" msprop:FriendlyName="v_16-01_ЕдиницыИзмерения" msprop:DbSchemaName="olap" msprop:DbTableName="v_16-01_ЕдиницыИзмерения" msprop:TableType="View">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID" msdata:ReadOnly="true" msprop:design-time-name="cfb6043d-c81e-432a-9049-e124df951359" msprop:DbColumnName="ID" msprop:FriendlyName="ID" minOccurs="0">
+                  <xs:element name="ID" msdata:ReadOnly="true" msprop:design-time-name="cfb6043d-c81e-432a-9049-e124df951359" msprop:DbColumnName="ID" msprop:FriendlyName="ID">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="32" />
@@ -898,6 +942,13 @@
                     </xs:simpleType>
                   </xs:element>
                   <xs:element name="IsBasicUnit" msdata:ReadOnly="true" msprop:design-time-name="91df4539-3200-4179-afc1-20540a70fab1" msprop:DbColumnName="IsBasicUnit" msprop:FriendlyName="IsBasicUnit" type="xs:int" />
+                  <xs:element name="Description" msprop:design-time-name="b8bfce88-3b3e-4bec-b6e9-388371d50396" msprop:DbColumnName="Description" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="25" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
@@ -924,17 +975,10 @@
             <xs:element name="olap_v_16-01-01_КлассификаторЕдиницИзмерения" msprop:design-time-name="ccd7bc07-0d0a-45ca-8811-244aca17f228" msprop:FriendlyName="v_16-01-01_КлассификаторЕдиницИзмерения" msprop:DbSchemaName="olap" msprop:DbTableName="v_16-01-01_КлассификаторЕдиницИзмерения" msprop:TableType="View">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID" msdata:ReadOnly="true" msprop:design-time-name="9ce475d9-70f6-4611-99f6-bf869432f900" msprop:DbColumnName="ID" msprop:FriendlyName="ID" minOccurs="0">
+                  <xs:element name="ID" msdata:ReadOnly="true" msprop:design-time-name="9ce475d9-70f6-4611-99f6-bf869432f900" msprop:DbColumnName="ID" msprop:FriendlyName="ID">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="32" />
-                      </xs:restriction>
-                    </xs:simpleType>
-                  </xs:element>
-                  <xs:element name="Code" msprop:design-time-name="d3823d33-1bd2-4954-a878-bb9f1b08b81a" msprop:DbColumnName="Code" msprop:FriendlyName="Code">
-                    <xs:simpleType>
-                      <xs:restriction base="xs:string">
-                        <xs:maxLength value="3" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
@@ -1305,14 +1349,14 @@
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="ArticleDescription" msprop:DbColumnName="ArticleDescription" msprop:design-time-name="3093c4d6-5f23-4849-a071-ccc60b9b9258" minOccurs="0">
+                  <xs:element name="ArticleDescription" msprop:design-time-name="3093c4d6-5f23-4849-a071-ccc60b9b9258" msprop:DbColumnName="ArticleDescription" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="127" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="DescriptionArticle" msprop:DbColumnName="DescriptionArticle" msprop:design-time-name="5448afd4-cde5-4cf3-8edf-86d7c9052ec3" minOccurs="0">
+                  <xs:element name="DescriptionArticle" msprop:design-time-name="5448afd4-cde5-4cf3-8edf-86d7c9052ec3" msprop:DbColumnName="DescriptionArticle" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="128" />
@@ -1508,8 +1552,16 @@
           <xs:selector xpath=".//olap_v_13-01_ТипыДокументов" />
           <xs:field xpath="ID" />
         </xs:unique>
+        <xs:unique name="olap_v_16-01_ЕдиницыИзмерения_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//olap_v_16-01_ЕдиницыИзмерения" />
+          <xs:field xpath="ID" />
+        </xs:unique>
         <xs:unique name="olap_v_11_Сотрудники_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
           <xs:selector xpath=".//olap_v_11_Сотрудники" />
+          <xs:field xpath="ID" />
+        </xs:unique>
+        <xs:unique name="olap_v_16-01-01_КлассификаторЕдиницИзмерения_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//olap_v_16-01-01_КлассификаторЕдиницИзмерения" />
           <xs:field xpath="ID" />
         </xs:unique>
         <xs:unique name="olap_v_07-01-01_СистемыМобильныхПродаж_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
@@ -1598,6 +1650,8 @@
           <msdata:Relationship name="v_13_ДокументыРеализацияТоваров-v_13-02_СпособыОплаты" msdata:parent="olap_v_13-02_СпособыОплаты" msdata:child="olap_v_13_ДокументыРеализацияТоваров" msdata:parentkey="ID" msdata:childkey="PaymentMethodID" msprop:IsLogical="True" msprop:Description="" />
           <msdata:Relationship name="v_01_Продажи-v_14_Документы" msdata:parent="olap_v_14_Документы" msdata:child="olap_v_01_Продажи" msdata:parentkey="ID" msdata:childkey="DocumentID" msprop:IsLogical="True" msprop:Description="" />
           <msdata:Relationship name="v_01_Продажи-v_16_Номенклатура" msdata:parent="olap_v_16_Номенклатура" msdata:child="olap_v_01_Продажи" msdata:parentkey="ID" msdata:childkey="GoodID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="v_16-01_ЕдиницыИзмерения-v_16_Номенклатура" msdata:parent="olap_v_16_Номенклатура" msdata:child="olap_v_16-01_ЕдиницыИзмерения" msdata:parentkey="ID" msdata:childkey="GoodsID" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="v_16-01_ЕдиницыИзмерения-v_16-01-01_КлассификаторЕдиницИзмерения" msdata:parent="olap_v_16-01-01_КлассификаторЕдиницИзмерения" msdata:child="olap_v_16-01_ЕдиницыИзмерения" msdata:parentkey="ID" msdata:childkey="ClassifierUnitsID" msprop:IsLogical="True" msprop:Description="" />
         </xs:appinfo>
       </xs:annotation>
     </xs:schema>

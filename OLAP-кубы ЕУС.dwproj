@@ -95,6 +95,14 @@
       <Name>16 Номенклатура.dim</Name>
       <FullPath>16 Номенклатура.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>16-01 Единицы Измерения.dim</Name>
+      <FullPath>16-01 Единицы Измерения.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>16-01-01 Классификатор единиц измерения.dim</Name>
+      <FullPath>16-01-01 Классификатор единиц измерения.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
