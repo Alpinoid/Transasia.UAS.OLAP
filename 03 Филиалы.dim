@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3512" scrolltop="-6045" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8652" y="16034" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3512" scrolltop="-6045" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8652" y="21696" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -203,6 +203,7 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -227,18 +228,29 @@
   <Hierarchies>
     <Hierarchy dwd:design-time-name="6f816505-4f91-4e80-a516-3a4c82c78b13">
       <ID>Иерархия</ID>
-      <Name>Филиалы</Name>
+      <Name>Иерархия филиалов</Name>
       <Levels>
         <Level dwd:design-time-name="0bdecafa-1922-4d19-ba84-aa507edacbf2">
           <ID>Parent Description</ID>
-          <Name>Parent Description</Name>
+          <Name>Филиал</Name>
           <SourceAttributeID>Parent Description</SourceAttributeID>
         </Level>
         <Level dwd:design-time-name="0e0e0e46-6d53-4e8f-b547-37d2db27d939">
           <ID>Child Description</ID>
-          <Name>Child Description</Name>
+          <Name>Подчиненнный филиал</Name>
           <SourceAttributeID>Child Description</SourceAttributeID>
           <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="cf6a91c5-cf66-4b6d-871c-3cc009c07565">
+      <ID>Иерархия 1</ID>
+      <Name>Филиалы</Name>
+      <Levels>
+        <Level dwd:design-time-name="2a568011-3e30-4534-868d-86b091d7511f">
+          <ID>Филиал</ID>
+          <Name>Филиал</Name>
+          <SourceAttributeID>Description</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>

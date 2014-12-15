@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2806" scrolltop="-9274" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8652" y="21696" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2806" scrolltop="-9274" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8652" y="21696" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_14_Документы" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_14_Документы" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000b80b00004d0c0000" />
             </control>
@@ -70,7 +70,7 @@
       <Value>
         <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
           <Shapes NodeWidth="144">
-            <Shape Id="ID" Expanded="false">
+            <Shape Id="ID" Expanded="true">
               <Attributes>
                 <Attribute Id="ID" />
                 <Attribute Id="Doc Date" />
@@ -133,15 +133,15 @@
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="ee296be0-b3c6-4373-a2ad-b617d5d78111">
+        <AttributeRelationship dwd:design-time-name="aa81fe95-de8d-4781-a040-37b14dd3aa2e">
           <AttributeID>Doc Date</AttributeID>
           <Name>Дата документа</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="8ee999fa-0359-4fe6-af5c-edaae87a59f5">
+        <AttributeRelationship dwd:design-time-name="867a66fb-ecae-4e04-948e-488ab9cfbdff">
           <AttributeID>Doc Number</AttributeID>
           <Name>Номер документа</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="83e95b2a-0140-4e72-b381-ca8389de64a6">
+        <AttributeRelationship dwd:design-time-name="3f734c3b-96d8-42ae-a5cb-7449704bdba3">
           <AttributeID>Description</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Документ</Name>
@@ -165,6 +165,7 @@
         </KeyColumn>
       </KeyColumns>
       <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -205,17 +206,17 @@
       <ID>Description</ID>
       <Name>Документ</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="fd317269-a04e-48d7-ba7a-3edaf7c456e5">
+        <KeyColumn dwd:design-time-name="195944d6-3e8b-4e1d-9880-1bf9762700dc">
           <DataType>WChar</DataType>
           <DataSize>61</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f6391889-9b7b-4117-ba5c-2a80ef988218">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7889a085-d3f3-4022-99fe-09c66ceb1e3f">
             <TableID>olap_v_14_Документы</TableID>
             <ColumnID>Description</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="c0a7f20d-7f8c-4210-a3c3-c81b2578255d">
+        <AttributeRelationship dwd:design-time-name="3d91d084-6bca-4a54-aeee-89970d2147ad">
           <AttributeID>Document</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Тип документа</Name>
@@ -227,27 +228,27 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="0f988019-86bc-43c9-b826-e05dd7bfba01">
+    <Hierarchy dwd:design-time-name="a525524a-b084-46b4-a4bd-c2bd55046612">
       <ID>Иерархия</ID>
-      <Name>Документы</Name>
+      <Name>Тип документа - Документ</Name>
       <Levels>
-        <Level dwd:design-time-name="1cac5f04-c828-4a35-a5d1-8350667c9a05">
+        <Level dwd:design-time-name="761306c6-ac23-4a51-a754-9f73e61d0039">
+          <ID>Тип документа</ID>
+          <Name>Тип документа</Name>
+          <SourceAttributeID>Document</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a1c3ca5d-5166-42a2-be12-df8a937d37b0">
           <ID>Документ</ID>
           <Name>Документ</Name>
           <SourceAttributeID>Description</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
-    <Hierarchy dwd:design-time-name="ef86b3bf-c96a-4ea1-b5fd-cd86b1704d1a">
+    <Hierarchy dwd:design-time-name="cdd0972b-edb8-450e-89bf-eaf5dd87a156">
       <ID>Иерархия 1</ID>
-      <Name>Тип документа - Документ</Name>
+      <Name>Документы</Name>
       <Levels>
-        <Level dwd:design-time-name="b768cd78-3d0e-423a-9b07-4131dc6eb785">
-          <ID>Тип документа</ID>
-          <Name>Тип документа</Name>
-          <SourceAttributeID>Document</SourceAttributeID>
-        </Level>
-        <Level dwd:design-time-name="cb6caa71-f40f-4b4f-8447-a6bffa598739">
+        <Level dwd:design-time-name="125e9390-98d0-4885-95b8-53137f7552e8">
           <ID>Документ</ID>
           <Name>Документ</Name>
           <SourceAttributeID>Description</SourceAttributeID>

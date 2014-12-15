@@ -124,7 +124,7 @@
           <ConfigurationSetting>
             <Id>UASD</Id>
             <Name>UASD</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=V-APP8283;Persist Security Info=True;Password=;User ID=;Initial Catalog=UASD</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=V-SQL8;Persist Security Info=True;Password=;User ID=;Initial Catalog=UASD</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
