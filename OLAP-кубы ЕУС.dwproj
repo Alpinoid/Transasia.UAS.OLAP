@@ -103,6 +103,10 @@
       <Name>16-01-01 Классификатор единиц измерения.dim</Name>
       <FullPath>16-01-01 Классификатор единиц измерения.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>16-03 Бренды.dim</Name>
+      <FullPath>16-03 Бренды.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>

@@ -22,6 +22,7 @@ SELECT
 	,Element._Fld221 + ': ' + Element._Description AS ArticleDescription		-- Артикул: Наименовнаие
 	,Element._Description + ' (' + Element._Fld221 + ')' AS DescriptionArticle	-- Наименовнаие (Артикул)
 	,ISNULL(Bussiness._Description, 'Без направления') AS Business				-- Направление бизнеса
+	,CONVERT(varchar(32), Element._Fld223RRef, 2) AS BrandID					-- ID бренда
 FROM dbo._Reference55 AS Element WITH(NOLOCK)													-- Справочник.Номенклатура
 LEFT JOIN dbo._Reference54 AS Bussiness WITH(NOLOCK) ON Bussiness._IDRRef = Element._Fld165RRef	-- Справочник.НаправленияБизнеса
 WHERE Element._Folder = 0x01
