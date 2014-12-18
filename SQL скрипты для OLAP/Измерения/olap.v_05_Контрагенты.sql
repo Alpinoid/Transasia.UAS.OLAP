@@ -8,38 +8,22 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-
-
-
-
-
-
-
 ALTER VIEW [olap].[v_05_Контрагенты]
 AS
 
 SELECT
-	CONVERT(varchar(32), Customers._IDRRef, 2) AS ID
-	,Customers._Code AS Code
-	,CASE
-		WHEN ISNULL(Customers._Fld170, '') = '' THEN '000000000000'
-		ELSE Customers._Fld170
-	END AS INN
-	,Customers._Description AS Description
-	,Customers._Code + ': ' + Customers._Description AS CodeDescription
-	,Customers._Description + ' (' + Customers._Code + ')' AS DescriptionCode
-	,CASE
-		WHEN ISNULL(Customers._Fld170, '') = '' THEN '000000000000'
-		ELSE Customers._Fld170
-	END + ': ' + Customers._Description AS INNDescription
-	,Customers._Description + ' (' + CASE
-										WHEN ISNULL(Customers._Fld170, '') = '' THEN '000000000000'
-										ELSE Customers._Fld170
-									END + ')' AS DescriptionINN
-FROM dbo._Reference50 AS Customers WITH(NOLOCK)																-- Справочник.Контрагенты
-INNER JOIN dbo._Reference1044 AS CustomerType WITH(NOLOCK) ON CustomerType._IDRRef = Customers._Fld1216RRef	-- Справочник.ТипыКонтрагента
-											AND CustomerType._Code = '000000003'							-- Тип контрагента: Обычный клиент
-WHERE Customers._Fld176 = 1																					-- Покупатель
+	CONVERT(varchar(32), Customers.Ссылка, 2) AS ID
+	,Customers.Код AS Code
+	,Customers.ИНН AS INN
+	,Customers.Наименование AS Description
+	,Customers.Код + ': ' + Customers.Наименование AS CodeDescription
+	,Customers.Наименование + ' (' + Customers.Код + ')' AS DescriptionCode
+	,Customers.ИНН + ': ' + Customers.Наименование AS INNDescription
+	,Customers.Наименование + ' (' + Customers.ИНН + ')' AS DescriptionINN
+FROM dbo.Справочник_Контрагенты AS Customers WITH(NOLOCK)																	-- Справочник.Контрагенты
+INNER JOIN dbo.Справочник_ТипыКонтрагента AS CustomerType WITH(NOLOCK) ON CustomerType.Ссылка = Customers.ТипКонтрагента	-- Справочник.ТипыКонтрагента
+											AND CustomerType.Код = '000000003'												-- Тип контрагента: Обычный клиент
+WHERE Customers.Покупатель = 1																								-- Покупатель
 
 
 GO

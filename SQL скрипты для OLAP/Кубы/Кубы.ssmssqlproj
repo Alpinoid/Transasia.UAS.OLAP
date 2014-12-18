@@ -3,13 +3,13 @@
   <Items>
     <LogicalFolder Name="Соединения" Type="2" Sorted="true">
       <Items>
-        <ConnectionNode Name="V-APP8283:sa">
-          <Created>2014-12-10T17:10:41.5076665+03:00</Created>
+        <ConnectionNode Name="V-SQL8:sa">
+          <Created>2014-12-15T18:03:57.8392675+03:00</Created>
           <Type>SQL</Type>
-          <Server>V-APP8283</Server>
+          <Server>V-SQL8</Server>
           <UserName>sa</UserName>
           <Authentication>SQL</Authentication>
-          <InitialDB>master</InitialDB>
+          <InitialDB />
           <LoginTimeout>15</LoginTimeout>
           <ExecutionTimeout>0</ExecutionTimeout>
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
@@ -20,8 +20,8 @@
     <LogicalFolder Name="Запросы" Type="0" Sorted="true">
       <Items>
         <FileNode Name="olap.v_01_Продажи.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-APP8283:False:sa</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>V-APP8283</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>olap.v_01_Продажи.sql</FullPath>
         </FileNode>

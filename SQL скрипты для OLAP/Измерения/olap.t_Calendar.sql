@@ -8,7 +8,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE TABLE [olap].[Calendar](
+CREATE TABLE [olap].[t_Calendar](
 	[Date] [date] NOT NULL,
 	[Year] [smallint] NOT NULL,
 	[Quarter] [tinyint] NOT NULL,

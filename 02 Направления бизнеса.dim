@@ -93,6 +93,23 @@
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
+  <DimensionPermissions>
+    <DimensionPermission dwd:design-time-name="c7057c9c-1bfd-4a25-ac87-faccc538d181">
+      <ID>DimensionPermission</ID>
+      <Name>DimensionPermission</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="8a175d10-62ee-48c2-8b49-ef6ec8f2d927">
+          <AttributeID>ID</AttributeID>
+          <DeniedSet>{[02 Направления бизнеса].[ID].&amp;[829608606E8882E611E3F090A4A707C9], [02 Направления бизнеса].[ID].&amp;[829608606E8882E611E3F090A4A707CA], [02 Направления бизнеса].[ID].&amp;[827808606E8882E611E3DCEE29B844CE]}</DeniedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+  </DimensionPermissions>
   <Attributes>
     <Attribute dwd:design-time-name="f8fdd650-f72e-44e8-9ec9-1a0e25dac034">
       <ID>ID</ID>
