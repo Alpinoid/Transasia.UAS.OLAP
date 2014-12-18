@@ -122,8 +122,8 @@
   </DataSourceViews>
   <Roles>
     <ProjectItem>
-      <Name>Role.role</Name>
-      <FullPath>Role.role</FullPath>
+      <Name>FOOD.role</Name>
+      <FullPath>FOOD.role</FullPath>
     </ProjectItem>
   </Roles>
   <Configurations>

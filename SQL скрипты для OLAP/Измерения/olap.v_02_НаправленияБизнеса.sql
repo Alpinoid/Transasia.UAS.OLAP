@@ -16,9 +16,9 @@ ALTER VIEW [olap].[v_02_НаправленияБизнеса]
 AS
 
 SELECT 
-	CONVERT(varchar(32), Element._IDRRef, 2) AS ID
-	,Element._Description AS Description
-FROM dbo._Reference54 AS Element WITH(NOLOCK)				-- Справочник.НаправленияБизнеса
+	CONVERT(varchar(32), Element.Ссылка, 2) AS ID	-- ID направления бизнеса
+	,Element.Наименование AS Description			-- Наименование направления бизнеса
+FROM dbo.Справочник_НаправленияБизнеса AS Element	-- Справочник.НаправленияБизнеса
 
 GO
 

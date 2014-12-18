@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2806" scrolltop="-7170" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8652" y="16219" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2806" scrolltop="-7170" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8678" y="16219" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_13-01_ТипыДокументов" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_13-01_ТипыДокументов" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000b80b000057070000" />
             </control>
@@ -76,12 +76,6 @@
               </Attributes>
               <Position x="20" y="20" />
             </Shape>
-            <Shape Id="Description" Expanded="false">
-              <Attributes>
-                <Attribute Id="Description" />
-              </Attributes>
-              <Position x="175" y="20" />
-            </Shape>
           </Shapes>
         </DiagramLayout>
       </Value>
@@ -135,44 +129,20 @@
           <ColumnID>Description</ColumnID>
         </Source>
       </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="a72a937a-7176-4ef9-87b0-fcd1dac5c028">
-          <AttributeID>Description</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Тип документа</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="6a862820-bc28-4997-b685-6c47337d7416">
-      <ID>Description</ID>
-      <Name>Тип документа</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="8c0523af-c7ff-4b4e-98ca-beb8ca78916d">
-          <DataType>WChar</DataType>
-          <DataSize>18</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="899753ab-7ac6-43f6-81cb-b19c44ba4145">
-            <TableID>olap_v_13-01_ТипыДокументов</TableID>
-            <ColumnID>Description</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="2e8c1bca-9c03-4927-82f2-ab36b15bbeaf">
+    <Hierarchy dwd:design-time-name="0e5e4a4c-079a-4569-8fc8-66898b615ce9">
       <ID>Иерархия</ID>
       <Name>Типы документов</Name>
       <Levels>
-        <Level dwd:design-time-name="64e1a7b7-b570-476d-9bb7-1adfb4f745d3">
-          <ID>Тип документа</ID>
-          <Name>Тип документа</Name>
-          <SourceAttributeID>Description</SourceAttributeID>
+        <Level dwd:design-time-name="9153b8c8-f876-429e-9c00-be23d9fdaa82">
+          <ID>ID</ID>
+          <Name>Тип документов</Name>
+          <SourceAttributeID>ID</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>

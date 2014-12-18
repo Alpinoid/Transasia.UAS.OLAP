@@ -13,44 +13,66 @@ ALTER VIEW [olap].[v_01_Продажи]
 AS
 
 SELECT
-	DATEADD(year, -2000, CAST(RegSales._Period AS date)) AS TransactionDate		-- Дата операции
-	,CONVERT(varchar(32), RegSales._RecorderRRef, 2) AS DocumentID				-- ID документа
-	,CONVERT(varchar(32), RegSales._Fld2034RRef, 2) AS SalesDocumentID			-- ID документа продажи
-	,CONVERT(varchar(32), RegSales._Fld2037RRef, 2) AS TransactionTypeID		-- ID типа операции
-	,CONVERT(varchar(32), RegSales._Fld2032RRef, 2) AS BusinessID				-- ID направления бизнеса
-	,CONVERT(varchar(32), RegSales._Fld2030RRef, 2) AS CompanyID				-- ID организации
-	,CONVERT(varchar(32), RegSales._Fld2031RRef, 2) AS BranchID					-- ID филиала
-	,CONVERT(varchar(32), RegSales._Fld2106RRef, 2) AS StorehouseID				-- ID склада
-	,CONVERT(varchar(32), RegSales._Fld2028RRef, 2) AS CustomerID				-- ID контрагента
-	,CONVERT(varchar(32), RegSales._Fld2029RRef, 2) AS TardeShopID				-- ID точки доставки (продажи)
-	,CONVERT(varchar(32), RegSales._Fld2033RRef, 2) AS CreditLineID				-- ID кредитного направления
-	,CONVERT(varchar(32), RegSales._Fld2035RRef, 2) AS RouteID					-- ID марушрта (торгового представителя)
-	,CONVERT(varchar(32), RegSales._Fld2036RRef, 2) AS AgentID					-- ID торгового агента (сотрудника)
-	,CONVERT(varchar(32), RegSales._Fld2243RRef, 2) AS TypePriceID				-- ID типа цены
-	,CONVERT(varchar(32), RegSales._Fld2027RRef, 2) AS GoodID					-- ID номенклатуры
-	,RegSales._Fld2038 AS Quantity												-- Количество в базовых единицах измерения (шт.)
-	,ROUND(RegSales._Fld2038/(CASE
-								WHEN Units._Fld152 = 0 THEN 1
-								ELSE ISNULL(Units._Fld152, 1)
-							END), 0, 1) AS QuantityInDeliveryUnits				-- Количество в единицах поступления (кор.)
-	,RegSales._Fld2039 AS AmountVAT												-- Сумма НДС
-	,RegSales._Fld2040 AS AmountWithoutDiscount									-- Сумма без скидки
-	,RegSales._Fld2041 AS Amount												-- Сумма
+	CAST(RegSales._Период AS date) AS TransactionDate								-- Дата операции
+	,CONVERT(varchar(32), RegSales.Регистратор, 2) AS DocumentID					-- ID документа
+	,CONVERT(varchar(32), RegSales.ДокументПродажи, 2) AS SalesDocumentID			-- ID документа продажи
+	,CONVERT(varchar(32), RegSales.ХозяйственнаяОперация, 2) AS TransactionTypeID	-- ID типа операции
+	,CONVERT(varchar(32), RegSales.НаправлениеБизнеса, 2) AS BusinessID				-- ID направления бизнеса
+	,CONVERT(varchar(32), RegSales.Организация, 2) AS CompanyID						-- ID организации
+	,CONVERT(varchar(32), RegSales.Филиал, 2) AS BranchID							-- ID филиала
+	,CONVERT(varchar(32), RegSales.Склад, 2) AS StorehouseID						-- ID склада
+	,CONVERT(varchar(32), RegSales.Контрагент, 2) AS CustomerID						-- ID контрагента
+	,CONVERT(varchar(32), RegSales.ТочкаДоставки, 2) AS TardeShopID					-- ID точки доставки (продажи)
+	,CONVERT(varchar(32), RegSales.КредитноеНаправление, 2) AS CreditLineID			-- ID кредитного направления
+	,CONVERT(varchar(32), RegSales.Маршрут, 2) AS RouteID							-- ID марушрта (торгового представителя)
+	,CONVERT(varchar(32), RegSales.ТорговыйАгент, 2) AS AgentID						-- ID торгового агента (сотрудника)
+	,CONVERT(varchar(32), RegSales.ТипЦены, 2) AS TypePriceID						-- ID типа цены
+	,CONVERT(varchar(32), RegSales.Номенклатура, 2) AS GoodID						-- ID номенклатуры
+	,RegSales.Количество AS QuantityBase											-- Количество в базовых единицах измерения
+	,CASE
+		WHEN MeasuresUnit.Коэффициент = 0 OR MeasuresUnit.Коэффициент IS NULL THEN 0 
+		ELSE ROUND(RegSales.Количество / MeasuresUnit.Коэффициент, 0, 1)
+	END AS QuantityUnit																-- Количество в [шт]
+	,CASE
+		WHEN MeasuresBox.Коэффициент = 0 OR MeasuresBox.Коэффициент IS NULL THEN 0 
+		ELSE ROUND(RegSales.Количество / MeasuresBox.Коэффициент, 0, 1)
+	END AS QuantityBox																-- Количество в [кор]
+	,CASE
+		WHEN MeasuresBlock.Коэффициент = 0 OR MeasuresBlock.Коэффициент IS NULL THEN 0 
+		ELSE ROUND(RegSales.Количество / MeasuresBlock.Коэффициент, 0, 1)
+	END AS QuantityBlock															-- Количество в [бл]
+	,ISNULL(MeasuresBase.Объем, 0) * RegSales.Количество AS Value					-- Объем
+	,ISNULL(MeasuresBase.ВесБрутто, 0) * RegSales.Количество AS WeightGross			-- Вес брутто
+	,ISNULL(MeasuresBase.ВесНетто, 0) * RegSales.Количество AS WeightNet			-- Вес брутто
+	,RegSales.СуммаНДС AS AmountVAT													-- Сумма НДС
+	,RegSales.СуммаБезСкидки AS AmountWithoutDiscount								-- Сумма без скидки
+	,RegSales.Сумма AS Amount														-- Сумма
 	,(SELECT TOP 1
-		Cost._Fld1587 AS Ammount
-		FROM dbo._InfoRg1585 AS Cost
-		WHERE Cost._Active = 0x01
-		AND Cost._Fld1586RRef = RegSales._Fld2027RRef
-		AND Cost._Period <= RegSales._Period
-	ORDER BY Cost._Period DESC) * RegSales._Fld2038 AS Cost						-- Сумма себестоимости
-FROM dbo._AccumRg2026 AS RegSales WITH(NOLOCK)												-- РегистрНакопления.Продажи
-LEFT JOIN dbo._Reference55 AS Goods WITH(NOLOCK) ON Goods._IDRRef = RegSales._Fld2027RRef	-- Справочник.Номенклатура
-LEFT JOIN dbo._Reference46 AS Units WITH(NOLOCK) ON Units._IDRRef = Goods._Fld224RRef		-- Справочник.ЕдиницыИзмерения
-WHERE RegSales._Active = 0x01
-
-
-
-
+		Cost.Сумма AS Ammount
+		FROM РегистрСведений_Срезы AS Cost
+		WHERE Cost.Активность = 0x01
+		AND Cost.Номенклатура = RegSales.Номенклатура
+		AND Cost._Период <= RegSales._Период
+	ORDER BY Cost._Период DESC) * RegSales.Количество AS Cost						-- Сумма себестоимости
+FROM dbo.РегистрНакопления_Продажи AS RegSales													-- РегистрНакопления.Продажи
+LEFT JOIN dbo.Справочник_Номенклатура AS Goods ON Goods.Ссылка = RegSales.Номенклатура				-- Справочник.Номенклатура
+LEFT JOIN dbo.Справочник_ЕдиницыИзмерения AS MeasuresBase ON MeasuresBase.Ссылка = Goods.БазоваяЕдиницаИзмерения	-- Справочник.ЕдиницыИзмерения
+LEFT JOIN dbo.Справочник_ЕдиницыИзмерения AS MeasuresUnit ON MeasuresUnit.Владелец = Goods.Ссылка	-- Справочник.ЕдиницыИзмерения
+															AND MeasuresUnit.БазоваяЕдиница = (	SELECT TOP 1
+																									Ссылка	
+																								FROM dbo.Справочник_КлассификаторЕдиницИзмерения
+																								WHERE Наименование LIKE 'шт%')	-- [шт]
+LEFT JOIN dbo.Справочник_ЕдиницыИзмерения AS MeasuresBox ON MeasuresBox.Владелец = Goods.Ссылка	-- Справочник.ЕдиницыИзмерения
+															AND MeasuresBox.БазоваяЕдиница = (	SELECT TOP 1
+																									Ссылка	
+																								FROM dbo.Справочник_КлассификаторЕдиницИзмерения
+																								WHERE Наименование LIKE 'кор%')	-- [кор]
+LEFT JOIN dbo.Справочник_ЕдиницыИзмерения AS MeasuresBlock ON MeasuresBlock.Владелец = Goods.Ссылка	-- Справочник.ЕдиницыИзмерения
+															AND MeasuresBlock.БазоваяЕдиница = (SELECT TOP 1
+																									Ссылка	
+																								FROM dbo.Справочник_КлассификаторЕдиницИзмерения
+																								WHERE Наименование LIKE 'бл%')	-- [бл]
+WHERE RegSales.Активность = 0x01
 
 GO
 

@@ -19,17 +19,17 @@
     </LogicalFolder>
     <LogicalFolder Name="Запросы" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="olap.Calendar.sql">
+        <FileNode Name="olap.p_LoadingCalendarTable.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>olap.Calendar.sql</FullPath>
+          <FullPath>olap.p_LoadingCalendarTable.sql</FullPath>
         </FileNode>
-        <FileNode Name="olap.LoadingCalendarTable.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
-          <FullPath>olap.LoadingCalendarTable.sql</FullPath>
+        <FileNode Name="olap.t_Calendar.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>olap.t_Calendar.sql</FullPath>
         </FileNode>
         <FileNode Name="olap.v_02_НаправленияБизнеса.sql">
           <AssociatedConnectionMoniker />

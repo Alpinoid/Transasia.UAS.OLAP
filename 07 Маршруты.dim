@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2806" scrolltop="-6747" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10213" y="21696" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2806" scrolltop="-6747" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8678" y="16219" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -99,10 +99,8 @@
     <DataSourceViewID>UASD</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="b3d04880-13a5-4b16-8bcb-e5949c29d944">
-    <KeyNotFound>ReportAndStop</KeyNotFound>
+  <ErrorConfiguration dwd:design-time-name="26723fb8-9426-4558-baac-623311dc99e9">
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
-    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <DimensionPermissions>
@@ -146,6 +144,10 @@
           <AttributeID>Description</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Маршрут</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f3f718ed-c7bc-42e1-82ba-01ed43e3d7ed">
+          <AttributeID>Team ID</AttributeID>
+          <Name>Team ID</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -213,6 +215,23 @@
           <ColumnID>Description</ColumnID>
         </Source>
       </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="411fef52-b69f-4b50-9d47-f5fe84abd3ce">
+      <ID>Team ID</ID>
+      <Name>Team ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="610f640d-be5f-40bc-8df4-9d4f3dfe1010">
+          <DataType>WChar</DataType>
+          <DataSize>32</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="414c8caa-142b-4576-a298-af9a0411bfb3">
+            <TableID>olap_v_07_Маршруты</TableID>
+            <ColumnID>TeamID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
