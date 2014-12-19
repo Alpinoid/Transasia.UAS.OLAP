@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2806" scrolltop="-9486" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8678" y="16219" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2806" scrolltop="-6747" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9472" y="12541" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -51,7 +51,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-9486</Value>
+      <Value>-6747</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -70,35 +70,31 @@
       <Value>
         <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
           <Shapes NodeWidth="169">
-            <Shape Id="ID" Expanded="false">
+            <Shape Id="ID" Expanded="true">
               <Attributes>
                 <Attribute Id="ID" />
+                <Attribute Id="Brand ID" />
+                <Attribute Id="VAT" />
               </Attributes>
               <Position x="20" y="20" />
-            </Shape>
-            <Shape Id="Description Article" Expanded="false">
-              <Attributes>
-                <Attribute Id="Description Article" />
-              </Attributes>
-              <Position x="236" y="20" />
-            </Shape>
-            <Shape Id="Article Description" Expanded="false">
-              <Attributes>
-                <Attribute Id="Article Description" />
-              </Attributes>
-              <Position x="236" y="68" />
-            </Shape>
-            <Shape Id="Description" Expanded="false">
-              <Attributes>
-                <Attribute Id="Description" />
-              </Attributes>
-              <Position x="236" y="116" />
             </Shape>
             <Shape Id="Business" Expanded="false">
               <Attributes>
                 <Attribute Id="Business" />
               </Attributes>
-              <Position x="452" y="116" />
+              <Position x="236" y="20" />
+            </Shape>
+            <Shape Id="Description Article" Expanded="false">
+              <Attributes>
+                <Attribute Id="Description Article" />
+              </Attributes>
+              <Position x="236" y="68" />
+            </Shape>
+            <Shape Id="Article Description" Expanded="false">
+              <Attributes>
+                <Attribute Id="Article Description" />
+              </Attributes>
+              <Position x="236" y="116" />
             </Shape>
             <Shape Id="Article" Expanded="false">
               <Attributes>
@@ -118,9 +114,7 @@
   </Source>
   <UnknownMember>Visible</UnknownMember>
   <ErrorConfiguration dwd:design-time-name="89114df8-f05b-49a9-a910-1c68164bf1e9">
-    <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
-    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <DimensionPermissions>
@@ -138,7 +132,7 @@
   <Attributes>
     <Attribute dwd:design-time-name="671b5241-2e36-4adc-bbc7-20a05a5f4732">
       <ID>ID</ID>
-      <Name>ID</Name>
+      <Name>Номенклатура</Name>
       <Usage>Key</Usage>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="3ef23411-1af7-49d1-a386-96c52482e932">
@@ -153,10 +147,10 @@
       </KeyColumns>
       <NameColumn dwd:design-time-name="4891eb12-c688-4d4d-a408-6dd72b3a5e1b">
         <DataType>WChar</DataType>
-        <DataSize>32</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="38826fea-d3ea-4a99-984d-87558822680f">
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2b20adf9-3a38-41f4-8dcf-90661804e131">
           <TableID>olap_v_16_Номенклатура</TableID>
-          <ColumnID>ID</ColumnID>
+          <ColumnID>Description</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
@@ -164,11 +158,6 @@
           <AttributeID>Article</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Артикул</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="0b82790e-52ef-42a2-ab45-5676cc836b51">
-          <AttributeID>Description</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Номенклатура</Name>
         </AttributeRelationship>
         <AttributeRelationship dwd:design-time-name="8cdeaf01-0333-42c4-9ede-94059205b0ae">
           <AttributeID>Article Description</AttributeID>
@@ -180,11 +169,21 @@
           <RelationshipType>Rigid</RelationshipType>
           <Name>Номенклатура Артикул</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="351d5c19-6fe6-4808-8f2b-4273bceb5870">
+        <AttributeRelationship dwd:design-time-name="470cd814-ecbb-4fde-b540-11141ac38718">
+          <AttributeID>Business</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Направление бизнеса</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f16018ed-932d-4df0-803a-8004b407d393">
           <AttributeID>Brand ID</AttributeID>
           <Name>Brand ID</Name>
         </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7cd39174-2da2-477d-b2a9-ec78e21aaddf">
+          <AttributeID>VAT</AttributeID>
+          <Name>НДС</Name>
+        </AttributeRelationship>
       </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -219,55 +218,6 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <OrderBy>Key</OrderBy>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="51d7f5fa-d3e7-4de4-ba9b-efb3b91e0402">
-      <ID>Description</ID>
-      <Name>Номенклатура</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="8f9fdeff-54fb-495f-ab80-96a78300ed63">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a13f5ed0-fc6e-480f-92d6-da96dafcf221">
-            <TableID>olap_v_16_Номенклатура</TableID>
-            <ColumnID>Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="5c9d6089-e882-4001-a10e-0ed975c2b4d3">
-          <DataType>WChar</DataType>
-          <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="142e551a-e928-47f1-9aae-d65e119c8398">
-            <TableID>olap_v_16_Номенклатура</TableID>
-            <ColumnID>Business</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <NameColumn dwd:design-time-name="420d81f0-7387-4efa-b8de-69be07b8ae64">
-        <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="5ed4f15c-723c-47c7-8a81-19dc26a7e58a">
-          <TableID>olap_v_16_Номенклатура</TableID>
-          <ColumnID>Description</ColumnID>
-        </Source>
-      </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="e17f830f-8c96-43b2-be37-78c6dfa9232e">
-          <AttributeID>Business</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Направление бизнеса</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <ValueColumn dwd:design-time-name="29d36f4f-6503-4c33-bb05-fbfc118f3e98">
-        <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="3bdbc0fc-d92e-43e8-9136-632366ec71a9">
-          <TableID>olap_v_16_Номенклатура</TableID>
-          <ColumnID>Description</ColumnID>
-        </Source>
-      </ValueColumn>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -323,6 +273,22 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
+    <Attribute dwd:design-time-name="d99d77e1-7502-4109-9709-2a852c5a121f">
+      <ID>VAT</ID>
+      <Name>НДС</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9de0e5a5-c7fb-4d36-a351-2f47e1f99893">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="689123ce-31c2-4ad8-86bb-a24cc2e774cc">
+            <TableID>olap_v_16_Номенклатура</TableID>
+            <ColumnID>VAT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
   </Attributes>
   <Hierarchies>
     <Hierarchy dwd:design-time-name="3968c3c6-dc94-40c2-b3d0-f883baa04c18">
@@ -343,7 +309,7 @@
         <Level dwd:design-time-name="85dfafec-2d86-4e8d-946b-246ff692a42b">
           <ID>Номенклатура</ID>
           <Name>Номенклатура</Name>
-          <SourceAttributeID>Description</SourceAttributeID>
+          <SourceAttributeID>ID</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
@@ -381,7 +347,7 @@
         <Level dwd:design-time-name="37419618-2191-4305-ac34-658ccd9b5b5f">
           <ID>Номенклатура</ID>
           <Name>Номенклатура</Name>
-          <SourceAttributeID>Description</SourceAttributeID>
+          <SourceAttributeID>ID</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>

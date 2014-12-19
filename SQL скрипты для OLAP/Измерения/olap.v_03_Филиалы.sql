@@ -14,19 +14,19 @@ ALTER VIEW [olap].[v_03_Филиалы]
 AS
 
 SELECT
-	CONVERT(varchar(32), Element._IDRRef, 2) AS ID
-	,Element._Description AS Description
+	CONVERT(varchar(32), Element.Ссылка, 2) AS ID
+	,Element.Наименование AS Description
 	,CASE
-		WHEN SUM(1) OVER (PARTITION BY Parent._Description) <=1 THEN Element._Description
-		ELSE Parent._Description
+		WHEN SUM(1) OVER (PARTITION BY Parent.Наименование) <=1 THEN Element.Наименование
+		ELSE Parent.Наименование
 	END AS ParentDescription
 	,CASE
-		WHEN SUM(1) OVER (PARTITION BY Parent._Description) <=1 THEN NULL
-		ELSE Element._Description
+		WHEN SUM(1) OVER (PARTITION BY Parent.Наименование) <=1 THEN NULL
+		ELSE Element.Наименование
 	END AS ChildDescription
-FROM dbo._Reference70 AS Element WITH(NOLOCK)																-- Справочник.Филиалы
-LEFT JOIN dbo._Reference70 AS Parent WITH(NOLOCK) ON Parent._IDRRef = Element._ParentIDRRef					-- Справочник.Филиалы (родитель)
-										OR (Parent._IDRRef = Element._IDRRef AND Element._ParentIDRRef = 0)
+FROM dbo.Справочник_Филиалы AS Element															-- Справочник.Филиалы
+LEFT JOIN dbo.Справочник_Филиалы AS Parent ON Parent.Ссылка = Element.Родитель					-- Справочник.Филиалы (родитель)
+										OR (Parent.Ссылка = Element.Ссылка AND Element.Родитель = 0)
 
 
 GO

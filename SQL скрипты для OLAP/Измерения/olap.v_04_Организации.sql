@@ -17,9 +17,9 @@ ALTER VIEW [olap].[v_04_Организации]
 AS
 
 SELECT
-	CONVERT(varchar(32), _IDRRef, 2) AS ID
-	,_Fld238 AS Description
-FROM dbo._Reference57 WITH(NOLOCK)			-- Справочник.Организации
+	CONVERT(varchar(32), Ссылка, 2) AS ID
+	,НаименованиеСокращенное AS Description
+FROM dbo.Справочник_Организации WITH(NOLOCK)			-- Справочник.Организации
 
 
 GO

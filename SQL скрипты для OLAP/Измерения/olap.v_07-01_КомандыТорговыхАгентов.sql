@@ -17,13 +17,13 @@ ALTER VIEW [olap].[v_07-01_КомандыТорговыхАгентов]
 AS
 
 SELECT
-	CONVERT(varchar(32), Element._IDRRef, 2) AS ID
-	,Element._Description AS Description
-	,CONVERT(varchar(32), Element._Fld1041RRef, 2) AS SMT_ID
-	,ISNULL(Bussiness._Description, 'Без направления') AS Business
-FROM dbo._Reference49 AS Element WITH(NOLOCK)													-- Справочник.КомандыТорговыхАгентов
-LEFT JOIN dbo._Reference54 AS Bussiness WITH(NOLOCK) ON Bussiness._IDRRef = Element._Fld165RRef	-- Справочник.НаправленияБизнеса
-WHERE Element._Folder = 0x01
+	CONVERT(varchar(32), Element.Ссылка, 2) AS ID						-- ID Команды торговых агентов
+	,Element.Наименование AS Description								-- Наименование
+	,CONVERT(varchar(32), Element.СистемаМобильныхПродаж, 2) AS SMT_ID	-- ID Системы мобильных продаж
+	,ISNULL(Bussiness.Наименование, 'Без направления') AS Business		-- Направление бизнеса
+FROM dbo.Справочник_КомандыТорговыхАгентов AS Element																	-- Справочник.КомандыТорговыхАгентов
+LEFT JOIN dbo.Справочник_НаправленияБизнеса AS Bussiness WITH(NOLOCK) ON Bussiness.Ссылка = Element.НаправлениеБизнеса	-- Справочник.НаправленияБизнеса
+WHERE Element.ЭтоГруппа = 0x01
 
 
 GO

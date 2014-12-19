@@ -17,13 +17,13 @@ ALTER VIEW [olap].[v_07_Маршруты]
 AS
 
 SELECT
-	CONVERT(varchar(32), Element._IDRRef, 2) AS ID
-	,CONVERT(varchar(32), Element._OwnerIDRRef, 2) AS TeamID
-	,Element._Description AS Description
-	,ISNULL(Branches._Description, 'Без филиала') AS Branch
-FROM dbo._Reference52 AS Element WITH(NOLOCK)													-- Справочник.Маршруты
-LEFT JOIN  dbo._Reference70 AS Branches WITH(NOLOCK) ON Branches._IDRRef = Element._Fld213RRef	-- Справочник.Филиалы
-WHERE Element._Folder = 0x01
+	CONVERT(varchar(32), Element.Ссылка, 2) AS ID
+	,CONVERT(varchar(32), Element.Владелец, 2) AS TeamID
+	,Element.Наименование AS Description
+	,ISNULL(Branches.Наименование, 'Без филиала') AS Branch
+FROM dbo.Справочник_Маршруты AS Element												-- Справочник.Маршруты
+LEFT JOIN  dbo.Справочник_Филиалы AS Branches ON Branches.Ссылка = Element.Филиал	-- Справочник.Филиалы
+WHERE Element.ЭтоГруппа = 0x01
 
 GO
 

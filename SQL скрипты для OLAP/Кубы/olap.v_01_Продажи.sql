@@ -54,7 +54,7 @@ SELECT
 		AND Cost.Номенклатура = RegSales.Номенклатура
 		AND Cost._Период <= RegSales._Период
 	ORDER BY Cost._Период DESC) * RegSales.Количество AS Cost						-- Сумма себестоимости
-FROM dbo.РегистрНакопления_Продажи AS RegSales													-- РегистрНакопления.Продажи
+FROM dbo.РегистрНакопления_Продажи AS RegSales														-- РегистрНакопления.Продажи
 LEFT JOIN dbo.Справочник_Номенклатура AS Goods ON Goods.Ссылка = RegSales.Номенклатура				-- Справочник.Номенклатура
 LEFT JOIN dbo.Справочник_ЕдиницыИзмерения AS MeasuresBase ON MeasuresBase.Ссылка = Goods.БазоваяЕдиницаИзмерения	-- Справочник.ЕдиницыИзмерения
 LEFT JOIN dbo.Справочник_ЕдиницыИзмерения AS MeasuresUnit ON MeasuresUnit.Владелец = Goods.Ссылка	-- Справочник.ЕдиницыИзмерения

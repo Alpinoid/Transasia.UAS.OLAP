@@ -21,5 +21,25 @@
         </Partition>
       </Partitions>
     </MeasureGroup>
+    <MeasureGroup>
+      <ID>v 02 Цены Номенклатуры</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="42f587e3-d7d0-4dcb-a192-3ceec82dabe6">
+          <ID>v 02 Цены Номенклатуры</ID>
+          <Name>v 02 Цены Номенклатуры</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="642a8662-3de3-4c2b-be19-1c6e3fac78eb">
+            <DataSourceViewID>UASD</DataSourceViewID>
+            <TableID>olap_v_02_ЦеныНоменклатуры</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
   </MeasureGroups>
 </Cube>

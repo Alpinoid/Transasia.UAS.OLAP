@@ -16,11 +16,14 @@ ALTER VIEW [olap].[v_16-03_Бренды]
 AS
 
 SELECT
-	CONVERT(varchar(32), _IDRRef, 2) AS ID	-- ID бренда
-	,_Description AS Description			-- Наименование
-FROM dbo._Reference41 WITH(NOLOCK)	-- Справочник.Бренды
-WHERE _Marked = 0 AND _ParentIDRRef <> 0x00000000000000000000000000000000
+	CONVERT(varchar(32), Ссылка, 2) AS ID	-- ID бренда
+	,Наименование AS Description			-- Наименование
+FROM dbo.Справочник_Бренды WITH(NOLOCK)	-- Справочник.Бренды
+WHERE Родитель <> 0x00
+UNION ALL
+SELECT
+	'00000000000000000000000000000000' AS ID
+	,'Без филиала' AS Description
 
 GO
-
 
