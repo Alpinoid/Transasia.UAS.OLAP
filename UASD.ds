@@ -19,5 +19,13 @@
       <RoleID>Role</RoleID>
       <Read>Allowed</Read>
     </DataSourcePermission>
+    <DataSourcePermission dwd:design-time-name="57eec518-73f0-41b7-a626-fa1446f4ba0e">
+      <ID>DataSourcePermission 1</ID>
+      <Name>DataSourcePermission 1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 1</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
   </DataSourcePermissions>
 </DataSource>

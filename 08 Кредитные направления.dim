@@ -115,6 +115,15 @@
       <ReadDefinition>Allowed</ReadDefinition>
       <Read>Allowed</Read>
     </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="4a0f23d6-3cb5-4c6e-b576-a5513ab6c4bf">
+      <ID>DimensionPermission 1</ID>
+      <Name>DimensionPermission 1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 1</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
   </DimensionPermissions>
   <UnknownMemberName>Без кредитного направления</UnknownMemberName>
   <Attributes>

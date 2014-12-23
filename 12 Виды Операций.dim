@@ -109,6 +109,15 @@
       <ReadDefinition>Allowed</ReadDefinition>
       <Read>Allowed</Read>
     </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="78f87f8a-7f7e-458a-9227-90c4f6e8d91d">
+      <ID>DimensionPermission 1</ID>
+      <Name>DimensionPermission 1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 1</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
   </DimensionPermissions>
   <UnknownMemberName>Без вида операции</UnknownMemberName>
   <Attributes>

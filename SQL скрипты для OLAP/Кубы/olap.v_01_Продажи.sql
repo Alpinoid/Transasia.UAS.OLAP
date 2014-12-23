@@ -29,18 +29,39 @@ SELECT
 	,CONVERT(varchar(32), RegSales.ТипЦены, 2) AS TypePriceID						-- ID типа цены
 	,CONVERT(varchar(32), RegSales.Номенклатура, 2) AS GoodID						-- ID номенклатуры
 	,RegSales.Количество AS QuantityBase											-- Количество в базовых единицах измерения
-	,CASE
-		WHEN MeasuresUnit.Коэффициент = 0 OR MeasuresUnit.Коэффициент IS NULL THEN 0 
-		ELSE ROUND(RegSales.Количество / MeasuresUnit.Коэффициент, 0, 1)
-	END AS QuantityUnit																-- Количество в [шт]
-	,CASE
-		WHEN MeasuresBox.Коэффициент = 0 OR MeasuresBox.Коэффициент IS NULL THEN 0 
-		ELSE ROUND(RegSales.Количество / MeasuresBox.Коэффициент, 0, 1)
-	END AS QuantityBox																-- Количество в [кор]
-	,CASE
-		WHEN MeasuresBlock.Коэффициент = 0 OR MeasuresBlock.Коэффициент IS NULL THEN 0 
-		ELSE ROUND(RegSales.Количество / MeasuresBlock.Коэффициент, 0, 1)
-	END AS QuantityBlock															-- Количество в [бл]
+	,ROUND(RegSales.Количество * (
+									SELECT TOP 1
+										CASE
+											WHEN ISNULL(MeasuresUnit.Коэффициент, 0) = 0 THEN 0
+											ELSE 1 / MeasuresUnit.Коэффициент
+										END
+									FROM dbo.Справочник_ЕдиницыИзмерения AS MeasuresUnit	-- Справочник.ЕдиницыИзмерения
+									INNER JOIN dbo.Справочник_КлассификаторЕдиницИзмерения AS Class ON MeasuresUnit.БазоваяЕдиница = Class.Ссылка
+																										AND Class.Наименование LIKE 'шт%'-- [шт]
+									WHERE MeasuresUnit.Владелец = Goods.Ссылка
+								), 0, 1) AS QuantityUnit																-- Количество в [шт]
+	,ROUND(RegSales.Количество * (
+									SELECT TOP 1
+										CASE
+											WHEN ISNULL(MeasuresUnit.Коэффициент, 0) = 0 THEN 0
+											ELSE 1 / MeasuresUnit.Коэффициент
+										END
+									FROM dbo.Справочник_ЕдиницыИзмерения AS MeasuresUnit	-- Справочник.ЕдиницыИзмерения
+									INNER JOIN dbo.Справочник_КлассификаторЕдиницИзмерения AS Class ON MeasuresUnit.БазоваяЕдиница = Class.Ссылка
+																										AND Class.Наименование LIKE 'кор%'-- [кор]
+									WHERE MeasuresUnit.Владелец = Goods.Ссылка
+								), 0, 1)  AS QuantityBox																-- Количество в [кор]
+	,ROUND(RegSales.Количество * (
+									SELECT TOP 1
+										CASE
+											WHEN ISNULL(MeasuresUnit.Коэффициент, 0) = 0 THEN 0
+											ELSE 1 / MeasuresUnit.Коэффициент
+										END
+									FROM dbo.Справочник_ЕдиницыИзмерения AS MeasuresUnit	-- Справочник.ЕдиницыИзмерения
+									INNER JOIN dbo.Справочник_КлассификаторЕдиницИзмерения AS Class ON MeasuresUnit.БазоваяЕдиница = Class.Ссылка
+																										AND Class.Наименование LIKE 'бл%'-- [бл]
+									WHERE MeasuresUnit.Владелец = Goods.Ссылка
+								), 0, 1)  AS QuantityBlock															-- Количество в [бл]
 	,ISNULL(MeasuresBase.Объем, 0) * RegSales.Количество AS Value					-- Объем
 	,ISNULL(MeasuresBase.ВесБрутто, 0) * RegSales.Количество AS WeightGross			-- Вес брутто
 	,ISNULL(MeasuresBase.ВесНетто, 0) * RegSales.Количество AS WeightNet			-- Вес брутто
@@ -57,21 +78,7 @@ SELECT
 FROM dbo.РегистрНакопления_Продажи AS RegSales														-- РегистрНакопления.Продажи
 LEFT JOIN dbo.Справочник_Номенклатура AS Goods ON Goods.Ссылка = RegSales.Номенклатура				-- Справочник.Номенклатура
 LEFT JOIN dbo.Справочник_ЕдиницыИзмерения AS MeasuresBase ON MeasuresBase.Ссылка = Goods.БазоваяЕдиницаИзмерения	-- Справочник.ЕдиницыИзмерения
-LEFT JOIN dbo.Справочник_ЕдиницыИзмерения AS MeasuresUnit ON MeasuresUnit.Владелец = Goods.Ссылка	-- Справочник.ЕдиницыИзмерения
-															AND MeasuresUnit.БазоваяЕдиница = (	SELECT TOP 1
-																									Ссылка	
-																								FROM dbo.Справочник_КлассификаторЕдиницИзмерения
-																								WHERE Наименование LIKE 'шт%')	-- [шт]
-LEFT JOIN dbo.Справочник_ЕдиницыИзмерения AS MeasuresBox ON MeasuresBox.Владелец = Goods.Ссылка	-- Справочник.ЕдиницыИзмерения
-															AND MeasuresBox.БазоваяЕдиница = (	SELECT TOP 1
-																									Ссылка	
-																								FROM dbo.Справочник_КлассификаторЕдиницИзмерения
-																								WHERE Наименование LIKE 'кор%')	-- [кор]
-LEFT JOIN dbo.Справочник_ЕдиницыИзмерения AS MeasuresBlock ON MeasuresBlock.Владелец = Goods.Ссылка	-- Справочник.ЕдиницыИзмерения
-															AND MeasuresBlock.БазоваяЕдиница = (SELECT TOP 1
-																									Ссылка	
-																								FROM dbo.Справочник_КлассификаторЕдиницИзмерения
-																								WHERE Наименование LIKE 'бл%')	-- [бл]
+
 WHERE RegSales.Активность = 0x01
 
 GO

@@ -125,6 +125,10 @@
       <Name>FOOD.role</Name>
       <FullPath>FOOD.role</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Development.role</Name>
+      <FullPath>Development.role</FullPath>
+    </ProjectItem>
   </Roles>
   <Configurations>
     <Configuration>
