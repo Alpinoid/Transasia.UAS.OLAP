@@ -18,7 +18,7 @@ AS
 SELECT
 	CONVERT(varchar(32), Ссылка, 2) AS ID	-- ID бренда
 	,Наименование AS Description			-- Наименование
-FROM dbo.Справочник_Бренды WITH(NOLOCK)	-- Справочник.Бренды
+FROM dbo.Справочник_Бренды		-- Справочник.Бренды
 WHERE Родитель <> 0x00
 UNION ALL
 SELECT

@@ -39,7 +39,7 @@ SELECT
 									INNER JOIN dbo.Справочник_КлассификаторЕдиницИзмерения AS Class ON MeasuresUnit.БазоваяЕдиница = Class.Ссылка
 																										AND Class.Наименование LIKE 'шт%'-- [шт]
 									WHERE MeasuresUnit.Владелец = Goods.Ссылка
-								), 0, 1) AS QuantityUnit																-- Количество в [шт]
+								), 0, 1) AS QuantityUnit							-- Количество в [шт]
 	,ROUND(RegSales.Количество * (
 									SELECT TOP 1
 										CASE
@@ -50,7 +50,7 @@ SELECT
 									INNER JOIN dbo.Справочник_КлассификаторЕдиницИзмерения AS Class ON MeasuresUnit.БазоваяЕдиница = Class.Ссылка
 																										AND Class.Наименование LIKE 'кор%'-- [кор]
 									WHERE MeasuresUnit.Владелец = Goods.Ссылка
-								), 0, 1)  AS QuantityBox																-- Количество в [кор]
+								), 0, 1)  AS QuantityBox							-- Количество в [кор]
 	,ROUND(RegSales.Количество * (
 									SELECT TOP 1
 										CASE
@@ -61,7 +61,7 @@ SELECT
 									INNER JOIN dbo.Справочник_КлассификаторЕдиницИзмерения AS Class ON MeasuresUnit.БазоваяЕдиница = Class.Ссылка
 																										AND Class.Наименование LIKE 'бл%'-- [бл]
 									WHERE MeasuresUnit.Владелец = Goods.Ссылка
-								), 0, 1)  AS QuantityBlock															-- Количество в [бл]
+								), 0, 1)  AS QuantityBlock							-- Количество в [бл]
 	,ISNULL(MeasuresBase.Объем, 0) * RegSales.Количество AS Value					-- Объем
 	,ISNULL(MeasuresBase.ВесБрутто, 0) * RegSales.Количество AS WeightGross			-- Вес брутто
 	,ISNULL(MeasuresBase.ВесНетто, 0) * RegSales.Количество AS WeightNet			-- Вес брутто

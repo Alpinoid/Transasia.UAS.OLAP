@@ -22,7 +22,7 @@ SELECT
 	,CONVERT(varchar(32), Element.СистемаМобильныхПродаж, 2) AS SMT_ID	-- ID Системы мобильных продаж
 	,ISNULL(Bussiness.Наименование, 'Без направления') AS Business		-- Направление бизнеса
 FROM dbo.Справочник_КомандыТорговыхАгентов AS Element																	-- Справочник.КомандыТорговыхАгентов
-LEFT JOIN dbo.Справочник_НаправленияБизнеса AS Bussiness WITH(NOLOCK) ON Bussiness.Ссылка = Element.НаправлениеБизнеса	-- Справочник.НаправленияБизнеса
+LEFT JOIN dbo.Справочник_НаправленияБизнеса AS Bussiness ON Bussiness.Ссылка = Element.НаправлениеБизнеса	-- Справочник.НаправленияБизнеса
 WHERE Element.ЭтоГруппа = 0x01
 
 

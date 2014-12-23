@@ -16,12 +16,12 @@ ALTER VIEW [olap].[v_10_ТипыЦенНоменклатуры]
 AS
 
 SELECT
-	CONVERT(varchar(32), Element._IDRRef, 2) AS ID
-	,Element._Description AS Description
-	,ISNULL(Bussiness._Description, 'Без направления') AS Business
-FROM dbo._Reference66 AS Element WITH(NOLOCK)													-- Справочник.ТипыЦенНоменклатуры
-LEFT JOIN dbo._Reference54 AS Bussiness WITH(NOLOCK) ON Bussiness._IDRRef = Element._Fld165RRef	-- Справочник.НаправленияБизнеса
-WHERE Element._Folder = 0x01
+	CONVERT(varchar(32), Element.Ссылка, 2) AS ID					-- ID типа цен номенклатуры
+	,Element.Наименование AS Description							-- Наименование
+	,ISNULL(Bussiness.Наименование, 'Без направления') AS Business	-- Направление бизнеса
+FROM dbo.Справочник_ТипыЦенНоменклатуры AS Element															-- Справочник.ТипыЦенНоменклатуры
+LEFT JOIN dbo.Справочник_НаправленияБизнеса AS Bussiness ON Bussiness.Ссылка = Element.НаправлениеБизнеса	-- Справочник.НаправленияБизнеса
+WHERE Element.ЭтоГруппа = 0x01
 
 
 GO

@@ -16,15 +16,10 @@ ALTER VIEW [olap].[v_13-01_ТипыДокументов]
 AS
 
 SELECT
-	CONVERT(varchar(32), _IDRRef, 2) AS ID
-	,CASE
-		WHEN _EnumOrder = 0 THEN 'Список'
-		WHEN _EnumOrder = 1 THEN 'Счет-фактура'
-	END AS Description
-FROM dbo._Enum99 WITH(NOLOCK)	-- Перечисление.ТипыДокументов
-WHERE _EnumOrder IN (0, 1)		-- Список или Счет-фактура
+	CONVERT(varchar(32), Значение, 2) AS ID		-- ID типа документа
+	,Синоним AS Description						-- Тип документа
+FROM dbo.Перечисление_ТипыДокументов	-- Перечисление.ТипыДокументов
+
 
 
 GO
-
-

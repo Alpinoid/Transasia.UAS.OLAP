@@ -16,11 +16,11 @@ ALTER VIEW [olap].[v_16-01-01_КлассификаторЕдиницИзмерения]
 AS
 
 SELECT
-	CONVERT(varchar(32), _IDRRef, 2) AS ID	-- ID клпссификатора
-	,_Description AS Description			-- Наименовнаие
-	,_Fld164 AS FullName					-- Полное наименовнаие
-FROM dbo._Reference48 WITH(NOLOCK)	-- Справочник.КлассификаторЕдиницИзмерения
-WHERE _Marked = 0
+	CONVERT(varchar(32), Ссылка, 2) AS ID	-- ID классификатора
+	,Наименование AS Description			-- Наименовнаие
+	,ПолноеНаименование AS FullName			-- Полное наименовнаие
+FROM dbo.Справочник_КлассификаторЕдиницИзмерения	-- Справочник.КлассификаторЕдиницИзмерения
+WHERE ПометкаУдаления = 0
 
 
 

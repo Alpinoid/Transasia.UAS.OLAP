@@ -16,10 +16,10 @@ ALTER VIEW [olap].[v_11_Сотрудники]
 AS
 
 SELECT
-	CONVERT(varchar(32), Element._IDRRef, 2) AS ID
-	,Element._Description AS Description
-FROM dbo._Reference64 AS Element WITH(NOLOCK)	-- Справочник.Сотрудники
-WHERE Element._Folder = 0x01
+	CONVERT(varchar(32), Element.Ссылка, 2) AS ID	-- ID сштрудника
+	,Element.Наименование AS Description			-- ФИО
+FROM dbo.Справочник_Сотрудники AS Element	-- Справочник.Сотрудники
+WHERE Element.ЭтоГруппа = 0x01
 
 
 GO

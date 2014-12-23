@@ -16,14 +16,9 @@ ALTER VIEW [olap].[v_12_¬идыќпераций]
 AS
 
 SELECT
-	CONVERT(varchar(32), _IDRRef, 2) AS ID
-	,CASE
-		WHEN _EnumOrder = 5 THEN '¬озврат'
-		WHEN _EnumOrder = 12 THEN 'ѕродажа'
-	END AS Description
-FROM dbo._Enum105 WITH(NOLOCK)	-- ѕеречисление.’оз€йственныеќперации
-WHERE _EnumOrder IN (5, 12)		-- ¬озврат или ѕродажа
+	CONVERT(varchar(32), «начение, 2) AS ID	-- ID хоз€йственной операции
+	,—иноним AS Description					-- ¬ид операции
+FROM dbo.ѕеречисление_’оз€йственныеќперации	-- ѕеречисление.’оз€йственныеќперации
 
 GO
-
 

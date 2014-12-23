@@ -16,12 +16,12 @@ ALTER VIEW [olap].[v_09_Склады]
 AS
 
 SELECT
-	CONVERT(varchar(32), Element._IDRRef, 2) AS ID
-	,Element._Description AS Description
-	,ISNULL(Branches._Description, 'Без филиала') AS Branch
-FROM dbo._Reference63 AS Element WITH(NOLOCK)													-- Справочник.Склады
-LEFT JOIN  dbo._Reference70 AS Branches WITH(NOLOCK) ON Branches._IDRRef = Element._Fld278RRef	-- Справочник.Филиалы
-WHERE Element._Folder = 0x01
+	CONVERT(varchar(32), Element.Ссылка, 2) AS ID			-- ID склада
+	,Element.Наименование AS Description					-- Наименовнаие
+	,ISNULL(Branches.Наименование, 'Без филиала') AS Branch	-- Филиал
+FROM dbo.Справочник_Склады AS Element												-- Справочник.Склады
+LEFT JOIN  dbo.Справочник_Филиалы AS Branches ON Branches.Ссылка = Element.Филиал	-- Справочник.Филиалы
+WHERE Element.ЭтоГруппа = 0x01
 
 
 GO

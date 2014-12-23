@@ -29,7 +29,7 @@ SELECT
 		LEFT JOIN dbo.Перечисление_СтавкиНДС AS VATValue ON VATValue.Значение = dbo.РегистрСведений_СтавкиНДС.НДС
 		WHERE dbo.РегистрСведений_СтавкиНДС.Номенклатура = Element.Ссылка
 		ORDER BY dbo.РегистрСведений_СтавкиНДС._Период DESC
-	) AS VAT
+	) AS VAT																	-- Става НДС
 FROM dbo.Справочник_Номенклатура AS Element																	-- Справочник.Номенклатура
 LEFT JOIN dbo.Справочник_НаправленияБизнеса AS Bussiness ON Bussiness.Ссылка = Element.НаправлениеБизнеса	-- Справочник.НаправленияБизнеса
 WHERE Element.ЭтоГруппа = 0x01

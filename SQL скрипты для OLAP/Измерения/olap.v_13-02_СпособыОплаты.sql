@@ -16,13 +16,10 @@ ALTER VIEW [olap].[v_13-02_СпособыОплаты]
 AS
 
 SELECT
-	CONVERT(varchar(32), _IDRRef, 2) AS ID
-	,CASE
-		WHEN _EnumOrder = 0 THEN 'Банк'
-		WHEN _EnumOrder = 1 THEN 'Касса'
-	END AS Description
-FROM dbo._Enum94 WITH(NOLOCK)	-- Перечисление.СпособыОплаты
-WHERE _EnumOrder IN (0, 1)		-- Банк или Касса
+	CONVERT(varchar(32), Значение, 2) AS ID		-- ID способа оплаты
+	,Синоним AS Description						-- Способ оплаты
+FROM dbo.Перечисление_СпособыОплаты	-- Перечисление.СпособыОплаты
+
 
 
 GO
