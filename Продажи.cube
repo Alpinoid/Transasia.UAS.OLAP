@@ -1637,6 +1637,45 @@
           <DisplayFolder>Физические показатели</DisplayFolder>
           <FormatString># ##0,000;-# ##0,000</FormatString>
         </Measure>
+        <Measure dwd:design-time-name="fd0ddc9b-eaf0-45ab-833b-9a8cf156c780">
+          <ID>Число Customer ID</ID>
+          <Name>Количество контрагентов</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="c334a722-72b5-48e3-926a-64741cda5f06">
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f826f417-4966-4178-90b7-6ada5dfe24de">
+              <TableID>olap_v_01_Продажи</TableID>
+              <ColumnID>CustomerID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1fc1fd51-9289-49a0-9c4f-33af9d3466f6">
+          <ID>Число Good ID</ID>
+          <Name>Количество SKU</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="77b74bd0-554b-4bdf-a103-2de1b5787862">
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4b322ee5-8fa3-47ac-a2e4-4d4ad0e2866a">
+              <TableID>olap_v_01_Продажи</TableID>
+              <ColumnID>GoodID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="637cb502-3422-4d60-aeb8-7df2f996e400">
+          <ID>Число Tarde Shop ID</ID>
+          <Name>Количество торговых точек</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="f1b20c91-42eb-45c2-8ada-54bf09a73160">
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fdb3f9e6-5063-40b2-b167-9895f284217c">
+              <TableID>olap_v_01_Продажи</TableID>
+              <ColumnID>TardeShopID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
       </Measures>
       <StorageMode>Molap</StorageMode>
       <ErrorConfiguration dwd:design-time-name="45eec9d0-37ed-4efc-bcbf-260572790a93">
