@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="100" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-13480" scrolltop="9450" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="28443" y="21696" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="100" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-13480" scrolltop="-8316" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23495" y="21696" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -804,7 +804,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>9450</Value>
+      <Value>-8316</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -1145,15 +1145,12 @@
       <Name>12 Виды операций</Name>
       <DimensionID>12 Виды Операций</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="3f5ce984-3a88-47db-8035-6974ec0efba5">
+        <Attribute dwd:design-time-name="dca196a5-e724-4fc1-9c49-e97370e0a33d">
           <AttributeID>ID</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="6d14cb15-e83e-484a-b331-6d2622962744">
-          <AttributeID>Description</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="60189a06-c019-45e8-8816-933ffcf254ce">
+        <Hierarchy dwd:design-time-name="14ea8df5-b6e8-4909-b431-5d31d9433430">
           <HierarchyID>Иерархия</HierarchyID>
         </Hierarchy>
       </Hierarchies>
@@ -1174,7 +1171,6 @@
         </Attribute>
         <Attribute dwd:design-time-name="548eac3c-9f1e-4320-b118-e76d276ff4a1">
           <AttributeID>Payment Method ID</AttributeID>
-          <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
         </Attribute>
         <Attribute dwd:design-time-name="77ba2dab-2054-4657-a12f-4b77a51d5882">
           <AttributeID>Doc Delivery Date</AttributeID>
@@ -1470,7 +1466,7 @@
               <ColumnID>AmountVAT</ColumnID>
             </Source>
           </Source>
-          <FormatString># ##0,00;-# ##0,00</FormatString>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="2016114a-a70b-4e81-9bb0-c6b4c62b7cf9">
           <ID>Amount Without Discount</ID>
@@ -1483,7 +1479,7 @@
             </Source>
           </Source>
           <DisplayFolder>Скидки</DisplayFolder>
-          <FormatString># ##0,00;-# ##0,00</FormatString>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="74a58b1e-abdf-4f18-bbbf-6c788bce0c51">
           <ID>Amount</ID>
@@ -1497,7 +1493,7 @@
               <ColumnID>Amount</ColumnID>
             </Source>
           </Source>
-          <FormatString># ##0,00;-# ##0,00</FormatString>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="ea2c0e79-7ee1-4e3b-a34d-309675e4a664">
           <ID>Cost</ID>
@@ -1510,7 +1506,7 @@
             </Source>
           </Source>
           <DisplayFolder>Наценки</DisplayFolder>
-          <FormatString># ##0,00;-# ##0,00</FormatString>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
         <Measure dwd:design-time-name="e0103101-02c3-41f6-b540-7a07b11f59d8">
           <ID>Число v 01 Продажи</ID>
@@ -1522,20 +1518,6 @@
             <DataSize>4</DataSize>
             <Source xsi:type="RowBinding" dwd:design-time-name="1ab80204-25ec-4167-9e77-5a489dc094e7">
               <TableID>olap_v_01_Продажи</TableID>
-            </Source>
-          </Source>
-          <DisplayFolder>Документы</DisplayFolder>
-        </Measure>
-        <Measure dwd:design-time-name="58f59f29-2b3c-4a1f-b276-6496d3646dbe">
-          <ID>Число Document ID</ID>
-          <Name>Количество документов</Name>
-          <AggregateFunction>DistinctCount</AggregateFunction>
-          <DataType>Integer</DataType>
-          <Source dwd:design-time-name="1af48085-45db-4f2c-8cb3-c73e75a73568">
-            <DataType>WChar</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="6c39a558-fa7a-4627-a592-4bcaf572df36">
-              <TableID>olap_v_01_Продажи</TableID>
-              <ColumnID>DocumentID</ColumnID>
             </Source>
           </Source>
           <DisplayFolder>Документы</DisplayFolder>
@@ -1636,45 +1618,6 @@
           </Source>
           <DisplayFolder>Физические показатели</DisplayFolder>
           <FormatString># ##0,000;-# ##0,000</FormatString>
-        </Measure>
-        <Measure dwd:design-time-name="fd0ddc9b-eaf0-45ab-833b-9a8cf156c780">
-          <ID>Число Customer ID</ID>
-          <Name>Количество контрагентов</Name>
-          <AggregateFunction>DistinctCount</AggregateFunction>
-          <DataType>Integer</DataType>
-          <Source dwd:design-time-name="c334a722-72b5-48e3-926a-64741cda5f06">
-            <DataType>WChar</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="f826f417-4966-4178-90b7-6ada5dfe24de">
-              <TableID>olap_v_01_Продажи</TableID>
-              <ColumnID>CustomerID</ColumnID>
-            </Source>
-          </Source>
-        </Measure>
-        <Measure dwd:design-time-name="1fc1fd51-9289-49a0-9c4f-33af9d3466f6">
-          <ID>Число Good ID</ID>
-          <Name>Количество SKU</Name>
-          <AggregateFunction>DistinctCount</AggregateFunction>
-          <DataType>Integer</DataType>
-          <Source dwd:design-time-name="77b74bd0-554b-4bdf-a103-2de1b5787862">
-            <DataType>WChar</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="4b322ee5-8fa3-47ac-a2e4-4d4ad0e2866a">
-              <TableID>olap_v_01_Продажи</TableID>
-              <ColumnID>GoodID</ColumnID>
-            </Source>
-          </Source>
-        </Measure>
-        <Measure dwd:design-time-name="637cb502-3422-4d60-aeb8-7df2f996e400">
-          <ID>Число Tarde Shop ID</ID>
-          <Name>Количество торговых точек</Name>
-          <AggregateFunction>DistinctCount</AggregateFunction>
-          <DataType>Integer</DataType>
-          <Source dwd:design-time-name="f1b20c91-42eb-45c2-8ada-54bf09a73160">
-            <DataType>WChar</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="fdb3f9e6-5063-40b2-b167-9895f284217c">
-              <TableID>olap_v_01_Продажи</TableID>
-              <ColumnID>TardeShopID</ColumnID>
-            </Source>
-          </Source>
         </Measure>
       </Measures>
       <StorageMode>Molap</StorageMode>
@@ -1881,26 +1824,6 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9e027cd4-9531-4951-9f6d-c45827e15439">
-          <CubeDimensionID>12 Виды Операций</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="da94f5d6-0560-442d-a08b-ea548ca4ef17">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="0115ee5e-8f20-4677-a7e9-93cbe5731815">
-                  <DataType>WChar</DataType>
-                  <DataSize>32</DataSize>
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c7cb9103-2544-4e80-b657-4eacfd8cbd0e">
-                    <TableID>olap_v_01_Продажи</TableID>
-                    <ColumnID>TransactionTypeID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
         <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ff9b8534-efb8-4906-a2af-ef195d59a956">
           <CubeDimensionID>13 Документы Реализация товаров</CubeDimensionID>
           <Attributes>
@@ -2046,12 +1969,44 @@
             </Attribute>
           </Attributes>
         </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="6ef4b1f9-404a-4f81-9566-210ae455e4a0">
+          <CubeDimensionID>13-02 Способы оплаты</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bc690045-600f-4438-a596-011830b37146">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>13 Документы Реализация товаров</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Payment Method ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7bd9889a-1e64-44e9-a330-c42523d9e686">
+          <CubeDimensionID>12 Виды Операций</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="208d0a43-63c6-4b78-92f2-86b40fa96754">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0e06107b-348d-4f42-ba82-21db2d53b015">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0a6ff13b-4345-49eb-8979-48bee51b756b">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>TransactionTypeID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
       </Dimensions>
       <Partitions />
     </MeasureGroup>
     <MeasureGroup dwd:design-time-name="1256c8ec-03e8-4872-8c8d-34808ef87d1d">
       <ID>v 02 Цены Номенклатуры</ID>
-      <Name>02 Цены номенклатуры</Name>
+      <Name>Цены номенклатуры</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
@@ -2069,7 +2024,7 @@
               <ColumnID>Price</ColumnID>
             </Source>
           </Source>
-          <FormatString>Standard</FormatString>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
         </Measure>
       </Measures>
       <StorageMode>Molap</StorageMode>
@@ -2150,6 +2105,1630 @@
       </Dimensions>
       <Partitions />
     </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="c77135cb-403c-45c5-b42d-118d5e77b7e0">
+      <ID>01 Продажи</ID>
+      <Name>03 Контрагенты</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="bb8ec199-bd14-4080-9afe-65223ec135a4">
+          <ID>Число различных объектов Customer ID</ID>
+          <Name>Число контрагентов</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="0d4a0024-edb9-4a21-a9e1-82e2b6095f0e">
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="34d18205-ab71-457c-9120-38978a3d05d6">
+              <TableID>olap_v_01_Продажи</TableID>
+              <ColumnID>CustomerID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ErrorConfiguration dwd:design-time-name="32e72644-51ea-42d9-961a-487ad9fa3048">
+        <KeyNotFound>IgnoreError</KeyNotFound>
+      </ErrorConfiguration>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4fa16639-3833-4a6a-9d0b-2c94ed20bfb0">
+          <CubeDimensionID>02 Направления бизнеса</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c0a61832-90bf-4b19-b85c-ef3e682f0fa8">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="735f3c24-3412-47e0-82f3-2b000fe42ee4">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="128e8736-9f9d-4f0f-bfb0-8b1964fda1b7">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>BusinessID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="af75e009-cd8e-4b3e-b937-0707d3bf6362">
+          <CubeDimensionID>v 03 Филиалы</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0cb5c9a5-eddb-44ae-a079-3fc65b6fc6d5">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b335d9b4-e8e2-4f47-b673-9927a445b311">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bfae1eda-5373-4547-9ed3-9e7007ec3467">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>BranchID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e4b6023a-826b-4e51-b67a-e32c60aa568f">
+          <CubeDimensionID>01 Даты</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="79b36a3d-601d-46ca-bd84-bfab848d6159">
+              <AttributeID>Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f3abfc14-6fef-478c-aaa7-6258aacf24aa">
+                  <DataType>Date</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f1afdd39-7be0-485a-88f7-416e02ddf99d">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>TransactionDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1fd6052b-151a-4286-b5bd-a956bc422537">
+          <CubeDimensionID>04 Организации</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b6ed2daf-ba09-430d-adf4-d6fdca38648b">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="113229c4-b6e6-45ac-9e39-a58d36185877">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0d804bce-8068-4179-bec2-0f4f41ae22c5">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>CompanyID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="98c116cf-e361-4997-a59d-53f4b97fde71">
+          <CubeDimensionID>05 Контрагенты</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a1e3b6a7-ab58-46d8-8b13-35be371e193d">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="74289308-d68b-415a-afda-198d3a1dbaa4">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ed1db8e0-6eb1-4309-8cde-8409d778ac43">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>CustomerID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="76fde1f6-54ee-4d90-a70d-e2a7a40015d0">
+          <CubeDimensionID>07 Маршруты</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f18554f6-3fbf-4ed9-bf6a-2dac480c6cb4">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9857d5cd-fef2-409b-8ed3-cfa244f023ca">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="421ef1b5-4625-44e4-b9bc-7d85e3d645e0">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>RouteID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3d36c818-ec91-4129-b9b5-7e74c0b7f8a0">
+          <CubeDimensionID>08 Кредитные направления</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1ebb3035-77fd-45d6-9463-f62ac7a6ec02">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="eb5a55ce-bd5f-4616-b134-7462b69e1948">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="19b7ce26-82a2-4e44-b0bb-68839880ffee">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>CreditLineID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="640078ef-7a1e-4392-bfef-3fa9bad72286">
+          <CubeDimensionID>09 Склады</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="59a47ebb-e932-4b2f-bbfb-e7c0fce2067a">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="76d45873-a997-4c9c-97da-20e5fd10076a">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e45950b1-63d8-42f5-8df8-c6ced9c9ceab">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>StorehouseID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1ec38cc3-4ae2-4860-a6eb-6b59d89de95f">
+          <CubeDimensionID>10 Типы цен номенклатуры</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1d3597e4-675f-4d40-b7a2-9095032b0142">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2e706d64-f630-4d8f-9146-abdb47f9d927">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2cb3c5bf-662d-4044-bbe3-4ea2b4157469">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>TypePriceID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1d7cd556-8ce5-4dfc-b2a1-4e109aa7266f">
+          <CubeDimensionID>11 Сотрудники</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4501a9ef-cd0a-480a-be05-599af8faf342">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7d7475d2-aebe-4839-a04d-e197e412f861">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9d9c6109-1eac-4729-b7b0-1427c43a6848">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>AgentID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a24e0dd7-ee11-4460-8ecf-e963d1998561">
+          <CubeDimensionID>13 Документы Реализация товаров</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c7211dce-e345-4bd8-b404-fa7c1b68dbd0">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="23d9b5ba-4b58-4c33-91e6-a4d03730d9cc">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6fdf9f8c-5a5a-49d2-84a3-2bedc7de8a86">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>SalesDocumentID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3ffc0420-95e1-4121-b849-334b819b1e38">
+          <CubeDimensionID>14 Документы</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c748893a-384f-4353-a24e-ae0b2ecbaf39">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fdfe3674-3747-4349-b8b9-a6fb3d394c24">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ef1c744a-c5a5-4343-84cb-723fef39f5fe">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>DocumentID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c4ac75cb-c543-4495-8540-1244b4d6c1c9">
+          <CubeDimensionID>16 Номенклатура</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="63096d28-0119-43da-8755-f086f64b3f2b">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="66314764-4462-4fa1-8120-4f3ae3cf400d">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="35c7ceff-68c6-4c85-a95b-07ca38d539d2">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>GoodID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="1bae9ff4-153b-44df-9719-59251a4ee36b">
+          <CubeDimensionID>07-01 Команды торговых агентов</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ce63ad68-e0bb-4c8c-85d6-5f2c05646197">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>07 Маршруты</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Team ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="969a0cd9-6175-4a4d-ba81-358a83226208">
+          <CubeDimensionID>07-01-01 Системы Мобильных Продаж</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="89cd260f-72b2-41c0-8023-a81a60d17c89">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>07-01 Команды торговых агентов</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>SMT ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="7f3045c5-9609-4045-b5a3-7715b8c1c606">
+          <CubeDimensionID>13-01 Типы Документов</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="51939250-2a9b-41d7-a380-628afc8da270">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>13 Документы Реализация товаров</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Document Type ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="7c31c17b-0659-4781-a87c-8d05c9fcbd27">
+          <CubeDimensionID>16-03 Бренды</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="004b6612-5efc-4707-84d6-5767f5f013dd">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>16 Номенклатура</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Brand ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="ba50d467-a1d8-4a90-a06b-485e371773af">
+          <CubeDimensionID>16-01 Единицы Измерения</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1a53715d-1f33-4291-bc36-879227c1e516">
+              <AttributeID>Goods ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>16 Номенклатура</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="74700b9b-c40d-4a60-9602-d91167e1974d">
+          <CubeDimensionID>06 Точки доставки</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b528e647-dfc5-4e7e-9502-2546a870f881">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="819510dc-bfe9-473f-ad31-3166e1f14a8d">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="120d01b5-8fe3-4cb2-97df-047910eddf25">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>TardeShopID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="2dab54e2-c8df-410a-98e4-90a2959e664f">
+          <CubeDimensionID>13-02 Способы оплаты</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8a839682-3fdf-4030-904b-4a55c4e3f159">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>13 Документы Реализация товаров</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Payment Method ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3a244356-9610-46b1-937b-85b33db173fc">
+          <CubeDimensionID>12 Виды Операций</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="68e42832-c645-4211-86d9-bb4421f32d55">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ac81bfae-ed1b-4b34-a8d0-6556172d6987">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="311417c1-752a-4441-964d-37d55b3fc12c">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>TransactionTypeID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="f83aa235-3d7d-4e2f-9a25-b8a30ac70811">
+      <ID>01 Продажи 1</ID>
+      <Name>02 Документы реализации</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="f06ee654-c7ba-4e85-8193-0fff9fbb2396">
+          <ID>Число различных объектов Sales Document ID</ID>
+          <Name>Число продаж</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="f1446382-3b71-4917-b558-1b995b2e30a2">
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="aa6531ae-2088-40f8-973e-82a366d01407">
+              <TableID>olap_v_01_Продажи</TableID>
+              <ColumnID>SalesDocumentID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ErrorConfiguration dwd:design-time-name="2098947f-7d77-4c4c-8c73-5f902d797704">
+        <KeyNotFound>IgnoreError</KeyNotFound>
+      </ErrorConfiguration>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7ba3cecb-f1e2-4a92-9e8c-f1d43e3cac44">
+          <CubeDimensionID>02 Направления бизнеса</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="07c5ed6d-51c0-4d4a-a5c6-4941fb66408a">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cc22ded3-1947-472e-83aa-a00989f6691d">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4505a5e6-4d13-451f-bc4d-16719fff5dfd">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>BusinessID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1509d167-4105-470f-917a-cb42a798fbe6">
+          <CubeDimensionID>v 03 Филиалы</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="45b22a9f-5bba-491a-97bd-c361f565713f">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="33e63a0e-fa72-4f11-b044-3aa828e7a45e">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4cde1cb2-de42-4917-b2d1-61ae30ae77ec">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>BranchID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a51aa837-24a4-4e74-8e80-2dbfcc5a4de9">
+          <CubeDimensionID>01 Даты</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="256b43a2-7866-49eb-a88b-93cda39d0d63">
+              <AttributeID>Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f338ea42-b762-4a43-bfcc-50c5c1fb1896">
+                  <DataType>Date</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="aaed8e12-5344-4540-8e09-dd28b0827006">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>TransactionDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dfaa4b53-9dad-47f6-9c45-ad2eca832158">
+          <CubeDimensionID>04 Организации</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5b9c93b7-9338-4048-91da-14caf404bc1b">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="aa55018d-9a4e-479f-b576-b80914ca41ed">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fbebb2c8-a9e6-4606-8ff3-237fd1001037">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>CompanyID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6501bf68-6d61-4bc2-b8d2-cb9e5b290a66">
+          <CubeDimensionID>05 Контрагенты</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="852df01c-b870-423e-b346-7cf589eecb58">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="470d5683-e7af-4ccc-98f6-014e383a83e4">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c2c95a2e-8e14-498c-8509-8abe39c724ef">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>CustomerID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="75600fc4-1002-4065-a2b3-5846cb88dd55">
+          <CubeDimensionID>07 Маршруты</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e1a96db7-392a-47cf-b4cb-3d4a03e16f77">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="93801ac5-f6fc-498d-b477-42ff3a06f4f1">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a57f9445-53f8-4314-82c2-067e220c904d">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>RouteID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7dbe63f5-df8a-4fd9-b7ff-307215ac191d">
+          <CubeDimensionID>08 Кредитные направления</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a3624004-bc09-4305-8e31-4c5db1875507">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ff337df3-1ade-4198-b1cc-847fb2bd332c">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7f264fe5-6640-4f3e-93d9-43b6941f809f">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>CreditLineID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="84411389-2ab3-438e-9e44-5e807a83efc3">
+          <CubeDimensionID>09 Склады</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b4fe31e5-83e9-4621-9345-19ccb5015ed2">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3804edf6-7ee7-4576-ae32-8409300a26bb">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2de46e9d-e4f2-4cdb-b052-0ba82deb6250">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>StorehouseID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d8f5e627-73e1-4ca4-8da4-bd2dc36b4654">
+          <CubeDimensionID>10 Типы цен номенклатуры</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7a459b14-b80f-497a-9a08-6ed0c148e9e3">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e5114ff3-4b46-4d51-9a31-2f34d917f852">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0843fb30-e50b-459c-865c-6ce783ac887e">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>TypePriceID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d5c7e62a-aa59-4e24-9c12-e9fd556a21c6">
+          <CubeDimensionID>11 Сотрудники</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c9a46369-ea9c-46fc-a372-a4a1c7ba385d">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b95f13d1-93a4-41cc-abfa-c7f36f681936">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0120d42c-4d40-45bd-a6f5-131439c9fef3">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>AgentID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7c916714-9024-4dd8-b2c6-717808f11c89">
+          <CubeDimensionID>13 Документы Реализация товаров</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1eee99a2-9a91-4d10-ae25-9e82aa907778">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f03865db-0236-493b-9b9b-ca3f91bc89e8">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6d188b4a-8b37-4ae9-bcec-08bb49f245c9">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>SalesDocumentID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b291a03e-8e8d-439f-bb5d-90b93c5a40f7">
+          <CubeDimensionID>14 Документы</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8c4fcd84-9da4-44ff-b263-565f2439db32">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="63506fef-4088-46d9-8cac-8bde4ff933af">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="43821874-6c46-4f4c-96a9-8cc1adabcba9">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>DocumentID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5272730c-9546-4600-ac8d-ad55baab809d">
+          <CubeDimensionID>16 Номенклатура</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8513968b-0690-4996-bb1f-ff4da028decb">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="83bbbe29-b54e-4ea7-9761-f7c30754885a">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b86d6d4d-2641-47e7-b20f-460480cbcc03">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>GoodID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="cfcea934-5491-4094-9d18-d077d93172dc">
+          <CubeDimensionID>07-01 Команды торговых агентов</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f943a02c-4c5a-4dc4-b024-cde2cd2a3e24">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>07 Маршруты</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Team ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="9547f131-1c83-4068-a617-c797407045ff">
+          <CubeDimensionID>07-01-01 Системы Мобильных Продаж</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5cb2a5a1-14af-4bee-8e42-a89ed3636fbe">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>07-01 Команды торговых агентов</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>SMT ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="72ea13af-f95d-4222-be0d-152629648dda">
+          <CubeDimensionID>13-01 Типы Документов</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="633b7008-18b9-4e8d-b824-3d64f364811a">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>13 Документы Реализация товаров</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Document Type ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="c6f4a55b-48b2-42fb-89f7-6ea8e388c973">
+          <CubeDimensionID>16-03 Бренды</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d4971d88-c930-45b9-bfdc-44c333dbb59a">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>16 Номенклатура</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Brand ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="f26d39a7-77ed-4fcb-848c-027dbfa61320">
+          <CubeDimensionID>16-01 Единицы Измерения</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c4307220-7feb-4cce-89a3-cf11fa028402">
+              <AttributeID>Goods ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>16 Номенклатура</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="16a19fa8-e214-465d-bbba-0fc82ccf52f9">
+          <CubeDimensionID>06 Точки доставки</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a749b493-8209-4714-acee-c843224a1a31">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0aee0474-9caa-4a82-b720-8e215f7fc69f">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="101b8f82-7cc9-4b5d-a07a-55fec9bddd3f">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>TardeShopID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="4482a182-20cd-4fad-8185-55d3a47e095b">
+          <CubeDimensionID>13-02 Способы оплаты</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9aa5e34b-2479-40ac-beb8-4568ed4ad4dd">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>13 Документы Реализация товаров</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Payment Method ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d41d210f-31d2-4a91-9812-ffda9550da36">
+          <CubeDimensionID>12 Виды Операций</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="43506628-ccf8-451d-b13a-a10d31aa5543">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5a797867-414d-407d-a19a-c7db2bdc436a">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bd1e95ab-e84c-4099-9b5c-c24d963022a7">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>TransactionTypeID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="c1c2c282-d7a3-4c60-90e3-aae3a116e4f4">
+      <ID>01 Продажи 3</ID>
+      <Name>05 Маршруты</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="26845d10-e887-425d-a89c-f9998c6f3a70">
+          <ID>Число различных объектов Route ID</ID>
+          <Name>Число маршрутов</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="8bea6171-2176-4617-b7ba-e98742a992e7">
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1193c8de-021a-442d-a748-c7d61256051c">
+              <TableID>olap_v_01_Продажи</TableID>
+              <ColumnID>RouteID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ErrorConfiguration dwd:design-time-name="08d3da40-efbe-4c27-b92c-69f44f3eec71">
+        <KeyNotFound>IgnoreError</KeyNotFound>
+      </ErrorConfiguration>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c56067ba-5686-4121-897a-e4b801d56427">
+          <CubeDimensionID>02 Направления бизнеса</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b80d139a-5bb2-4b60-9d4e-f8bb522f8b96">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="83312d64-bdf6-474d-ad34-754e796f5a41">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4bbe82bf-fd4a-427e-aeea-99bdf4238052">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>BusinessID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="12caac91-a537-42cd-a07f-e283652efa61">
+          <CubeDimensionID>v 03 Филиалы</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="69e0ac1b-8bf7-421f-b413-4218990b2c29">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5f1477f4-8355-422c-b1fd-36fe3c37d397">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a9733b56-c368-43bb-ba2c-7e7a61e9e739">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>BranchID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="709da5ba-837c-40c9-866d-dd3f1e7d234e">
+          <CubeDimensionID>01 Даты</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e76634cc-0101-4f8f-b885-b5ea88809428">
+              <AttributeID>Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dadaefed-69e8-4a20-953c-103228e2ab0f">
+                  <DataType>Date</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="65d81daf-6b6d-4eda-af83-f2cd767b45a0">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>TransactionDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fb417e3d-b5a1-40b8-9138-c171270b31a5">
+          <CubeDimensionID>04 Организации</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c07a5afc-1734-4716-9831-50e084c2486a">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0e0c7e01-c01f-4d52-b9c9-fa3f5a52e967">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9dd835d4-1f2d-4e26-b285-336c2e5f973a">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>CompanyID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6288bace-ea15-46f8-9e13-cd6363b6aca4">
+          <CubeDimensionID>05 Контрагенты</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ef1f307f-7047-4ccd-bdd7-442a285bfa24">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cc74a856-b72e-444c-8c2a-0370bd885ae3">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f741830e-facf-4164-849d-d586ab4c829f">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>CustomerID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3051a3f4-e24d-44a0-8c53-5b2630621415">
+          <CubeDimensionID>07 Маршруты</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="44daa19c-8ad5-472d-9586-a3f7f291fb16">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="364b10da-b83b-44dd-90f0-b6c94ac2eccd">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="975624b5-2824-4b77-963a-cf13f5998164">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>RouteID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ddd929f2-a179-43ea-a1fb-4f62a8581502">
+          <CubeDimensionID>08 Кредитные направления</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a515a064-f875-480c-a389-04c929acc923">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="01a87c41-549f-4870-9178-4846c1514fa2">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="afa59a9b-fee7-4adc-b433-b6c9648994a1">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>CreditLineID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="23b74b48-a609-458d-90e8-17ddff8cc681">
+          <CubeDimensionID>09 Склады</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3124dac0-43a6-472e-a0fe-c3d8dc00f4a4">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0ae5ac4a-cb63-41c3-9312-d04f9dd581ad">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d4798eec-afb9-47fa-9584-e1c81fd1bf0e">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>StorehouseID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6be554c3-5e76-44c8-97c8-3efc1d059328">
+          <CubeDimensionID>10 Типы цен номенклатуры</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f8fb6656-3745-4638-a9c8-ff318996389c">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bbd2f66a-db88-4585-9b9a-c39f423912b2">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="049b9528-82e6-4eaa-a73f-33138a722fc5">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>TypePriceID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f549561f-5e61-41eb-8469-2516f50563b1">
+          <CubeDimensionID>11 Сотрудники</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3b9251a7-2f1e-44b3-b198-d5d1871c0a31">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="be7aca97-4309-46eb-a286-6b2f32c617d3">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b566faf9-9f7b-4ab2-8869-37c503f9eb8c">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>AgentID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="42d57252-142a-4e34-8cc5-9fd33a9aef88">
+          <CubeDimensionID>13 Документы Реализация товаров</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1aff2cdf-b2b6-4778-94c4-9c636ba9024a">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bfab363a-798d-4fe7-af00-c213d9048219">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="43073f24-0850-41dd-b2dd-8828292c1b88">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>SalesDocumentID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="88c86e1d-88aa-48cc-8cd4-57b7b2648fd2">
+          <CubeDimensionID>14 Документы</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="338e4fd2-8fbe-49b7-924f-f2fa660beb16">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="426a897a-2839-4594-a732-fed021421f87">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="752519ec-6ec4-4859-baaf-0b3897386ba7">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>DocumentID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a7b9bf45-1cdc-4a22-9608-8217f4714c07">
+          <CubeDimensionID>16 Номенклатура</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="68109db4-05b1-4a73-ba71-575706f1be91">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f91631d8-99a5-481c-b0ac-a7456d4aa733">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="299d0287-9c74-4781-8116-e334d378e227">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>GoodID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="0a329eaa-de5a-452c-a48c-2d6e0c1206ab">
+          <CubeDimensionID>07-01 Команды торговых агентов</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dd1ae185-af22-4f31-ada1-7c81f9e15938">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>07 Маршруты</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Team ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="91e874a1-1bc0-48ea-8222-16fdb78078ad">
+          <CubeDimensionID>07-01-01 Системы Мобильных Продаж</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="57d9dae1-8be9-474f-b493-9477f4e596bf">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>07-01 Команды торговых агентов</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>SMT ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="bed95304-c7db-4d5c-87f1-ed67cbcfcb80">
+          <CubeDimensionID>13-01 Типы Документов</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5c1b3749-2814-4ca8-aa8c-79b652e4d47a">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>13 Документы Реализация товаров</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Document Type ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="6e1d8c99-a2d4-4c22-bed4-a4bcb584bf2e">
+          <CubeDimensionID>16-03 Бренды</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bbfccf8b-5020-42e1-98b2-6be5569c85b3">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>16 Номенклатура</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Brand ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="8e2bd682-9b4f-4f76-8c69-2cafcbb5ec3c">
+          <CubeDimensionID>16-01 Единицы Измерения</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d286230b-8714-4e8f-bf2f-718a1b064c4f">
+              <AttributeID>Goods ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>16 Номенклатура</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="56f49198-ce4a-41c9-be46-f6ae65e07dd3">
+          <CubeDimensionID>06 Точки доставки</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="21334359-da1c-4eae-9a89-64739eb98ac6">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bc857d0d-be1a-46c3-872e-467dd9a2396b">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3c282edf-b647-4b60-b6de-fd18cf1e1893">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>TardeShopID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="5084d2a6-2d26-49c0-b309-14f6ef7f8dcc">
+          <CubeDimensionID>13-02 Способы оплаты</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a62512e7-96a5-4643-a1a3-df40a3bfac40">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>13 Документы Реализация товаров</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Payment Method ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ed1efa04-4b50-4421-aceb-38d5ce2f937f">
+          <CubeDimensionID>12 Виды Операций</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ef1ab98b-7839-4289-a073-6779f93272fb">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="164b8fe8-aa58-4bdb-b5a7-8be9124be926">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="28882970-98e8-4c66-b726-a190d8212f00">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>TransactionTypeID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="62578c86-44ca-40af-9d90-d791aec80f19">
+      <ID>01 Продажи 2</ID>
+      <Name>04 Точки доставки</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="8dc8d597-2553-41f4-b368-710edc479100">
+          <ID>Число различных объектов Tarde Shop ID</ID>
+          <Name>Число точек доставки</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="a2fa3022-ae51-4cbd-85fc-9af950881c00">
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5002ec12-220a-47ed-a81d-101e32bd1f04">
+              <TableID>olap_v_01_Продажи</TableID>
+              <ColumnID>TardeShopID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ErrorConfiguration dwd:design-time-name="ff8565fc-bcea-4b9e-a70c-68c3c81eec05">
+        <KeyNotFound>IgnoreError</KeyNotFound>
+      </ErrorConfiguration>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d1c8be1a-450b-4bef-82ad-15a6e6c3eef4">
+          <CubeDimensionID>02 Направления бизнеса</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ccefaa9e-faeb-4a1a-8c57-92eae08bfb10">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4ba370b9-5992-4a13-8d55-311522ac084a">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e21589ba-61f3-40e5-9d6d-70e8ca65d4be">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>BusinessID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f28d38b2-e832-4419-847c-827b62f7fa14">
+          <CubeDimensionID>v 03 Филиалы</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b9d3106a-e3e1-4314-a7c5-7c9477aad261">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b335d788-7c87-4ed7-a24c-b7c214fde7ee">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3a5e5675-0e40-4316-94c7-3e22df92f3d7">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>BranchID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="897aa9a0-748a-44f5-b4e3-317d24d979bc">
+          <CubeDimensionID>01 Даты</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="553ed57c-d5cb-45e1-a02d-ef70d72fc9ca">
+              <AttributeID>Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="55e90027-445e-4b77-9812-1935209e226c">
+                  <DataType>Date</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ad5d61be-0702-47a2-8d67-58d2a246ad6f">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>TransactionDate</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="df10adcb-4b3f-4c9d-9378-5773d0302a5d">
+          <CubeDimensionID>04 Организации</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="926c68d4-607b-4f12-bd0e-700752e520e6">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f01e9f28-1f19-4dfa-913a-ee15f7a3f5e7">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4d4cf2b1-1084-4269-a853-44985b1b74de">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>CompanyID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e4cd248e-2887-4310-a8c5-230cd44794ca">
+          <CubeDimensionID>05 Контрагенты</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c07a49ef-178f-42eb-860f-1e96013d1dd6">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0381abad-5b89-481c-920f-dd6a910c60db">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="af5de462-3ee2-42c1-b8f6-f0d2f42713a8">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>CustomerID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="41791d93-01fc-4358-b170-8b65aea7d909">
+          <CubeDimensionID>07 Маршруты</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b46e6d39-d364-4754-9499-68ef53f09696">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="aa21b751-c9f1-490d-b915-70c68bb14977">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="62b2b2e6-817c-446f-9f79-9bd7deb435af">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>RouteID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a40861e2-c4f3-43ff-9efa-cb83de89f092">
+          <CubeDimensionID>08 Кредитные направления</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="62a2dee9-3268-476a-b938-076bc988bbb1">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c7cfbd40-8d04-47f2-87c0-b388bfbe77e0">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9e6c357d-5655-422b-9f5b-837ab7e5ba50">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>CreditLineID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cadd63e7-6287-4b3b-a249-0268682c9a16">
+          <CubeDimensionID>09 Склады</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2143b116-5970-4ddf-a7df-eb784867b297">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bc6c2c6b-1918-4cf7-835b-ae5b79c99721">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e3e89d08-dea1-48d1-af33-1fb4895b7adf">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>StorehouseID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5b76f43f-1ee8-4fb9-8796-62943aa8f7cb">
+          <CubeDimensionID>10 Типы цен номенклатуры</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5edf1e8d-c13f-4d58-9449-bb57ca175c83">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fdc544ed-2c89-4be3-b52f-2655237bba7b">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="66850885-660c-4173-bf72-11fe889f9071">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>TypePriceID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2afe9803-0a02-477d-9f6e-98f45d5a6721">
+          <CubeDimensionID>11 Сотрудники</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="04dc9b30-fd07-4bc9-88ca-5b1fc14dee13">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="76542d01-da4a-42c0-b1b8-20e2c2501eef">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3d5f81c9-c483-4cbf-a849-4ec77e85ad41">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>AgentID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="33ddb4e3-29d7-4fdd-a024-187951983635">
+          <CubeDimensionID>13 Документы Реализация товаров</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fed1a161-c085-4fd7-966d-99543e58afd9">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="69dc0c51-5a58-4341-ba94-1d1b6e4bd619">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cdf7c1fb-9e3c-4a94-b6e0-259cd6f2eb54">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>SalesDocumentID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2eb89e5f-9ad7-46d3-a459-9d6956db7a3f">
+          <CubeDimensionID>14 Документы</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="04e77be0-fa84-4a05-ac6f-36eb6db1d26a">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6fed1a1e-9923-4286-bd2f-82b71e230d65">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6fe66cea-b2c9-4157-8701-b206a1c47818">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>DocumentID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3c8d119c-ed48-47a7-aa8d-82878f2105a0">
+          <CubeDimensionID>16 Номенклатура</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6520a7f4-45f6-4234-b653-478bb912fdee">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e9d51e00-b17d-4844-a164-8370c3a94dde">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c215a9b3-b1cc-43de-b95b-a952824376b2">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>GoodID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="cee27a68-1636-4673-8291-b8b82a52d527">
+          <CubeDimensionID>07-01 Команды торговых агентов</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1c7c5f2e-c021-467b-b165-3e706d2f3f60">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>07 Маршруты</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Team ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="ab56b12f-ff34-4a16-8a58-7474a7920e61">
+          <CubeDimensionID>07-01-01 Системы Мобильных Продаж</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bf381126-d8ee-40f0-af6e-9134deb1cf6a">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>07-01 Команды торговых агентов</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>SMT ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a3b8f5d1-50e9-43da-9f09-7c59ea48f219">
+          <CubeDimensionID>13-01 Типы Документов</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="231da3ff-677f-4453-abdf-896629c8859f">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>13 Документы Реализация товаров</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Document Type ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="5b4c8809-2e5e-4e9b-a9de-a0de73f075ec">
+          <CubeDimensionID>16-03 Бренды</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5f752a74-dc82-4651-910e-cea5f305ae4a">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>16 Номенклатура</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Brand ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="2fe66628-d3df-4c60-b175-aee2b6cd8c25">
+          <CubeDimensionID>16-01 Единицы Измерения</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="03a2be2b-0521-4bc6-967f-a06192199d1e">
+              <AttributeID>Goods ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>16 Номенклатура</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f379350e-33eb-4fd9-a1d9-b5cddbb58bcf">
+          <CubeDimensionID>06 Точки доставки</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b70523cb-4efd-4e1c-a216-909d56e3bea6">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="95d9d6d0-1b42-4979-a52c-69c9b379608d">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8ae10fff-ce0d-47fb-b54b-0c15d05b9c02">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>TardeShopID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="d3876f8c-85ce-497f-9796-a8eb93083d00">
+          <CubeDimensionID>13-02 Способы оплаты</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="263fa88e-8e80-4502-9b80-2098bd3c8b0f">
+              <AttributeID>ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>13 Документы Реализация товаров</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Payment Method ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="af1d9aef-866e-4e9b-abdb-1b30095230ab">
+          <CubeDimensionID>12 Виды Операций</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6399acff-0018-40b3-a3f9-9a3403733c92">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0d8a54f9-69e6-4875-9153-4aec25200d86">
+                  <DataType>WChar</DataType>
+                  <DataSize>32</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7643bed0-91e9-4cf0-9d29-a82e34086ab0">
+                    <TableID>olap_v_01_Продажи</TableID>
+                    <ColumnID>TransactionTypeID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
   </MeasureGroups>
   <Source dwd:design-time-name="1f26700b-e6d6-4194-a82f-b924d7122424">
     <DataSourceViewID>UASD</DataSourceViewID>
@@ -2167,26 +3746,27 @@
 Удаление или изменение команды CALCULATE приведет к изменению данных, содержащихся в кубе.
 Эту команду следует изменять только в том случае, если способ статистической обработки куба задается вручную.
 */
-CALCULATE;                                     
+CALCULATE;                                           
 CREATE MEMBER CURRENTCUBE.[Measures].[Наценка от себестоимости (руб.)]
  AS [Measures].[Сумма продаж] - [Measures].[Сумма себестоимости], 
-FORMAT_STRING = "# ##0,00;-# ##0,00", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Наценки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';          
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Наценки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи'  ;                
 CREATE MEMBER CURRENTCUBE.[Measures].[Наценка от себестоимости (%)]
  AS [Measures].[Сумма продаж] / [Measures].[Сумма себестоимости] - 1, 
 FORMAT_STRING = "Percent", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Наценки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';          
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Наценки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                
 CREATE MEMBER CURRENTCUBE.[Measures].[Сумма скидок (руб.)]
  AS [Measures].[Сумма продаж без скидок] - [Measures].[Сумма продаж], 
-FORMAT_STRING = "# ##0,00;-# ##0,00", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Скидки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';          
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Скидки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи'  ;                
 CREATE MEMBER CURRENTCUBE.[Measures].[Скидки (%)]
  AS 1 - [Measures].[Сумма продаж] / [Measures].[Сумма продаж без скидок], 
 FORMAT_STRING = "Percent", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Скидки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                                     
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Скидки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                                           
 CREATE MEMBER CURRENTCUBE.[Measures].[Сумма продаж без НДС]
  AS [Measures].[Сумма продаж] - [Measures].[Сумма НДС], 
-VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';     
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи'  ;           
 CREATE MEMBER CURRENTCUBE.[Measures].[Цена на дату]
  AS (
     IIF(IsEmpty (
@@ -2203,7 +3783,24 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Цена на дату]
                     [Measures].[Цена])
 		        ) 
 	), 
-VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = '02 Цены номенклатуры'  ; </Text>
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Цены номенклатуры'  ; 
+CREATE MEMBER CURRENTCUBE.[Measures].[Средняя сумма документа реализации]
+ AS [Measures].[Сумма продаж] / [Measures].[Число продаж], 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = '02 Документы реализации'  ;     
+CREATE MEMBER CURRENTCUBE.[Measures].[Средняя сумма продаж контрагента]
+ AS [Measures].[Сумма продаж] / [Measures].[Число контрагентов], 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = '03 Контрагенты'  ;  
+CREATE MEMBER CURRENTCUBE.[Measures].[Средняя сумма продаж точки доставки]
+ AS [Measures].[Сумма продаж] / [Measures].[Число точек доставки], 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = '04 Точки доставки'  ;  
+CREATE MEMBER CURRENTCUBE.[Measures].[Средняя сумма продаж маршрута]
+ AS [Measures].[Сумма продаж] / [Measures].[Число маршрутов], 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = '05 Маршруты'  ; </Text>
         </Command>
       </Commands>
     </MdxScript>

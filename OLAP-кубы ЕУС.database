@@ -95,6 +95,7 @@
           <Result sourcePath="[13-02 Способы оплаты]" sourceType="Dimension" rule="31">Нет связи атрибутов</Result>
           <Result sourcePath="[13-01 Типы Документов]" sourceType="Dimension" rule="31">Нет связей атрибутов</Result>
           <Result sourcePath="[16-03 Бренды]" sourceType="Dimension" rule="31">Нет связи атрибутов</Result>
+          <Result sourcePath="[12 Виды Операций]" sourceType="Dimension" rule="31">Нет связей атрибутов</Result>
         </Results>
       </Value>
     </Annotation>

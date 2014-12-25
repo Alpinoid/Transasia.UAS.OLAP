@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2806" scrolltop="-7170" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8652" y="16219" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2806" scrolltop="-7170" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="12541" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_12_ВидыОпераций" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_12_ВидыОпераций" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000b80b000057070000" />
             </control>
@@ -73,14 +73,9 @@
             <Shape Id="ID" Expanded="false">
               <Attributes>
                 <Attribute Id="ID" />
-              </Attributes>
-              <Position x="20" y="20" />
-            </Shape>
-            <Shape Id="Description" Expanded="false">
-              <Attributes>
                 <Attribute Id="Description" />
               </Attributes>
-              <Position x="163" y="20" />
+              <Position x="20" y="20" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -121,67 +116,42 @@
   </DimensionPermissions>
   <UnknownMemberName>Без вида операции</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="c4c41a82-3eec-4605-bad8-e3ef1cdbbbf9">
+    <Attribute dwd:design-time-name="b62d1235-5b65-454c-ae2d-e78a17b99eaa">
       <ID>ID</ID>
       <Name>ID</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="40b193db-f489-4c27-b623-31b16eb952eb">
+        <KeyColumn dwd:design-time-name="5afdb8a6-4c51-4f44-9f05-8093b02e7e54">
           <DataType>WChar</DataType>
           <DataSize>32</DataSize>
-          <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fdd06b5d-842e-4b23-bbe0-827a7d456ee0">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1daba8aa-e99f-4332-9c62-2688f5b7cc11">
             <TableID>olap_v_12_ВидыОпераций</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="4d546177-6c21-4673-95b6-a8f2ad66c97e">
+      <NameColumn dwd:design-time-name="ea884460-3a8c-4f89-852b-3ac0c045eb2b">
         <DataType>WChar</DataType>
-        <DataSize>17</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="ee65a9ad-ef67-45a5-ac65-1edf20d22d38">
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="05c68a00-ba69-4b44-8c13-66f2fecef553">
           <TableID>olap_v_12_ВидыОпераций</TableID>
           <ColumnID>Description</ColumnID>
         </Source>
       </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="1ef20450-4a54-428f-803c-736f3872a7b4">
-          <AttributeID>Description</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Вид операции</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="331cd793-0c6e-4cfc-874a-92b6e1c217ea">
-      <ID>Description</ID>
-      <Name>Вид операции</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="954f96bc-212a-4a88-8c17-b55b3102d1ff">
-          <DataType>WChar</DataType>
-          <DataSize>17</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3794fba3-1778-42b8-9f6e-d0c5bc84ef7a">
-            <TableID>olap_v_12_ВидыОпераций</TableID>
-            <ColumnID>Description</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="1fdc17db-ef6d-4595-ae89-0f02e639f43b">
+    <Hierarchy dwd:design-time-name="dad2923f-f373-4b60-b9da-34008c913172">
       <ID>Иерархия</ID>
       <Name>Виды операций</Name>
       <Levels>
-        <Level dwd:design-time-name="946e0c4e-ed8d-4449-acb9-69affb2bbc71">
-          <ID>Вид операции</ID>
+        <Level dwd:design-time-name="bcf119c2-3d05-45c8-a0fc-b8aaad91f129">
+          <ID>ID</ID>
           <Name>Вид операции</Name>
-          <SourceAttributeID>Description</SourceAttributeID>
+          <SourceAttributeID>ID</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>

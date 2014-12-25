@@ -40,6 +40,10 @@
       <FullPath>05 Контрагенты.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>06 Точки доставки.dim</Name>
+      <FullPath>06 Точки доставки.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>07 Маршруты.dim</Name>
       <FullPath>07 Маршруты.dim</FullPath>
     </ProjectItem>
@@ -102,10 +106,6 @@
     <ProjectItem>
       <Name>16-03 Бренды.dim</Name>
       <FullPath>16-03 Бренды.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>06 Точки доставки.dim</Name>
-      <FullPath>06 Точки доставки.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
