@@ -92,6 +92,10 @@
       <FullPath>14 Документы.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>15 Каналы продаж.dim</Name>
+      <FullPath>15 Каналы продаж.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>16 Номенклатура.dim</Name>
       <FullPath>16 Номенклатура.dim</FullPath>
     </ProjectItem>

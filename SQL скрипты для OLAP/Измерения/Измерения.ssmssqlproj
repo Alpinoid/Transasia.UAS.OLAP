@@ -37,11 +37,17 @@
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>olap.v_02_НаправленияБизнеса.sql</FullPath>
         </FileNode>
-        <FileNode Name="olap.v_03_Филиалы.sql">
+        <FileNode Name="olap.v_06-01_КаналыПродаж.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
-          <FullPath>olap.v_03_Филиалы.sql</FullPath>
+          <FullPath>olap.v_06-01_КаналыПродаж.sql</FullPath>
+        </FileNode>
+        <FileNode Name="olap.v_06-99_ПериодическиеРеквизитыТочекДоставки.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>olap.v_06-99_ПериодическиеРеквизитыТочекДоставки.sql</FullPath>
         </FileNode>
         <FileNode Name="olap.v_04_Организации.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
@@ -116,15 +122,15 @@
           <FullPath>olap.v_13_ДокументыРеализацияТоваров.sql</FullPath>
         </FileNode>
         <FileNode Name="olap.v_13-01_ТипыДокументов.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>olap.v_13-01_ТипыДокументов.sql</FullPath>
         </FileNode>
         <FileNode Name="olap.v_13-02_СпособыОплаты.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>olap.v_13-02_СпособыОплаты.sql</FullPath>
         </FileNode>
         <FileNode Name="olap.v_14_Документы.sql">
@@ -133,11 +139,11 @@
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>olap.v_14_Документы.sql</FullPath>
         </FileNode>
-        <FileNode Name="olap.v_16_Номенклатура.sql">
+        <FileNode Name="olap.v_16-04_CSKU.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
-          <FullPath>olap.v_16_Номенклатура.sql</FullPath>
+          <FullPath>olap.v_16-04_CSKU.sql</FullPath>
         </FileNode>
         <FileNode Name="olap.v_16-01_ЕдиницыИзмерения.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>

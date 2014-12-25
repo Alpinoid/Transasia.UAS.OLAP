@@ -27,6 +27,12 @@ SELECT
 	,CONVERT(varchar(32), RegSales.Маршрут, 2) AS RouteID							-- ID марушрта (торгового представителя)
 	,CONVERT(varchar(32), RegSales.ТорговыйАгент, 2) AS AgentID						-- ID торгового агента (сотрудника)
 	,CONVERT(varchar(32), RegSales.ТипЦены, 2) AS TypePriceID						-- ID типа цены
+	,(	SELECT TOP 1
+			ISNULL(CONVERT(varchar(32), TradeChanel.ISISКанал, 2), '00000000000000000000000000000000')
+		FROM dbo.РегистрСведений_ПериодическиеРеквизитыТочекДоставки AS TradeChanel			-- РегистрСведений.ПериодическиеРеквизитыТочекДоставки
+		WHERE TradeChanel.ТочкаДоставки = RegSales.ТочкаДоставки
+				AND TradeChanel._Период <= RegSales._Период
+		ORDER BY TradeChanel._Период DESC) AS TradeChanelID							-- ID канала торговли
 	,CONVERT(varchar(32), RegSales.Номенклатура, 2) AS GoodID						-- ID номенклатуры
 	,RegSales.Количество AS QuantityBase											-- Количество в базовых единицах измерения
 	,ROUND(RegSales.Количество * (
