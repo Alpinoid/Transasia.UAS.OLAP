@@ -124,6 +124,16 @@
       <ReadDefinition>Allowed</ReadDefinition>
       <Read>Allowed</Read>
     </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="a4c1a3a1-fcf4-4a58-adf5-c6f7335587b0">
+      <ID>DimensionPermission 2</ID>
+      <Name>DimensionPermission 2</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 2</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+      <Write>Allowed</Write>
+    </DimensionPermission>
   </DimensionPermissions>
   <UnknownMemberName>Без типа цен</UnknownMemberName>
   <Attributes>

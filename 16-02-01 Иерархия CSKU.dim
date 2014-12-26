@@ -1,0 +1,1378 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="29a1c0d2-91da-4872-a5b2-9ba502826b45" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>16-02-01 Иерархия CSKU</ID>
+  <Name>16-02-01 Иерархия CSKU</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2547" scrolltop="-8348" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8890" y="21696" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="v_16-02-01_ИерархияCSKU" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3757" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000ad0e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="olap_v_16-02-01_ИерархияCSKU" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2547</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8348</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="4" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="149">
+            <Shape Id="ID" Expanded="false">
+              <Attributes>
+                <Attribute Id="ID" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Parent7 Description" Expanded="false">
+              <Attributes>
+                <Attribute Id="Parent7 Description" />
+              </Attributes>
+              <Position x="211" y="20" />
+            </Shape>
+            <Shape Id="Parent6 Description" Expanded="false">
+              <Attributes>
+                <Attribute Id="Parent6 Description" />
+              </Attributes>
+              <Position x="402" y="20" />
+            </Shape>
+            <Shape Id="Parent5 Description" Expanded="false">
+              <Attributes>
+                <Attribute Id="Parent5 Description" />
+              </Attributes>
+              <Position x="593" y="20" />
+            </Shape>
+            <Shape Id="Parent4 Description" Expanded="false">
+              <Attributes>
+                <Attribute Id="Parent4 Description" />
+              </Attributes>
+              <Position x="785" y="20" />
+            </Shape>
+            <Shape Id="Parent3 Description" Expanded="false">
+              <Attributes>
+                <Attribute Id="Parent3 Description" />
+              </Attributes>
+              <Position x="976" y="20" />
+            </Shape>
+            <Shape Id="Parent2 Description" Expanded="false">
+              <Attributes>
+                <Attribute Id="Parent2 Description" />
+              </Attributes>
+              <Position x="1167" y="20" />
+            </Shape>
+            <Shape Id="Parent1 Description" Expanded="false">
+              <Attributes>
+                <Attribute Id="Parent1 Description" />
+              </Attributes>
+              <Position x="1358" y="20" />
+            </Shape>
+            <Shape Id="Parent0 Description" Expanded="false">
+              <Attributes>
+                <Attribute Id="Parent0 Description" />
+              </Attributes>
+              <Position x="1550" y="20" />
+            </Shape>
+            <Shape Id="Parent7 Code" Expanded="false">
+              <Attributes>
+                <Attribute Id="Parent7 Code" />
+              </Attributes>
+              <Position x="211" y="68" />
+            </Shape>
+            <Shape Id="Parent6 Code" Expanded="false">
+              <Attributes>
+                <Attribute Id="Parent6 Code" />
+              </Attributes>
+              <Position x="402" y="68" />
+            </Shape>
+            <Shape Id="Parent5 Code" Expanded="false">
+              <Attributes>
+                <Attribute Id="Parent5 Code" />
+              </Attributes>
+              <Position x="593" y="68" />
+            </Shape>
+            <Shape Id="Parent4 Code" Expanded="false">
+              <Attributes>
+                <Attribute Id="Parent4 Code" />
+              </Attributes>
+              <Position x="785" y="68" />
+            </Shape>
+            <Shape Id="Parent3 Code" Expanded="false">
+              <Attributes>
+                <Attribute Id="Parent3 Code" />
+              </Attributes>
+              <Position x="976" y="68" />
+            </Shape>
+            <Shape Id="Parent2 Code" Expanded="false">
+              <Attributes>
+                <Attribute Id="Parent2 Code" />
+              </Attributes>
+              <Position x="1167" y="68" />
+            </Shape>
+            <Shape Id="Parent1 Code" Expanded="false">
+              <Attributes>
+                <Attribute Id="Parent1 Code" />
+              </Attributes>
+              <Position x="1358" y="68" />
+            </Shape>
+            <Shape Id="Parent0 Code" Expanded="false">
+              <Attributes>
+                <Attribute Id="Parent0 Code" />
+              </Attributes>
+              <Position x="1550" y="68" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2de453e2-ab68-4e24-a5da-f99aba75825e">
+    <DataSourceViewID>UASD</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="de4b6467-fcbc-40a1-a806-56a8160dcbac">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="33727682-d27b-472d-898f-147b7c8e1ade">
+      <ID>ID</ID>
+      <Name>ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8ff67c42-2856-4cb8-9c34-760702bc1a54">
+          <DataType>WChar</DataType>
+          <DataSize>32</DataSize>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8fe61522-dcd7-480b-9b7b-307d031801e7">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="264a5a40-8d0c-47a1-9610-eec83dcd367f">
+          <AttributeID>Parent7 Code</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent7 Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="58e82d3e-283d-449e-ae80-58c7b69b0961">
+          <AttributeID>Parent7 Description</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent7 Description</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="31f130a6-1fc9-45ca-89e5-e0eeaafd7747">
+      <ID>Parent0 Code</ID>
+      <Name>Parent0 Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9a4d9be4-f2eb-479d-9bda-863c6ffbbfe0">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="837e562d-d62f-4a38-8009-f3d77a8768ef">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent0_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0a55cee2-97cb-4576-a7cc-df30300088ae">
+      <ID>Parent0 Description</ID>
+      <Name>Parent0 Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="386e4c9e-6d6c-49ca-a8d5-da798d82c34a">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="39e77312-3d22-4c93-a4a7-3e1099f6ebb0">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent0_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0e5b75d7-b2f0-4d07-9f41-922b85b79220">
+      <ID>Parent1 Code</ID>
+      <Name>Parent1 Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cb296b8f-715d-45b3-81e3-916ceba09bfd">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9d47b480-c476-41a5-b6bb-734f47ea2e5d">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent1_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="43fad4db-6a75-4136-89a9-c3a25ec45746">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2d87f197-69fd-4a35-b338-c4ef2edcd9d1">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent0_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="7826021c-e27d-45d4-ad80-92aa7549b2dd">
+        <DataType>WChar</DataType>
+        <DataSize>9</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9d9e8485-0fdb-4d68-b15c-16e36b6a151c">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent1_Code</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="119a054a-0657-4175-b23f-d801cfa054c7">
+          <AttributeID>Parent0 Code</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent0 Code</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="a6ff130f-a4cf-4b11-b758-00dc0f5c669e">
+        <DataType>WChar</DataType>
+        <DataSize>9</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3676b20b-13c5-4178-8405-79862c7817c4">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent1_Code</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="509cef58-53f5-4eee-840f-15c70eea8205">
+      <ID>Parent1 Description</ID>
+      <Name>Parent1 Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a88b8644-d569-4086-9b21-4d5785f5e157">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e8979613-7b67-4b63-ad5e-333116aa9442">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent1_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="8d416a5f-3915-4069-b4f5-3e2f24236781">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cc99fb08-ed94-476f-a206-3fa096d5c722">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent0_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="cc0763db-e092-40b4-80db-7640febf1cb4">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="38076260-4629-42d3-885a-1c5e38716a6b">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent1_Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="186dd17e-46e8-44dd-8f23-138f4c6b7a0a">
+          <AttributeID>Parent0 Description</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent0 Description</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="ec1b3a17-8b39-480a-a0ed-a1ae0da20aa1">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="46bbde03-2b03-4cb9-9f30-1d2cdae77314">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent1_Description</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a006734c-0a4e-4500-b0e2-3b5e7d8fa9ca">
+      <ID>Parent2 Code</ID>
+      <Name>Parent2 Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0476d97e-b485-42f0-a333-41820c3df153">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ff71293d-b130-4d18-824c-ca6fa31d9d5d">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent2_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a8be1881-b2fb-48f1-a787-07909d1c99e7">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f7118bdc-1953-45e2-8174-25873291bf2e">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent1_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="273a7aeb-5ce4-436f-990e-035d27bcf6f0">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e555f1c2-1772-4a66-a54c-b507fd0948d0">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent0_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="57ef230a-a98b-45bc-b3a2-9a072980a1b2">
+        <DataType>WChar</DataType>
+        <DataSize>9</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a3e313e1-eeef-4e2b-868a-9368d628c264">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent2_Code</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="c914e81c-0b93-4454-864e-ac3b3e01a617">
+          <AttributeID>Parent1 Code</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent1 Code</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="618f7dbf-41a3-47da-8636-e5e711da96d2">
+        <DataType>WChar</DataType>
+        <DataSize>9</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f01168eb-4fc4-4101-acd0-228c83c3effe">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent2_Code</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4a91b1f0-8ecb-4a4b-8660-2eec00019db1">
+      <ID>Parent2 Description</ID>
+      <Name>Parent2 Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e5726b03-f06b-47e0-b8f0-f62c217e4fa2">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2bf692b0-04c6-4fd6-adf4-41e19bb48deb">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent2_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="73e4567a-9f7b-4090-aa30-9cd10571e618">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b157ecf6-a5a8-4b45-901b-10e129f05b44">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent1_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="0d9fbeb7-2710-41f0-bae7-f236edaa4535">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="efce2073-3d7d-4980-9513-cf1c69a8c636">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent0_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="84908678-6d16-4527-b276-00f35f723e9a">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7b0c81c6-fe37-4304-9afa-733f8a784775">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent2_Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9ac6b6b5-c09d-4aa0-8ca1-78a85c015489">
+          <AttributeID>Parent1 Description</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent1 Description</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="8b6616c2-eb53-420c-8da9-edcd5f7b23d9">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f0dbcfa4-9992-4c6a-acd1-a42fd4ead5fa">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent2_Description</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="78bf0e4f-82c8-4be3-b916-0919972f6b2c">
+      <ID>Parent3 Code</ID>
+      <Name>Parent3 Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2140021b-e744-4952-ab95-7a1d9e6d1437">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f4a5d3eb-aaec-40c0-8aad-ccfa71f6972f">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent3_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="117ddb9b-b906-4fe7-8607-1a912fb9a127">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="461b5fc1-0f52-4344-817d-e4d922f488b7">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent2_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="5621c03c-f10f-4cf9-abf1-4cee80c858a7">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="df3620aa-7187-4a6f-bc7a-a045eaf8c3d3">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent1_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="bfb95df4-82b1-4734-b9e1-74b5dc0495cd">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="22b53684-e497-414b-91e4-0a504e3752b5">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent0_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="2ae340c2-ec21-4128-8f4f-5481694b05af">
+        <DataType>WChar</DataType>
+        <DataSize>9</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d7dfe64c-db28-4b7a-872a-3a2058219cd8">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent3_Code</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d46746f7-369e-41ca-a4d5-5eddaae55b5c">
+          <AttributeID>Parent2 Code</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent2 Code</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="ec29662f-4d92-4d8b-b1bc-3a1640f0e4e7">
+        <DataType>WChar</DataType>
+        <DataSize>9</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fbdd031b-268f-406e-8100-de980e657725">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent3_Code</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="663a49db-e49a-4e61-8a38-3d1b3ca561f4">
+      <ID>Parent3 Description</ID>
+      <Name>Parent3 Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4dfc9a43-2fbd-4fd7-b4c6-c3841693bbd1">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d371c300-075f-4763-b284-7fc768f1788a">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent3_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="bd004ec0-17c8-4f04-b668-b8f90a2a41a1">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="47e76fce-c23d-4847-a683-d5aae5d2d080">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent2_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="f720b471-8fea-4e39-8b3d-6f81d30161f3">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee3b944c-d593-4b6e-80b5-21ce81df479e">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent1_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="58fd611d-8697-46f9-9059-455e27644a55">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b0348088-6d1c-4608-b4cc-6bb6cc8afb31">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent3_Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9345b0d7-c8ef-41ce-a546-2080a725a3c5">
+          <AttributeID>Parent2 Description</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent2 Description</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="37a5e598-3186-4cb2-adbc-22d73460bdb0">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="61d9ecd4-bfa3-48fd-880f-80b014095afc">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent3_Description</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c44aa91a-f006-4b6a-bdc0-36bbb01a72c8">
+      <ID>Parent4 Code</ID>
+      <Name>Parent4 Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a7fc913e-b091-4ed6-aa8a-bd75949c3c0b">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8a83e6bd-9d00-4748-bea0-504745d18482">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent4_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="f766a61d-821a-4a96-b784-8239ef918754">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fcc7dbc1-5969-4a2e-b938-cc666abc060e">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent3_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="1251cff0-d02b-4645-8d85-f68bcff740c8">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3ab60016-d6ba-485d-be3a-d500c665f097">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent2_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="1b0bf7d2-4413-4abe-b463-5eb1f1df953b">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bbe08f1a-2729-4caf-907b-b24fb51e241d">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent1_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="464994fc-06aa-4f7e-9320-fcb2ac626dd1">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="db359cbb-d859-49c9-97ac-7a88adc33184">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent0_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="99a547d8-8cd0-48be-b4cd-73dc87616264">
+        <DataType>WChar</DataType>
+        <DataSize>9</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="47d092f8-f5a1-406e-a426-004eacade2ad">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent4_Code</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="88f5381d-786a-418e-8dff-17f744e1d6da">
+          <AttributeID>Parent3 Code</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent3 Code</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="75334283-9a78-42ad-84de-f81124c4807b">
+        <DataType>WChar</DataType>
+        <DataSize>9</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3ce0416f-5bb9-4465-9695-210deba98b3b">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent4_Code</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8cb2a4a9-8e22-471c-bd97-685f0be58a14">
+      <ID>Parent4 Description</ID>
+      <Name>Parent4 Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c6ca662e-272a-45ad-8a05-152643a58edd">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b90a7921-248f-4f48-9258-4511c07f7679">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent4_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="32fffe56-cfff-4864-800f-c96e47dd4504">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f8c8e65f-fa75-49d1-9084-5fc8a098b7b0">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent3_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="104e0e51-7e8d-42c2-9520-af156e5d3982">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="58d5b3e4-b641-4b69-88ca-453a0cc9ac68">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent2_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="81bbc4b9-588d-4cdc-a828-ae30e98a9da5">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bacea046-075a-4237-b25c-261928b0bac5">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent1_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="1a3f43f7-db31-4f03-b719-80a215dddd67">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b4b9fbf1-4b68-4177-aeeb-d37a2aa47784">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent0_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d267ea87-97b6-472b-ac7f-fdad50345e69">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f451017b-224b-41f4-8978-4c7075bb934b">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent4_Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="b98b43d6-a761-41f8-ac5a-e849616241af">
+          <AttributeID>Parent3 Description</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent3 Description</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="e1876495-1d68-40f2-bade-3b5e289f172e">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ae0dd1d5-9a5e-4aeb-8cc5-f28365cf404e">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent4_Description</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1f3a27f2-0208-4803-8a8a-d2fe4826d1fb">
+      <ID>Parent5 Code</ID>
+      <Name>Parent5 Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2cbf24c3-1852-48d1-bc9b-0e241e6e4ad0">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3ed3d8fa-ac08-426c-94e6-035f0c100ecf">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent5_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="5e51e4c0-4823-470a-8c2c-440884c97e5b">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="026b4c53-4f66-490e-a46b-4c0f6ade2d3c">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent4_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="fabc4d4e-c54b-4799-9500-61b13b5b60aa">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c63e4265-3a93-4de9-85c9-88851068f6d0">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent3_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="593bff02-d25e-40ba-84c4-4004768d6e1d">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="04c8f388-9ccc-413d-b650-b1b9b1812aae">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent2_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="5c9f570e-1e89-4a10-a454-bbc31b3d77e4">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3936edd4-474f-48a9-9fb5-643459222ca7">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent1_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="14546e9c-34cc-4ecc-a925-5235f831b5f7">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="91b6efd9-b8f2-47ac-b6b2-d5a49eb645a4">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent0_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d989a9b9-4845-4e22-9878-dbf11f068bda">
+        <DataType>WChar</DataType>
+        <DataSize>9</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5edc27c2-db62-4785-9fb2-a51be7644a14">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent5_Code</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="8ce6fb14-22f4-413e-8a66-e37706b714d5">
+          <AttributeID>Parent4 Code</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent4 Code</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="4e3e651f-3146-42e7-ae86-481245926c2f">
+        <DataType>WChar</DataType>
+        <DataSize>9</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="bff74a6f-67ee-4294-a941-639fda44b433">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent5_Code</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="684bb113-378a-4319-a5ca-ad548145f728">
+      <ID>Parent5 Description</ID>
+      <Name>Parent5 Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="81a884c3-49a1-4b89-b265-e68f9d680ffe">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f0f5eb88-c86c-4991-b5a8-a4a37a4862b0">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent5_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="4e4e930f-af03-4e2e-a210-a6484e5d3019">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="041364b6-9142-4733-8bf5-ad646a0e1965">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent4_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a87e708b-342d-47d8-9f7a-73da3636d85c">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d5bfa1a6-530a-49f1-a0a8-ed62c5a77ca2">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent3_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2094aa2c-a835-4796-9897-63ef17da6ea6">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b16c35b-da55-45b1-bab1-6def5eea37c6">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent2_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="e19d7f41-5cbb-4dd5-b234-6eec6d2ff8ad">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d9435fb-4115-4ae3-88de-d01d39f7a7e0">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent1_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="36d240f4-cec9-4271-8357-f1f68c4aed38">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f23b491-6033-46e3-9581-71144dcd90bb">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent0_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="0cc992ba-19b5-45ee-a9cf-3ac9ff53fdde">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="06fc2d0b-9059-412b-9693-7b8f98e3d546">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent5_Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9eead9e6-e3ce-4614-b5b5-350f6c766fb0">
+          <AttributeID>Parent4 Description</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent4 Description</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="cf6324b3-89c6-48bc-860a-1a69cb269ac7">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="64a4c0e8-76a6-4bb8-9b75-f8926848328c">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent5_Description</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="28d389a6-c4ef-4673-b3a4-2a51df178271">
+      <ID>Parent6 Code</ID>
+      <Name>Parent6 Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="afac421d-d71b-4cce-be2e-aecac1cd7536">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="92e1b9bc-c8d7-4785-9f7d-c2ce8c93ed83">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent6_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="9f69e819-cd00-4e3a-8aa5-e16230e9a3c7">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="db404d57-8ff4-4de8-8f2d-cbffb2085976">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent5_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="6fbeca1b-0580-4bf8-8c16-0835ae755a83">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="46a4865c-be88-465e-a9e1-2f58dbec1fd9">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent4_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="7cf9299e-f04f-4332-b888-e16a2c7832ee">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9fa2f615-4700-40a9-a574-1b30bd3f6fff">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent3_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a3929f92-8c9a-4beb-9f7e-004880f5d3a4">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="edaf0ad9-38f1-4983-9ddd-499bfed8e1be">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent2_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="ed8a2a68-8f7f-433e-bbef-e541f3fd1936">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="181747de-77d9-437c-a7b4-1ed0bfb494db">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent1_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="d425a2ba-1a1d-4619-bc0d-1dd2bf89e56c">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab3e0651-519e-48d9-99b2-c91e9e646022">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent0_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="f9c40847-3347-452a-ba67-a0606cb90384">
+        <DataType>WChar</DataType>
+        <DataSize>9</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="11b3056a-cf59-43e0-904d-a394ab7f5b39">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent6_Code</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a8219ac7-4c7d-4246-81e5-0646b9062b63">
+          <AttributeID>Parent5 Code</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent5 Code</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="89711ca0-f2db-4b8e-b190-407386aebb39">
+        <DataType>WChar</DataType>
+        <DataSize>9</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d62acf44-d55f-4787-9b7c-105813e1fef0">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent6_Code</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="532339f3-4b78-490a-93ba-bc9f375e08c3">
+      <ID>Parent6 Description</ID>
+      <Name>Parent6 Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5696f0c9-d6e6-400b-9477-c5b950668380">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7541e6a9-7232-49f4-8fe1-d5c3a31658de">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent6_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="854b62fb-aa85-404e-85ab-95ee999f2231">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="92fdf8a7-3739-42de-898e-a791686c85fd">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent5_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="4e66aa24-ce1e-4df8-b6ed-474a84dbebc6">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="018ec803-0430-48c9-9d30-aaa09a7d60cb">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent4_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="9c8d4242-1d7c-45f2-8521-47bb65272119">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d8bb949b-72de-47f3-94a1-e97e242879e1">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent3_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a4233479-890b-4524-854b-c30bee065fb9">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="13e60572-76e3-4cbe-aec1-1dd6cba5852d">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent2_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="c1e787a0-b7bd-4bea-9e7c-5dde6a2edec5">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2c363129-61a5-4d2a-a1b2-ccd0e5c6bc6e">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent1_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a2b03167-cee6-4686-81e6-6ac7647b5e5d">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2465ec7c-b2d0-4706-abd9-5ce8e0c38527">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent0_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="4d193c5e-6544-4fe5-8501-e53e29f9e15a">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a814b51a-39fc-4dd4-9370-0eaafc00f010">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent6_Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="e2fa0628-d486-4ad4-b8cb-83a6062ad566">
+          <AttributeID>Parent5 Description</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent5 Description</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="fa46553f-f7c2-409b-a1b6-873eb1121d82">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e2ea46c5-ddbc-4622-948c-ee1285adc4aa">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent6_Description</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c0235633-2b13-4c4c-b981-b9f20e186079">
+      <ID>Parent7 Code</ID>
+      <Name>Parent7 Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2cbcc665-8f3c-4e1b-92ce-9055297e5948">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="32220cc2-e17a-4c94-9cb4-27b6df803aa7">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent7_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a323c3ec-3eac-4c58-99dd-7fdfe8e6cd04">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa98e153-7ea3-47c9-a94b-7a36c08bdbaa">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent6_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="8901c00e-044f-4a7e-be91-5c0a5563f094">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="42d5fe9f-ecc6-4b47-a24e-215bbaf55c22">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent5_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="93a1d0f4-bc2b-4c2d-8de6-e452f8f4bb57">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa356dde-9383-4620-ba2b-80ec89dce9db">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent4_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="cbd1a2d3-36fd-4905-9527-adf2e04946f5">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="df51f9f2-782a-48b2-87ba-31959948a57d">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent3_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="7dafa3e4-6ea9-4102-9827-46ba0f5b1b25">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="24aeae3a-54f8-4242-af58-70ea19438abe">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent2_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="fee420a6-2d22-454d-902f-f43d884b2830">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8a4c9012-4d30-4d1a-b561-b705e0915681">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent1_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a973bcd7-46ce-45d0-aa23-4231ac8fc4f5">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bfdf3538-8874-466a-9659-d46749819b37">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent0_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="4e5885aa-823a-4c92-b91e-f153af83c22d">
+        <DataType>WChar</DataType>
+        <DataSize>9</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="da0bf38e-af2e-4fe8-91b6-2105006054cf">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent7_Code</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="b417ad77-2f62-4e53-bb43-a9c7648ad634">
+          <AttributeID>Parent6 Code</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent6 Code</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="f62f0864-cdaa-4317-83f3-dde9ffa32979">
+        <DataType>WChar</DataType>
+        <DataSize>9</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="239c534b-6671-40ef-9a7a-8dace12cd88b">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent7_Code</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="565ca445-45f3-47d1-aa80-836a60170ce8">
+      <ID>Parent7 Description</ID>
+      <Name>Parent7 Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1c3d5fea-6871-4cf9-89ef-20d0a3155100">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7d6f1b4b-5a42-440c-9166-d1f78c71eaf4">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent7_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="754bc4da-6139-4c74-8280-a0505eafe982">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2fc315ed-daca-4d46-9e76-5980f32a0153">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent6_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="e993c088-cc01-4527-b612-019b5801440e">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cf90ed33-3541-46ba-8cc0-985ce6f1d37a">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent5_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="8a4b0f31-c079-4aef-8123-e63db74a1f42">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="91e42cfc-3dfb-4b37-8b01-d18662ecf788">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent4_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="117e4d93-6b0f-4a9b-8ab8-d0a5924add3c">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="11d3d130-c2b0-431e-a2b8-56ed07859278">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent3_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="69c3fe14-d044-4efd-9c17-9e5d5d84afab">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2e3cda11-bb78-4cfe-815b-b9e955a28d7b">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent2_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="8ad8dd19-9992-49a5-aeac-10364b8d9cd1">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1c7d8483-a976-4304-9ad4-31bd3ceac128">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent1_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="773cdece-d0a3-495d-9d6d-1c0e91c55210">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="44a68f20-3e05-48fd-89c8-2761dde9ad85">
+            <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+            <ColumnID>Parent0_Description</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="61a20916-140c-4192-8ccb-8d7f10e1a87a">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="10a20be7-eebf-4263-8565-7dcf298d0184">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent7_Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1f0d527a-332d-4008-9cbf-bdfdd71b8f47">
+          <AttributeID>Parent6 Description</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent6 Description</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="dbad6d7f-5c8d-479f-860a-da8258da6ceb">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d35e5eb8-e88d-495c-a324-7f71cdde2d9d">
+          <TableID>olap_v_16-02-01_ИерархияCSKU</TableID>
+          <ColumnID>Parent7_Description</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="02209c5d-2ff2-4085-b8d2-c012e41cd360">
+      <ID>Иерархия</ID>
+      <Name>Иерархия кодов CSKU</Name>
+      <Levels>
+        <Level dwd:design-time-name="f1f31e95-f7e8-4301-a3f7-62e59e054368">
+          <ID>Parent0 Code</ID>
+          <Name>Уровень 0</Name>
+          <SourceAttributeID>Parent0 Code</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="de0812f5-0375-47ac-acc8-3e118d146c11">
+          <ID>Parent1 Code</ID>
+          <Name>Уровень 1</Name>
+          <SourceAttributeID>Parent1 Code</SourceAttributeID>
+          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
+        </Level>
+        <Level dwd:design-time-name="3a01cde9-00ff-4c11-bcb3-b1969dc3c78d">
+          <ID>Parent2 Code 1</ID>
+          <Name>Уровень 2</Name>
+          <SourceAttributeID>Parent2 Code</SourceAttributeID>
+          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
+        </Level>
+        <Level dwd:design-time-name="e0984a1f-62ce-46da-8fc3-98544c1994b0">
+          <ID>Parent3 Code</ID>
+          <Name>Уровень 3</Name>
+          <SourceAttributeID>Parent3 Code</SourceAttributeID>
+          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
+        </Level>
+        <Level dwd:design-time-name="0bf41ca9-e25f-455e-bdf3-ac02b07b5e30">
+          <ID>Parent4 Code</ID>
+          <Name>Уровень 4</Name>
+          <SourceAttributeID>Parent4 Code</SourceAttributeID>
+          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
+        </Level>
+        <Level dwd:design-time-name="e783aae8-35a1-4587-aab3-c8d1bcd6f983">
+          <ID>Parent5 Code</ID>
+          <Name>Уровень 5</Name>
+          <SourceAttributeID>Parent5 Code</SourceAttributeID>
+          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
+        </Level>
+        <Level dwd:design-time-name="60274600-8b36-4ce2-8a74-789c77ff1f3c">
+          <ID>Parent6 Code</ID>
+          <Name>Уровень 6</Name>
+          <SourceAttributeID>Parent6 Code</SourceAttributeID>
+          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
+        </Level>
+        <Level dwd:design-time-name="e3178289-a899-4a4f-9120-ac0d67fc50b1">
+          <ID>Parent7 Code</ID>
+          <Name>Уровень 7</Name>
+          <SourceAttributeID>Parent7 Code</SourceAttributeID>
+          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="b974b2f7-0833-4d9b-bd37-ea46e25c98ef">
+      <ID>Иерархия 1</ID>
+      <Name>Иерархия наименований CSKU</Name>
+      <Levels>
+        <Level dwd:design-time-name="cda83d98-66c7-482b-b93f-25ea48edb05b">
+          <ID>Parent0 Description</ID>
+          <Name>Уровень 0</Name>
+          <SourceAttributeID>Parent0 Description</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="988afa3f-1a74-4c6e-a41b-b5f9b95dd635">
+          <ID>Parent1 Description</ID>
+          <Name>Уровень 1</Name>
+          <SourceAttributeID>Parent1 Description</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="7b8150e8-cb2d-437a-b228-c20206c8ac09">
+          <ID>Parent2 Description</ID>
+          <Name>Уровень 2</Name>
+          <SourceAttributeID>Parent2 Description</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="155feba7-d46d-4c88-b313-81a9d45b465b">
+          <ID>Parent3 Description</ID>
+          <Name>Уровень 3</Name>
+          <SourceAttributeID>Parent3 Description</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="0c30b8c6-dddd-4dcf-b397-564ffbe7b897">
+          <ID>Parent4 Description</ID>
+          <Name>Уровень 4</Name>
+          <SourceAttributeID>Parent4 Description</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="896d7340-d39c-4f08-9111-05d32ce191ac">
+          <ID>Parent5 Description</ID>
+          <Name>Уровень 5</Name>
+          <SourceAttributeID>Parent5 Description</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="fbd96935-0d33-4060-84d2-9a47d250b071">
+          <ID>Parent6 Description</ID>
+          <Name>Уровень 6</Name>
+          <SourceAttributeID>Parent6 Description</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="af2f4879-b9eb-48c4-8f83-3a5653406db4">
+          <ID>Parent7 Description</ID>
+          <Name>Уровень 7</Name>
+          <SourceAttributeID>Parent7 Description</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

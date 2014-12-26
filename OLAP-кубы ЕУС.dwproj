@@ -111,6 +111,14 @@
       <Name>16-03 Бренды.dim</Name>
       <FullPath>16-03 Бренды.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>16-02 CSKU.dim</Name>
+      <FullPath>16-02 CSKU.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>16-02-01 Иерархия CSKU.dim</Name>
+      <FullPath>16-02-01 Иерархия CSKU.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
@@ -132,6 +140,10 @@
     <ProjectItem>
       <Name>Development.role</Name>
       <FullPath>Development.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Full.role</Name>
+      <FullPath>Full.role</FullPath>
     </ProjectItem>
   </Roles>
   <Configurations>
