@@ -1,18 +1,14 @@
-USE [UASD]
-GO
-
-/****** Object:  View [olap].[v_16-01-01_КлассификаторЕдиницИзмерения]    Script Date: 12.12.2014 9:06:01 ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
 
+IF OBJECT_ID('[olap].[v_16-03_Бренды]','V') IS NOT NULL
+	DROP VIEW [olap].[v_16-03_Бренды]
+GO
 
-
-
-
-ALTER VIEW [olap].[v_16-03_Бренды]
+CREATE VIEW [olap].[v_16-03_Бренды]
 AS
 
 SELECT
@@ -23,7 +19,7 @@ WHERE Родитель <> 0x00
 UNION ALL
 SELECT
 	'00000000000000000000000000000000' AS ID
-	,'Без филиала' AS Description
+	,'Без бренда' AS Description
 
 GO
 

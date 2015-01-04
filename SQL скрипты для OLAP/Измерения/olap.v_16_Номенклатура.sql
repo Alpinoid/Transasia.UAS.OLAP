@@ -1,18 +1,14 @@
-USE [UASD]
-GO
-
-/****** Object:  View [olap].[v_16_Номенклатура]    Script Date: 11.12.2014 16:49:30 ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
 
+IF OBJECT_ID('[olap].[v_16_Номенклатура]','V') IS NOT NULL
+	DROP VIEW [olap].[v_16_Номенклатура]
+GO
 
-
-
-
-ALTER VIEW [olap].[v_16_Номенклатура]
+CREATE VIEW [olap].[v_16_Номенклатура]
 AS
 
 SELECT

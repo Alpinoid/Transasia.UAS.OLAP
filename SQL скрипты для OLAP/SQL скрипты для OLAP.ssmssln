@@ -7,6 +7,8 @@ Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Измерения", "Из�
 EndProject
 Project("{54D695D8-3FC1-47A3-8D60-959ECE458279}") = "SMT.Yukon", "SMT.Yukon\SMT.Yukon.ssmsasproj", "{089A6D9E-E1AA-4D80-84A0-C2D250838A63}"
 EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Служебные скрипты", "Служебные скрипты\Служебные скрипты.ssmssqlproj", "{4D1A78DA-D5EF-4D09-A10B-9DE7566720BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Default = Default|Default
@@ -14,7 +16,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{CDF9CA07-8716-4166-B8F0-3471292403E6}.Default|Default.ActiveCfg = Default
 		{9D7A2659-F4B6-466A-827C-CCAECE419273}.Default|Default.ActiveCfg = Default
-		{44CB6EEE-0830-4480-A779-8A1FCDC6BCAD}.Default|Default.ActiveCfg = Default
+		{873856EE-3498-4906-88B4-A13B80867A6D}.Default|Default.ActiveCfg = Default
+		{4D1A78DA-D5EF-4D09-A10B-9DE7566720BC}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

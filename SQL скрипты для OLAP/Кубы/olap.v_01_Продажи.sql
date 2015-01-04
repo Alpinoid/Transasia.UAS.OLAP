@@ -1,15 +1,14 @@
-USE [UASD]
-GO
-
-/****** Object:  View [olap].[v_01_Продажи]    Script Date: 10.12.2014 17:09:02 ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
 
+IF OBJECT_ID('[olap].[v_01_Продажи]','V') IS NOT NULL
+	DROP VIEW [olap].[v_01_Продажи]
+GO
 
-ALTER VIEW [olap].[v_01_Продажи]
+CREATE VIEW [olap].[v_01_Продажи]
 AS
 
 SELECT
@@ -74,19 +73,31 @@ SELECT
 	,RegSales.СуммаНДС AS AmountVAT													-- Сумма НДС
 	,RegSales.СуммаБезСкидки AS AmountWithoutDiscount								-- Сумма без скидки
 	,RegSales.Сумма AS Amount														-- Сумма
-	,(SELECT TOP 1
-		Cost.Сумма AS Ammount
-		FROM РегистрСведений_Срезы AS Cost
+	,(	SELECT TOP 1
+			ISNULL(Cost.Сумма, 0) AS Ammount
+		FROM РегистрСведений_Срезы AS Cost					-- РегистрСведений.Срезы
 		WHERE Cost.Активность = 0x01
-		AND Cost.Номенклатура = RegSales.Номенклатура
-		AND Cost._Период <= RegSales._Период
-	ORDER BY Cost._Период DESC) * RegSales.Количество AS Cost						-- Сумма себестоимости
-FROM dbo.РегистрНакопления_Продажи AS RegSales														-- РегистрНакопления.Продажи
-LEFT JOIN dbo.Справочник_Номенклатура AS Goods ON Goods.Ссылка = RegSales.Номенклатура				-- Справочник.Номенклатура
+			AND Cost.Номенклатура = RegSales.Номенклатура
+			AND Cost._Период <= RegSales._Период
+		ORDER BY Cost._Период DESC
+	) * RegSales.Количество AS Cost						-- Сумма себестоимости
+	,(	SELECT TOP 1
+			ISNULL(Price.Цена, 0) AS InputPrice
+		FROM dbo.РегистрСведений_ЦеныНоменклатуры AS Price	-- РегистрСведений.ЦеныНоменклатуры
+		INNER JOIN dbo.Справочник_ТипыЦенНоменклатуры AS PriceType ON PriceType.Ссылка = Price.ТипЦены
+																		AND PriceType.ИмяПредопределенныхДанных = 0x9688769FCF7C991545B04E324B1591F5
+		WHERE Price.Номенклатура = RegSales.Номенклатура
+			AND Price._Период <= RegSales._Период
+		ORDER BY Price._Период DESC
+	) * RegSales.Количество AS AmountInInputPrices		-- Сумма во входных ценах
+FROM dbo.РегистрНакопления_Продажи AS RegSales																		-- РегистрНакопления.Продажи
+LEFT JOIN dbo.Справочник_Номенклатура AS Goods ON Goods.Ссылка = RegSales.Номенклатура								-- Справочник.Номенклатура
 LEFT JOIN dbo.Справочник_ЕдиницыИзмерения AS MeasuresBase ON MeasuresBase.Ссылка = Goods.БазоваяЕдиницаИзмерения	-- Справочник.ЕдиницыИзмерения
-
 WHERE RegSales.Активность = 0x01
+AND RegSales._Период >= '2014-09-01'
 
 GO
+
+
 
 

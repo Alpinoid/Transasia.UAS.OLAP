@@ -1,18 +1,14 @@
-USE [UASD]
-GO
-
-/****** Object:  View [olap].[v_16-01_ЕдиницыИзмерения]    Script Date: 11.12.2014 17:05:25 ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
 
+IF OBJECT_ID('[olap].[v_16-01_ЕдиницыИзмерения]','V') IS NOT NULL
+	DROP VIEW [olap].[v_16-01_ЕдиницыИзмерения]
+GO
 
-
-
-
-ALTER VIEW [olap].[v_16-01_ЕдиницыИзмерения]
+CREATE VIEW [olap].[v_16-01_ЕдиницыИзмерения]
 AS
 
 SELECT

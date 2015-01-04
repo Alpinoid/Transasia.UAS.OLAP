@@ -1,4 +1,4 @@
-USE [UASD]
+USE [uas_central]
 GO
 
 /****** Object:  Table [olap].[Calendar]    Script Date: 10.12.2014 17:19:05 ******/
