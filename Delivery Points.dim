@@ -1,0 +1,361 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bdf6b133-cc07-4924-b14f-304d489e7ff4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>t Delivery Points</ID>
+  <Name>Delivery Points</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3552" scrolltop="-5610" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10425" y="12171" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_DeliveryPoints" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3281" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000d10c00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_t_DeliveryPoints" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3552</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5610</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="161">
+            <Shape Id="ID" Expanded="false">
+              <Attributes>
+                <Attribute Id="ID" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Description Code" Expanded="false">
+              <Attributes>
+                <Attribute Id="Description Code" />
+              </Attributes>
+              <Position x="226" y="20" />
+            </Shape>
+            <Shape Id="Branch" Expanded="false">
+              <Attributes>
+                <Attribute Id="Branch" />
+              </Attributes>
+              <Position x="432" y="20" />
+            </Shape>
+            <Shape Id="Code Description" Expanded="false">
+              <Attributes>
+                <Attribute Id="Code Description" />
+              </Attributes>
+              <Position x="226" y="68" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="0bd4184e-e9a8-49e7-9a59-c8a60fff6f99">
+    <DataSourceViewID>Reporting Database</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="94aac824-d61d-4652-a63e-dacf82fa8d20">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <DimensionPermissions>
+    <DimensionPermission dwd:design-time-name="e553931a-97f8-48b5-9d28-54143ca49b24">
+      <ID>DimensionPermission</ID>
+      <Name>DimensionPermission</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 2</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="3df18e5c-638c-47f1-9d8c-e0c490c269a4">
+      <ID>DimensionPermission 1</ID>
+      <Name>DimensionPermission 1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>PG_Full</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="04081ea8-f577-41f4-9ead-7ae28f3b6cf4">
+      <ID>DimensionPermission 2</ID>
+      <Name>DimensionPermission 2</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>ALL_Full</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="29e1638b-5698-4994-8316-535f27d4f9c0">
+      <ID>DimensionPermission 3</ID>
+      <Name>DimensionPermission 3</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>CPG</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="272dd3d7-1fd6-4ddd-bc14-2ee04902ce4c">
+      <ID>DimensionPermission 4</ID>
+      <Name>DimensionPermission 4</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>CHM_Full</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+  </DimensionPermissions>
+  <UnknownMemberName>Без точки доставки</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="4beff3c9-e1e2-42cd-8ba2-2f819c1152c6">
+      <ID>ID</ID>
+      <Name>Точка доставки</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="51d0e0cc-bb39-4e0d-88e6-ebd3613f2e58">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f17703f-c084-4452-96e4-b3aa542082ad">
+            <TableID>dbo_t_DeliveryPoints</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="6f3067d5-8253-4a0b-bef2-38ec38185199">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4cd50909-8069-4f70-9aca-c8187a892258">
+          <TableID>dbo_t_DeliveryPoints</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="b038128c-e706-48a8-98b0-2a22bcb4898c">
+          <AttributeID>Code Description</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Код Точка доставки</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b9c6262c-96f3-49c5-af9d-1e26e0a1ddc2">
+          <AttributeID>Description Code</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Точка доставки (Код)</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="10f5724e-1bb4-4e94-9d85-451404557b31">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b67d05a0-9d30-4c64-9058-aca888f37195">
+          <TableID>dbo_t_DeliveryPoints</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2ad693ea-6aca-46ed-a0bb-a007aa47ef04">
+      <ID>Code Description</ID>
+      <Name>Код Точка доставки</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d2bcf2de-6c6c-49db-a3e1-915e80124c8b">
+          <DataType>WChar</DataType>
+          <DataSize>128</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1680c85d-67cd-4483-bcc5-76e6c28c30f5">
+            <TableID>dbo_t_DeliveryPoints</TableID>
+            <ColumnID>CodeDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="f0ca66d4-8f13-429f-b76a-f33f7039f85a">
+          <AttributeID>Branch</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Филиал</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8bb21324-c900-46ae-b587-5024825dd59d">
+      <ID>Description Code</ID>
+      <Name>Точка доставки (Код)</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ffff1204-bbee-4623-96c5-dd6229d20f49">
+          <DataType>WChar</DataType>
+          <DataSize>128</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b12c631-922c-4261-9085-bf3719827acb">
+            <TableID>dbo_t_DeliveryPoints</TableID>
+            <ColumnID>DescriptionCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="49d4afdc-8f43-48fc-9bcf-96445fdaa397">
+          <AttributeID>Branch</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Филиал</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="40b3e14e-f1f3-467b-9017-efebfb4321b7">
+      <ID>Branch</ID>
+      <Name>Филиал</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4ce52eac-2a7d-4da6-ae25-151f798e504b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4ae77aae-e49f-4d59-b485-538598fb3563">
+            <TableID>dbo_t_DeliveryPoints</TableID>
+            <ColumnID>Branch</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="e09ddcab-ff8d-4764-b272-9bcd22e341af">
+      <ID>Иерархия</ID>
+      <Name>Филиал - Точка доставки</Name>
+      <Levels>
+        <Level dwd:design-time-name="5fb0955c-88f8-4c37-94ce-d7c37ecdc3c3">
+          <ID>Филиал</ID>
+          <Name>Филиал</Name>
+          <SourceAttributeID>Branch</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="1e5487e2-1d4a-4315-ba0c-70321e1a248f">
+          <ID>Точка доставки</ID>
+          <Name>Точка доставки</Name>
+          <SourceAttributeID>ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="de689133-0d25-44e8-8278-09c5aa98ab07">
+      <ID>Иерархия 1</ID>
+      <Name>Филиал - Код Точка доставки</Name>
+      <Levels>
+        <Level dwd:design-time-name="94ea47f0-99c7-433c-80f7-b47e7619f455">
+          <ID>Филиал</ID>
+          <Name>Филиал</Name>
+          <SourceAttributeID>Branch</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="8f0249c3-807e-4932-98c0-c5454bd3bf9d">
+          <ID>Код Точка доставки</ID>
+          <Name>Код Точка доставки</Name>
+          <SourceAttributeID>Code Description</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="298cf71c-b0d9-41a2-b17a-0ed2aa46e842">
+      <ID>Иерархия 2</ID>
+      <Name>Филиал - Точка доставки (Код)</Name>
+      <Levels>
+        <Level dwd:design-time-name="5cb09d63-36ef-4350-a90e-2c6ee1beedc8">
+          <ID>Филиал</ID>
+          <Name>Филиал</Name>
+          <SourceAttributeID>Branch</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="dbed5586-c2ac-41e9-b739-fa26137aa1ed">
+          <ID>Точка доставки (Код)</ID>
+          <Name>Точка доставки (Код)</Name>
+          <SourceAttributeID>Description Code</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="2f3741f9-f75e-4261-9011-240f68bba0ff">
+      <ID>Иерархия 3</ID>
+      <Name>Точки доставки</Name>
+      <Levels>
+        <Level dwd:design-time-name="2dee0195-13e7-4db9-9767-955b39faf9b0">
+          <ID>Точка доставки</ID>
+          <Name>Точка доставки</Name>
+          <SourceAttributeID>ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="922383c5-1559-4298-90c4-343404e2f187">
+      <ID>Иерархия 4</ID>
+      <Name>Код Точки доставки</Name>
+      <Levels>
+        <Level dwd:design-time-name="3f031746-ed56-492f-98e4-e3b87578ccb0">
+          <ID>Код Точка доставки</ID>
+          <Name>Код Точка доставки</Name>
+          <SourceAttributeID>Code Description</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="d9adc4e0-988e-4317-9ab2-b812c4db186b">
+      <ID>Иерархия 5</ID>
+      <Name>Точки доставки (Код)</Name>
+      <Levels>
+        <Level dwd:design-time-name="ab96c842-cb8c-45bc-bdab-4930e26ee529">
+          <ID>Точка доставки (Код)</ID>
+          <Name>Точка доставки (Код)</Name>
+          <SourceAttributeID>Description Code</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:StringStoresCompatibilityLevel>1100</ddl300:StringStoresCompatibilityLevel>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

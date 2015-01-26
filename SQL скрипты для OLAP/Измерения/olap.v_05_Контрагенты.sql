@@ -4,34 +4,43 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-IF OBJECT_ID('[olap].[v_05_Контрагенты]','V') IS NOT NULL
-	DROP VIEW [olap].[v_05_Контрагенты]
+IF OBJECT_ID('[olap].[v_GoodsHierarchy]','V') IS NOT NULL
+	DROP VIEW [olap].[v_GoodsHierarchy]
 GO
 
-CREATE VIEW [olap].[v_05_Контрагенты]
+CREATE VIEW [olap].[v_GoodsHierarchy]
 AS
 
 SELECT
-	CONVERT(varchar(32), Customers.Ссылка, 2) AS ID							-- ID контрагента
-	,Customers.Код AS Code													-- Код
-	,Customers.ИНН AS INN													-- ИНН
-	,Customers.Наименование AS Description									-- Наименовнаие		
-	,Customers.Код + ': ' + Customers.Наименование AS CodeDescription		-- Код: Наименовнаие
-	,Customers.Наименование + ' (' + Customers.Код + ')' AS DescriptionCode	-- Наименование (Код)
-	,Customers.ИНН + ': ' + Customers.Наименование AS INNDescription		-- ИНН: Наименование
-	,Customers.Наименование + ' (' + Customers.ИНН + ')' AS DescriptionINN	-- Наименование (ИНН)
-	,CastomerLegalAddress.Представление AS LegalAddress						-- Юридический адрес
-	,CastomerFactAddress.Представление AS FactAddress						-- Фактический адрес
-FROM dbo.Справочник_Контрагенты AS Customers																													-- Справочник.Контрагенты
-INNER JOIN dbo.Справочник_ТипыКонтрагента AS CustomerType ON CustomerType.Ссылка = Customers.ТипКонтрагента														-- Справочник.ТипыКонтрагента
-											AND CustomerType.Код = '000000003'																					-- Тип контрагента: Обычный клиент
-LEFT JOIN dbo.Справочник_Контрагенты_КонтактнаяИнформация AS CastomerLegalAddress ON CastomerLegalAddress.Владелец = Customers.Ссылка							-- Справочник.Контрагенты_КонтактнаяИнформация
-INNER JOIN dbo.Справочник_ВидыКонтактнойИнформации AS ContactTypeLegalAddress ON ContactTypeLegalAddress.Ссылка = CastomerLegalAddress.Вид						-- Справочник.ВидыКонтактнойИнформации
-																	AND ContactTypeLegalAddress.ИмяПредопределенныхДанных = 0xA581F8724C86FD9C4E1AA1B9D95035D6	-- Юридический адрес
-LEFT JOIN dbo.Справочник_Контрагенты_КонтактнаяИнформация AS CastomerFactAddress ON CastomerFactAddress.Владелец = Customers.Ссылка								-- Справочник.Контрагенты_КонтактнаяИнформация
-INNER JOIN dbo.Справочник_ВидыКонтактнойИнформации AS ContactTypeFactAddress ON ContactTypeFactAddress.Ссылка = CastomerFactAddress.Вид							-- Справочник.ВидыКонтактнойИнформации
-																	AND ContactTypeFactAddress.ИмяПредопределенныхДанных = 0x9F0111DE9B2A95ED4087A3968FFB5332	-- Фактически адрес
-WHERE Customers.Покупатель = 1		-- Покупатель
+	CASE
+		WHEN SUM(1) OVER (PARTITION BY Level0.Ссылка) = 1 THEN Level0.Ссылка
+		WHEN SUM(1) OVER (PARTITION BY Level1.Ссылка) = 1 THEN Level1.Ссылка
+		WHEN SUM(1) OVER (PARTITION BY Level2.Ссылка) = 1 THEN Level2.Ссылка
+		WHEN SUM(1) OVER (PARTITION BY Level3.Ссылка) = 1 THEN Level3.Ссылка
+		WHEN SUM(1) OVER (PARTITION BY Level4.Ссылка) = 1 THEN Level4.Ссылка
+		--WHEN SUM(1) OVER (PARTITION BY Level5.Ссылка) = 1 THEN Level5.Ссылка
+	END AS UID_1C
+	,Level0.Наименование AS Level0
+	,Level1.Наименование AS Level1
+	,Level2.Наименование AS Level2
+	,Level3.Наименование AS Level3
+	,Level4.Наименование AS Level4
+	--,Level5.Наименование AS Level5
+	--,Level6.Наименование AS Level6
+	--,Level7.Наименование AS Level7
+	--,Level8.Наименование AS Level8
+	--,Level9.Наименование AS Level9
+FROM dbo.Справочник_Номенклатура AS Level0
+LEFT JOIN dbo.Справочник_Номенклатура AS Level1 ON Level1.Родитель = Level0.Ссылка AND Level1.ЭтоГруппа = 0
+LEFT JOIN dbo.Справочник_Номенклатура AS Level2 ON Level2.Родитель = Level1.Ссылка AND Level2.ЭтоГруппа = 0
+LEFT JOIN dbo.Справочник_Номенклатура AS Level3 ON Level3.Родитель = Level2.Ссылка AND Level3.ЭтоГруппа = 0
+LEFT JOIN dbo.Справочник_Номенклатура AS Level4 ON Level4.Родитель = Level3.Ссылка AND Level4.ЭтоГруппа = 0
+--LEFT JOIN dbo.Справочник_Номенклатура AS Level5 ON Level5.Родитель = Level4.Ссылка AND Level5.ЭтоГруппа = 0
+--LEFT JOIN dbo.Справочник_Номенклатура AS Level6 ON Level6.Родитель = Level5.Ссылка AND Level6.ЭтоГруппа = 0
+--LEFT JOIN dbo.Справочник_Номенклатура AS Level7 ON Level7.Родитель = Level6.Ссылка AND Level7.ЭтоГруппа = 0
+--LEFT JOIN dbo.Справочник_Номенклатура AS Level8 ON Level8.Родитель = Level7.Ссылка AND Level8.ЭтоГруппа = 0
+--LEFT JOIN dbo.Справочник_Номенклатура AS Level9 ON Level9.Родитель = Level8.Ссылка AND Level9.ЭтоГруппа = 0
+WHERE Level0.Родитель = 0x00
 
 
 GO

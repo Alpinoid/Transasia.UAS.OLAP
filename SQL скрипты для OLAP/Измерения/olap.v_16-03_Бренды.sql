@@ -16,10 +16,10 @@ SELECT
 	,Наименование AS Description			-- Наименование
 FROM dbo.Справочник_Бренды		-- Справочник.Бренды
 WHERE Родитель <> 0x00
-UNION ALL
-SELECT
-	'00000000000000000000000000000000' AS ID
-	,'Без бренда' AS Description
+--UNION ALL
+--SELECT
+--	'00000000000000000000000000000000' AS ID
+--	,'Без бренда' AS Description
 
 GO
 

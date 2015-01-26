@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Таблицы">
+  <Items>
+    <LogicalFolder Name="Соединения" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="V-SQL8:sa">
+          <Created>2015-01-11T16:19:27.1122873+03:00</Created>
+          <Type>SQL</Type>
+          <Server>V-SQL8</Server>
+          <UserName>sa</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB>ReportingDatabase</InitialDB>
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Среда Microsoft SQL Server Management Studio - запрос</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Запросы" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="dbo.update_AllDimensionTables.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_AllDimensionTables.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_Branches.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_Branches.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_Brands.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_Brands.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_Business.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>dbo.update_Business.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_Calendar.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_Calendar.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_CreditLines.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_CreditLines.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_CSKUHierarchy.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_CSKUHierarchy.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_Customers.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>dbo.update_Customers.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_CustomersTypes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_CustomersTypes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_DeliveryPoints.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_DeliveryPoints.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_Documents.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_Documents.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_DocumentsTypes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_DocumentsTypes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_Goods.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_Goods.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_Organizations.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_Organizations.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_PaymentsTypes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_PaymentsTypes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_PriceTypes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_PriceTypes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_Routes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_Routes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_Sales.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_Sales.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_SalesDocuments.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_SalesDocuments.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_SalesDocumentsType.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_SalesDocumentsType.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_Staff.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_Staff.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_Storehouses.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_Storehouses.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_SystemsMobileTrade.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_SystemsMobileTrade.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_Teams.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_Teams.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.update_TradeChanels.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.update_TradeChanels.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.v_ReceivablesOfCustomers.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.v_ReceivablesOfCustomers.sql</FullPath>
+        </FileNode>
+        <FileNode Name="olap.v_GoodsHierarchy.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>olap.v_GoodsHierarchy.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Создание всех таблиц с индексами.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>Создание всех таблиц с индексами.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Создание таблицы t_ReceivablesOfCustomers с индексами.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>Создание таблицы t_ReceivablesOfCustomers с индексами.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Создание талицы t_Sales с индексами.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>Создание талицы t_Sales с индексами.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Разное" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>

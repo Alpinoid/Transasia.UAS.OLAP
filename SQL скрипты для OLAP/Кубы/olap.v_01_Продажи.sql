@@ -26,12 +26,13 @@ SELECT
 	,CONVERT(varchar(32), RegSales.Маршрут, 2) AS RouteID							-- ID марушрта (торгового представителя)
 	,CONVERT(varchar(32), RegSales.ТорговыйАгент, 2) AS AgentID						-- ID торгового агента (сотрудника)
 	,CONVERT(varchar(32), RegSales.ТипЦены, 2) AS TypePriceID						-- ID типа цены
-	,(	SELECT TOP 1
-			ISNULL(CONVERT(varchar(32), TradeChanel.ISISКанал, 2), '00000000000000000000000000000000')
-		FROM dbo.РегистрСведений_ПериодическиеРеквизитыТочекДоставки AS TradeChanel			-- РегистрСведений.ПериодическиеРеквизитыТочекДоставки
-		WHERE TradeChanel.ТочкаДоставки = RegSales.ТочкаДоставки
-				AND TradeChanel._Период <= RegSales._Период
-		ORDER BY TradeChanel._Период DESC) AS TradeChanelID							-- ID канала торговли
+	,ISNULL( (	SELECT TOP 1
+					CONVERT(varchar(32), TradeChanel.ISISКанал, 2)
+				FROM dbo.РегистрСведений_ПериодическиеРеквизитыТочекДоставки AS TradeChanel			-- РегистрСведений.ПериодическиеРеквизитыТочекДоставки
+				WHERE TradeChanel.ТочкаДоставки = RegSales.ТочкаДоставки
+						AND TradeChanel._Период <= RegSales._Период
+				ORDER BY TradeChanel._Период DESC)
+			, '00000000000000000000000000000000') AS TradeChanelID					-- ID канала торговли
 	,CONVERT(varchar(32), RegSales.Номенклатура, 2) AS GoodID						-- ID номенклатуры
 	,RegSales.Количество AS QuantityBase											-- Количество в базовых единицах измерения
 	,ROUND(RegSales.Количество * (
@@ -94,7 +95,7 @@ FROM dbo.РегистрНакопления_Продажи AS RegSales																		-- РегистрНакопл
 LEFT JOIN dbo.Справочник_Номенклатура AS Goods ON Goods.Ссылка = RegSales.Номенклатура								-- Справочник.Номенклатура
 LEFT JOIN dbo.Справочник_ЕдиницыИзмерения AS MeasuresBase ON MeasuresBase.Ссылка = Goods.БазоваяЕдиницаИзмерения	-- Справочник.ЕдиницыИзмерения
 WHERE RegSales.Активность = 0x01
-AND RegSales._Период >= '2014-09-01'
+	AND CAST(RegSales._Период AS date) BETWEEN '2014-12-10' AND '2014-12-10'
 
 GO
 

@@ -16,6 +16,10 @@ SELECT
 	,Element.Наименование AS Description			-- ФИО
 FROM dbo.Справочник_Сотрудники AS Element	-- Справочник.Сотрудники
 WHERE Element.ЭтоГруппа = 0x01
+--UNION ALL
+--SELECT
+--	'00000000000000000000000000000000' AS ID
+--	,'Без сотрудника' AS Description
 
 
 GO

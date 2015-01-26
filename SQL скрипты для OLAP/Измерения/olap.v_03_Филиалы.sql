@@ -25,6 +25,12 @@ SELECT
 FROM dbo.Справочник_Филиалы AS Element															-- Справочник.Филиалы
 LEFT JOIN dbo.Справочник_Филиалы AS Parent ON Parent.Ссылка = Element.Родитель					-- Справочник.Филиалы (родитель)
 										OR (Parent.Ссылка = Element.Ссылка AND Element.Родитель = 0)
+--UNION ALL
+--SELECT
+--	'00000000000000000000000000000000' AS ID
+--	,'Без филиала' AS Description
+--	,'Без филиала' ParentDescription
+--	,'Без филиала' ChildDescription
 
 
 GO

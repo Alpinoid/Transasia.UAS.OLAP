@@ -25,7 +25,14 @@ FROM dbo.Справочник_КаналыПродаж AS Element											-- Справочник.КаналыПродаж
 LEFT JOIN dbo.Справочник_КаналыПродаж AS Parent ON Parent.Ссылка = Element.Родитель	-- Справочник.КаналыПродаж (родитель)
 										OR (Parent.Ссылка = Element.Ссылка AND Element.Родитель = 0)
 WHERE Element.Родитель <> 0x00  AND Element.ПометкаУдаления = 0x00
-
+--UNION ALL
+--SELECT
+--	'00000000000000000000000000000000' AS ID
+--	,'Без группы каналов продаж' AS ParentDescription
+--	,'Без канала продаж' AS Description
+--	,'Без наименования' AS OfficialDescription
+--	,0 AS Code
+--	,0 AS ISIS
 
 GO
 

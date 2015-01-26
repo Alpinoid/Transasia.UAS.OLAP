@@ -19,6 +19,48 @@
     </LogicalFolder>
     <LogicalFolder Name="Запросы" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="dbo.getReceivablesOfCustomers.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.getReceivablesOfCustomers.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.t_Calendar.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.t_Calendar.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.t_CustomersTypes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.t_CustomersTypes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.t_DocumentsType.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.t_DocumentsType.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.t_TypesOfDebt.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.t_TypesOfDebt.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dbo.t_TypesOfDelay.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>dbo.t_TypesOfDelay.sql</FullPath>
+        </FileNode>
+        <FileNode Name="olap.PriceList.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>olap.PriceList.sql</FullPath>
+        </FileNode>
         <FileNode Name="olap.Создание всех представлений.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
@@ -30,12 +72,6 @@
           <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>olap.Тест.sql</FullPath>
-        </FileNode>
-        <FileNode Name="SQLQuery1.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
-          <AssociatedConnUserName>sa</AssociatedConnUserName>
-          <FullPath>SQLQuery1.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

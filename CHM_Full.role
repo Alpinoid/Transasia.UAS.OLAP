@@ -5,4 +5,15 @@
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <Description>Ограничения доступа:
  - Направление бизнеса = CHM</Description>
+  <Members>
+    <Member>
+      <Name>TRANSASIA\batalshikova.ms</Name>
+    </Member>
+    <Member>
+      <Name>TRANSASIA\shumilina.eu</Name>
+    </Member>
+    <Member>
+      <Name>TRANSASIA\filippova.ga</Name>
+    </Member>
+  </Members>
 </Role>

@@ -1,0 +1,478 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5a3d6630-33a0-419a-8566-473d5e2c95d7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>t Routes</ID>
+  <Name>Routes</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-767" scrolltop="-3033" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10425" y="12171" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_Teams" left="20" top="0" logicalid="6" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_t_Teams" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_SystemsMobileTrade" left="5420" top="423" logicalid="7" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_t_SystemsMobileTrade" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_Routes" left="20" top="5549" logicalid="8" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_t_Routes" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="1175" logicalid="9" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_t_Teams_t_SystemsMobileTrade]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="12" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5420" y="1574" />
+              <point x="3020" y="1574" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1121" top="2650" logicalid="10" controlid="5" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_t_Routes_t_Teams]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1520" y="3149" />
+              <point x="1520" y="5549" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-767</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3033</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="198">
+            <Shape Id="ID" Expanded="true">
+              <Attributes>
+                <Attribute Id="ID" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="t Teams - ID" Expanded="true">
+              <Attributes>
+                <Attribute Id="t Teams - ID" />
+              </Attributes>
+              <Position x="272" y="20" />
+            </Shape>
+            <Shape Id="t Systems Mobile Trade - ID" Expanded="false">
+              <Attributes>
+                <Attribute Id="t Systems Mobile Trade - ID" />
+              </Attributes>
+              <Position x="525" y="20" />
+            </Shape>
+            <Shape Id="Business" Expanded="false">
+              <Attributes>
+                <Attribute Id="Business" />
+              </Attributes>
+              <Position x="525" y="68" />
+            </Shape>
+            <Shape Id="Branch" Expanded="false">
+              <Attributes>
+                <Attribute Id="Branch" />
+              </Attributes>
+              <Position x="272" y="116" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="72fc0cf9-4c22-4e09-ae32-3e7a5c1e1934">
+    <DataSourceViewID>Reporting Database</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="fab912a5-ca7e-439e-b48f-955f0f96ebf9">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <DimensionPermissions>
+    <DimensionPermission dwd:design-time-name="14bff639-9665-43f6-922a-a692a99d6836">
+      <ID>DimensionPermission</ID>
+      <Name>DimensionPermission</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 2</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="a329bd7c-c04e-4a98-a003-ec897f1bff39">
+      <ID>DimensionPermission 1</ID>
+      <Name>DimensionPermission 1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>PG_Full</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="494f212f-2cab-4607-9f3a-56db82ebb1fd">
+      <ID>DimensionPermission 2</ID>
+      <Name>DimensionPermission 2</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>ALL_Full</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="e23af9c1-488e-4302-aacb-7e69734446eb">
+      <ID>DimensionPermission 3</ID>
+      <Name>DimensionPermission 3</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>CPG</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="0ff55304-aa78-4b35-b3a5-dc0eb19b84f7">
+      <ID>DimensionPermission 4</ID>
+      <Name>DimensionPermission 4</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>CHM_Full</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+  </DimensionPermissions>
+  <UnknownMemberName>Без маршрута</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="e83af162-1e2b-4c57-a56a-e7cb13a5aded">
+      <ID>ID</ID>
+      <Name>Маршрут</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="589ac9ce-e125-4509-aa8b-3cfe8e754e92">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="036152ea-5af3-4809-8fd5-02cc9fddb077">
+            <TableID>dbo_t_Routes</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="18ad30bd-5f58-4cd5-a0cb-8952ec5cdb8b">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="118c6416-64fb-495a-a4d8-f5f7f1309a4d">
+          <TableID>dbo_t_Routes</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="55cb278e-4895-486a-b695-00bc683b5463">
+          <AttributeID>Branch</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Филиал</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="438fb338-c10d-4dba-b56f-f3a539b0853d">
+          <AttributeID>t Teams - ID</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Команда</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="533d69d3-7a3d-46e0-937a-1e5ac0e7786b">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="93a4e5d9-6df7-4628-a88f-d748e79a301c">
+          <TableID>dbo_t_Routes</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fb3c30e4-498d-4a48-8ee7-7114f30cf9ea">
+      <ID>t Teams - ID</ID>
+      <Name>Команда</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="955bc4bd-7499-4837-96ad-aa95d44ce74a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7d2fb7de-00a6-46dd-b0d8-202a2dffa833">
+            <TableID>dbo_t_Teams</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="caf5d7d2-62bb-45fb-835b-a57029537c42">
+        <DataType>WChar</DataType>
+        <DataSize>25</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="97188d3b-19cd-4246-806a-59370ab4463b">
+          <TableID>dbo_t_Teams</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="dc75bb5a-a7e9-474a-a5bf-5df9b29343bd">
+          <AttributeID>Business</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Направление бизнеса</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a5b80c54-b81d-457f-9dab-e227c1aebf64">
+          <AttributeID>t Systems Mobile Trade - ID</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Система мобильных продаж</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="04a4b549-7328-421c-80ce-0534adc7c4d8">
+        <DataType>WChar</DataType>
+        <DataSize>25</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c7007ec3-3221-4669-b358-8eee84c7f338">
+          <TableID>dbo_t_Teams</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d305a280-ea29-402c-a416-589438785add">
+      <ID>t Systems Mobile Trade - ID</ID>
+      <Name>Система мобильных продаж</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6229fabd-1200-4c1c-8c45-badcc6d398db">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="16cd2899-21d2-4eb3-b3e1-addf1f218aa4">
+            <TableID>dbo_t_SystemsMobileTrade</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="f00cba17-ac60-42e3-82a6-c8b0c51d7c6e">
+        <DataType>WChar</DataType>
+        <DataSize>25</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6b73d065-f822-4e1c-b5a9-d8a64af322a2">
+          <TableID>dbo_t_SystemsMobileTrade</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="41ac6d2a-d00c-4e98-ae6c-43f10cd4e021">
+        <DataType>WChar</DataType>
+        <DataSize>25</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="616f6a76-9623-4498-8c50-3e9de2aabec8">
+          <TableID>dbo_t_SystemsMobileTrade</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2cfe92f3-fd5e-4f76-9b0d-8bcdd5938380">
+      <ID>Branch</ID>
+      <Name>Филиал</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a4bf212b-4b88-422d-8629-84885901ce41">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8b3acc2a-f280-4fd0-848c-7a84216717f4">
+            <TableID>dbo_t_Routes</TableID>
+            <ColumnID>Branch</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b438564e-9a8b-4d1b-9688-2a068559f7c6">
+      <ID>Business</ID>
+      <Name>Направление бизнеса</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="82f994a4-c34c-42e5-8003-1068d0e3cb29">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f8ebf412-af5a-4469-8b78-1f86ddf98da4">
+            <TableID>dbo_t_Teams</TableID>
+            <ColumnID>Business</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="9aee1689-82d3-441f-8d80-524473848bbc">
+      <ID>Иерархия</ID>
+      <Name>Маршруты</Name>
+      <Levels>
+        <Level dwd:design-time-name="25581505-2284-451c-b375-2795d026d771">
+          <ID>Маршрут</ID>
+          <Name>Маршрут</Name>
+          <SourceAttributeID>ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="1cf877de-fdb5-4abb-9c10-1ce333e961f3">
+      <ID>Иерархия 1</ID>
+      <Name>Филиал - Маршрут</Name>
+      <Levels>
+        <Level dwd:design-time-name="08c1812e-de63-4d1c-9730-c2cbdcbc207b">
+          <ID>Филиал</ID>
+          <Name>Филиал</Name>
+          <SourceAttributeID>Branch</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="4b0adb37-fb19-422d-9454-cb2868424b98">
+          <ID>Маршрут</ID>
+          <Name>Маршрут</Name>
+          <SourceAttributeID>ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="290a2e1d-4933-41dc-ab08-c0038cf91c10">
+      <ID>Иерархия 2</ID>
+      <Name>Команды</Name>
+      <Levels>
+        <Level dwd:design-time-name="e99fd9f2-5664-489c-8c9c-5abb15b941a2">
+          <ID>Команда</ID>
+          <Name>Команда</Name>
+          <SourceAttributeID>t Teams - ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="48deab3d-8c9d-4954-a205-bf01f984355e">
+      <ID>Иерархия 3</ID>
+      <Name>Направление бизнеса - Команда</Name>
+      <Levels>
+        <Level dwd:design-time-name="3972dc2b-5649-4fc2-9a53-1015c0615157">
+          <ID>Направление бизнеса</ID>
+          <Name>Направление бизнеса</Name>
+          <SourceAttributeID>Business</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="01e26e9f-7565-4791-9d0d-f53a78918157">
+          <ID>Команда</ID>
+          <Name>Команда</Name>
+          <SourceAttributeID>t Teams - ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="6b965c5b-a365-42b4-819d-8df5c35ec02e">
+      <ID>Иерархия 4</ID>
+      <Name>СМП - Маршрут - Команда</Name>
+      <Levels>
+        <Level dwd:design-time-name="7c57a7b6-3c8e-4890-b640-b7db6484445a">
+          <ID>Система мобильных продаж</ID>
+          <Name>Система мобильных продаж</Name>
+          <SourceAttributeID>t Systems Mobile Trade - ID</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2cbab751-386a-4386-81f1-65d6c46846a7">
+          <ID>Команда</ID>
+          <Name>Команда</Name>
+          <SourceAttributeID>t Teams - ID</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c445d04a-5a0a-4d08-a59b-d3bd3866bcb9">
+          <ID>Маршрут</ID>
+          <Name>Маршрут</Name>
+          <SourceAttributeID>ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="700b5945-11d2-4c27-85d9-385128ced391">
+      <ID>Иерархия 5</ID>
+      <Name>Системы мобильных продаж</Name>
+      <Levels>
+        <Level dwd:design-time-name="08e01399-066c-4256-9deb-686fee6200b3">
+          <ID>Система мобильных продаж</ID>
+          <Name>Система мобильных продаж</Name>
+          <SourceAttributeID>t Systems Mobile Trade - ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:StringStoresCompatibilityLevel>1100</ddl300:StringStoresCompatibilityLevel>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

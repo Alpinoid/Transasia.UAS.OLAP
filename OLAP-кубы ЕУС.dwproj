@@ -8,142 +8,126 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>Продажи.cube</Name>
-      <FullPath>Продажи.cube</FullPath>
+      <Name>Продажи Трансазии.cube</Name>
+      <FullPath>Продажи Трансазии.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>Продажи.partitions</Name>
-          <FullPath>Продажи.partitions</FullPath>
+          <Name>Продажи Трансазии.partitions</Name>
+          <FullPath>Продажи Трансазии.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>01 Даты.dim</Name>
-      <FullPath>01 Даты.dim</FullPath>
+      <Name>Branches.dim</Name>
+      <FullPath>Branches.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>02 Направления бизнеса.dim</Name>
-      <FullPath>02 Направления бизнеса.dim</FullPath>
+      <Name>Business.dim</Name>
+      <FullPath>Business.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>03 Филиалы.dim</Name>
-      <FullPath>03 Филиалы.dim</FullPath>
+      <Name>Calendar.dim</Name>
+      <FullPath>Calendar.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>04 Организации.dim</Name>
-      <FullPath>04 Организации.dim</FullPath>
+      <Name>Credit Lines.dim</Name>
+      <FullPath>Credit Lines.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>05 Контрагенты.dim</Name>
-      <FullPath>05 Контрагенты.dim</FullPath>
+      <Name>Customers.dim</Name>
+      <FullPath>Customers.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>06 Точки доставки.dim</Name>
-      <FullPath>06 Точки доставки.dim</FullPath>
+      <Name>Delivery Points.dim</Name>
+      <FullPath>Delivery Points.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>07 Маршруты.dim</Name>
-      <FullPath>07 Маршруты.dim</FullPath>
+      <Name>Documents.dim</Name>
+      <FullPath>Documents.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>07-01 Команды торговых агентов.dim</Name>
-      <FullPath>07-01 Команды торговых агентов.dim</FullPath>
+      <Name>Organizations.dim</Name>
+      <FullPath>Organizations.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>07-01-01 Системы мобильных продаж.dim</Name>
-      <FullPath>07-01-01 Системы Мобильных Продаж.dim</FullPath>
+      <Name>Price Types.dim</Name>
+      <FullPath>Price Types.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>08 Кредитные направления.dim</Name>
-      <FullPath>08 Кредитные направления.dim</FullPath>
+      <Name>Routes.dim</Name>
+      <FullPath>Routes.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>09 Склады.dim</Name>
-      <FullPath>09 Склады.dim</FullPath>
+      <Name>Sales Documents.dim</Name>
+      <FullPath>Sales Documents.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>10 Типы цен номенклатуры.dim</Name>
-      <FullPath>10 Типы цен номенклатуры.dim</FullPath>
+      <Name>Staff.dim</Name>
+      <FullPath>Staff.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>11 Сотрудники.dim</Name>
-      <FullPath>11 Сотрудники.dim</FullPath>
+      <Name>Storehouses.dim</Name>
+      <FullPath>Storehouses.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>12 Виды операций.dim</Name>
-      <FullPath>12 Виды Операций.dim</FullPath>
+      <Name>Goods.dim</Name>
+      <FullPath>Goods.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>13 Документы Реализация товаров.dim</Name>
-      <FullPath>13 Документы Реализация товаров.dim</FullPath>
+      <Name>Trade Chanels.dim</Name>
+      <FullPath>Trade Chanels.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>13-01 Типы документов.dim</Name>
-      <FullPath>13-01 Типы Документов.dim</FullPath>
+      <Name>Transactions Type.dim</Name>
+      <FullPath>Transactions Type.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>13-02 Способы оплаты.dim</Name>
-      <FullPath>13-02 Способы оплаты.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>14 Документы.dim</Name>
-      <FullPath>14 Документы.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>15 Каналы продаж.dim</Name>
-      <FullPath>15 Каналы продаж.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>16 Номенклатура.dim</Name>
-      <FullPath>16 Номенклатура.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>16-01 Единицы измерения.dim</Name>
-      <FullPath>16-01 Единицы Измерения.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>16-01-01 Классификатор единиц измерения.dim</Name>
-      <FullPath>16-01-01 Классификатор единиц измерения.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>16-03 Бренды.dim</Name>
-      <FullPath>16-03 Бренды.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>16-02 CSKU.dim</Name>
-      <FullPath>16-02 CSKU.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>16-02-01 Иерархия CSKU.dim</Name>
-      <FullPath>16-02-01 Иерархия CSKU.dim</FullPath>
+      <Name>Initiatives Types.dim</Name>
+      <FullPath>Initiatives Types.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
-      <Name>UASD.ds</Name>
-      <FullPath>UASD.ds</FullPath>
+      <Name>Reporting Database.ds</Name>
+      <FullPath>Reporting Database.ds</FullPath>
     </ProjectItem>
   </DataSources>
   <DataSourceViews>
     <ProjectItem>
-      <Name>UASD.dsv</Name>
-      <FullPath>UASD.dsv</FullPath>
+      <Name>Reporting Database.dsv</Name>
+      <FullPath>Reporting Database.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Roles>
     <ProjectItem>
-      <Name>FOOD.role</Name>
-      <FullPath>FOOD.role</FullPath>
+      <Name>FOOD_Full.role</Name>
+      <FullPath>FOOD_Full.role</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Development.role</Name>
       <FullPath>Development.role</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Full.role</Name>
-      <FullPath>Full.role</FullPath>
+      <Name>All_Administration.role</Name>
+      <FullPath>All_Administration.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CPG_Full.role</Name>
+      <FullPath>CPG_Full.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CHM_Full.role</Name>
+      <FullPath>CHM_Full.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>PG_Full.role</Name>
+      <FullPath>PG_Full.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ALL_Full.role</Name>
+      <FullPath>ALL_Full.role</FullPath>
     </ProjectItem>
   </Roles>
   <Configurations>
@@ -152,15 +136,15 @@
       <Options>
         <ConnectionMappings>
           <ConfigurationSetting>
-            <Id>UASD</Id>
-            <Name>UASD</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=V-SQL8;Persist Security Info=True;Password=;User ID=;Initial Catalog=UASD</Value>
+            <Id>Reporting Database</Id>
+            <Name>Reporting Database</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=V-SQL8;Persist Security Info=True;Password=;User ID=;Initial Catalog=ReportingDatabase</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
           <ConfigurationSetting>
-            <Id>UASD</Id>
-            <Name>UASD</Name>
+            <Id>Reporting Database</Id>
+            <Name>Reporting Database</Name>
             <Value xsi:type="xsd:int">1</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>

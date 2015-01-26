@@ -5,4 +5,21 @@
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <Description>Ограничения доступа:
  - Направление бизнеса = CPG</Description>
+  <Members>
+    <Member>
+      <Name>TRANSASIA\Mikirtichev</Name>
+    </Member>
+    <Member>
+      <Name>TRANSASIA\panuli.ak</Name>
+    </Member>
+    <Member>
+      <Name>TRANSASIA\sokolov.ra</Name>
+    </Member>
+    <Member>
+      <Name>TRANSASIA\matsenko.sn</Name>
+    </Member>
+    <Member>
+      <Name>TRANSASIA\badalova.sk</Name>
+    </Member>
+  </Members>
 </Role>

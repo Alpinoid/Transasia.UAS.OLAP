@@ -18,8 +18,16 @@ SELECT
 	,ISNULL(Branches.Наименование, 'Без филиала') AS Branch
 FROM dbo.Справочник_Маршруты AS Element												-- Справочник.Маршруты
 LEFT JOIN  dbo.Справочник_Филиалы AS Branches ON Branches.Ссылка = Element.Филиал	-- Справочник.Филиалы
-WHERE Element.ЭтоГруппа = 0x01
+--WHERE Element.ЭтоГруппа = 0x01
+--UNION ALL
+--SELECT
+--	'00000000000000000000000000000000' AS ID
+--	,'00000000000000000000000000000000' AS TeamID
+--	,'Без маршрута' AS Description
+--	,'Без филиала' AS Branch
+
 
 GO
+
 
 

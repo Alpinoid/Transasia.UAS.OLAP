@@ -25,16 +25,28 @@
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>olap.v_01_Продажи.sql</FullPath>
         </FileNode>
-        <FileNode Name="olap.v_02_ЦеныНоменклатуры.sql">
+        <FileNode Name="olap.v_02_ЦеныНоменклатуры_CHM.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
-          <FullPath>olap.v_02_ЦеныНоменклатуры.sql</FullPath>
+          <FullPath>olap.v_02_ЦеныНоменклатуры_CHM.sql</FullPath>
+        </FileNode>
+        <FileNode Name="olap.v_02_ЦеныНоменклатуры_CPG.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>olap.v_02_ЦеныНоменклатуры_CPG.sql</FullPath>
         </FileNode>
         <FileNode Name="olap.v_03_ДебиторскаяЗадолженность.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
-          <AssociatedConnUserName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>olap.v_03_ДебиторскаяЗадолженность.sql</FullPath>
+        </FileNode>
+        <FileNode Name="olap.v_03_ДебиторскаяЗадолженность.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>olap.v_03_ДебиторскаяЗадолженность.sql</FullPath>
         </FileNode>
       </Items>

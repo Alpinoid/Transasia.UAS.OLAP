@@ -3,6 +3,18 @@
   <Items>
     <LogicalFolder Name="Соединения" Type="2" Sorted="true">
       <Items>
+        <ConnectionNode Name="V-CUBE:sa">
+          <Created>2015-01-11T16:25:29.5677693+03:00</Created>
+          <Type>SQL</Type>
+          <Server>V-CUBE</Server>
+          <UserName>sa</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Среда Microsoft SQL Server Management Studio - запрос</ApplicationName>
+        </ConnectionNode>
         <ConnectionNode Name="V-SQL8:sa">
           <Created>2014-12-16T11:30:16.1595209+03:00</Created>
           <Type>SQL</Type>
@@ -19,18 +31,6 @@
     </LogicalFolder>
     <LogicalFolder Name="Запросы" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="olap.p_LoadingCalendarTable.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
-          <AssociatedConnUserName>sa</AssociatedConnUserName>
-          <FullPath>olap.p_LoadingCalendarTable.sql</FullPath>
-        </FileNode>
-        <FileNode Name="olap.t_Calendar.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
-          <AssociatedConnUserName>sa</AssociatedConnUserName>
-          <FullPath>olap.t_Calendar.sql</FullPath>
-        </FileNode>
         <FileNode Name="olap.v_02_НаправленияБизнеса.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
@@ -44,16 +44,16 @@
           <FullPath>olap.v_03_Филиалы.sql</FullPath>
         </FileNode>
         <FileNode Name="olap.v_04_Организации.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-CUBE:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-CUBE</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>olap.v_04_Организации.sql</FullPath>
         </FileNode>
-        <FileNode Name="olap.v_05_Контрагенты.sql">
+        <FileNode Name="olap.v_05-01_ТипыКонтрагентов.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
-          <FullPath>olap.v_05_Контрагенты.sql</FullPath>
+          <FullPath>olap.v_05-01_ТипыКонтрагентов.sql</FullPath>
         </FileNode>
         <FileNode Name="olap.v_06_ТочкиДоставки.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
@@ -85,6 +85,12 @@
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>olap.v_08_КредитныеНаправления.sql</FullPath>
         </FileNode>
+        <FileNode Name="olap.v_08-01_ТипыКредитныхНаправлений.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>olap.v_08-01_ТипыКредитныхНаправлений.sql</FullPath>
+        </FileNode>
         <FileNode Name="olap.v_09_Склады.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
@@ -104,8 +110,8 @@
           <FullPath>olap.v_11_Сотрудники.sql</FullPath>
         </FileNode>
         <FileNode Name="olap.v_12_ВидыОпераций.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-CUBE:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>V-CUBE</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>olap.v_12_ВидыОпераций.sql</FullPath>
         </FileNode>
@@ -175,23 +181,17 @@
           <AssociatedConnUserName>sa</AssociatedConnUserName>
           <FullPath>olap.v_16-03_Бренды.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery1.sql">
+        <FileNode Name="olap.v_20_ДокументыВзаиморасчетов.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
-          <FullPath>SQLQuery1.sql</FullPath>
+          <FullPath>olap.v_20_ДокументыВзаиморасчетов.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery2.sql">
+        <FileNode Name="olap.v_21_ВидыДолга.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
           <AssociatedConnUserName>sa</AssociatedConnUserName>
-          <FullPath>SQLQuery2.sql</FullPath>
-        </FileNode>
-        <FileNode Name="SQLQuery3.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:V-SQL8:False:sa</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>V-SQL8</AssociatedConnSrvName>
-          <AssociatedConnUserName>sa</AssociatedConnUserName>
-          <FullPath>SQLQuery3.sql</FullPath>
+          <FullPath>olap.v_21_ВидыДолга.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
