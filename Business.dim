@@ -183,6 +183,7 @@
       <ID>ID</ID>
       <Name>Направление бизнеса</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>4</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="02fc1c7d-2bb4-4270-8f25-ef8ee36f7254">
           <DataType>Integer</DataType>

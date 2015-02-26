@@ -1,0 +1,256 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a12928e9-0626-4a38-9b4f-c014d837176c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>CSKU</ID>
+  <Name>CSKU</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="5" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3990" scrolltop="-9289" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10319" y="21696" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_CSKU" left="20" top="0" logicalid="3" controlid="1" masterid="0" hint1="0" hint2="0" width="3281" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000d10c000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_t_CSKU" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-1280" top="-1300" logicalid="4" controlid="2" masterid="0" hint1="0" hint2="0" width="2690" height="2809" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_t_CSKU_t_CSKU]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="1" sourceattachpoint="12" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="20" y="1109" />
+              <point x="-980" y="1109" />
+              <point x="-980" y="-1000" />
+              <point x="1110" y="-1000" />
+              <point x="1110" y="0" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3990</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-9289</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e3f3124d-7f06-4acb-a76e-2f2585967dc1">
+    <DataSourceViewID>Reporting Database</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="7bb7cedd-e05d-43ef-930a-1a931982e6fb">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="295dbe8f-1a55-4801-96ee-4253ff5b658e">
+      <ID>ID</ID>
+      <Name>ID</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>18799</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="319f2fa4-4c6d-4a3c-b7e6-7265d4963805">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1cf03a79-13b7-455b-b4c0-8401675082f9">
+            <TableID>dbo_t_CSKU</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="c81dd89b-ad9e-45da-b357-f3023c4e635e">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9b0f4872-5b0b-4c81-991e-b4712531abd5">
+          <TableID>dbo_t_CSKU</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="cd5f9ecf-48e3-4760-aaf9-4623e3ddda1e">
+          <AttributeID>Parent ID</AttributeID>
+          <Name>CSKU</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0a8def7b-552c-4fc1-a9e6-0a7e5d037910">
+          <AttributeID>Code</AttributeID>
+          <Name>Код</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2a56bd3c-ea56-421b-9b4f-35a53c0c1541">
+          <AttributeID>Description</AttributeID>
+          <Name>Наименование</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="99c13845-7ce4-4f8f-a7fa-6bd8d1a7a7d5">
+          <AttributeID>Code Description</AttributeID>
+          <Name>Код Наименование</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="47f19099-af60-4b48-9ce2-c8d4c430f178">
+          <AttributeID>Description Code</AttributeID>
+          <Name>Наименование Код</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2787a05b-461a-41c9-a89d-29b04dbbafa7">
+          <AttributeID>ID 1</AttributeID>
+          <Name>CSKU Surrogate Key</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b3d3a1fb-a70a-4321-bb44-18b844ef8980">
+      <ID>Parent ID</ID>
+      <Name>CSKU</Name>
+      <Usage>Parent</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="41091865-ab94-4c7f-b69f-60a3de838239">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b6722d7a-dd18-4ecb-bb41-350495acca77">
+            <TableID>dbo_t_CSKU</TableID>
+            <ColumnID>ParentID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <MembersWithData>NonLeafDataHidden</MembersWithData>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4ec174d9-bf9e-471c-b708-af3950b09d62">
+      <ID>Code</ID>
+      <Name>Код</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3d0a13cc-ea74-444f-a17d-88517b39a216">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1a574b90-5cc5-4258-9afd-4866667b5195">
+            <TableID>dbo_t_CSKU</TableID>
+            <ColumnID>Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5191ed0b-1beb-4c48-8d97-79756f0bd5fa">
+      <ID>Description</ID>
+      <Name>Наименование</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c287aa30-3d39-4849-9f26-a6769924df14">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="217726a0-f4e6-4fb2-ba46-e47c13bbfac2">
+            <TableID>dbo_t_CSKU</TableID>
+            <ColumnID>Description</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="93ecdb6a-c6e4-4ce9-acc4-156b6f233f3a">
+      <ID>Code Description</ID>
+      <Name>Код Наименование</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c430a315-e424-4cd1-a366-718ee8c24414">
+          <DataType>WChar</DataType>
+          <DataSize>128</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="11257b39-46f0-4eab-8550-1fd8456cfcd6">
+            <TableID>dbo_t_CSKU</TableID>
+            <ColumnID>CodeDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="baa36820-d91d-41d2-8997-fc76635253b5">
+      <ID>Description Code</ID>
+      <Name>Наименование Код</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7513b1b3-e331-4dff-8d62-334d5bdaf273">
+          <DataType>WChar</DataType>
+          <DataSize>128</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8962c69d-3041-416a-9d06-6df845327141">
+            <TableID>dbo_t_CSKU</TableID>
+            <ColumnID>DescriptionCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0adb55d2-abca-4eee-94a2-0d5e104d4287">
+      <ID>ID 1</ID>
+      <Name>CSKU Surrogate Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="67c1ae21-e429-4d99-b6f2-6479f8a044cd">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d8ee025e-b022-4069-bc5a-8bd01b4300f7">
+            <TableID>dbo_t_CSKU</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:StringStoresCompatibilityLevel>1100</ddl300:StringStoresCompatibilityLevel>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

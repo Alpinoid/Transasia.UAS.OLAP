@@ -7,13 +7,7 @@
  - Направление бизнеса = All</Description>
   <Members>
     <Member>
-      <Name>TRANSASIA\litvinenko.si</Name>
-    </Member>
-    <Member>
-      <Name>TRANSASIA\cherkashin.sn</Name>
-    </Member>
-    <Member>
-      <Name>TRANSASIA\suvorov.vm</Name>
+      <Name>TRANSASIA\OLAP_ALL</Name>
     </Member>
   </Members>
 </Role>

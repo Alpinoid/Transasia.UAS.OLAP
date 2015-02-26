@@ -8,5 +8,8 @@
     <Member>
       <Name>TRANSASIA\gavrish</Name>
     </Member>
+    <Member>
+      <Name>TRANSASIA\sqlserver</Name>
+    </Member>
   </Members>
 </Role>

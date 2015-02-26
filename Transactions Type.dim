@@ -146,6 +146,7 @@
       <ID>ID</ID>
       <Name>Вид операции</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>13</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="93fed2fe-f34d-4b21-af14-bb8ed887e36a">
           <DataType>Integer</DataType>

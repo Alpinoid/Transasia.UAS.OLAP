@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3692" scrolltop="-6456" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10425" y="12171" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3692" scrolltop="-6456" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10504" y="21696" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -73,6 +73,7 @@
             <Shape Id="ID" Expanded="true">
               <Attributes>
                 <Attribute Id="ID" />
+                <Attribute Id="Position" />
               </Attributes>
               <Position x="20" y="20" />
             </Shape>
@@ -146,6 +147,7 @@
       <ID>ID</ID>
       <Name>Сотрудник</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>1439</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="df79dcdc-a8b5-4b64-8990-ca326060fdec">
           <DataType>Integer</DataType>
@@ -164,6 +166,13 @@
           <ColumnID>Description</ColumnID>
         </Source>
       </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9f327e10-a70a-4db7-b9fb-d01146e14731">
+          <AttributeID>Position</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Должность</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ValueColumn dwd:design-time-name="7a1dad30-4acb-4c22-aeae-333c8062477b">
         <DataType>WChar</DataType>
@@ -173,10 +182,40 @@
           <ColumnID>Description</ColumnID>
         </Source>
       </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c08b81ed-7198-4a47-a9e8-a6802d013dde">
+      <ID>Position</ID>
+      <Name>Должность</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="280e37b8-c6c9-4847-872a-e799d07d2ced">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c4f60df2-980e-4861-9e6a-f73020f363be">
+            <TableID>dbo_t_Staff</TableID>
+            <ColumnID>Position</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="26281e2f-218f-44b7-98d4-05d66def9d00">
+      <ID>Иерархия</ID>
+      <Name>Сотрудники</Name>
+      <Levels>
+        <Level dwd:design-time-name="8316942e-5eb0-4a4b-983e-42b0534e737a">
+          <ID>Сотрудник</ID>
+          <Name>Сотрудник</Name>
+          <SourceAttributeID>ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
   <ddl300:StringStoresCompatibilityLevel>1100</ddl300:StringStoresCompatibilityLevel>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

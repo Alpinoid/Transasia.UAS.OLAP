@@ -84,6 +84,7 @@
       <ID>ID</ID>
       <Name>Статус товара</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>4</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="4e4af8fb-0c33-4c3a-9c56-ac0349e97beb">
           <DataType>Integer</DataType>

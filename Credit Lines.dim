@@ -152,6 +152,7 @@
       <ID>ID</ID>
       <Name>Кредитное направление</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>120</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="41c6c093-3ca0-4435-aa46-139f650b20e3">
           <DataType>Integer</DataType>
@@ -193,6 +194,7 @@
     <Attribute dwd:design-time-name="b7168d15-7ec4-4eb7-8c6f-e4399b6a9df1">
       <ID>Business</ID>
       <Name>Направление бизнеса</Name>
+      <EstimatedCount>4</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="5d69cc62-f587-4047-ac79-71c2645a9f0c">
           <DataType>WChar</DataType>

@@ -1,5 +1,5 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="20430446-d88b-42e3-a685-0f2fcf5cd1b9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
-  <ID>t Goods</ID>
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="48497c55-9674-4aff-9f74-e8bd345030ae" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Goods</ID>
   <Name>Goods</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6" scrolltop="-4998" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="97" x="10425" y="13891" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="14" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1256" scrolltop="-7134" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="92" x="10319" y="21696" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -19,18 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_Goods" left="6177" top="2" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4075" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-            <control>
-              <ddsxmlobjectstreaminitwrapper binary="000a0000eb0f000088130000" />
-            </control>
-            <layoutobject>
-              <ddsxmlobj>
-                <property name="LogicalObject" value="dbo_t_Goods" vartype="8" />
-              </ddsxmlobj>
-            </layoutobject>
-            <shape groupshapeid="0" groupnode="0" />
-          </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_Brands" left="6714" top="7402" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_Brands" left="6495" top="1349" logicalid="7" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000b80b0000fe080000" />
             </control>
@@ -41,49 +30,29 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_CSKUElements" left="496" top="2855" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3281" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_Business" left="557" top="7400" logicalid="8" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
-              <ddsxmlobjectstreaminitwrapper binary="000a0000d10c00009b0f0000" />
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b80b0000a50a0000" />
             </control>
             <layoutobject>
               <ddsxmlobj>
-                <property name="LogicalObject" value="dbo_t_CSKUElements" vartype="8" />
+                <property name="LogicalObject" value="dbo_t_Business" vartype="8" />
               </ddsxmlobj>
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_CSKUHierarchy" left="20" top="9250" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3757" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_Goods" left="20" top="0" logicalid="9" controlid="3" masterid="0" hint1="0" hint2="0" width="4075" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
-              <ddsxmlobjectstreaminitwrapper binary="000a0000ad0e000088130000" />
+              <ddsxmlobjectstreaminitwrapper binary="000a0000eb0f000088130000" />
             </control>
             <layoutobject>
               <ddsxmlobj>
-                <property name="LogicalObject" value="dbo_t_CSKUHierarchy" vartype="8" />
+                <property name="LogicalObject" value="dbo_t_Goods" vartype="8" />
               </ddsxmlobj>
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="3477" top="2202" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="3050" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-            <control>
-              <ddsxmlobj>
-                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
-              </ddsxmlobj>
-            </control>
-            <layoutobject>
-              <ddsxmlobj>
-                <property name="LogicalObject" value="dataSet.Relations[FK_t_Goods_t_CSKUElements]" vartype="8" />
-                <property name="Virtual" value="0" vartype="11" />
-                <property name="VisibleAP" value="0" vartype="3" />
-              </ddsxmlobj>
-            </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="17" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="3777" y="4852" />
-              <point x="4977" y="4852" />
-              <point x="4977" y="2502" />
-              <point x="6177" y="2502" />
-            </connector>
-          </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="7815" top="4702" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3795" top="2101" logicalid="10" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -96,12 +65,12 @@
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="4" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="8214" y="7402" />
-              <point x="8214" y="5002" />
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="12" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6495" y="2500" />
+              <point x="4095" y="2500" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="1499" top="6550" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="937" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1658" top="4700" logicalid="11" controlid="5" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -109,16 +78,35 @@
             </control>
             <layoutobject>
               <ddsxmlobj>
-                <property name="LogicalObject" value="dataSet.Relations[FK_t_CSKUElements_t_CSKUHierarchy]" vartype="8" />
+                <property name="LogicalObject" value="dataSet.Relations[FK_t_Goods_t_Business]" vartype="8" />
                 <property name="Virtual" value="0" vartype="11" />
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="3" sourceattachpoint="6" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="1898" y="9250" />
-              <point x="1898" y="8050" />
-              <point x="2136" y="8050" />
-              <point x="2136" y="6850" />
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="3" sourceattachpoint="4" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2057" y="7400" />
+              <point x="2057" y="5000" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-1280" top="-1300" logicalid="12" controlid="6" masterid="0" hint1="0" hint2="0" width="2537" height="2550" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_t_Goods_t_Goods]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="3" sourceattachpoint="16" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="20" y="850" />
+              <point x="-980" y="850" />
+              <point x="-980" y="-1000" />
+              <point x="957" y="-1000" />
+              <point x="957" y="0" />
             </connector>
           </ddscontrol>
         </dds>
@@ -138,11 +126,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-6</Value>
+      <Value>-1256</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-4998</Value>
+      <Value>-7134</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -150,132 +138,31 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-      <Value>2</Value>
+      <Value>0</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
-      <Value>97</Value>
+      <Value>92</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
       <Value>
-        <DiagramLayout ZoomPercent="100" ViewPortX="201" ViewPortY="0" xmlns="">
-          <Shapes NodeWidth="174">
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="159">
             <Shape Id="ID" Expanded="true">
               <Attributes>
                 <Attribute Id="ID" />
-                <Attribute Id="Article" />
-                <Attribute Id="Article Description" />
-                <Attribute Id="Description" />
-                <Attribute Id="Description Article" />
+                <Attribute Id="CSKU ID" />
+                <Attribute Id="t Business - ID" />
+                <Attribute Id="Parent ID" />
               </Attributes>
-              <Position x="221" y="20" />
+              <Position x="20" y="20" />
             </Shape>
-            <Shape Id="t CSKU Elements - ID" Expanded="true">
+            <Shape Id="t Brands - ID" Expanded="false">
               <Attributes>
-                <Attribute Id="t CSKU Elements - ID" />
-                <Attribute Id="Code" />
-                <Attribute Id="Code Description" />
-                <Attribute Id="Description 1" />
-                <Attribute Id="Description Code" />
+                <Attribute Id="t Brands - ID" />
               </Attributes>
-              <Position x="443" y="20" />
-            </Shape>
-            <Shape Id="t CSKU Hierarchy - ID" Expanded="false">
-              <Attributes>
-                <Attribute Id="t CSKU Hierarchy - ID" />
-              </Attributes>
-              <Position x="666" y="20" />
-            </Shape>
-            <Shape Id="Parent6 Description" Expanded="false">
-              <Attributes>
-                <Attribute Id="Parent6 Description" />
-              </Attributes>
-              <Position x="888" y="20" />
-            </Shape>
-            <Shape Id="Parent5 Description" Expanded="false">
-              <Attributes>
-                <Attribute Id="Parent5 Description" />
-              </Attributes>
-              <Position x="1111" y="20" />
-            </Shape>
-            <Shape Id="Parent4 Description" Expanded="false">
-              <Attributes>
-                <Attribute Id="Parent4 Description" />
-              </Attributes>
-              <Position x="1333" y="20" />
-            </Shape>
-            <Shape Id="Parent3 Description" Expanded="false">
-              <Attributes>
-                <Attribute Id="Parent3 Description" />
-              </Attributes>
-              <Position x="1556" y="20" />
-            </Shape>
-            <Shape Id="Parent2 Description" Expanded="true">
-              <Attributes>
-                <Attribute Id="Parent2 Description" />
-              </Attributes>
-              <Position x="1778" y="20" />
-            </Shape>
-            <Shape Id="Parent1 Description" Expanded="false">
-              <Attributes>
-                <Attribute Id="Parent1 Description" />
-              </Attributes>
-              <Position x="2001" y="20" />
-            </Shape>
-            <Shape Id="Parent0 Description" Expanded="false">
-              <Attributes>
-                <Attribute Id="Parent0 Description" />
-              </Attributes>
-              <Position x="2223" y="20" />
-            </Shape>
-            <Shape Id="Parent6 Code" Expanded="false">
-              <Attributes>
-                <Attribute Id="Parent6 Code" />
-              </Attributes>
-              <Position x="888" y="68" />
-            </Shape>
-            <Shape Id="Parent5 Code" Expanded="false">
-              <Attributes>
-                <Attribute Id="Parent5 Code" />
-              </Attributes>
-              <Position x="1111" y="68" />
-            </Shape>
-            <Shape Id="Parent4 Code" Expanded="false">
-              <Attributes>
-                <Attribute Id="Parent4 Code" />
-              </Attributes>
-              <Position x="1333" y="68" />
-            </Shape>
-            <Shape Id="Parent3 Code" Expanded="false">
-              <Attributes>
-                <Attribute Id="Parent3 Code" />
-              </Attributes>
-              <Position x="1556" y="68" />
-            </Shape>
-            <Shape Id="Parent2 Code" Expanded="false">
-              <Attributes>
-                <Attribute Id="Parent2 Code" />
-              </Attributes>
-              <Position x="1778" y="68" />
-            </Shape>
-            <Shape Id="Parent1 Code" Expanded="false">
-              <Attributes>
-                <Attribute Id="Parent1 Code" />
-              </Attributes>
-              <Position x="2001" y="68" />
-            </Shape>
-            <Shape Id="Parent0 Code" Expanded="false">
-              <Attributes>
-                <Attribute Id="Parent0 Code" />
-              </Attributes>
-              <Position x="2223" y="68" />
-            </Shape>
-            <Shape Id="Brand ID" Expanded="false">
-              <Attributes>
-                <Attribute Id="Brand ID" />
-              </Attributes>
-              <Position x="443" y="152" />
+              <Position x="223" y="20" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -284,205 +171,178 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="55c5f6dc-affe-4992-a97b-a0429ef49697">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="848c9579-9094-475a-ac99-43895eb8e9fd">
     <DataSourceViewID>Reporting Database</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="f8590de9-97c2-45be-93b4-b7c60c71a2dc">
+  <ErrorConfiguration dwd:design-time-name="a377c5ea-5717-4f84-b4f0-335bc152562f">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
-  <DimensionPermissions>
-    <DimensionPermission dwd:design-time-name="d4c0ab30-0224-4d9c-a09c-692da2fe1c95">
-      <ID>DimensionPermission</ID>
-      <Name>DimensionPermission</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <RoleID>Role 2</RoleID>
-      <ReadDefinition>Allowed</ReadDefinition>
-      <Read>Allowed</Read>
-    </DimensionPermission>
-    <DimensionPermission dwd:design-time-name="134e8cf6-5042-4d9a-9741-c05854187af7">
-      <ID>DimensionPermission 1</ID>
-      <Name>DimensionPermission 1</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <RoleID>PG_Full</RoleID>
-      <ReadDefinition>Allowed</ReadDefinition>
-      <Read>Allowed</Read>
-    </DimensionPermission>
-    <DimensionPermission dwd:design-time-name="8cb650f5-4424-459f-9f8d-13a0b7b7feb4">
-      <ID>DimensionPermission 2</ID>
-      <Name>DimensionPermission 2</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <RoleID>ALL_Full</RoleID>
-      <ReadDefinition>Allowed</ReadDefinition>
-      <Read>Allowed</Read>
-    </DimensionPermission>
-    <DimensionPermission dwd:design-time-name="fb8529a9-b354-459f-b680-0e1d135ab94d">
-      <ID>DimensionPermission 3</ID>
-      <Name>DimensionPermission 3</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <RoleID>CPG</RoleID>
-      <ReadDefinition>Allowed</ReadDefinition>
-      <Read>Allowed</Read>
-    </DimensionPermission>
-    <DimensionPermission dwd:design-time-name="2c5b0171-5f2c-4ba6-934b-fa6fe615b8bc">
-      <ID>DimensionPermission 4</ID>
-      <Name>DimensionPermission 4</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <RoleID>CHM_Full</RoleID>
-      <ReadDefinition>Allowed</ReadDefinition>
-      <Read>Allowed</Read>
-    </DimensionPermission>
-  </DimensionPermissions>
   <Attributes>
-    <Attribute dwd:design-time-name="bf3c1a01-756f-447f-b40c-d7cbb7c5f695">
+    <Attribute dwd:design-time-name="194900cc-8d9b-41fc-a835-f611ddc6a2e0">
       <ID>ID</ID>
-      <Name>Номенклатура</Name>
+      <Name>ID</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>43559</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="84cec485-1ec2-4a5c-be4a-317d2f18d100">
+        <KeyColumn dwd:design-time-name="d320329c-f99a-4cec-8cce-f4232aa3f234">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="18424059-7156-434f-9c92-3a37eec5ec3c">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="73c24f31-11e7-47f3-987f-671abc65bfbb">
             <TableID>dbo_t_Goods</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="aead2672-8b45-4afb-a792-17d90bc94853">
+      <NameColumn dwd:design-time-name="3fafd895-c190-401a-84dd-ecb28eb4135d">
         <DataType>WChar</DataType>
         <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="65106a2d-7ff4-41e5-bde2-b0d57453ebde">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3977b9e6-9197-4493-93df-73f8b500d590">
           <TableID>dbo_t_Goods</TableID>
           <ColumnID>Description</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="7a943c64-98bc-4e56-81ad-fe47bccf074f">
-          <AttributeID>Article</AttributeID>
-          <Name>Артикул</Name>
+        <AttributeRelationship dwd:design-time-name="5e6cb7d0-e951-4158-889b-8481ab588e5b">
+          <AttributeID>Parent ID</AttributeID>
+          <Name>Номенклатура</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="985ebebb-d3b9-48a3-b6cb-6e4eb579044e">
-          <AttributeID>Article Description</AttributeID>
-          <Name>Артикул Наименование</Name>
+        <AttributeRelationship dwd:design-time-name="3ccd0729-ca40-4134-a34e-e342707e2d78">
+          <AttributeID>CSKU ID</AttributeID>
+          <Name>CSKU ID</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="31e0e8aa-ded7-467f-8439-bee7dfaa52a8">
-          <AttributeID>Description Article</AttributeID>
-          <Name>Наименование Артикул</Name>
+        <AttributeRelationship dwd:design-time-name="c4e9e05b-53f4-4b0d-bd37-938ff03bda04">
+          <AttributeID>t Business - ID</AttributeID>
+          <Name>Направление бизнеса</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="36fea11b-5311-4c17-a151-b5cb22827f14">
-          <AttributeID>Description</AttributeID>
-          <Name>Наименование</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="1e54d099-1022-4894-9a73-8715b1d585bd">
-          <AttributeID>Brand ID</AttributeID>
+        <AttributeRelationship dwd:design-time-name="02be8018-bb2b-43df-a3fd-ea2c716b7b24">
+          <AttributeID>t Brands - ID</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Бренд</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="6cd6bba3-68c1-4940-8524-90764029ce93">
-          <AttributeID>t CSKU Elements - ID</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>CSKU</Name>
+        <AttributeRelationship dwd:design-time-name="b9d929f4-f41a-4851-bd59-678c8e609fd7">
+          <AttributeID>Article</AttributeID>
+          <Name>Артикул</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fec35cd0-5fae-442d-8621-b891637e8963">
+          <AttributeID>Description</AttributeID>
+          <Name>Наименование</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e0a18c0b-370a-4105-8e00-e379ba799c6c">
+          <AttributeID>Article Description</AttributeID>
+          <Name>Артикул Наименование</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="474c33a0-234d-4953-9890-8648bb3bceb0">
+          <AttributeID>Description Article</AttributeID>
+          <Name>Наименовнаие Артикул</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8178089c-0c87-46c4-948d-73ef972b1cf6">
+          <AttributeID>ID 1</AttributeID>
+          <Name>Goods Surrogate Key</Name>
         </AttributeRelationship>
       </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9e954ea1-8f66-48a2-8ab8-1f5fbb75dc1a">
+      <ID>Parent ID</ID>
+      <Name>Номенклатура</Name>
+      <Usage>Parent</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5d0427d5-b4bd-458e-aa64-7d959e3accb2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eaa3e539-c658-41b8-8c19-7ac8d3b70ab8">
+            <TableID>dbo_t_Goods</TableID>
+            <ColumnID>ParentID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2c2ec8cc-5307-41cf-b88d-eaf1e037cca7">
+      <ID>CSKU ID</ID>
+      <Name>CSKU ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="51d508f3-afcc-48ed-b51c-0abcbe9f99bb">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="89bc1c4b-d210-4113-99f4-9cd5646210b6">
+            <TableID>dbo_t_Goods</TableID>
+            <ColumnID>CSKU_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="de5406ca-2e82-43da-bbff-ee5cf4915fa9">
-      <ID>t CSKU Elements - ID</ID>
-      <Name>CSKU</Name>
+    <Attribute dwd:design-time-name="09ef3c35-8c15-40fd-a2e8-be70131eee7f">
+      <ID>t Business - ID</ID>
+      <Name>Направление бизнеса</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="603cb685-89ec-4f3f-9faa-130174f7f559">
+        <KeyColumn dwd:design-time-name="565b4650-e219-4d18-a5d4-df82004c6d5e">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b77e0356-f834-44d3-a7c4-7a99634f3dc6">
-            <TableID>dbo_t_CSKUElements</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="834bc712-e1d2-4870-be2d-0616293b1cee">
+            <TableID>dbo_t_Business</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="29d38c3b-e1df-41ec-9e4b-6d5e030be54d">
+      <NameColumn dwd:design-time-name="a6bd39cc-a629-445f-9632-b47f010adbaa">
         <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="748cb1f4-2de1-4392-9257-403b0d4cebac">
-          <TableID>dbo_t_CSKUElements</TableID>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ba861636-8c24-441a-9b6f-5977eba5e0f1">
+          <TableID>dbo_t_Business</TableID>
           <ColumnID>Description</ColumnID>
         </Source>
       </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="3a4f8828-2746-48b4-8722-434ec919ed27">
-          <AttributeID>t CSKU Hierarchy - ID</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>t CSKU Hierarchy - ID</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="9e732efa-adf6-436b-8d4d-68335facf59a">
-          <AttributeID>Description 1</AttributeID>
-          <Name>CSKU наименование</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="9359b59d-a074-4dbc-a73c-441cdb3849a0">
-          <AttributeID>Code</AttributeID>
-          <Name>CSKU код</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="6dd069d8-1714-4802-96a5-25e876ad0081">
-          <AttributeID>Code Description</AttributeID>
-          <Name>CSKU Код Наименование</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="330d0c1a-4ac8-459d-8ea8-c1b5f4f0dbde">
-          <AttributeID>Description Code</AttributeID>
-          <Name>CSKU Наименование Код</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="7a6af030-c71d-4e80-b1e9-85a46cbb2d3c">
-      <ID>t CSKU Hierarchy - ID</ID>
-      <Name>t CSKU Hierarchy - ID</Name>
+    <Attribute dwd:design-time-name="70309c8c-afa3-4b02-a758-64df43911dc6">
+      <ID>t Brands - ID</ID>
+      <Name>Бренд</Name>
+      <EstimatedCount>260</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="06b552b8-d03e-4059-808a-b050c7e5b444">
+        <KeyColumn dwd:design-time-name="0b532c42-6c57-4ec6-b765-57813c97d94d">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="55de0cd2-0aca-4948-aa7c-c8ca304c8eec">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="78e576f4-6e42-499d-b67b-c8a693c10feb">
+            <TableID>dbo_t_Brands</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="a06e0850-3281-4cf4-9556-44c3dcc920eb">
-          <AttributeID>Parent6 Code</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Parent6 Code</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="314655ce-8727-4dc6-b226-db8853eb4427">
-          <AttributeID>Parent6 Description</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Parent6 Description</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
+      <NameColumn dwd:design-time-name="36e18049-6758-4b86-9f2e-c74d11b98728">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="167d32e7-7d50-4387-ad75-bfa51983f8f4">
+          <TableID>dbo_t_Brands</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bb76810c-95ef-46a4-937a-922e4381b674">
+    <Attribute dwd:design-time-name="52f05854-7b7f-420a-8bca-165e0fe4c224">
       <ID>Article</ID>
       <Name>Артикул</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f36d5064-b2f8-4822-9e2f-5c5cecb9db69">
+        <KeyColumn dwd:design-time-name="c5f75833-a0db-4e03-9280-c64ddb76f988">
           <DataType>WChar</DataType>
           <DataSize>25</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1506f070-7c6c-420f-980f-70eb4d78da5a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e2fee4e8-d6e7-4cd4-aeef-798eb757df23">
             <TableID>dbo_t_Goods</TableID>
             <ColumnID>Article</ColumnID>
           </Source>
@@ -491,14 +351,30 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="b6f5d532-fe54-4cbf-8121-451bba2d4ecb">
+    <Attribute dwd:design-time-name="fdaef5f2-eb7a-4de8-a4aa-084ce67747c3">
+      <ID>Description</ID>
+      <Name>Наименование</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1beafeb0-d884-4448-b1c3-1690a7dcdf82">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f8afd00-97ee-4048-a763-c93c03e32b41">
+            <TableID>dbo_t_Goods</TableID>
+            <ColumnID>Description</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d792c26b-dc1a-47f9-806c-453666271722">
       <ID>Article Description</ID>
       <Name>Артикул Наименование</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="87d0cc14-e7e2-4777-ac16-8597798be459">
+        <KeyColumn dwd:design-time-name="7e563557-5dfa-45c4-9fb8-02ed5c71b6c7">
           <DataType>WChar</DataType>
           <DataSize>128</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5677c691-164b-47db-9966-26869a6beacf">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0bc1367f-2e2b-4c04-8373-21c34816258e">
             <TableID>dbo_t_Goods</TableID>
             <ColumnID>ArticleDescription</ColumnID>
           </Source>
@@ -507,14 +383,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bf681a5a-a2d9-4c3b-911a-f91b8ef160c1">
+    <Attribute dwd:design-time-name="fe794906-bbee-4733-89b7-bb520bca8be8">
       <ID>Description Article</ID>
-      <Name>Наименование Артикул</Name>
+      <Name>Наименовнаие Артикул</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="2b1b679a-3dca-4be7-8098-f2c2eca3a06d">
+        <KeyColumn dwd:design-time-name="97e2db4b-92ba-43a2-913c-d95e6d57908d">
           <DataType>WChar</DataType>
           <DataSize>128</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f20e43fc-d77b-4368-9119-90ea983829af">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="92128734-025a-427d-8665-0a764674aa20">
             <TableID>dbo_t_Goods</TableID>
             <ColumnID>DescriptionArticle</ColumnID>
           </Source>
@@ -523,1131 +399,37 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0250c328-f528-4532-b0da-eb1f3ff6efbd">
-      <ID>Description</ID>
-      <Name>Наименование</Name>
+    <Attribute dwd:design-time-name="4e6e66bf-0230-4c8a-acac-f28b344c36c8">
+      <ID>ID 1</ID>
+      <Name>Goods Surrogate Key</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f35b8f90-2c6f-4d9b-9e20-f9f17da7112d">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="38e73957-f739-4936-8147-f40c440f0a5a">
-            <TableID>dbo_t_Goods</TableID>
-            <ColumnID>Description</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="bdec891e-717f-4e4e-b385-9ccf5248712a">
-      <ID>Brand ID</ID>
-      <Name>Бренд</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="34f49f3c-adc8-4b7e-9443-89b2b8af6abc">
+        <KeyColumn dwd:design-time-name="5c51aaed-ed5a-4653-ad4d-c46ccc43fd17">
           <DataType>Integer</DataType>
-          <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="21a01fb9-0b9e-44ce-8ff6-fb05b7638d64">
-            <TableID>dbo_t_Brands</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="348f9a9f-1545-4bbd-9f06-9dd13849900d">
+            <TableID>dbo_t_Goods</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="3ec07be2-f0f8-4b37-ae6d-42c872bc24b4">
-        <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="3b716352-5152-4fde-bdbf-4b7fec134e60">
-          <TableID>dbo_t_Brands</TableID>
-          <ColumnID>Description</ColumnID>
-        </Source>
-      </NameColumn>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="b21dc84b-d304-45a7-9aa7-70318a08c0c9">
-      <ID>Code</ID>
-      <Name>CSKU код</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="bc8ebbd3-18b4-435b-8dc1-b5700bb8a9ca">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5e456b5a-81ff-437b-a4ca-4b23942b0603">
-            <TableID>dbo_t_CSKUElements</TableID>
-            <ColumnID>Code</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="f38f3cf9-708c-4781-b965-78a7a7b4bb81">
-      <ID>Description 1</ID>
-      <Name>CSKU наименование</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="21c12082-6b34-4659-92b2-f9c84e8b6adb">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e3ced136-633e-4de9-9540-7e8689a55642">
-            <TableID>dbo_t_CSKUElements</TableID>
-            <ColumnID>Description</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="66c8c202-cd4a-4813-91f8-e06d0a44941c">
-      <ID>Code Description</ID>
-      <Name>CSKU Код Наименование</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="e3b7c26d-543a-4531-ac2e-f1c6ce6fb589">
-          <DataType>WChar</DataType>
-          <DataSize>128</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="cfd7e0f3-3131-4b89-9b1d-29c19c3cb328">
-            <TableID>dbo_t_CSKUElements</TableID>
-            <ColumnID>CodeDescription</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="2afa515d-435b-47a9-8195-e24d4276c54a">
-      <ID>Description Code</ID>
-      <Name>CSKU Наименование Код</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="320f0661-b5ec-40b7-aa9b-4849c6aa7054">
-          <DataType>WChar</DataType>
-          <DataSize>128</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="cb71cb2e-840e-4e6e-80d3-e83cb4952dfb">
-            <TableID>dbo_t_CSKUElements</TableID>
-            <ColumnID>DescriptionCode</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="645ecabf-2d1a-4cbd-b0f1-2269106df419">
-      <ID>Parent0 Code</ID>
-      <Name>Parent0 Code</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="275338f8-2db3-4528-acec-ecc34235c5bb">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="66032277-a9b5-4a21-997e-7d568628b3d8">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent0_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <NameColumn dwd:design-time-name="08e74d3b-8645-4106-872e-e3768a75fc78">
-        <DataType>WChar</DataType>
-        <DataSize>9</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="45a1e73c-ba0b-4239-92bf-cdbf7f0aee97">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent0_Code</ColumnID>
-        </Source>
-      </NameColumn>
-      <ValueColumn dwd:design-time-name="92e1cf5d-6233-4301-af53-2c5d53cfd35a">
-        <DataType>WChar</DataType>
-        <DataSize>9</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="796eca93-209c-4c1c-9b3e-8b87bafc970c">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent0_Code</ColumnID>
-        </Source>
-      </ValueColumn>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="1014d184-a171-47ec-b371-6a4110ed0424">
-      <ID>Parent1 Code</ID>
-      <Name>Parent1 Code</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="389bb6c3-cd61-4049-b6af-da444852b12d">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7d8d9984-1cef-4af1-ab34-ef1645128492">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent1_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="730621ea-ff4b-47e4-b9ce-3754db2941ae">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9773ae07-441f-4508-a10a-001cdeaf5f5a">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent0_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <NameColumn dwd:design-time-name="53284bc7-957d-48e5-96e6-8469d78876e4">
-        <DataType>WChar</DataType>
-        <DataSize>9</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="7bbe7aa0-95df-4bc8-8efc-c066d196a417">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent1_Code</ColumnID>
-        </Source>
-      </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="b754c9aa-4e45-4aa2-a1ba-0e808f186baf">
-          <AttributeID>Parent0 Code</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Parent0 Code</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <ValueColumn dwd:design-time-name="a58f7d70-566b-4963-bff9-a89f9618eb54">
-        <DataType>WChar</DataType>
-        <DataSize>9</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="28cee046-e6ff-41ce-8060-8057189825fd">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent1_Code</ColumnID>
-        </Source>
-      </ValueColumn>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="b14d8c2f-cf9b-4db4-902d-1293fb17ab49">
-      <ID>Parent2 Code</ID>
-      <Name>Parent2 Code</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="c8a71373-4e9a-4d13-9277-90911d42f1d3">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="77e92ab5-77c4-402e-a71c-dea210d8bd05">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent2_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="a1504af0-f642-44e7-88ec-ee22304123e2">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea5df403-6ff5-4adc-bea4-3de7acc9d096">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent1_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="1dc0d6ae-a28d-4785-aeeb-3f3db8add51a">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f4441185-b020-4595-b0c8-9aaf8c65dc57">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent0_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <NameColumn dwd:design-time-name="76102a46-b5b2-4dcc-8ce1-b692b2a24ef1">
-        <DataType>WChar</DataType>
-        <DataSize>9</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="26be004b-1700-4abe-aee2-04c66d660976">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent2_Code</ColumnID>
-        </Source>
-      </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="b8b90104-d9a0-4715-9653-dfaab4d08b73">
-          <AttributeID>Parent1 Code</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Parent1 Code</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <ValueColumn dwd:design-time-name="19395264-ea10-4b25-ab7d-c68514b15fa8">
-        <DataType>WChar</DataType>
-        <DataSize>9</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="7a57e2b4-01d3-42ad-9d10-4e5830ef70ea">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent2_Code</ColumnID>
-        </Source>
-      </ValueColumn>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="f2d9c21a-cc43-4d14-919a-fbc717e8f13a">
-      <ID>Parent3 Code</ID>
-      <Name>Parent3 Code</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="a22257d7-d920-4c3f-a437-ca73e387963c">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="194ef9f5-38b6-4483-b8fd-655fefa8a379">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent3_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="51b1820f-836f-42cf-9f01-a47831dba5ef">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="148c001b-ac8d-42b0-9d27-375bdc6a8787">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent2_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="d6028695-41e5-4f60-a2d3-cb6ae8d53686">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a0ef116e-174a-4118-b9eb-0c2ce4614476">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent1_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="ab7bf559-d895-4998-b13f-be7cc055c10e">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3f3eebe5-e691-4dd3-bdec-330bfc7365f6">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent0_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <NameColumn dwd:design-time-name="a19fe2a7-e482-4691-ab0a-26351e7eca47">
-        <DataType>WChar</DataType>
-        <DataSize>9</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="1d0cd693-a52b-44a9-bdad-989701ca6bc4">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent3_Code</ColumnID>
-        </Source>
-      </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="48da7604-935b-484a-a1a6-79b00a2f83ce">
-          <AttributeID>Parent2 Code</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Parent2 Code</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <ValueColumn dwd:design-time-name="b7d23e3f-c73e-41b5-a413-c365a0f0b8e9">
-        <DataType>WChar</DataType>
-        <DataSize>9</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="0f1aa0b3-3b76-4638-8c50-26c130457557">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent3_Code</ColumnID>
-        </Source>
-      </ValueColumn>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="8833b023-ddc9-491a-8df4-492189f4dfb2">
-      <ID>Parent4 Code</ID>
-      <Name>Parent4 Code</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="22ebd1a4-46e0-4df6-ae5c-b5b15e3f0257">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="41d4cfcc-8c7c-4ca6-87fd-5e6d99e62162">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent4_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="7b9c576b-9a53-4b63-91ad-8b6b348eea52">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f334236-caa0-45a8-8762-e73aacd89bed">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent3_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="80512288-13ee-4fa9-9352-d834dfd28fe9">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e5950159-40b2-4ac8-a9d4-b2abc3190144">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent2_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="c539f631-445d-4878-ae22-b1a828e9ad05">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a5d92cdc-2898-4425-b691-1b98432c3b0b">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent1_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="874612bc-9f6a-4d84-b004-4f35b8598436">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="695f5d09-5d08-49bc-aac0-053b2014a266">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent0_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <NameColumn dwd:design-time-name="af2ce44c-1fa0-4208-896b-3b973360e993">
-        <DataType>WChar</DataType>
-        <DataSize>9</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="75c80ad9-c876-43ab-84a7-3eaf3d3180f4">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent4_Code</ColumnID>
-        </Source>
-      </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="7e96eece-194e-449b-a31d-43121bf24db6">
-          <AttributeID>Parent3 Code</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Parent3 Code</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <ValueColumn dwd:design-time-name="deba1f2e-0826-4e19-928d-01df962ba9dd">
-        <DataType>WChar</DataType>
-        <DataSize>9</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="e203818e-2b0f-4140-9096-b3271a44f01f">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent4_Code</ColumnID>
-        </Source>
-      </ValueColumn>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="e2b5be2d-a7b1-4dd9-a3a9-a661c5d8f02f">
-      <ID>Parent5 Code</ID>
-      <Name>Parent5 Code</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="3452de7a-205e-4499-b702-fc0afdc34277">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b170cca2-c045-4d9a-a31a-fa441c963819">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent5_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="5dab9ad5-9872-421d-b52d-8b07cfaad2a7">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6d2ccc7d-9ee1-4992-9dc6-74e0d277dfb4">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent4_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="397208c5-9711-46bc-88d4-dbb224d6b17d">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7e930455-90fa-406b-b53b-04771385a013">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent3_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="0658c8e7-cf60-4680-9085-57c43516ce9c">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="25d015a7-c44a-4b2d-931e-b293adce7a9c">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent2_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="82ae9586-1384-44c5-8929-14e57ddb16bb">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="59452293-771e-4e22-a937-fa6067ec54a3">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent1_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="b0c793c5-cb1f-4327-9b62-8275be062ab0">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ac598fe8-9fea-4ce8-b56d-d277de284385">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent0_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <NameColumn dwd:design-time-name="fe93a436-da34-4581-9d48-3720319c10c0">
-        <DataType>WChar</DataType>
-        <DataSize>9</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="9a5ec285-5f50-401c-a6e3-eed891eac140">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent5_Code</ColumnID>
-        </Source>
-      </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="243ff643-b9f0-4ae0-80de-b938b6f0d31c">
-          <AttributeID>Parent4 Code</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Parent4 Code</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <ValueColumn dwd:design-time-name="95cc25e4-ac39-495a-9ece-4095fa8780de">
-        <DataType>WChar</DataType>
-        <DataSize>9</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="116bee14-256f-42dd-a25d-7731101a0935">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent5_Code</ColumnID>
-        </Source>
-      </ValueColumn>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="eac55e0b-fa61-40ff-ba5b-2c3af329005e">
-      <ID>Parent6 Code</ID>
-      <Name>Parent6 Code</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="0e625cff-c64a-4a3d-b29d-e08f22a405a0">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f926f30c-76e0-439d-b518-c265e2991b64">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent6_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="38e811a5-014e-4828-82ad-b80a2bfd34ac">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f15d5e8c-8c22-4d0c-a4d0-021bf93276d4">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent5_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="ead91229-c740-44e8-b82e-3407ca3d4dfb">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a5fc62f1-56f7-4deb-aabb-78233305455f">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent4_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="1705154b-0ebb-4f28-bfd3-a5ce87464460">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ec66f7ac-29b5-4707-b230-96eae0db27f6">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent3_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="5e9e0d6b-0e50-49be-89a9-c1cde0a0da0e">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d6663405-a424-47ae-85c0-2ff0037307d4">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent2_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="dc52ba9e-2f16-46b6-93b1-f728375807f0">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e3c0ca05-9595-4532-ae06-d5d43af25d2d">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent1_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="212e7dda-b97d-420e-8f23-8c53bb5b9b3c">
-          <DataType>WChar</DataType>
-          <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0ec71382-af93-4ed5-9171-890d7573d279">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent0_Code</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <NameColumn dwd:design-time-name="89ced746-96b5-4cf0-805d-f234b1a31ec5">
-        <DataType>WChar</DataType>
-        <DataSize>9</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="4da3fd30-ecf4-4170-b6fa-b8a0c75f1dda">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent6_Code</ColumnID>
-        </Source>
-      </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="b7b43649-6a53-4779-b19c-f28ea8d1948f">
-          <AttributeID>Parent5 Code</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Parent5 Code</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <ValueColumn dwd:design-time-name="be5a8f5c-3523-4060-ba8a-6999680fb01a">
-        <DataType>WChar</DataType>
-        <DataSize>9</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="1a0d3dac-2c85-4bd5-9ed8-436141029e37">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent6_Code</ColumnID>
-        </Source>
-      </ValueColumn>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="2670386e-59ae-4c8a-bab1-7af77608e1be">
-      <ID>Parent0 Description</ID>
-      <Name>Parent0 Description</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="63c8b382-1f1d-43f7-99af-ee46343454b0">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="21a82c6c-a0b7-4d8f-bf07-234d0345bd91">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent0_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <NameColumn dwd:design-time-name="f2520c1f-f6e4-4c17-9148-0ed35811acdf">
-        <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="59665422-347f-4f32-8590-9430d2753910">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent0_Description</ColumnID>
-        </Source>
-      </NameColumn>
-      <ValueColumn dwd:design-time-name="46c677bd-4d45-42f0-a9b4-bb6beee043b5">
-        <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="5ddb6781-e3ae-4d47-a10f-3c682565f1c3">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent0_Description</ColumnID>
-        </Source>
-      </ValueColumn>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="4db200d9-0ca5-4ca1-be17-3507ecc9e36b">
-      <ID>Parent1 Description</ID>
-      <Name>Parent1 Description</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="105d1e0c-4bd4-49d6-b208-fb7b796dab34">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="28b63e75-026d-42bd-8160-2fdbbeb90648">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent1_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="2c0dd975-844e-41b3-8f5a-f1b07e8cc026">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b45bb9c2-e595-409c-9fb1-36f82e4f53ee">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent0_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <NameColumn dwd:design-time-name="dd7e2e46-8fcd-44f8-937a-296287f1655d">
-        <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="86667b1e-304e-4cff-9d8b-f411ae7e5207">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent1_Description</ColumnID>
-        </Source>
-      </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="6564f576-a109-446a-9e5a-ed6f385f59dc">
-          <AttributeID>Parent0 Description</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Parent0 Description</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <ValueColumn dwd:design-time-name="f7b25885-2655-4a80-b6ee-9a978b6f614b">
-        <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="988016c0-bde7-41fe-a6aa-e87e9aa62ab3">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent1_Description</ColumnID>
-        </Source>
-      </ValueColumn>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="89d52a66-f85b-41d2-b94f-2c8bb85442d2">
-      <ID>Parent2 Description</ID>
-      <Name>Parent2 Description</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="f93e2f37-9597-4396-9eb7-09fe91cc3bb3">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="824f4a8e-71e7-4d2d-bd97-ea457fa6b90f">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent2_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="228a788b-2af3-4e87-966c-871812e96a57">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e86a3e05-e18f-4da1-a38e-f6dd702495d8">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent1_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="43e5ab5a-7737-42b4-8576-230673dbc759">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f3b0c69-73b0-4e21-b0b6-225f0208728c">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent0_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <NameColumn dwd:design-time-name="99535112-60bf-49d8-85aa-da5a0053613c">
-        <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="b56f8d12-77dd-41f7-8aff-b10b6126828c">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent2_Description</ColumnID>
-        </Source>
-      </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="9ff96a0d-92a6-4014-90ff-01249b79f7f6">
-          <AttributeID>Parent1 Description</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Parent1 Description</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <ValueColumn dwd:design-time-name="89f1a1b1-a717-47e2-9ed5-ea6af5bb1b73">
-        <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="af1760ef-60e2-41c2-b767-f585f0fd7bbb">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent2_Description</ColumnID>
-        </Source>
-      </ValueColumn>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="8e9fe26a-33ca-4629-a1f3-4a71affbc6c9">
-      <ID>Parent3 Description</ID>
-      <Name>Parent3 Description</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="e004f780-60ad-4c5a-b6bd-ed240f331e4f">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="13b2e76f-4aed-4d67-9e84-a617f6cb30ea">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent3_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="0db710df-691e-4919-b7d9-894ebe2e2ece">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2ee8c836-38d1-428c-a368-4c8935586014">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent2_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="986c7410-f6fe-4785-b24a-ee6f2fe3989a">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fdc52367-1bc0-4b2e-9667-eb1451358282">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent1_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="1b51cf58-80a6-4438-a495-ef4bb57de225">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5dc4dea6-6a34-4412-8998-66c7523e5e15">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent0_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <NameColumn dwd:design-time-name="ace14300-a058-4985-a990-63236b030b2d">
-        <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="caf79f81-40a7-442a-91cc-80d8c68c2320">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent3_Description</ColumnID>
-        </Source>
-      </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="e2bb1091-75fc-4bdd-b4be-4cc5feeea8d2">
-          <AttributeID>Parent2 Description</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Parent2 Description</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <ValueColumn dwd:design-time-name="4470dd61-dff5-4bbe-b2fc-fe4e5bca45e5">
-        <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="c1395f9b-00ed-4813-8477-508e8b1573c9">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent3_Description</ColumnID>
-        </Source>
-      </ValueColumn>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="9199626e-ed6c-44f6-9111-5676ee2ad181">
-      <ID>Parent4 Description</ID>
-      <Name>Parent4 Description</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="f95ba33c-a8b4-4abc-b438-2bc0d68cbade">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1ae20178-58e8-4d6c-b82a-a0e670f2e636">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent4_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="9a7631df-c350-401c-953f-1b6a501a3caa">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7bc730ac-bfc2-4cbd-9fff-6747b16dcec3">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent3_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="83fc77b6-6bbb-4d45-8556-d7d2cc92fb2f">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8dd3af6f-571c-487d-b41a-e4e77be4c737">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent2_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="988bdf78-b145-4614-be1e-7de9fb7fe5e1">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e5542ab4-c51c-480d-a2d8-0fb2031a65f3">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent1_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="5b427b6b-3ce7-45b8-b33b-8994ea1cf53c">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7f0bf9a5-ec57-4100-89a8-5141565cc24b">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent0_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <NameColumn dwd:design-time-name="483927f5-ccd6-4575-a6bb-3dd77b8c728b">
-        <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="24e85013-8cd6-410b-a0a0-2de3be366ff0">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent4_Description</ColumnID>
-        </Source>
-      </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="b1d48c60-1b92-432b-950a-d45c7cb449aa">
-          <AttributeID>Parent3 Description</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Parent3 Description</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <ValueColumn dwd:design-time-name="fb7e00ce-945d-4235-8aac-e2aef1595345">
-        <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="befd8272-1477-4e8a-8fb5-d8337c22e9a6">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent4_Description</ColumnID>
-        </Source>
-      </ValueColumn>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="beb518b6-0a9c-45b3-9e50-91e9c8389d15">
-      <ID>Parent6 Description</ID>
-      <Name>Parent6 Description</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="7ed41dc6-c671-43fc-b85f-830ac8eb5fe8">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4d7c636a-7cee-4b69-97ca-ba7c9ceff891">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent6_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="74bda518-4e74-4fc0-bb39-0af55cbed304">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="127a24dd-c0b4-4aa6-85d9-184b1fc51caf">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent5_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="ff50a12d-95e1-41e4-a067-3df42e4cb299">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="64a51456-8b12-4d22-b6f7-5a816b662d51">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent4_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="765aba8f-4ca2-49f8-86af-f7c07f74babe">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ae0a4733-1b8b-4f89-84c4-498eb9a4f8e1">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent3_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="713f5be2-4e37-453b-9206-5b2ff383c12f">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b17ba699-e0b3-415b-a146-3fb971bedf76">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent2_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="80c1fe6f-7f97-4712-a518-d7c5fd4177c2">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="714341b5-d4f0-46e9-8c90-7b3e8e786bdd">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent1_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="923f3a28-5677-4881-8884-90dc36083897">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2c0e5f27-a4a0-4c2c-aae1-48d8f087658e">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent0_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <NameColumn dwd:design-time-name="5497b8bb-df78-4937-addc-a77291c18e53">
-        <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="aa8f5d30-822e-4dda-a026-fdd0dc36c6cf">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent6_Description</ColumnID>
-        </Source>
-      </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="d644b2c5-b3d5-4f46-8990-230e73d512e3">
-          <AttributeID>Parent5 Description</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Parent5 Description</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <ValueColumn dwd:design-time-name="b2d6ed80-0b55-4f07-ad9f-a2ea49526bc8">
-        <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="fd6e10d5-32b1-48b3-938a-d1c4a4178956">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent6_Description</ColumnID>
-        </Source>
-      </ValueColumn>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="2a650d88-6f05-4d9b-ae17-31e28fc127a9">
-      <ID>Parent5 Description</ID>
-      <Name>Parent5 Description</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="b9863db2-60af-431b-8aa8-5fb5d60ba305">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3528e411-4b9c-4d81-908b-426896c0c19f">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent5_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="8e8be104-ed9d-478c-9dad-aa0715ecdd76">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5e2a59dc-5a87-4bf2-b2c6-34b01af05ede">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent4_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="1cb1aea6-e207-4e79-9928-c5a58f89e80c">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="642f4197-8793-4269-bbfb-fde65b2e8045">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent3_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="ce93979d-8dc1-4847-a0fa-9bcc7c445fbe">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="18d34aa3-884b-4d51-aae5-87ec42d25335">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent2_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="ff5a9d3b-32ba-465a-aa76-d559a1752ee2">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="30238d89-b90f-4881-8239-2c519876f72c">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent1_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="43358a18-dce4-4494-b35b-6f6f23609158">
-          <DataType>WChar</DataType>
-          <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="08f9e337-0999-4d51-ad03-3089b8ca0f92">
-            <TableID>dbo_t_CSKUHierarchy</TableID>
-            <ColumnID>Parent0_Description</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <NameColumn dwd:design-time-name="0fe7b529-1758-4c09-b2f4-ecee4a9b1c4f">
-        <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="4c5d2445-29c2-46f6-819a-1619da59dd31">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent5_Description</ColumnID>
-        </Source>
-      </NameColumn>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="28a5b822-727e-4b00-879d-91d5d868606a">
-          <AttributeID>Parent4 Description</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Parent4 Description</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
-      <ValueColumn dwd:design-time-name="901f6e9c-157d-4995-b6cc-d92416d89475">
-        <DataType>WChar</DataType>
-        <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="5077958f-c299-48e8-acb4-48a510099c7d">
-          <TableID>dbo_t_CSKUHierarchy</TableID>
-          <ColumnID>Parent5_Description</ColumnID>
-        </Source>
-      </ValueColumn>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="4e71e8c9-3b62-456f-bc74-93e54f7db867">
+    <Hierarchy dwd:design-time-name="3466fba5-fe67-47f5-9f4f-6c6e38b4bb73">
       <ID>Иерархия</ID>
       <Name>Бренд - Номенклатура</Name>
       <Levels>
-        <Level dwd:design-time-name="37185701-adcf-40f8-9082-318bd6be6b30">
-          <ID>Бренд 1</ID>
+        <Level dwd:design-time-name="e0112ed4-e754-42f6-a0c3-87d65bdd7ced">
+          <ID>Бренд</ID>
           <Name>Бренд</Name>
-          <SourceAttributeID>Brand ID</SourceAttributeID>
+          <SourceAttributeID>t Brands - ID</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="97bf45be-ef00-4b13-a589-5c200fe67778">
-          <ID>Номенклатура</ID>
+        <Level dwd:design-time-name="dd906ace-57b6-4b93-a133-1bb84f18aca5">
+          <ID>ID</ID>
           <Name>Номенклатура</Name>
           <SourceAttributeID>ID</SourceAttributeID>
-        </Level>
-      </Levels>
-    </Hierarchy>
-    <Hierarchy dwd:design-time-name="a5207113-55be-404b-b082-9a0c56336484">
-      <ID>Иерархия 1</ID>
-      <Name>CSKU - Номенклатура</Name>
-      <Levels>
-        <Level dwd:design-time-name="f7e27845-ff1f-4bc1-a3cd-fc2d1afafb4c">
-          <ID>CSKU</ID>
-          <Name>CSKU</Name>
-          <SourceAttributeID>t CSKU Elements - ID</SourceAttributeID>
-        </Level>
-        <Level dwd:design-time-name="309e2177-ce2e-44ae-8f3f-ed2bd5e0c03e">
-          <ID>Номенклатура</ID>
-          <Name>Номенклатура</Name>
-          <SourceAttributeID>ID</SourceAttributeID>
-        </Level>
-      </Levels>
-    </Hierarchy>
-    <Hierarchy dwd:design-time-name="00753fa3-8d03-4ed8-9208-e66a3a5bf73b">
-      <ID>Иерархия 2</ID>
-      <Name>Иерархия кодов CSKU</Name>
-      <Levels>
-        <Level dwd:design-time-name="bfa3aedd-1b33-4b01-9b9f-051248775d4f">
-          <ID>Parent0 Code</ID>
-          <Name>Уровень 0</Name>
-          <SourceAttributeID>Parent0 Code</SourceAttributeID>
-          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
-        </Level>
-        <Level dwd:design-time-name="739f1197-185d-4cee-9809-0f7250ea412b">
-          <ID>Parent1 Code</ID>
-          <Name>Уровень 1</Name>
-          <SourceAttributeID>Parent1 Code</SourceAttributeID>
-          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
-        </Level>
-        <Level dwd:design-time-name="108bad7c-aa51-49c6-a456-ad076d71dc05">
-          <ID>Parent2 Code</ID>
-          <Name>Уровень 2</Name>
-          <SourceAttributeID>Parent2 Code</SourceAttributeID>
-          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
-        </Level>
-        <Level dwd:design-time-name="43d88eaa-a48f-49b5-9a33-4d21cee23691">
-          <ID>Parent3 Code</ID>
-          <Name>Уровень 3</Name>
-          <SourceAttributeID>Parent3 Code</SourceAttributeID>
-          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
-        </Level>
-        <Level dwd:design-time-name="9ae85436-3c1a-4f6e-87db-cd0bacd19fcc">
-          <ID>Parent4 Code</ID>
-          <Name>Уровень 4</Name>
-          <SourceAttributeID>Parent4 Code</SourceAttributeID>
-          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
-        </Level>
-        <Level dwd:design-time-name="1e19b318-857c-4f9d-9172-fc47c12cc80c">
-          <ID>Parent5 Code</ID>
-          <Name>Уровень 5</Name>
-          <SourceAttributeID>Parent5 Code</SourceAttributeID>
-          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
-        </Level>
-        <Level dwd:design-time-name="713447d3-8019-4659-96a0-9f2b9921b485">
-          <ID>Parent6 Code</ID>
-          <Name>Уровень 6</Name>
-          <SourceAttributeID>Parent6 Code</SourceAttributeID>
-          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
-        </Level>
-        <Level dwd:design-time-name="a37ea304-b23b-418d-a601-4d0eece7b4e1">
-          <ID>CSKU</ID>
-          <Name>CSKU</Name>
-          <SourceAttributeID>t CSKU Elements - ID</SourceAttributeID>
-        </Level>
-      </Levels>
-    </Hierarchy>
-    <Hierarchy dwd:design-time-name="08507caf-d501-4dd6-8a6b-f1432e9f414e">
-      <ID>Иерархия 3</ID>
-      <Name>Иерархия наименований CSKU</Name>
-      <Levels>
-        <Level dwd:design-time-name="9ec44d38-47f7-4741-8247-f78a27eb91f8">
-          <ID>Parent0 Description</ID>
-          <Name>Уровень 0</Name>
-          <SourceAttributeID>Parent0 Description</SourceAttributeID>
-          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
-        </Level>
-        <Level dwd:design-time-name="0916aac9-2e8d-41d9-bfc3-1c854be9ea2b">
-          <ID>Parent1 Description</ID>
-          <Name>Уровень 1</Name>
-          <SourceAttributeID>Parent1 Description</SourceAttributeID>
-          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
-        </Level>
-        <Level dwd:design-time-name="39ef35c4-4dca-407c-afe1-73c424c60252">
-          <ID>Parent2 Description</ID>
-          <Name>Уровень 2</Name>
-          <SourceAttributeID>Parent2 Description</SourceAttributeID>
-          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
-        </Level>
-        <Level dwd:design-time-name="056f6893-e868-4e0f-89e4-473edc20e384">
-          <ID>Parent3 Description</ID>
-          <Name>Уровень 3</Name>
-          <SourceAttributeID>Parent3 Description</SourceAttributeID>
-          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
-        </Level>
-        <Level dwd:design-time-name="4d1e697c-bbd8-4160-b850-abdddebf1075">
-          <ID>Parent4 Description</ID>
-          <Name>Уровень 4</Name>
-          <SourceAttributeID>Parent4 Description</SourceAttributeID>
-          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
-        </Level>
-        <Level dwd:design-time-name="82fdc233-22b0-401c-9e98-00a67eb36ac8">
-          <ID>Parent5 Description</ID>
-          <Name>Уровень 5</Name>
-          <SourceAttributeID>Parent5 Description</SourceAttributeID>
-          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
-        </Level>
-        <Level dwd:design-time-name="5986ef81-e6c2-48be-9c47-1fb51e355c7e">
-          <ID>Parent6 Description</ID>
-          <Name>Уровень 6</Name>
-          <SourceAttributeID>Parent6 Description</SourceAttributeID>
-          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
-        </Level>
-        <Level dwd:design-time-name="33bf3277-df65-441c-a09e-80dd1169c28d">
-          <ID>CSKU</ID>
-          <Name>CSKU</Name>
-          <SourceAttributeID>t CSKU Elements - ID</SourceAttributeID>
-          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
         </Level>
       </Levels>
     </Hierarchy>

@@ -131,6 +131,7 @@
       <ID>ID</ID>
       <Name>Организация</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>3</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="e2c3224d-fe19-4c5e-8c22-a4f060cf6790">
           <DataType>Integer</DataType>

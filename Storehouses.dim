@@ -152,6 +152,7 @@
       <ID>ID</ID>
       <Name>Склад</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>514</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="82c3db55-e5ba-4972-9c66-88268ac3d21e">
           <DataType>Integer</DataType>
@@ -192,6 +193,7 @@
     <Attribute dwd:design-time-name="ce888283-fb50-44e7-a14e-2cbe0bbdd6ad">
       <ID>Branch</ID>
       <Name>Филиал</Name>
+      <EstimatedCount>15</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="13eda608-d129-4333-bbe6-fb3d721a3edd">
           <DataType>WChar</DataType>

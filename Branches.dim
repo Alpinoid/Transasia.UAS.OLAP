@@ -174,6 +174,7 @@
       <ID>ID</ID>
       <Name>Филиал</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>14</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="92b21593-0cc8-40e4-89e7-534eb1ad0cb6">
           <DataType>Integer</DataType>
@@ -221,6 +222,7 @@
     <Attribute dwd:design-time-name="72092e29-142d-4143-8339-eb859d9da81d">
       <ID>Parent Description</ID>
       <Name>Parent Description</Name>
+      <EstimatedCount>10</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="9bd8f9bc-dec6-41a7-8d10-4a8ba0be3889">
           <DataType>WChar</DataType>
@@ -263,6 +265,7 @@
     <Attribute dwd:design-time-name="982a511f-e3cb-481b-9f65-1247707b5e52">
       <ID>Child Description</ID>
       <Name>Child Description</Name>
+      <EstimatedCount>14</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="f8562781-03d4-4d82-b9f7-977ade94549c">
           <DataType>WChar</DataType>

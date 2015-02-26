@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-767" scrolltop="-3033" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10425" y="12171" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="411" scrolltop="-6106" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6932" y="21696" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_Teams" left="20" top="0" logicalid="6" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_Teams" left="2720" top="3591" logicalid="10" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000b80b00004d0c0000" />
             </control>
@@ -30,7 +30,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_SystemsMobileTrade" left="5420" top="423" logicalid="7" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_SystemsMobileTrade" left="2720" top="9140" logicalid="11" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000b80b0000fe080000" />
             </control>
@@ -41,7 +41,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_Routes" left="20" top="5549" logicalid="8" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_Routes" left="20" top="-1958" logicalid="12" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000b80b00004d0c0000" />
             </control>
@@ -52,7 +52,47 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="1175" logicalid="9" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_Staff" left="5420" top="-1535" logicalid="15" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_t_Staff" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_Business" left="8120" top="3803" logicalid="17" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b80b0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_t_Business" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="5420" top="4766" logicalid="20" controlid="11" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_t_Teams_t_Business]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="1" sourceattachpoint="14" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8120" y="5165" />
+              <point x="5720" y="5165" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3821" top="6440" logicalid="21" controlid="12" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -65,12 +105,30 @@
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="12" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="5420" y="1574" />
-              <point x="3020" y="1574" />
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4220" y="9140" />
+              <point x="4220" y="6740" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="1121" top="2650" logicalid="10" controlid="5" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="-783" logicalid="22" controlid="13" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_t_Routes_t_Staff]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="3" sourceattachpoint="12" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5420" y="-384" />
+              <point x="3020" y="-384" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1220" top="891" logicalid="23" controlid="14" masterid="0" hint1="0" hint2="0" width="3400" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -83,9 +141,11 @@
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="1520" y="3149" />
-              <point x="1520" y="5549" />
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4220" y="3591" />
+              <point x="4220" y="2391" />
+              <point x="1520" y="2391" />
+              <point x="1520" y="1191" />
             </connector>
           </ddscontrol>
         </dds>
@@ -105,11 +165,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-767</Value>
+      <Value>411</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-3033</Value>
+      <Value>-6106</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -117,7 +177,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-      <Value>0</Value>
+      <Value>-1958</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
@@ -140,23 +200,29 @@
               </Attributes>
               <Position x="272" y="20" />
             </Shape>
+            <Shape Id="ID 1" Expanded="false">
+              <Attributes>
+                <Attribute Id="ID 1" />
+              </Attributes>
+              <Position x="525" y="20" />
+            </Shape>
             <Shape Id="t Systems Mobile Trade - ID" Expanded="false">
               <Attributes>
                 <Attribute Id="t Systems Mobile Trade - ID" />
               </Attributes>
-              <Position x="525" y="20" />
-            </Shape>
-            <Shape Id="Business" Expanded="false">
-              <Attributes>
-                <Attribute Id="Business" />
-              </Attributes>
               <Position x="525" y="68" />
+            </Shape>
+            <Shape Id="Description" Expanded="false">
+              <Attributes>
+                <Attribute Id="Description" />
+              </Attributes>
+              <Position x="272" y="116" />
             </Shape>
             <Shape Id="Branch" Expanded="false">
               <Attributes>
                 <Attribute Id="Branch" />
               </Attributes>
-              <Position x="272" y="116" />
+              <Position x="272" y="164" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -228,6 +294,7 @@
       <ID>ID</ID>
       <Name>Маршрут</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>771</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="589ac9ce-e125-4509-aa8b-3cfe8e754e92">
           <DataType>Integer</DataType>
@@ -252,13 +319,15 @@
           <RelationshipType>Rigid</RelationshipType>
           <Name>Филиал</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="438fb338-c10d-4dba-b56f-f3a539b0853d">
+        <AttributeRelationship dwd:design-time-name="c9334598-be7c-43b4-9f6b-f978b3c204b0">
+          <AttributeID>Description</AttributeID>
+          <Name>Менеджер</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ff1b5448-d2ed-4794-9473-0a97bf7dda6e">
           <AttributeID>t Teams - ID</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
           <Name>Команда</Name>
         </AttributeRelationship>
       </AttributeRelationships>
-      <OrderBy>Key</OrderBy>
       <ValueColumn dwd:design-time-name="533d69d3-7a3d-46e0-937a-1e5ac0e7786b">
         <DataType>WChar</DataType>
         <DataSize>100</DataSize>
@@ -274,6 +343,7 @@
     <Attribute dwd:design-time-name="fb3c30e4-498d-4a48-8ee7-7114f30cf9ea">
       <ID>t Teams - ID</ID>
       <Name>Команда</Name>
+      <EstimatedCount>39</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="955bc4bd-7499-4837-96ad-aa95d44ce74a">
           <DataType>Integer</DataType>
@@ -292,15 +362,15 @@
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="dc75bb5a-a7e9-474a-a5bf-5df9b29343bd">
-          <AttributeID>Business</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Направление бизнеса</Name>
-        </AttributeRelationship>
         <AttributeRelationship dwd:design-time-name="a5b80c54-b81d-457f-9dab-e227c1aebf64">
           <AttributeID>t Systems Mobile Trade - ID</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Система мобильных продаж</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bf26f198-7f4a-4c24-9e13-ea28d9c22230">
+          <AttributeID>ID 1</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Направление бизнеса</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
@@ -319,6 +389,7 @@
     <Attribute dwd:design-time-name="d305a280-ea29-402c-a416-589438785add">
       <ID>t Systems Mobile Trade - ID</ID>
       <Name>Система мобильных продаж</Name>
+      <EstimatedCount>6</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="6229fabd-1200-4c1c-8c45-badcc6d398db">
           <DataType>Integer</DataType>
@@ -353,6 +424,7 @@
     <Attribute dwd:design-time-name="2cfe92f3-fd5e-4f76-9b0d-8bcdd5938380">
       <ID>Branch</ID>
       <Name>Филиал</Name>
+      <EstimatedCount>14</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="a4bf212b-4b88-422d-8629-84885901ce41">
           <DataType>WChar</DataType>
@@ -367,19 +439,70 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="b438564e-9a8b-4d1b-9688-2a068559f7c6">
-      <ID>Business</ID>
-      <Name>Направление бизнеса</Name>
+    <Attribute dwd:design-time-name="61998892-ae7b-4068-8771-9d585cc01151">
+      <ID>Description</ID>
+      <Name>Менеджер</Name>
+      <EstimatedCount>1439</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="82f994a4-c34c-42e5-8003-1068d0e3cb29">
-          <DataType>WChar</DataType>
-          <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f8ebf412-af5a-4469-8b78-1f86ddf98da4">
-            <TableID>dbo_t_Teams</TableID>
-            <ColumnID>Business</ColumnID>
+        <KeyColumn dwd:design-time-name="6b1fdfeb-20e7-49b1-b253-2529bb681e37">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="04c511c3-7769-4ad7-9f6b-44b361f834ed">
+            <TableID>dbo_t_Staff</TableID>
+            <ColumnID>ID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="daac205c-ad79-4bfd-bf51-4a8be2ec6bea">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b69221c6-8e8f-4cd3-95bd-a6c0892cf6d0">
+          <TableID>dbo_t_Staff</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <MembersWithData>NonLeafDataHidden</MembersWithData>
+      <ValueColumn dwd:design-time-name="9c753734-49a0-428a-9922-e4422e35d0cb">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="00c88da8-2841-4ffb-bea5-a5bdb8a65a01">
+          <TableID>dbo_t_Staff</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="46a55dc3-9e70-437b-9501-402270c71ac8">
+      <ID>ID 1</ID>
+      <Name>Направление бизнеса</Name>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e0202522-3b3c-46f1-8a36-342d35041b85">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a470b857-3e71-4a9d-9ca4-2fa3a8b573d4">
+            <TableID>dbo_t_Business</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="4179e00c-08d9-45ba-bd4c-9ee2d6054073">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c2b124b3-51f5-41d5-bcb4-458422f22f6f">
+          <TableID>dbo_t_Business</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <ValueColumn dwd:design-time-name="1d662e6e-7758-4b5d-994a-68c81b09149e">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="59fae70a-2d71-424f-8eb7-44274a62b76f">
+          <TableID>dbo_t_Business</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </ValueColumn>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -431,7 +554,7 @@
         <Level dwd:design-time-name="3972dc2b-5649-4fc2-9a53-1015c0615157">
           <ID>Направление бизнеса</ID>
           <Name>Направление бизнеса</Name>
-          <SourceAttributeID>Business</SourceAttributeID>
+          <SourceAttributeID>ID 1</SourceAttributeID>
         </Level>
         <Level dwd:design-time-name="01e26e9f-7565-4791-9d0d-f53a78918157">
           <ID>Команда</ID>
@@ -469,6 +592,48 @@
           <ID>Система мобильных продаж</ID>
           <Name>Система мобильных продаж</Name>
           <SourceAttributeID>t Systems Mobile Trade - ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="8407fe1c-4764-46c1-b657-68a0eb70651e">
+      <ID>Иерархия 6</ID>
+      <Name>Менеджер - Маршрут</Name>
+      <Levels>
+        <Level dwd:design-time-name="8b3bb55e-1880-4a42-b607-7bbdae7935ca">
+          <ID>Менеджер</ID>
+          <Name>Менеджер</Name>
+          <SourceAttributeID>Description</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a32f0880-e33d-4af6-958d-c065cf2c16b1">
+          <ID>Маршрут</ID>
+          <Name>Маршрут</Name>
+          <SourceAttributeID>ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="9cf1c714-e749-4dab-af87-a2bdedc71ef9">
+      <ID>Иерархия 7</ID>
+      <Name>Направление бизнеса - Команда - Менеджер - Маршрут</Name>
+      <Levels>
+        <Level dwd:design-time-name="1f2e2b22-0b75-4c05-b5c3-63de386d4d8d">
+          <ID>Направление бизнеса</ID>
+          <Name>Направление бизнеса</Name>
+          <SourceAttributeID>ID 1</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f61fe73f-b7c3-4e2f-ad62-653437cf7868">
+          <ID>Команда</ID>
+          <Name>Команда</Name>
+          <SourceAttributeID>t Teams - ID</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="4071a754-9d66-4658-8633-76e4564b6331">
+          <ID>Менеджер</ID>
+          <Name>Менеджер</Name>
+          <SourceAttributeID>Description</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="59f0b576-eca3-4232-a232-a638d024f031">
+          <ID>Маршрут</ID>
+          <Name>Маршрут</Name>
+          <SourceAttributeID>ID</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>

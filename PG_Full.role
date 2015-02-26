@@ -7,25 +7,7 @@
  - Направление бизнеса = PG</Description>
   <Members>
     <Member>
-      <Name>TRANSASIA\sokolov.ra</Name>
-    </Member>
-    <Member>
-      <Name>TRANSASIA\ushakov.ds</Name>
-    </Member>
-    <Member>
-      <Name>TRANSASIA\rak.dv</Name>
-    </Member>
-    <Member>
-      <Name>TRANSASIA\grankin.al</Name>
-    </Member>
-    <Member>
-      <Name>TRANSASIA\solomahi.mu</Name>
-    </Member>
-    <Member>
-      <Name>TRANSASIA\borisenko.un</Name>
-    </Member>
-    <Member>
-      <Name>TRANSASIA\kolobkova.om</Name>
+      <Name>TRANSASIA\OLAP_PG</Name>
     </Member>
   </Members>
 </Role>

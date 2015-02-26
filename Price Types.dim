@@ -152,6 +152,7 @@
       <ID>ID</ID>
       <Name>Тип цены</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>168</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="53103502-8b90-4850-bfc8-a01840c4295c">
           <DataType>Integer</DataType>
@@ -193,6 +194,7 @@
     <Attribute dwd:design-time-name="291e04c1-b221-4256-a8c8-b0ef3ecf276b">
       <ID>Business</ID>
       <Name>Направление бизнеса</Name>
+      <EstimatedCount>5</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="2907aacd-bc22-417c-9a51-2a5279e72584">
           <DataType>WChar</DataType>

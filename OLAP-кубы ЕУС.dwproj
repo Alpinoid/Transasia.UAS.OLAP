@@ -72,20 +72,24 @@
       <FullPath>Storehouses.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Goods.dim</Name>
-      <FullPath>Goods.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Trade Chanels.dim</Name>
-      <FullPath>Trade Chanels.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Transactions Type.dim</Name>
       <FullPath>Transactions Type.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Initiatives Types.dim</Name>
       <FullPath>Initiatives Types.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Trade Channels.dim</Name>
+      <FullPath>Trade Channels.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CSKU.dim</Name>
+      <FullPath>CSKU.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Goods.dim</Name>
+      <FullPath>Goods.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
@@ -148,6 +152,7 @@
             <Value xsi:type="xsd:int">1</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>
+        <DeploymentServerEdition>Standard</DeploymentServerEdition>
       </Options>
     </Configuration>
   </Configurations>
