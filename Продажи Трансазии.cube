@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="140" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8880" scrolltop="-2783" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="28284" y="21696" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="140" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8880" scrolltop="-6059" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="28284" y="21696" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -1167,7 +1167,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-2783</Value>
+      <Value>-6059</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -2573,23 +2573,43 @@
 Удаление или изменение команды CALCULATE приведет к изменению данных, содержащихся в кубе.
 Эту команду следует изменять только в том случае, если способ статистической обработки куба задается вручную.
 */
-CALCULATE;                                    
+CALCULATE;  
+  
+CREATE DYNAMIC SET CURRENTCUBE.[Текущий год]
+ AS STRTOSET("[00 Календарь].[Год - Квартал - Месяц - Дата].[Год].&amp;[" + FORMAT(Now(), "yyyy") + "]");  
+
+CREATE DYNAMIC SET CURRENTCUBE.[Текущий квартал]
+ AS STRTOSET("[00 Календарь].[Год - Квартал - Месяц - Дата].[Квартал].&amp;[" + FORMAT(DATEPART("q",Now()), "") + " квартал]&amp;[" + FORMAT(Now(), "yyyy") + "]");  
+
+CREATE DYNAMIC SET CURRENTCUBE.[Текущий месяц]
+ AS STRTOSET("[00 Календарь].[Год - Квартал - Месяц - Дата].[Месяц].&amp;[" + FORMAT(Now(), "MMMM") + "]&amp;[" + FORMAT(Now(), "yyyy") + "]");   
+
+CREATE DYNAMIC SET CURRENTCUBE.[Текущий месяц + два предыдущих]
+ AS STRTOSET("{[00 Календарь].[Год - Квартал - Месяц - Дата].[Месяц].&amp;[" + FORMAT(Now(), "MMMM") + "]&amp;[" + FORMAT(Now(), "yyyy") + "]
+            , [00 Календарь].[Год - Квартал - Месяц - Дата].[Месяц].&amp;[" + FORMAT(Now(), "MMMM") + "]&amp;[" + FORMAT(Now(), "yyyy") + "].Lag(1)
+            , [00 Календарь].[Год - Квартал - Месяц - Дата].[Месяц].&amp;[" + FORMAT(Now(), "MMMM") + "]&amp;[" + FORMAT(Now(), "yyyy") + "].Lag(2)}");  
+                                 
 CREATE MEMBER CURRENTCUBE.[Measures].[Сумма продаж без НДС]
  AS [Measures].[Сумма продаж] - [Measures].[Сумма НДС], 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                                    
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                                          
 CREATE MEMBER CURRENTCUBE.[Measures].[Сумма скидок (руб.)]
  AS [Measures].[Сумма продаж без скидок] - [Measures].[Сумма продаж], 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Наценки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                                    
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Наценки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи'; 
+
+CREATE MEMBER CURRENTCUBE.[00 Календарь].[Год - Квартал - Месяц - Дата].[Вычисляемый элемент]
+ AS STRTOMEMBER("[00 Календарь].[Год - Квартал - Месяц - Дата].[Год].&amp;[" + FORMAT(Now(), "yyyy") + "]") ,
+VISIBLE = 1  ;     
+                                     
 CREATE MEMBER CURRENTCUBE.[Measures].[Скидки (%)]
  AS 1 - [Measures].[Сумма продаж] / [Measures].[Сумма продаж без скидок], 
 FORMAT_STRING = "Percent", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Наценки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Наценки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';      
 
-CREATE HIDDEN SummatorBySalesAmmount;
-[Measures].[SummatorBySalesAmmount] = IIF([Measures].[Сумма продаж] &gt; 0, 1, NULL);
-NON_EMPTY_BEHAVIOR([Measures].[SummatorBySalesAmmount]) = [Measures].[Сумма продаж];
+CREATE HIDDEN SummatorBySalesAmmount;      
+[Measures].[SummatorBySalesAmmount] = IIF([Measures].[Сумма продаж] &gt; 0, 1, NULL);      
+NON_EMPTY_BEHAVIOR([Measures].[SummatorBySalesAmmount]) = [Measures].[Сумма продаж];      
                          
 CREATE MEMBER CURRENTCUBE.[Measures].[Номенклатура. Проданная дистрибьюция]
  AS
@@ -2599,7 +2619,7 @@ SUM(
 )
 ,  
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';      
                           
 CREATE MEMBER CURRENTCUBE.[Measures].[CSKU. Проданная дистрибьюция]
  AS
@@ -2609,7 +2629,7 @@ SUM(
 )
 ,  
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи'; 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';       
                          
 CREATE MEMBER CURRENTCUBE.[Measures].[Номенклатура. Общая дистрибьюция (контрагент)]
  AS
@@ -2620,7 +2640,7 @@ SUM(
 ,  
 FORMAT_STRING = "#,##0;-#,##0", 
 NON_EMPTY_BEHAVIOR = { [Сумма продаж] }, 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                           
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                                 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[CSKU. Общая дистрибьюция (контрагент)]
  AS
@@ -2631,7 +2651,7 @@ SUM(
 ,  
 FORMAT_STRING = "#,##0;-#,##0", 
 NON_EMPTY_BEHAVIOR = { [Сумма продаж] }, 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                         
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                               
 CREATE MEMBER CURRENTCUBE.[Measures].[Номенклатура. Общая дистрибьюция (точка доставки)]
  AS
 SUM(
@@ -2641,7 +2661,7 @@ SUM(
 ,  
 FORMAT_STRING = "#,##0;-#,##0", 
 NON_EMPTY_BEHAVIOR = { [Сумма продаж] }, 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                           
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                                 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[CSKU. Общая дистрибьюция (точка доставки)]
  AS 
@@ -2652,7 +2672,7 @@ SUM(
 , 
 FORMAT_STRING = "#,##0;-#,##0", 
 NON_EMPTY_BEHAVIOR = { [Сумма продаж] }, 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';      
            
 CREATE MEMBER CURRENTCUBE.[Measures].[Нумерическая дистрибьюция (контрагент)]
  AS
@@ -2662,7 +2682,7 @@ SUM(
 )
 , 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';      
                           
 CREATE MEMBER CURRENTCUBE.[Measures].[Нумерическая дистрибьюция (точка доставки)]
  AS
@@ -2672,7 +2692,7 @@ SUM(
 )
 ,  
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';      
                      
 CREATE MEMBER CURRENTCUBE.[Measures].[Номенклатура. Дистрибьюция проданная в точку доставки]
  AS IIF([Measures].[Нумерическая дистрибьюция по точкам доставки] &lt;&gt; 0
@@ -2680,44 +2700,44 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Номенклатура. Дистрибь
     ,0), 
 FORMAT_STRING = "#,##0;-#,##0", 
 NON_EMPTY_BEHAVIOR = { [Сумма продаж] }, 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                           
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                                 
 CREATE MEMBER CURRENTCUBE.[Measures].[CSKU. Дистрибьюция проданная в точку доставки]
  AS IIF([Measures].[Нумерическая дистрибьюция по точкам доставки] &lt;&gt; 0
     ,[Measures].[CSKU. Общая дистрибьюция по точкам доставки] / [Measures].[Нумерическая дистрибьюция по точкам доставки]
     ,0), 
 FORMAT_STRING = "#,##0;-#,##0", 
 NON_EMPTY_BEHAVIOR = { [Сумма продаж] }, 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                         
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                               
 CREATE MEMBER CURRENTCUBE.[Measures].[Номенклатура. Дистрибьюция проданная контрагенту]
  AS IIF([Measures].[Нумерическая дистрибьюция по контрагентам] &lt;&gt; 0
     ,[Measures].[Номенклатура. Общая дистрибьюция по контрагентам] / [Measures].[Нумерическая дистрибьюция по контрагентам]
     ,0), 
 FORMAT_STRING = "#,##0;-#,##0", 
 NON_EMPTY_BEHAVIOR = { [Сумма продаж] }, 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                           
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                                 
 CREATE MEMBER CURRENTCUBE.[Measures].[CSKU. Дистрибьюция проданная контрагенту]
  AS IIF([Measures].[Нумерическая дистрибьюция по контрагентам] &lt;&gt; 0
     ,[Measures].[CSKU. Общая дистрибьюция по контрагентам] / [Measures].[Нумерическая дистрибьюция по контрагентам]
     ,0), 
 FORMAT_STRING = "#,##0;-#,##0", 
 NON_EMPTY_BEHAVIOR = { [Сумма продаж] }, 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                                    
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                                          
 CREATE MEMBER CURRENTCUBE.[Measures].[Наценка от себестоимости (руб.)]
  AS [Measures].[Сумма продаж] - [Measures].[Сумма себестоимости], 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Наценки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                                    
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Наценки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                                          
 CREATE MEMBER CURRENTCUBE.[Measures].[% Наценка от себестоимости]
  AS [Measures].[Сумма продаж] / [Measures].[Сумма себестоимости] - 1, 
 FORMAT_STRING = "Percent", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Наценки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                                    
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Наценки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                                          
 CREATE MEMBER CURRENTCUBE.[Measures].[Наценка от входных цен (руб.)]
  AS [Measures].[Сумма продаж] - [Measures].[Сумма во входных ценах], 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Наценки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                                    
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Наценки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';                                          
 CREATE MEMBER CURRENTCUBE.[Measures].[% Наценка от входных цен]
  AS [Measures].[Сумма продаж] / [Measures].[Сумма во входных ценах] - 1, 
 FORMAT_STRING = "Percent", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Наценки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Наценки' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';      
            
 CREATE MEMBER CURRENTCUBE.[Measures].[Продуктивные визиты]
  AS
@@ -2739,7 +2759,7 @@ COALESCEEMPTY(
 , 
 FORMAT_STRING = "#,##0;-#,##0", 
 NON_EMPTY_BEHAVIOR = { [Сумма продаж] }, 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';    
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Дистрибьюция' ,  ASSOCIATED_MEASURE_GROUP = '01 Продажи';          
      
 CREATE MEMBER CURRENTCUBE.[Measures].[План по инициативным CSKU]
  AS
@@ -2749,7 +2769,7 @@ SUM(
 )
 , 
 NON_EMPTY_BEHAVIOR = { [Количество инициативных артикулов] }, 
-VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = '02 Инициативы';
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = '02 Инициативы';      
 
 CREATE MEMBER CURRENTCUBE.[Measures].[План по инициативным CSKU (точки доставки)]
  AS
@@ -2759,12 +2779,12 @@ SUM(
 )
 , 
 NON_EMPTY_BEHAVIOR = { [Количество инициативных артикулов] }, 
-VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = '02 Инициативы';
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = '02 Инициативы';      
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Процент выполнения плана по CSKU]
  AS [Measures].[CSKU. Проданная дистрибьюция] / [Measures].[План по инициативным CSKU], 
 FORMAT_STRING = "Percent", 
-VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = '02 Инициативы'; 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = '02 Инициативы';       
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Процент выполнения плана по CSKU (точки доставки)]
  AS [Measures].[CSKU. Общая дистрибьюция (точка доставки)] / [Measures].[План по инициативным CSKU (точки доставки)], 
