@@ -53,10 +53,6 @@
               <CubeDimensionID>t Calendar</CubeDimensionID>
               <Attributes>
                 <Attribute>
-                  <AttributeID>Date</AttributeID>
-                  <EstimatedCount>1098</EstimatedCount>
-                </Attribute>
-                <Attribute>
                   <AttributeID>Year</AttributeID>
                   <EstimatedCount>5</EstimatedCount>
                 </Attribute>
@@ -10717,6 +10713,26 @@
           </Aggregations>
         </AggregationDesign>
       </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>t Cubes Changes</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="7377c1c8-d61f-45b9-ada8-7740d489e961">
+          <ID>t Cubes Changes</ID>
+          <Name>t Cubes Changes</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="861f13f4-b40f-4ee9-844c-e8e24ca06b12">
+            <DataSourceViewID>Reporting Database</DataSourceViewID>
+            <TableID>dbo_t_CubesChanges</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
     </MeasureGroup>
   </MeasureGroups>
 </Cube>

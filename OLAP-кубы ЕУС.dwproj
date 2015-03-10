@@ -91,6 +91,10 @@
       <Name>Goods.dim</Name>
       <FullPath>Goods.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Cubes Changes.dim</Name>
+      <FullPath>Cubes Changes.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>

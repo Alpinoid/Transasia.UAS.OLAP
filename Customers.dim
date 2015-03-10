@@ -234,7 +234,7 @@
       <Read>Allowed</Read>
     </DimensionPermission>
   </DimensionPermissions>
-  <UnknownMemberName>Без контрагента</UnknownMemberName>
+  <UnknownMemberName>Unknow</UnknownMemberName>
   <Attributes>
     <Attribute dwd:design-time-name="841a0189-9687-4848-ae07-9fca957bd93d">
       <ID>ID</ID>
