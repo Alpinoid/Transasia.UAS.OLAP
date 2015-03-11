@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3605" scrolltop="-5107" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10319" y="21696" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3605" scrolltop="-5107" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10398" y="21696" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -73,54 +73,60 @@
             <Shape Id="Date ID" Expanded="true">
               <Attributes>
                 <Attribute Id="Date ID" />
+                <Attribute Id="Year 1" />
                 <Attribute Id="Date 1" />
                 <Attribute Id="Day Of Year" />
                 <Attribute Id="Day Of Month" />
+                <Attribute Id="Name Quarter 1" />
+                <Attribute Id="Quarter" />
               </Attributes>
               <Position x="20" y="20" />
             </Shape>
-            <Shape Id="Name Of Month 1" Expanded="true">
+            <Shape Id="Date ID 1" Expanded="false">
               <Attributes>
-                <Attribute Id="Name Of Month 1" />
-                <Attribute Id="Month 1" />
+                <Attribute Id="Date ID 1" />
               </Attributes>
               <Position x="210" y="20" />
-            </Shape>
-            <Shape Id="Weekday Name" Expanded="true">
-              <Attributes>
-                <Attribute Id="Weekday Name" />
-                <Attribute Id="Weekday" />
-              </Attributes>
-              <Position x="210" y="92" />
             </Shape>
             <Shape Id="Week" Expanded="true">
               <Attributes>
                 <Attribute Id="Week" />
                 <Attribute Id="Week 1" />
               </Attributes>
-              <Position x="400" y="92" />
+              <Position x="400" y="20" />
             </Shape>
             <Shape Id="Year" Expanded="true">
               <Attributes>
                 <Attribute Id="Year" />
-                <Attribute Id="Year 1" />
               </Attributes>
-              <Position x="590" y="92" />
+              <Position x="780" y="20" />
             </Shape>
             <Shape Id="Name Of Month" Expanded="true">
               <Attributes>
                 <Attribute Id="Name Of Month" />
-                <Attribute Id="Month" />
+                <Attribute Id="Month 1" />
               </Attributes>
-              <Position x="210" y="164" />
+              <Position x="400" y="92" />
             </Shape>
             <Shape Id="Name Quarter" Expanded="true">
               <Attributes>
                 <Attribute Id="Name Quarter" />
-                <Attribute Id="Name Quarter 1" />
-                <Attribute Id="Quarter" />
               </Attributes>
-              <Position x="400" y="164" />
+              <Position x="590" y="92" />
+            </Shape>
+            <Shape Id="Name Of Month 1" Expanded="true">
+              <Attributes>
+                <Attribute Id="Name Of Month 1" />
+                <Attribute Id="Month" />
+              </Attributes>
+              <Position x="210" y="164" />
+            </Shape>
+            <Shape Id="Weekday Name" Expanded="true">
+              <Attributes>
+                <Attribute Id="Weekday Name" />
+                <Attribute Id="Weekday" />
+              </Attributes>
+              <Position x="210" y="236" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -201,14 +207,21 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="c81748dc-250d-4e33-8406-840baa2150da">
-          <AttributeID>Year 1</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Год</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
+      <NameColumn dwd:design-time-name="277ed7cf-dbbe-4ea7-86ff-a35ca2dc1457">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="371c0e32-8d1b-4e47-9954-205af27958cb">
+          <TableID>dbo_t_Calendar</TableID>
+          <ColumnID>Year</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="7f977194-2ca0-47b1-88eb-1f2b1bee3f15">
+        <DataType>SmallInt</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f3caf531-152e-4687-a428-dcc6c5859b23">
+          <TableID>dbo_t_Calendar</TableID>
+          <ColumnID>Year</ColumnID>
+        </Source>
+      </ValueColumn>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -218,9 +231,9 @@
       <Name>День года</Name>
       <Type>DayOfYear</Type>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="9bfa3bc3-13ad-4f07-8d09-6542560f4fb3">
+        <KeyColumn dwd:design-time-name="deafefa7-eca8-482e-9ca5-2b30b032f337">
           <DataType>SmallInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="026e5f58-47e4-4ac4-8333-91ffd87a98cd">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2d00c341-a926-47cb-b779-dee30e05c050">
             <TableID>dbo_t_Calendar</TableID>
             <ColumnID>DayOfYear</ColumnID>
           </Source>
@@ -235,9 +248,9 @@
       <Name>День месяца</Name>
       <Type>DayOfMonth</Type>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="61477ce6-f5e1-4392-9466-b7d1d81540a1">
+        <KeyColumn dwd:design-time-name="3aba0704-b92c-4831-af0e-5bd997b7a3ca">
           <DataType>UnsignedTinyInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d40b2d7e-e07a-461a-b2a7-4d36eb22e59d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4ea5ef71-24f0-42bb-80aa-ab3eae322566">
             <TableID>dbo_t_Calendar</TableID>
             <ColumnID>DayOfMonth</ColumnID>
           </Source>
@@ -252,58 +265,24 @@
       <Name>День недели</Name>
       <Type>DayOfWeek</Type>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="70319745-1fb3-4168-8338-96e6fe22d732">
+        <KeyColumn dwd:design-time-name="2df59816-7e09-4dde-ab12-23f2500f8a91">
           <DataType>WChar</DataType>
           <DataSize>16</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="127d1514-ccde-40dc-a630-cae7cb02a56b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="64ba07af-0e45-448c-8dc9-eb480be025bf">
             <TableID>dbo_t_Calendar</TableID>
             <ColumnID>WeekdayName</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="c2b615d6-6065-4919-93ec-3b413f876737">
-          <DataType>UnsignedTinyInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d4b25bf9-2a67-4ad1-875a-cb3fa6b46f40">
-            <TableID>dbo_t_Calendar</TableID>
-            <ColumnID>Week</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="87617bcd-f61e-4016-813f-4fe17dc10052">
-          <DataType>SmallInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c49968b6-20ee-4b7b-a070-8cadb189aa4a">
-            <TableID>dbo_t_Calendar</TableID>
-            <ColumnID>Year</ColumnID>
-          </Source>
-        </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="5770ac6a-71e5-44c9-9665-e6e880b62437">
-        <DataType>WChar</DataType>
-        <DataSize>16</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="6f6a73b3-0f59-4afd-a3d8-1f571c0ce727">
-          <TableID>dbo_t_Calendar</TableID>
-          <ColumnID>WeekdayName</ColumnID>
-        </Source>
-      </NameColumn>
       <AttributeRelationships>
         <AttributeRelationship dwd:design-time-name="14d9a0b2-4006-40f8-9ce6-acfc60823d64">
           <AttributeID>Weekday</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Номер дня недели</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="a75f3cd1-fe12-40f4-959d-c4add946aa4a">
-          <AttributeID>Week</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>WeekOfYear</Name>
-        </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>AttributeKey</OrderBy>
       <OrderByAttributeID>Weekday</OrderByAttributeID>
-      <ValueColumn dwd:design-time-name="8fc0cf5e-594f-415a-bd73-17e747deb6c3">
-        <DataType>UnsignedTinyInt</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="4f53ff59-6a10-44c3-82d1-9f5fcda21257">
-          <TableID>dbo_t_Calendar</TableID>
-          <ColumnID>Weekday</ColumnID>
-        </Source>
-      </ValueColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -313,19 +292,18 @@
       <Type>Quarters</Type>
       <EstimatedCount>14</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b48d164e-9c87-4742-bad6-741a1c0af0cc">
-          <DataType>WChar</DataType>
-          <DataSize>16</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="21849789-b9f8-423d-9204-248804569b1f">
-            <TableID>dbo_t_Calendar</TableID>
-            <ColumnID>NameQuarter</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="dc4e6821-ef2d-4321-abb2-a6fa37405344">
+        <KeyColumn dwd:design-time-name="b6ad3c98-9c29-45b6-ab3b-81f4d0c5688c">
           <DataType>SmallInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5d27978c-3608-4680-a6aa-19504656a23a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c5bd2c8a-de9e-47be-9ecf-39aa5b740f42">
             <TableID>dbo_t_Calendar</TableID>
             <ColumnID>Year</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="6648689a-933f-4f3f-a4b8-cbacc21febde">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="32868e11-891a-43f7-9d80-0ea9377fd70c">
+            <TableID>dbo_t_Calendar</TableID>
+            <ColumnID>Quarter</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
@@ -343,25 +321,13 @@
           <RelationshipType>Rigid</RelationshipType>
           <Name>Year</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="66c913a6-dd3e-45a6-98dd-b6a4bcda16e3">
-          <AttributeID>Quarter</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Квартал года</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="878573db-7b09-4424-9a1b-3188da930b13">
-          <AttributeID>Name Quarter 1</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Квартал</Name>
-        </AttributeRelationship>
       </AttributeRelationships>
-      <OrderBy>AttributeKey</OrderBy>
-      <OrderByAttributeID>Quarter</OrderByAttributeID>
       <ValueColumn dwd:design-time-name="04888cc2-330d-4227-a956-a15544b2643e">
         <DataType>WChar</DataType>
         <DataSize>16</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="60421337-17db-4506-b6dd-15894483d196">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ceecc179-ff27-42d5-ac4c-c377c74f8bc9">
           <TableID>dbo_t_Calendar</TableID>
-          <ColumnID>NameQuarter</ColumnID>
+          <ColumnID>Quarter</ColumnID>
         </Source>
       </ValueColumn>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
@@ -373,9 +339,9 @@
       <Name>Квартал года</Name>
       <Type>QuarterOfYear</Type>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ad4bec26-d60b-4ed6-8da4-209ad1a61164">
+        <KeyColumn dwd:design-time-name="c65bf78c-bc29-4e36-96d6-5a95cb3682d1">
           <DataType>UnsignedTinyInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d43289fe-3d77-41a2-ae5c-dd20fa1ec849">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="82c956f9-28f3-49e6-8541-3371e1d3e056">
             <TableID>dbo_t_Calendar</TableID>
             <ColumnID>Quarter</ColumnID>
           </Source>
@@ -390,9 +356,9 @@
       <Name>Месяц года</Name>
       <Type>MonthOfYear</Type>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="df43a9b4-7675-466d-b092-ce1cdf94ec01">
+        <KeyColumn dwd:design-time-name="0d2046b9-d23b-4f94-904a-2292f16cea47">
           <DataType>SmallInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="67979d43-d2fc-473d-87e3-79bddc9db498">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="40be1d2d-8a2e-408d-a88c-9767ae1850ec">
             <TableID>dbo_t_Calendar</TableID>
             <ColumnID>Month</ColumnID>
           </Source>
@@ -408,19 +374,18 @@
       <Type>Months</Type>
       <EstimatedCount>38</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5d05ad4f-fb3f-4fb7-9011-af4ad82ca295">
-          <DataType>WChar</DataType>
-          <DataSize>16</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fde2b62a-8b03-459c-aa84-12ca8c132d8d">
-            <TableID>dbo_t_Calendar</TableID>
-            <ColumnID>NameOfMonth</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="2289e382-107f-4d62-a10b-5042f223d2e4">
+        <KeyColumn dwd:design-time-name="8f7d3173-1b16-4e5a-b1ce-941d24abaa2d">
           <DataType>SmallInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4e3e3051-3190-4982-a53b-0c90f0901dc9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eb703ef5-4b60-483a-9ffc-3e7ce38725e0">
             <TableID>dbo_t_Calendar</TableID>
             <ColumnID>Year</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="8c8166ed-d8fd-412b-9954-dcb9b9e0aac9">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f98a964b-7d04-4ecc-84ee-2b0b6ae0b2cd">
+            <TableID>dbo_t_Calendar</TableID>
+            <ColumnID>Month</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
@@ -438,14 +403,14 @@
           <RelationshipType>Rigid</RelationshipType>
           <Name>Quarter</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="5163a7e0-e02c-4b40-96cd-54db27712976">
-          <AttributeID>Month</AttributeID>
+        <AttributeRelationship dwd:design-time-name="f76f1163-cd56-4d7c-b52e-24bd38fbbcb3">
+          <AttributeID>Month 1</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
-          <Name>Месяц года</Name>
+          <Name>MonthOfYear</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>AttributeKey</OrderBy>
-      <OrderByAttributeID>Month</OrderByAttributeID>
+      <OrderByAttributeID>Month 1</OrderByAttributeID>
       <ValueColumn dwd:design-time-name="ffbcd4a5-88c3-4b47-b82b-f553a144f053">
         <DataType>SmallInt</DataType>
         <Source xsi:type="ColumnBinding" dwd:design-time-name="175dc637-8b18-4ae9-8998-a321b418327f">
@@ -463,18 +428,18 @@
       <Type>WeekOfYear</Type>
       <EstimatedCount>161</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a23315c3-4e84-4a56-a980-66023432f763">
-          <DataType>UnsignedTinyInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0fe322ef-defb-4dfb-8d20-82fc69963ca2">
-            <TableID>dbo_t_Calendar</TableID>
-            <ColumnID>Week</ColumnID>
-          </Source>
-        </KeyColumn>
-        <KeyColumn dwd:design-time-name="cf2bb60e-51a4-4a1d-9184-82f04456750f">
+        <KeyColumn dwd:design-time-name="10c9a673-7587-43a8-a27a-aac391073399">
           <DataType>SmallInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d22e1912-3eca-44a6-92fc-34a15f78394f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fb0b05ca-3325-4b14-9f9b-670db7598550">
             <TableID>dbo_t_Calendar</TableID>
             <ColumnID>Year</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="38f3b9bf-1677-4c04-9a2c-0c9d78273720">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bf8b4436-1682-4cde-a876-d5fa69ad29c1">
+            <TableID>dbo_t_Calendar</TableID>
+            <ColumnID>Week</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
@@ -514,15 +479,14 @@
       <Name>Номер дня недели</Name>
       <Type>DayOfWeek</Type>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4e7d9371-c9ad-4f10-bb6d-ddbf4b368ebf">
+        <KeyColumn dwd:design-time-name="6c5eff51-51c7-409d-a89d-91288c516835">
           <DataType>UnsignedTinyInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a597fafc-df49-4f80-b688-0b719cf5cb2d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c31f9c38-d948-41cc-8401-56d569955f6c">
             <TableID>dbo_t_Calendar</TableID>
             <ColumnID>Weekday</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -531,11 +495,11 @@
       <Name>Дата</Name>
       <Type>Date</Type>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="41740c39-4332-4f5c-a59f-88d9b558eb50">
-          <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7662c335-e9eb-4fa8-a99e-d1beea77729b">
+        <KeyColumn dwd:design-time-name="dd684725-a03b-4c6e-b1a7-42063c7c946a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c222ddcc-2f32-4d8f-a220-ff34bbea99a8">
             <TableID>dbo_t_Calendar</TableID>
-            <ColumnID>Date</ColumnID>
+            <ColumnID>DateID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
@@ -548,46 +512,31 @@
       </NameColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-      <ddl300_300:FormatString>dd.MM.yyyy</ddl300_300:FormatString>
+      <ddl300_300:FormatString>Short Date</ddl300_300:FormatString>
     </Attribute>
     <Attribute dwd:design-time-name="6d5dfbaa-46d5-43c9-8664-2a9b62f62aea">
       <ID>Name Of Month 1</ID>
       <Name>Месяц</Name>
       <Type>Months</Type>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e5bf9f64-8f67-41a8-a945-810efb8fa3db">
+        <KeyColumn dwd:design-time-name="04be0a8d-6b1a-411a-8f4a-5445c41a8009">
           <DataType>WChar</DataType>
           <DataSize>16</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="918b8f71-7163-480c-92e3-5d78e35540e4">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="42f79715-69a6-4e85-8515-051e5b781c9f">
             <TableID>dbo_t_Calendar</TableID>
             <ColumnID>NameOfMonth</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="5312198e-1359-427d-afd0-259a4e0c450d">
-        <DataType>WChar</DataType>
-        <DataSize>16</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="b55f1fd0-b9b4-4402-b1a5-0edcd84e76bd">
-          <TableID>dbo_t_Calendar</TableID>
-          <ColumnID>NameOfMonth</ColumnID>
-        </Source>
-      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="b0ca8405-faad-48c4-935e-0dd100c94578">
-          <AttributeID>Month 1</AttributeID>
+        <AttributeRelationship dwd:design-time-name="4828db92-59db-43c4-87d3-b737c5b2ad2b">
+          <AttributeID>Month</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
-          <Name>MonthOfYear</Name>
+          <Name>Месяц года</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>AttributeKey</OrderBy>
-      <OrderByAttributeID>Month 1</OrderByAttributeID>
-      <ValueColumn dwd:design-time-name="f7783b8b-30a2-4937-aafe-8589bf183c7c">
-        <DataType>SmallInt</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="09436059-6756-4c45-b5cc-9d22349023dd">
-          <TableID>dbo_t_Calendar</TableID>
-          <ColumnID>Month</ColumnID>
-        </Source>
-      </ValueColumn>
+      <OrderByAttributeID>Month</OrderByAttributeID>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -604,6 +553,7 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -612,10 +562,10 @@
       <Name>Квартал</Name>
       <Type>Quarters</Type>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d09dea87-1fb2-41b3-bbc1-572ac83af501">
+        <KeyColumn dwd:design-time-name="9b3bbfbf-ad33-4798-bad1-bea9ac9c4a82">
           <DataType>WChar</DataType>
           <DataSize>16</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7418f534-fc94-4108-bd2f-1f34e98c8161">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aea8b9ae-2dcc-4468-a86d-5183a95981b3">
             <TableID>dbo_t_Calendar</TableID>
             <ColumnID>NameQuarter</ColumnID>
           </Source>
@@ -630,14 +580,35 @@
       <Name>MonthOfYear</Name>
       <Type>MonthOfYear</Type>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="7b28d96c-edc4-4301-ab4a-55f479237bc1">
+        <KeyColumn dwd:design-time-name="c4a9c771-0052-4793-99af-fbb4f5ee0899">
           <DataType>SmallInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d50a4568-eef2-4a42-b05e-a11b533b1125">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="98d5f11b-807a-473c-84f4-668edb91edaf">
+            <TableID>dbo_t_Calendar</TableID>
+            <ColumnID>Year</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="77bf6a51-f651-44a7-91cc-07bf3d9db638">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f91d20bb-5f03-48ac-8194-af32e5b5a1c5">
             <TableID>dbo_t_Calendar</TableID>
             <ColumnID>Month</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="aea35844-c0ff-4220-b8bf-e568c45fc284">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8ec03d8e-688b-4453-a849-075643fb6a59">
+          <TableID>dbo_t_Calendar</TableID>
+          <ColumnID>Month</ColumnID>
+        </Source>
+      </NameColumn>
+      <ValueColumn dwd:design-time-name="31e5b783-b8ca-4ffd-9fa1-3efae1b668f0">
+        <DataType>SmallInt</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1063c6a1-2e87-4502-8e22-68528e230e3f">
+          <TableID>dbo_t_Calendar</TableID>
+          <ColumnID>Month</ColumnID>
+        </Source>
+      </ValueColumn>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -647,9 +618,9 @@
       <Name>Неделя года</Name>
       <Type>WeekOfYear</Type>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1a5dbc94-2b4f-4664-9075-61b0ca3fcc5b">
+        <KeyColumn dwd:design-time-name="49614dd6-ab8c-4d90-9a81-4cb85b66c3df">
           <DataType>UnsignedTinyInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ebaca173-db41-492a-ad4b-70a81f523622">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea010317-4122-43ce-8c47-6735fd2a26eb">
             <TableID>dbo_t_Calendar</TableID>
             <ColumnID>Week</ColumnID>
           </Source>
@@ -674,18 +645,12 @@
       </KeyColumns>
       <NameColumn dwd:design-time-name="ccfac596-2edd-4441-af97-90b6cdbcf2fb">
         <DataType>WChar</DataType>
-        <Format>dd.MM.yyyy</Format>
         <Source xsi:type="ColumnBinding" dwd:design-time-name="eec227af-ac62-41cf-93e0-f9291ab80ff1">
           <TableID>dbo_t_Calendar</TableID>
           <ColumnID>Date</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="89d4e132-03e6-4c3e-8d87-b497c19b0e3e">
-          <AttributeID>Name Of Month</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
-          <Name>Month</Name>
-        </AttributeRelationship>
         <AttributeRelationship dwd:design-time-name="06d39ee1-6f3e-4ef3-b1f7-059724f9074e">
           <AttributeID>Weekday Name</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
@@ -706,10 +671,67 @@
           <RelationshipType>Rigid</RelationshipType>
           <Name>Дата</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="0485618a-2ea5-4b6a-ad05-6ba7ce506164">
+        <AttributeRelationship dwd:design-time-name="a1442fe9-4e64-4e11-bee1-cf4085d8e8a3">
+          <AttributeID>Quarter</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Квартал года</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a96ee7a6-d586-4e48-bbaf-bb750a7cf7d5">
           <AttributeID>Name Of Month 1</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Месяц</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c3435be2-b87d-4f47-960f-da2eedc31244">
+          <AttributeID>Name Quarter 1</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Квартал</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="51c08edd-6555-4858-8319-41b712fa3e93">
+          <AttributeID>Year 1</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Год</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f04f9cad-b909-4992-bbc9-96e15d7b099b">
+          <AttributeID>Date ID 1</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+      <ddl300_300:FormatString>Short Date</ddl300_300:FormatString>
+    </Attribute>
+    <Attribute dwd:design-time-name="5fc1edc2-fbcb-4b05-9f53-4688e2d75348">
+      <ID>Date ID 1</ID>
+      <Name>Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="82f7bf97-2b1c-415b-92cb-fedd0148a50c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0b42977f-7cea-4fac-bbda-71502db5fbec">
+            <TableID>dbo_t_Calendar</TableID>
+            <ColumnID>DateID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="a75a09b5-df63-4b66-b581-e80afd83e800">
+        <DataType>WChar</DataType>
+        <Format>Short Date</Format>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6d967532-6ea1-40da-a7df-929d1bfb5ee5">
+          <TableID>dbo_t_Calendar</TableID>
+          <ColumnID>Date</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ba0baaaa-671b-4724-baab-f71d6693fad8">
+          <AttributeID>Name Of Month</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Month</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="da017df3-af7d-4b55-9641-d7088aa4a80f">
+          <AttributeID>Week</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>WeekOfYear</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
@@ -732,10 +754,10 @@
           <Name>Месяц</Name>
           <SourceAttributeID>Name Of Month</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="07e4fe0e-e16e-4323-8207-02e77765dae6">
-          <ID>Дата</ID>
+        <Level dwd:design-time-name="26a8e49d-9b7a-4c28-a3d1-915291e1cee5">
+          <ID>Date</ID>
           <Name>Дата</Name>
-          <SourceAttributeID>Date ID</SourceAttributeID>
+          <SourceAttributeID>Date ID 1</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
@@ -758,10 +780,10 @@
           <Name>Месяц</Name>
           <SourceAttributeID>Name Of Month</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="d1d67128-3cea-4649-8a1d-39ed7333cd25">
-          <ID>Дата</ID>
+        <Level dwd:design-time-name="478e9fdd-cd62-4612-8ffb-5bedfe133150">
+          <ID>Date</ID>
           <Name>Дата</Name>
-          <SourceAttributeID>Date ID</SourceAttributeID>
+          <SourceAttributeID>Date ID 1</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
@@ -779,10 +801,36 @@
           <Name>Неделя</Name>
           <SourceAttributeID>Week</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="e54bef4c-290c-411c-af11-42aead940271">
-          <ID>Дата</ID>
+        <Level dwd:design-time-name="9410235a-7223-41d0-82b5-767229b6a639">
+          <ID>Date</ID>
           <Name>Дата</Name>
-          <SourceAttributeID>Date ID</SourceAttributeID>
+          <SourceAttributeID>Date ID 1</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="b2753213-e120-4dba-bcc9-c6d5e8095c0f">
+      <ID>Иерархия 3</ID>
+      <Name>Специальные периоды</Name>
+      <Levels>
+        <Level dwd:design-time-name="444a57e9-60f6-434b-8d74-13a97f37a2a3">
+          <ID>Year</ID>
+          <Name>Год</Name>
+          <SourceAttributeID>Year</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="9822fc33-6719-4434-85c9-9d25020d5765">
+          <ID>Quarter</ID>
+          <Name>Квартал</Name>
+          <SourceAttributeID>Name Quarter</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="13d7d1fd-939a-4fb9-90be-2f5f6ebcfd01">
+          <ID>Month</ID>
+          <Name>Месяц</Name>
+          <SourceAttributeID>Name Of Month</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ed565d9e-fd13-42b5-a2cc-0885fadfa1a5">
+          <ID>Date</ID>
+          <Name>Дата</Name>
+          <SourceAttributeID>Date ID 1</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
