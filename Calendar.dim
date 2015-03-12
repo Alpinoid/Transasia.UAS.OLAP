@@ -634,6 +634,7 @@
       <ID>Date ID</ID>
       <Name>Date ID</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>1098</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="d993cabd-24a0-41a0-b812-37d6a7fc6fa2">
           <DataType>Integer</DataType>
@@ -705,6 +706,7 @@
     <Attribute dwd:design-time-name="5fc1edc2-fbcb-4b05-9f53-4688e2d75348">
       <ID>Date ID 1</ID>
       <Name>Date</Name>
+      <EstimatedCount>1098</EstimatedCount>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="82f7bf97-2b1c-415b-92cb-fedd0148a50c">
           <DataType>Integer</DataType>
