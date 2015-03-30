@@ -24643,5 +24643,25 @@
         </AggregationDesign>
       </AggregationDesigns>
     </MeasureGroup>
+    <MeasureGroup>
+      <ID>t CSKU Periods Of TPR</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ba0f53b8-08e8-4dc2-890c-d878e4944b3e">
+          <ID>t CSKU Periods Of TPR</ID>
+          <Name>t CSKU Periods Of TPR</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5224da7d-5cbe-4f99-b980-45d233c6c969">
+            <DataSourceViewID>Reporting Database</DataSourceViewID>
+            <TableID>dbo_t_CSKUPeriodsOfTPR</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
   </MeasureGroups>
 </Cube>

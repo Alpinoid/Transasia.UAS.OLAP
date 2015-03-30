@@ -20,6 +20,10 @@
   </Cubes>
   <Dimensions>
     <ProjectItem>
+      <Name>Branches ISIS.dim</Name>
+      <FullPath>Branches ISIS.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Branches.dim</Name>
       <FullPath>Branches.dim</FullPath>
     </ProjectItem>
@@ -36,8 +40,24 @@
       <FullPath>Credit Lines.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>CSKU.dim</Name>
+      <FullPath>CSKU.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Cubes Changes.dim</Name>
+      <FullPath>Cubes Changes.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customers ISIS.dim</Name>
+      <FullPath>Customers ISIS.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Customers.dim</Name>
       <FullPath>Customers.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Delivery Points ISIS.dim</Name>
+      <FullPath>Delivery Points ISIS.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Delivery Points.dim</Name>
@@ -48,8 +68,20 @@
       <FullPath>Documents.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Goods.dim</Name>
+      <FullPath>Goods.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Initiatives Types.dim</Name>
+      <FullPath>Initiatives Types.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Organizations.dim</Name>
       <FullPath>Organizations.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Periods of TPR.dim</Name>
+      <FullPath>Periods of TPR.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Price Types.dim</Name>
@@ -72,28 +104,12 @@
       <FullPath>Storehouses.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Transactions Type.dim</Name>
-      <FullPath>Transactions Type.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Initiatives Types.dim</Name>
-      <FullPath>Initiatives Types.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Trade Channels.dim</Name>
       <FullPath>Trade Channels.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>CSKU.dim</Name>
-      <FullPath>CSKU.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Goods.dim</Name>
-      <FullPath>Goods.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Cubes Changes.dim</Name>
-      <FullPath>Cubes Changes.dim</FullPath>
+      <Name>Transactions Type.dim</Name>
+      <FullPath>Transactions Type.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
