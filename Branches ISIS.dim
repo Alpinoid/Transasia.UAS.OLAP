@@ -1,0 +1,415 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c4758731-ae2d-4287-af8a-052877823dbf" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Branches ISIS</ID>
+  <Name>Branches ISIS</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3472" scrolltop="-6033" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10398" y="21008" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_Branches" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3440" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000700d00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_t_Branches" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3472</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6033</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="136">
+            <Shape Id="ID" Expanded="true">
+              <Attributes>
+                <Attribute Id="ID" />
+                <Attribute Id="Order By" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Child Description" Expanded="true">
+              <Attributes>
+                <Attribute Id="Child Description" />
+                <Attribute Id="Order By 1" />
+              </Attributes>
+              <Position x="195" y="20" />
+            </Shape>
+            <Shape Id="Parent Description" Expanded="true">
+              <Attributes>
+                <Attribute Id="Parent Description" />
+                <Attribute Id="Parent Order By" />
+              </Attributes>
+              <Position x="370" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2e7e7221-e6b6-4025-862a-79453c494fb3">
+    <DataSourceViewID>Reporting Database</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="42a53f22-9121-46a7-bc3b-03331ccd85ca">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <DimensionPermissions>
+    <DimensionPermission dwd:design-time-name="428b4035-037b-4aa5-88ea-4a95a2ed3c21">
+      <ID>DimensionPermission</ID>
+      <Name>DimensionPermission</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 2</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="39e51a97-e1cf-4715-9e5e-e36987778f3c">
+      <ID>DimensionPermission 1</ID>
+      <Name>DimensionPermission 1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>PG_Full</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="0935eebd-3412-4e42-9358-4e8ca0c418d1">
+      <ID>DimensionPermission 2</ID>
+      <Name>DimensionPermission 2</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>ALL_Full</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="c8830778-3989-4355-b801-1d942864ea5e">
+      <ID>DimensionPermission 3</ID>
+      <Name>DimensionPermission 3</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>CPG</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="7e352f69-43ea-479f-8e78-53a987944771">
+      <ID>DimensionPermission 4</ID>
+      <Name>DimensionPermission 4</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>CHM_Full</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="dd91aff6-6bd4-433f-a8cd-243e016cb649">
+      <ID>DimensionPermission 5</ID>
+      <Name>DimensionPermission 5</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="13a0ec83-f32b-4f16-bf89-17b9b5341ce1">
+          <AttributeID>Child Description</AttributeID>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+  </DimensionPermissions>
+  <UnknownMemberName>Без филиала</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="0326b32c-aa73-4ee7-878d-6f5306daab97">
+      <ID>ID</ID>
+      <Name>Филиал</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>14</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="da766d02-685e-478d-980b-a499fe7b7203">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c5955c13-8dba-4833-8e02-807ec3cf4ae2">
+            <TableID>dbo_t_Branches</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="190cf5c9-1c89-4168-86a4-c2c46979e7f7">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6d4328dc-dd40-4fac-a387-a30da2ab631c">
+          <TableID>dbo_t_Branches</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9a4e87b8-2d1e-4c33-b91e-258510107a5c">
+          <AttributeID>Order By</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Order By</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="faa0ca13-4802-45f1-b205-fe0f836be863">
+          <AttributeID>Child Description</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Child Description</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>AttributeName</OrderBy>
+      <OrderByAttributeID>Order By</OrderByAttributeID>
+      <ValueColumn dwd:design-time-name="008814a4-6036-41db-9d8f-89b10123c371">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d51a6322-90a7-43e5-8cea-a5672c0779f1">
+          <TableID>dbo_t_Branches</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9bdf9dfb-d794-48bb-99eb-58c0f239a1b0">
+      <ID>Parent Description</ID>
+      <Name>Parent Description</Name>
+      <EstimatedCount>10</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="780e6ca5-e9d8-4875-a1da-b566e081419a">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="44c0b940-e062-4151-b9cc-927aea6e34c6">
+            <TableID>dbo_t_Branches</TableID>
+            <ColumnID>ParentDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="48a281f9-c559-437a-b5ab-6a30c8bb4888">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="019401cd-34cf-49f3-a76c-fb715c2ca8be">
+          <TableID>dbo_t_Branches</TableID>
+          <ColumnID>ParentDescription</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9aeb2785-2a23-4b40-8632-fbc4ad775587">
+          <AttributeID>Parent Order By</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent Order By</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>AttributeName</OrderBy>
+      <OrderByAttributeID>Parent Order By</OrderByAttributeID>
+      <ValueColumn dwd:design-time-name="1b78fae9-3c0b-4162-a8b7-1d448c4c46d5">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7449b5c9-5d80-4f00-8e51-fbac6a4b4ab2">
+          <TableID>dbo_t_Branches</TableID>
+          <ColumnID>ParentDescription</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e5424ae3-7d2b-4d9c-b1ec-4a55dfabd086">
+      <ID>Child Description</ID>
+      <Name>Child Description</Name>
+      <EstimatedCount>14</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="88f9ca5f-efe9-495f-812e-bb929c6cd0c3">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dca38e5b-37b3-4451-acd0-ba7fb476d671">
+            <TableID>dbo_t_Branches</TableID>
+            <ColumnID>ParentDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="e7db133c-4043-4847-9ffe-2de5321e61e9">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e9d984f3-78eb-4ceb-ab6d-832b32c850b2">
+            <TableID>dbo_t_Branches</TableID>
+            <ColumnID>ChildDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="ae4a5ae3-dac7-41db-b927-38fd1a7b2aa7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2d3450c1-6286-4738-8442-ed5ee8277742">
+            <TableID>dbo_t_Branches</TableID>
+            <ColumnID>OrderBy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="b226b973-3efa-48fe-8978-ca7a1ce37fb2">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ebcf4777-0604-4d2e-9b59-a9596c7e200a">
+          <TableID>dbo_t_Branches</TableID>
+          <ColumnID>ChildDescription</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="2855be46-966a-4ce6-9dd7-31647ae356e5">
+          <AttributeID>Parent Description</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Parent Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d246ceb1-4412-4dd5-a170-0dc640a736ea">
+          <AttributeID>Order By 1</AttributeID>
+          <Name>Child Order By</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>AttributeName</OrderBy>
+      <OrderByAttributeID>Order By 1</OrderByAttributeID>
+      <ValueColumn dwd:design-time-name="ee0fb0fe-23cb-4df0-b48a-7abe98f39c07">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c860333d-1939-4254-830c-f4ea096eab2b">
+          <TableID>dbo_t_Branches</TableID>
+          <ColumnID>ChildDescription</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d93b4083-d81c-4584-81ca-771101fb0ca5">
+      <ID>Order By</ID>
+      <Name>Order By</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d288f379-a66d-4fa6-a5b3-de907544cb27">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a1c8d903-bfbb-4a7f-a01f-ebcdf7e9b848">
+            <TableID>dbo_t_Branches</TableID>
+            <ColumnID>OrderBy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="141e2598-c43a-4b0f-b114-004716d88490">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ca5d3790-2a37-4769-94fe-13b6720f18ef">
+          <TableID>dbo_t_Branches</TableID>
+          <ColumnID>OrderBy</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0ab56d6b-9192-4720-9d02-9b7c6d8f765b">
+      <ID>Order By 1</ID>
+      <Name>Child Order By</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e84cd434-b139-447d-883b-1456e1292e34">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d1f35011-0069-435c-9e5a-36a8fd59f186">
+            <TableID>dbo_t_Branches</TableID>
+            <ColumnID>OrderBy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="49393167-80b1-41cb-90ef-79e10db56ee9">
+      <ID>Parent Order By</ID>
+      <Name>Parent Order By</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5bb07869-f321-4d93-b656-8c7fb377a39a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3bebc705-ef4c-423f-8af4-7625c2a40d96">
+            <TableID>dbo_t_Branches</TableID>
+            <ColumnID>ParentOrderBy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="271a3379-7cdc-45cc-a4f2-62ad6cf13022">
+      <ID>Иерархия</ID>
+      <Name>ISIS Иерархия филиалов</Name>
+      <Levels>
+        <Level dwd:design-time-name="4c63c91c-99c4-4dec-b9e7-be741015a780">
+          <ID>Parent Description</ID>
+          <Name>Филиал</Name>
+          <SourceAttributeID>Parent Description</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5d574a3d-a02a-430d-919b-b0acb9274387">
+          <ID>Child Description</ID>
+          <Name>Офис продаж</Name>
+          <SourceAttributeID>Child Description</SourceAttributeID>
+          <HideMemberIf>OnlyChildWithNoName</HideMemberIf>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="47db8064-dd69-470a-a98b-a08f9064e192">
+      <ID>Иерархия 1</ID>
+      <Name>ISIS Филиалы</Name>
+      <Levels>
+        <Level dwd:design-time-name="16e2ea2d-92f9-45a2-8382-675a52f9754d">
+          <ID>Филиал</ID>
+          <Name>Филиал</Name>
+          <SourceAttributeID>ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:StringStoresCompatibilityLevel>1100</ddl300:StringStoresCompatibilityLevel>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

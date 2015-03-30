@@ -1,0 +1,658 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="693f7bb7-14e1-4aa3-96b7-60c5e78b48aa" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Delivery Points ISIS</ID>
+  <Name>Delivery Points ISIS</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7035" scrolltop="-10782" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10398" y="21008" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_DeliveryPoints" left="-2282" top="-2938" logicalid="6" controlid="1" masterid="0" hint1="0" hint2="0" width="3281" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000d10c00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_t_DeliveryPoints" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_TypesOfGoldStore" left="2037" top="-6773" logicalid="7" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_t_TypesOfGoldStore" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-392" top="-5393" logicalid="8" controlid="3" masterid="0" hint1="0" hint2="0" width="3229" height="2755" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_t_DeliveryPoints_t_TypesOfGoldStore]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="1" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2437" y="-4894" />
+              <point x="2437" y="-3916" />
+              <point x="-92" y="-3916" />
+              <point x="-92" y="-2938" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_Customers" left="2540" top="2328" logicalid="9" controlid="4" masterid="0" hint1="0" hint2="0" width="4022" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b60f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_t_Customers" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-1492" top="757" logicalid="10" controlid="5" masterid="0" hint1="0" hint2="0" width="4793" height="2071" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_t_DeliveryPoints_t_Customers]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="0" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2901" y="2328" />
+              <point x="2901" y="1693" />
+              <point x="-1192" y="1693" />
+              <point x="-1192" y="1057" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-7035</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-10782</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-2282</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-6773</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="239">
+            <Shape Id="ID" Expanded="true">
+              <Attributes>
+                <Attribute Id="ID" />
+                <Attribute Id="ID 2" />
+                <Attribute Id="Is KBD" />
+                <Attribute Id="Code" />
+                <Attribute Id="ID 1" />
+                <Attribute Id="Fact Address" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Description Code" Expanded="false">
+              <Attributes>
+                <Attribute Id="Description Code" />
+              </Attributes>
+              <Position x="323" y="20" />
+            </Shape>
+            <Shape Id="Branch" Expanded="false">
+              <Attributes>
+                <Attribute Id="Branch" />
+              </Attributes>
+              <Position x="627" y="20" />
+            </Shape>
+            <Shape Id="Description Code 2" Expanded="false">
+              <Attributes>
+                <Attribute Id="Description Code 2" />
+              </Attributes>
+              <Position x="323" y="68" />
+            </Shape>
+            <Shape Id="Description Code 1" Expanded="false">
+              <Attributes>
+                <Attribute Id="Description Code 1" />
+              </Attributes>
+              <Position x="627" y="68" />
+            </Shape>
+            <Shape Id="Code Description" Expanded="false">
+              <Attributes>
+                <Attribute Id="Code Description" />
+              </Attributes>
+              <Position x="323" y="116" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="1d958ed3-050d-4995-ab73-fde35e052c49">
+    <DataSourceViewID>Reporting Database</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="0cc69dff-7944-4b11-bb91-9c5323227cfd">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <DimensionPermissions>
+    <DimensionPermission dwd:design-time-name="fceb0058-1a7b-469d-82d6-0a784e07a420">
+      <ID>DimensionPermission</ID>
+      <Name>DimensionPermission</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 2</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="9f4cdf6e-6e67-4f00-b806-407498fd6310">
+      <ID>DimensionPermission 1</ID>
+      <Name>DimensionPermission 1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>PG_Full</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="67182361-4d81-4da7-9f05-4e4dc2557847">
+      <ID>DimensionPermission 2</ID>
+      <Name>DimensionPermission 2</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>ALL_Full</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="807aa5d1-06fd-4ffc-ac7b-ce790fb9d79b">
+      <ID>DimensionPermission 3</ID>
+      <Name>DimensionPermission 3</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>CPG</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="05c7f9e8-dcb2-4978-a0b8-00a1c0835a04">
+      <ID>DimensionPermission 4</ID>
+      <Name>DimensionPermission 4</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>CHM_Full</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+  </DimensionPermissions>
+  <UnknownMemberName>Без точки доставки</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="a079071a-b33b-4324-a134-967d7e590e3a">
+      <ID>ID</ID>
+      <Name>Точка доставки</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>62198</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cf71ece3-1350-42a5-b668-7714f1a0d6ab">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1efc61e4-f8f1-46c9-9c09-3f32a64c2fd1">
+            <TableID>dbo_t_DeliveryPoints</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="91f044a1-4569-4656-9d6f-e26b2e520708">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="15e9d472-c3b5-4977-bdbc-b14a81e4dc65">
+          <TableID>dbo_t_DeliveryPoints</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="5bb57d16-c456-45df-abce-9cbd5e25152f">
+          <AttributeID>Code Description</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Код Точка доставки</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="08447a4f-c5c3-46ed-be6a-21e13ab2b38b">
+          <AttributeID>ID 1</AttributeID>
+          <Name>Статус Золотого магазина</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7a75a538-393e-475c-9185-cbf878796138">
+          <AttributeID>Fact Address</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Фактический адрес точки доставки</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5f6264d3-7d96-4c98-8b00-eebdcce8f825">
+          <AttributeID>Code</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Код точки доставки</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="76d77217-1ec3-4e3f-a773-8a611202fbfd">
+          <AttributeID>Is KBD</AttributeID>
+          <Name>КБД</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b5303d31-2590-4015-9d35-475b9a502ffa">
+          <AttributeID>Description Code 2</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Description Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bf850686-7989-46de-9e4c-5a946ac91ac6">
+          <AttributeID>Description Code</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Точка доставки Код</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ddf4465a-956f-4080-bb27-df5c577c3ba3">
+          <AttributeID>ID 2</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Delivery Points Surrogate Key</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="ee9ee0df-deee-4b5e-ac3c-ab569d79f6eb">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="11847777-548c-4300-aea5-2f79c2665c53">
+          <TableID>dbo_t_DeliveryPoints</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="40ca94f3-dfee-4ce4-b6d8-b1c530733bd1">
+      <ID>Code Description</ID>
+      <Name>Код Точка доставки</Name>
+      <EstimatedCount>62198</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2fbffc76-69f2-403f-b215-c03d31d0074d">
+          <DataType>WChar</DataType>
+          <DataSize>128</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f90982f-cda9-460d-8dc4-5bfef2680cdf">
+            <TableID>dbo_t_DeliveryPoints</TableID>
+            <ColumnID>CodeDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="7a93a0ac-c7fb-4980-8c02-36d0f99b6e85">
+          <AttributeID>Branch</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Филиал</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b8af9997-096b-4293-89cf-f1fcdc2f1d1b">
+      <ID>Description Code</ID>
+      <Name>Точка доставки Код</Name>
+      <EstimatedCount>62198</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7f7e0a5c-78be-48ba-9036-c4df6e6f1be8">
+          <DataType>WChar</DataType>
+          <DataSize>128</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c6174ed2-ce2f-4a85-afd2-a03bd99fc6d8">
+            <TableID>dbo_t_DeliveryPoints</TableID>
+            <ColumnID>DescriptionCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="8aedc12b-84f7-48ae-b45a-cfd9e174fd2a">
+          <AttributeID>Branch</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Филиал</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ed25e88c-7a53-40fb-a11a-510688093fad">
+      <ID>Branch</ID>
+      <Name>Филиал</Name>
+      <EstimatedCount>15</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c707431c-d287-4ba2-aa7e-fa81eef74298">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="48926d00-2506-4fd2-a818-3a9eda88b3dc">
+            <TableID>dbo_t_DeliveryPoints</TableID>
+            <ColumnID>Branch</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b45e4243-332c-4f5e-addd-c8757118d520">
+      <ID>ID 1</ID>
+      <Name>Статус Золотого магазина</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="41554bc3-bc4d-44d8-9f83-109945636b0b">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="20a767ed-3fcb-45f8-a1ec-df6853b2fc32">
+            <TableID>dbo_t_TypesOfGoldStore</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="dc6f6c1c-8837-4ebb-be6a-df8773f4d92d">
+        <DataType>WChar</DataType>
+        <DataSize>128</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="dc7e6aa2-6ade-43a5-84e5-bbd58ad09501">
+          <TableID>dbo_t_TypesOfGoldStore</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="47016640-ddfd-44e4-b3a1-72f511c1b357">
+        <DataType>WChar</DataType>
+        <DataSize>128</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ebf508ce-593d-4268-86b3-254443568dce">
+          <TableID>dbo_t_TypesOfGoldStore</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6ecd5c88-515b-4815-ac8c-66626f5a3b4f">
+      <ID>Fact Address</ID>
+      <Name>Фактический адрес точки доставки</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="365b8955-0951-40af-b1e6-5fed3688f989">
+          <DataType>WChar</DataType>
+          <DataSize>500</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d02ac6c-9588-4093-87a8-f1b08f3295dd">
+            <TableID>dbo_t_DeliveryPoints</TableID>
+            <ColumnID>FactAddress</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="25e8d04b-547c-43dd-a052-6d0fed549f86">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f8a810e4-b2cf-42fb-b1d2-664123afc59a">
+            <TableID>dbo_t_DeliveryPoints</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="082f8317-bcbb-43ff-b1f5-7db6c221b392">
+        <DataType>WChar</DataType>
+        <DataSize>500</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="63a8709f-70d9-4307-9433-cdbf7a9f8de1">
+          <TableID>dbo_t_DeliveryPoints</TableID>
+          <ColumnID>FactAddress</ColumnID>
+        </Source>
+      </NameColumn>
+      <ValueColumn dwd:design-time-name="55a91660-feb7-4bf6-b80b-27820f8f5bc8">
+        <DataType>WChar</DataType>
+        <DataSize>500</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="dbcc68bf-5607-4ea3-9912-444fccc56dda">
+          <TableID>dbo_t_DeliveryPoints</TableID>
+          <ColumnID>FactAddress</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4043df3c-8b86-44e6-b094-ada9c08706be">
+      <ID>Code</ID>
+      <Name>Код точки доставки</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1ddf892f-30f6-482a-a184-4cf7283e3be7">
+          <DataType>WChar</DataType>
+          <DataSize>11</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="06a14539-e9dd-4bfb-8e83-1d2af92c2fea">
+            <TableID>dbo_t_DeliveryPoints</TableID>
+            <ColumnID>Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="843dd7b6-6ad4-41e7-82b6-c26682d4fc21">
+      <ID>Is KBD</ID>
+      <Name>КБД</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="48ca6378-3040-465e-a968-772fd3e11fbe">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f71f85f4-8d93-467c-b917-7b1e237584a9">
+            <TableID>dbo_t_DeliveryPoints</TableID>
+            <ColumnID>IsKBD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="7d106941-2cb7-4d70-b104-8d8ffcbd584b">
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2c58e159-a78c-40fe-9cfc-9268d355ba85">
+          <TableID>dbo_t_DeliveryPoints</TableID>
+          <ColumnID>КБД</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bd0cdc94-38ad-46d5-8ebf-be4cfc0aca35">
+      <ID>Description Code 1</ID>
+      <Name>Контрагент Код</Name>
+      <EstimatedCount>36586</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="56d5ac56-81dc-43e5-bc0d-91845d8a2618">
+          <DataType>WChar</DataType>
+          <DataSize>128</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bf8477e3-0dc4-4b8a-a351-21046d40f17e">
+            <TableID>dbo_t_Customers</TableID>
+            <ColumnID>DescriptionCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4201311d-c33d-4a76-ad82-92d59cd436ff">
+      <ID>Description Code 2</ID>
+      <Name>Description Code</Name>
+      <EstimatedCount>62198</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9cae3484-6be2-4f9b-89a4-1e9f1fd5f41b">
+          <DataType>WChar</DataType>
+          <DataSize>128</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bd90263b-e593-4b1f-98ad-5b50174ab57c">
+            <TableID>dbo_t_DeliveryPoints</TableID>
+            <ColumnID>DescriptionCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="656b1856-effa-4cd2-8c13-6e7c4d976096">
+          <AttributeID>Description Code 1</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Контрагент Код</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="77ce9ec5-5f07-4b52-ac1b-2a94ae2e23ed">
+      <ID>ID 2</ID>
+      <Name>Delivery Points Surrogate Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e5f09b41-d345-46c2-b230-b79d8bf5d785">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3c9b523e-f798-458a-8c35-e050695a9655">
+            <TableID>dbo_t_DeliveryPoints</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="768ca339-ea1a-486a-bd82-aca2b39bd087">
+      <ID>Иерархия</ID>
+      <Name>ISIS Филиал - Точка доставки</Name>
+      <Levels>
+        <Level dwd:design-time-name="647141cf-5491-4b3a-88b3-259e1705441f">
+          <ID>Филиал</ID>
+          <Name>Филиал</Name>
+          <SourceAttributeID>Branch</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="88b8b86f-3e7a-4713-ad88-eebc8d9805b1">
+          <ID>Точка доставки</ID>
+          <Name>Точка доставки</Name>
+          <SourceAttributeID>ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="351a945c-d8c3-4cf6-911c-6edc89cf14ed">
+      <ID>Иерархия 1</ID>
+      <Name>ISIS Филиал - Код Точка доставки</Name>
+      <Levels>
+        <Level dwd:design-time-name="a12901eb-5907-474b-9b91-ac53f830489b">
+          <ID>Филиал</ID>
+          <Name>Филиал</Name>
+          <SourceAttributeID>Branch</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2b53ce61-4096-4e3f-a3be-a8d7efdc9b59">
+          <ID>Код Точка доставки</ID>
+          <Name>Код Точка доставки</Name>
+          <SourceAttributeID>Code Description</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="5632139a-2cad-4820-a3f6-a18a2d9e756a">
+      <ID>Иерархия 2</ID>
+      <Name>ISIS Филиал - Точка доставки (Код)</Name>
+      <Levels>
+        <Level dwd:design-time-name="c33f0989-1bc9-4e59-b267-7786a97a4b0a">
+          <ID>Филиал</ID>
+          <Name>Филиал</Name>
+          <SourceAttributeID>Branch</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="75629a25-559b-4f68-8ab1-0b317108fd6f">
+          <ID>Точка доставки (Код)</ID>
+          <Name>Точка доставки Код</Name>
+          <SourceAttributeID>Description Code</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="21ad0b2b-f648-493c-b06c-1ddc354fa68f">
+      <ID>Иерархия 3</ID>
+      <Name>ISIS Точки доставки</Name>
+      <Levels>
+        <Level dwd:design-time-name="e884cc47-bf71-4405-a7b0-c8fb18b5df2d">
+          <ID>Точка доставки</ID>
+          <Name>Точка доставки</Name>
+          <SourceAttributeID>ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="93a0684c-d06e-4140-b176-223e585b77a9">
+      <ID>Иерархия 4</ID>
+      <Name>ISIS Коды Точки доставки</Name>
+      <Levels>
+        <Level dwd:design-time-name="75fd72ce-5ec6-449b-b8c3-a94c060a24dc">
+          <ID>Код Точка доставки</ID>
+          <Name>Код Точка доставки</Name>
+          <SourceAttributeID>Code Description</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="b3bb968e-b29c-4568-9130-5b0feba2fd1a">
+      <ID>Иерархия 5</ID>
+      <Name>ISIS Точки доставки (Код)</Name>
+      <Levels>
+        <Level dwd:design-time-name="9062ec47-2367-4e7c-9db4-302f6d6a62fb">
+          <ID>Точка доставки (Код)</ID>
+          <Name>Точка доставки Код</Name>
+          <SourceAttributeID>Description Code</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="b9d2990c-122a-42ce-a43c-e45bbbf2946f">
+      <ID>Иерархия 6</ID>
+      <Name>ISIS Контрагент - Точка доставки</Name>
+      <Levels>
+        <Level dwd:design-time-name="b2ac0ef3-c2ba-4f28-bcb3-b3b9fd4122ff">
+          <ID>Контрагент (Код)</ID>
+          <Name>Контрагент Код</Name>
+          <SourceAttributeID>Description Code 1</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ddc66dcd-3e07-4d79-87f8-87465d159085">
+          <ID>Description Code</ID>
+          <Name>Точка доставки Код</Name>
+          <SourceAttributeID>Description Code 2</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:StringStoresCompatibilityLevel>1100</ddl300:StringStoresCompatibilityLevel>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

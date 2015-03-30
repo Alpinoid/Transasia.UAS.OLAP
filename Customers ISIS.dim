@@ -1,0 +1,683 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="964babc7-d0d6-47da-a5e5-7f93da03e35c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Customers ISIS</ID>
+  <Name>Customers ISIS</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2536" scrolltop="-2531" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10398" y="21008" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_CustomersTypes" left="173" top="0" logicalid="6" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_t_CustomersTypes" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_Customers" left="20" top="4702" logicalid="7" controlid="2" masterid="0" hint1="0" hint2="0" width="3307" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000eb0c000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_t_Customers" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1274" top="1803" logicalid="8" controlid="3" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_t_Customers_t_CustomersTypes]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1673" y="2302" />
+              <point x="1673" y="4702" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_Sales" left="5258" top="-31" logicalid="9" controlid="4" masterid="0" hint1="0" hint2="0" width="4286" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000be10000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_t_Sales" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3027" top="4369" logicalid="10" controlid="5" masterid="0" hint1="0" hint2="0" width="2531" height="1033" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_t_Sales_t_Customers]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="4" sourceattachpoint="11" destattachpoint="30" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3327" y="5002" />
+              <point x="4292" y="5002" />
+              <point x="4292" y="4669" />
+              <point x="5258" y="4669" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2536</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2531</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-31</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="166">
+            <Shape Id="ID" Expanded="true">
+              <Attributes>
+                <Attribute Id="ID" />
+                <Attribute Id="ID 1" />
+                <Attribute Id="INN" />
+                <Attribute Id="Is Nonresident" />
+                <Attribute Id="Is Buyer" />
+                <Attribute Id="Full Description" />
+                <Attribute Id="Is Deleted" />
+                <Attribute Id="Is Contractor" />
+                <Attribute Id="Customer Type ID" />
+                <Attribute Id="Fact Address" />
+                <Attribute Id="Legal Address" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Description INN" Expanded="false">
+              <Attributes>
+                <Attribute Id="Description INN" />
+              </Attributes>
+              <Position x="232" y="20" />
+            </Shape>
+            <Shape Id="INN Description" Expanded="true">
+              <Attributes>
+                <Attribute Id="INN Description" />
+              </Attributes>
+              <Position x="232" y="68" />
+            </Shape>
+            <Shape Id="Description Code" Expanded="false">
+              <Attributes>
+                <Attribute Id="Description Code" />
+              </Attributes>
+              <Position x="232" y="116" />
+            </Shape>
+            <Shape Id="Code Description" Expanded="false">
+              <Attributes>
+                <Attribute Id="Code Description" />
+              </Attributes>
+              <Position x="232" y="164" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2b80d78a-766a-4573-9db9-4268dba11126">
+    <DataSourceViewID>Reporting Database</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="15e78e3b-202f-4bf8-8e18-776421691804">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <DimensionPermissions>
+    <DimensionPermission dwd:design-time-name="4f9a4de8-79de-4f23-a7ce-14c783c2e3b7">
+      <ID>DimensionPermission</ID>
+      <Name>DimensionPermission</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 2</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="3818be55-aceb-4f86-a6d6-d65c9c950eda">
+      <ID>DimensionPermission 1</ID>
+      <Name>DimensionPermission 1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>PG_Full</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="90125514-80fe-4b73-ba96-00a87920965b">
+      <ID>DimensionPermission 2</ID>
+      <Name>DimensionPermission 2</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>ALL_Full</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="6ba5557b-6eb5-4ce9-a068-4ade8d6d4a94">
+      <ID>DimensionPermission 3</ID>
+      <Name>DimensionPermission 3</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>CPG</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="363cf00a-e89b-4c3c-a262-c5bf13bd1a8c">
+      <ID>DimensionPermission 4</ID>
+      <Name>DimensionPermission 4</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>CHM_Full</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+  </DimensionPermissions>
+  <UnknownMemberName>Unknow</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="f8a97b09-e0c0-430a-91f7-022ffcb544ec">
+      <ID>ID</ID>
+      <Name>Наименование</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>36586</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="291ac8a0-3e39-4331-ad78-2035a448f51f">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="076bb1a1-3198-4224-bf67-50bc3b281a6c">
+            <TableID>dbo_t_Customers</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="2546a939-b35b-4114-9bbe-db328f8cf4e9">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4f9885a8-f01b-4d9f-b883-539841ab3ad0">
+          <TableID>dbo_t_Customers</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="49416825-96fe-4efe-b952-ab8a23151fe9">
+          <AttributeID>Code Description</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Код Наименование</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3603fe4a-7421-4f00-877f-e2d7256ddff1">
+          <AttributeID>Description Code</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Наименование Код</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3a24f256-b2aa-4230-a123-dfa81af7da63">
+          <AttributeID>INN Description</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>ИНН Наименование</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2bf229ae-9f4e-4b5a-8292-47dc6242327d">
+          <AttributeID>Description INN</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Наименование ИНН</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7d5ae8f3-8904-4072-a197-7958d78ff456">
+          <AttributeID>INN</AttributeID>
+          <Name>ИНН</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2a2efacc-a1cf-4e8f-92de-58d2727ab4ae">
+          <AttributeID>Legal Address</AttributeID>
+          <Name>Юридический адрес</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="27af6089-614f-4253-a1d2-d6f13fe1d3a1">
+          <AttributeID>Fact Address</AttributeID>
+          <Name>Фактический адрес</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="85a8ccfe-0381-4909-85fa-d06d34f6243f">
+          <AttributeID>Customer Type ID</AttributeID>
+          <Name>Тип контрагента</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5a639364-9d5b-49c3-8b64-f8f6a74d1975">
+          <AttributeID>Is Buyer</AttributeID>
+          <Name>Покупатель</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="24e0c0b1-39a3-4613-ac57-5b3f1b142b84">
+          <AttributeID>Is Contractor</AttributeID>
+          <Name>Поставщик</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="173693c8-1714-4431-98bd-8d80a835174f">
+          <AttributeID>Is Deleted</AttributeID>
+          <Name>Пометка на удаление</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e703f9d7-834d-4517-8ff8-b6abb7361468">
+          <AttributeID>Full Description</AttributeID>
+          <Name>Полное наменование</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8aa99639-09ab-41b3-ba4c-0e35615d4524">
+          <AttributeID>Is Nonresident</AttributeID>
+          <Name>Нерезидент</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9a5cce60-b4d0-408f-a955-ae4b47d88292">
+          <AttributeID>ID 1</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Customers Surrogate Key</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="99a94caf-b014-4ef8-90e8-4227e17006ad">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="aa5ca4c5-69de-41ce-9cb3-71aa2b5925e3">
+          <TableID>dbo_t_Customers</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="22ab072d-f339-416b-a003-a739ba5cb57c">
+      <ID>Code Description</ID>
+      <Name>Код Наименование</Name>
+      <EstimatedCount>36586</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6b09403d-e21c-4c2f-a909-3d74c43bc652">
+          <DataType>WChar</DataType>
+          <DataSize>128</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fe444c97-1d0c-445c-92c6-a47f7de41b5b">
+            <TableID>dbo_t_Customers</TableID>
+            <ColumnID>CodeDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8e28ab7b-4b0c-4d22-80b2-9edbc2ec1f0a">
+      <ID>Description Code</ID>
+      <Name>Наименование Код</Name>
+      <EstimatedCount>36586</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="62009cb4-8ed6-435d-8bba-8453768b4141">
+          <DataType>WChar</DataType>
+          <DataSize>128</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e3345b9e-764c-4903-94a2-3a575db7234d">
+            <TableID>dbo_t_Customers</TableID>
+            <ColumnID>DescriptionCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3a40a25a-5d17-48a5-b90f-066065315cac">
+      <ID>INN Description</ID>
+      <Name>ИНН Наименование</Name>
+      <EstimatedCount>36525</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="38bc2448-d94f-495b-bd1d-ca783e5f80ad">
+          <DataType>WChar</DataType>
+          <DataSize>128</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9200d2c7-d3e9-4402-a16e-9fba695cf85c">
+            <TableID>dbo_t_Customers</TableID>
+            <ColumnID>INNDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2365657b-d8b6-4b94-87a5-b2fce046e5d7">
+      <ID>Description INN</ID>
+      <Name>Наименование ИНН</Name>
+      <EstimatedCount>36531</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9b7a6e42-dcdf-4d99-904a-e9ce60830c7c">
+          <DataType>WChar</DataType>
+          <DataSize>128</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d9754a8-4e9e-4510-8b8e-9f7be55ef1bb">
+            <TableID>dbo_t_Customers</TableID>
+            <ColumnID>DescriptionINN</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b2f9ca42-77e3-4048-8c7d-383dba3f5da7">
+      <ID>INN</ID>
+      <Name>ИНН</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0c7663e3-ed1a-4bde-9fec-a5048b51578d">
+          <DataType>WChar</DataType>
+          <DataSize>12</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="acedc592-2e53-43d4-a9c7-cf68fcd8663c">
+            <TableID>dbo_t_Customers</TableID>
+            <ColumnID>INN</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ee6846a9-9c04-4fea-b9d9-f9f450cf05b5">
+      <ID>Legal Address</ID>
+      <Name>Юридический адрес</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="430c834d-3134-4a2f-904e-ef1c4eb5da0c">
+          <DataType>WChar</DataType>
+          <DataSize>500</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f8336ff3-7f60-498b-b05e-9106a4b52e0c">
+            <TableID>dbo_t_Customers</TableID>
+            <ColumnID>LegalAddress</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="c8b2385c-59b2-4ca7-a44c-b04668d6c3ab">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="edb2dd16-1764-4832-8d94-0fc871221e9a">
+            <TableID>dbo_t_Customers</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="64a16e01-d295-4da2-9647-38ba43460820">
+        <DataType>WChar</DataType>
+        <DataSize>500</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="49c69684-2a3a-492d-95ea-22c249bcdbcc">
+          <TableID>dbo_t_Customers</TableID>
+          <ColumnID>LegalAddress</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3365c78b-b957-4f7e-88bd-12b3b8aec83a">
+      <ID>Fact Address</ID>
+      <Name>Фактический адрес</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4d1a5de8-d187-457a-9a51-d9180013e564">
+          <DataType>WChar</DataType>
+          <DataSize>500</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="199708a7-9c87-4cf0-8a43-404bd95c6887">
+            <TableID>dbo_t_Customers</TableID>
+            <ColumnID>FactAddress</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="23e65690-34af-4539-ab98-900cb088bf6a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="72425f3a-b34e-4aa2-a3df-35c2aa9b8a9c">
+            <TableID>dbo_t_Customers</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="530948c0-bbab-472f-ae93-a55269f22811">
+        <DataType>WChar</DataType>
+        <DataSize>500</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d80aaf47-c0a6-48bb-936e-5f6b3b985d3e">
+          <TableID>dbo_t_Customers</TableID>
+          <ColumnID>FactAddress</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0e771af3-3840-47c8-8f8d-f1f6ed7c974a">
+      <ID>Customer Type ID</ID>
+      <Name>Тип контрагента</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4ae04f16-636d-419a-b18e-82dd37075284">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b9da295b-0c30-4533-99ee-3631bb7d9eff">
+            <TableID>dbo_t_Customers</TableID>
+            <ColumnID>CustomerTypeID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="4362ff49-8d82-478b-9722-306cbf7729e8">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2b6ff7df-cf30-4f6a-85ac-7944375d5008">
+          <TableID>dbo_t_CustomersTypes</TableID>
+          <ColumnID>Description</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7a28244a-c2b4-479e-b074-787198cdb3fa">
+      <ID>Is Buyer</ID>
+      <Name>Покупатель</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="05f3805f-0aef-4ab4-8aba-dad301d28bf7">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="49f0f89e-725c-4ad1-9f08-0acf1b7812a9">
+            <TableID>dbo_t_Customers</TableID>
+            <ColumnID>IsBuyer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="435790ae-83a6-465b-a5b7-88ef1a2cef15">
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b7c4007d-bf84-43e6-9add-5fe6336b549e">
+          <TableID>dbo_t_Customers</TableID>
+          <ColumnID>Покупатель</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d433e07b-153c-4011-81d1-d2c54914239f">
+      <ID>Is Contractor</ID>
+      <Name>Поставщик</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5558c4a7-3f91-4b88-9b18-4159b971897a">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f6ca97f2-4be5-42dd-8d10-ac1ea0d3b8ec">
+            <TableID>dbo_t_Customers</TableID>
+            <ColumnID>IsContractor</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="2c1bc281-bf1d-4925-b4ce-c1f45083864d">
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="43112773-0bef-4fdb-9c7a-1425827c1031">
+          <TableID>dbo_t_Customers</TableID>
+          <ColumnID>Поставщик</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="63e9d018-ca61-4755-8a2d-026c9619a0fa">
+      <ID>Is Deleted</ID>
+      <Name>Пометка на удаление</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f7222d3e-52f3-4334-83f3-aa7747828b4f">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9ed5773a-5e4c-41b6-bb50-b6c4c34537b9">
+            <TableID>dbo_t_Customers</TableID>
+            <ColumnID>IsDeleted</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ca9419ce-a8da-415c-b7e5-4266934998ba">
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e4f484ba-88eb-4d13-8955-5bfcab2a8b7d">
+          <TableID>dbo_t_Customers</TableID>
+          <ColumnID>ПометкаНаУдаление</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3f34d679-9e10-4817-9bcd-0dd7d1958926">
+      <ID>Full Description</ID>
+      <Name>Полное наменование</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="29dbb616-2439-4d7e-951b-2b7fdc61ae22">
+          <DataType>WChar</DataType>
+          <DataSize>256</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3e111121-e702-41f5-9e60-74f128c86726">
+            <TableID>dbo_t_Customers</TableID>
+            <ColumnID>FullDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="004a5a80-737e-42d0-be2d-7eb19113be8c">
+      <ID>Is Nonresident</ID>
+      <Name>Нерезидент</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="131a7fb5-abc5-4346-8ae8-7f8c63320fa3">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bff514d6-c057-41b5-8f43-720645756390">
+            <TableID>dbo_t_Customers</TableID>
+            <ColumnID>IsNonresident</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="1479a999-0582-412c-ac9e-2ca41e5e2a06">
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d2675674-ff51-49fa-8921-86e72fb6991d">
+          <TableID>dbo_t_Customers</TableID>
+          <ColumnID>Нерезидент</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="42dae0de-8f22-45f9-8264-ce2f6f4379c2">
+      <ID>ID 1</ID>
+      <Name>Customers Surrogate Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fcd57336-99f8-479f-937e-40621bfcf2f2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a6ab45ed-eed3-4fbb-a944-b9fc5685fb26">
+            <TableID>dbo_t_Customers</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="be626170-9147-4891-9a57-573e917a9e3f">
+      <ID>Иерархия</ID>
+      <Name>ISIS ИНН Контрагент</Name>
+      <Levels>
+        <Level dwd:design-time-name="3380a63b-5935-438c-a413-1036bbd4c782">
+          <ID>ИНН Наименование</ID>
+          <Name>ИНН Наименование</Name>
+          <SourceAttributeID>INN Description</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="68c77371-9a33-4cd7-b824-c544319d3159">
+      <ID>Иерархия 1</ID>
+      <Name>ISIS Код Контрагент</Name>
+      <Levels>
+        <Level dwd:design-time-name="956dba2c-3d4b-4512-9e9f-f0277867255f">
+          <ID>Код Наименование</ID>
+          <Name>Код Наименование</Name>
+          <SourceAttributeID>Code Description</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="5d7965be-171d-4e20-9029-ca98dfba8b91">
+      <ID>Иерархия 2</ID>
+      <Name>ISIS Контрагент (ИНН)</Name>
+      <Levels>
+        <Level dwd:design-time-name="d89ce8a5-0f38-4483-a5d1-0516bc9d73d5">
+          <ID>Наименование ИНН</ID>
+          <Name>Наименование ИНН</Name>
+          <SourceAttributeID>Description INN</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="f8bb05de-227b-4db0-acf3-45f1c2de7316">
+      <ID>Иерархия 3</ID>
+      <Name>ISIS Контрагент (Код)</Name>
+      <Levels>
+        <Level dwd:design-time-name="57da693b-77d7-4f93-8832-2adb7adc4592">
+          <ID>Наименование Код</ID>
+          <Name>Наименование Код</Name>
+          <SourceAttributeID>Description Code</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:StringStoresCompatibilityLevel>1100</ddl300:StringStoresCompatibilityLevel>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
