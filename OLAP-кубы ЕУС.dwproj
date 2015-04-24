@@ -111,6 +111,14 @@
       <Name>Transactions Type.dim</Name>
       <FullPath>Transactions Type.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Types Of Delay.dim</Name>
+      <FullPath>Types Of Delay.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Types Of Debt.dim</Name>
+      <FullPath>Types Of Debt.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>

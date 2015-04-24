@@ -24663,5 +24663,45 @@
         </Partition>
       </Partitions>
     </MeasureGroup>
+    <MeasureGroup>
+      <ID>t Remains</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c06ef00f-641a-4fc2-b211-2f5e74421572">
+          <ID>t Remains</ID>
+          <Name>t Remains</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="57410d72-db57-4003-b015-eb1e52b4abfe">
+            <DataSourceViewID>Reporting Database</DataSourceViewID>
+            <TableID>dbo_t_Remains</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>t Receivables Of Customers</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="2312c192-a395-44a1-8194-6a6e6436afc0">
+          <ID>t Receivables Of Customers</ID>
+          <Name>t Receivables Of Customers</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5ab4c116-2408-4892-a41f-da116729d323">
+            <DataSourceViewID>Reporting Database</DataSourceViewID>
+            <TableID>dbo_t_ReceivablesOfCustomers</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
   </MeasureGroups>
 </Cube>

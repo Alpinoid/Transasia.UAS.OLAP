@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7035" scrolltop="-10782" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10319" y="21696" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="16" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="725" scrolltop="-10782" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7964" y="21008" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -92,6 +92,77 @@
               <point x="-1192" y="1057" />
             </connector>
           </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="t_AdditionalAttributes" left="2593" top="-3254" logicalid="12" controlid="7" masterid="0" hint1="0" hint2="0" width="3281" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000d10c0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_t_AdditionalAttributes" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="699" top="-1791" logicalid="13" controlid="8" masterid="0" hint1="0" hint2="0" width="2194" height="849" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_t_DeliveryPoints_t_AdditionalAttributes]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="1" sourceattachpoint="16" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2593" y="-1342" />
+              <point x="1796" y="-1342" />
+              <point x="1796" y="-1491" />
+              <point x="999" y="-1491" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="699" top="-2341" logicalid="14" controlid="9" masterid="0" hint1="0" hint2="0" width="2194" height="849" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_t_DeliveryPoints_t_AdditionalAttributes2]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="1" sourceattachpoint="14" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2593" y="-1892" />
+              <point x="1796" y="-1892" />
+              <point x="1796" y="-2041" />
+              <point x="999" y="-2041" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="699" top="-2891" logicalid="15" controlid="10" masterid="0" hint1="0" hint2="0" width="2194" height="849" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_t_DeliveryPoints_t_AdditionalAttributes1]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="1" sourceattachpoint="12" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2593" y="-2442" />
+              <point x="1796" y="-2442" />
+              <point x="1796" y="-2591" />
+              <point x="999" y="-2591" />
+            </connector>
+          </ddscontrol>
         </dds>
       </Value>
     </Annotation>
@@ -109,7 +180,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-7035</Value>
+      <Value>725</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
@@ -140,38 +211,60 @@
                 <Attribute Id="Code" />
                 <Attribute Id="ID 1" />
                 <Attribute Id="Fact Address" />
+                <Attribute Id="Actual Number" />
               </Attributes>
               <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Additional Attribute3" Expanded="true">
+              <Attributes>
+                <Attribute Id="Additional Attribute3" />
+                <Attribute Id="Value 2" />
+              </Attributes>
+              <Position x="323" y="20" />
+            </Shape>
+            <Shape Id="Additional Attribute2" Expanded="true">
+              <Attributes>
+                <Attribute Id="Additional Attribute2" />
+                <Attribute Id="Value 1" />
+              </Attributes>
+              <Position x="323" y="92" />
+            </Shape>
+            <Shape Id="Additional Attribute1" Expanded="true">
+              <Attributes>
+                <Attribute Id="Additional Attribute1" />
+                <Attribute Id="Value" />
+              </Attributes>
+              <Position x="323" y="164" />
             </Shape>
             <Shape Id="Description Code" Expanded="false">
               <Attributes>
                 <Attribute Id="Description Code" />
               </Attributes>
-              <Position x="323" y="20" />
+              <Position x="323" y="236" />
             </Shape>
             <Shape Id="Branch" Expanded="false">
               <Attributes>
                 <Attribute Id="Branch" />
               </Attributes>
-              <Position x="627" y="20" />
+              <Position x="627" y="236" />
             </Shape>
             <Shape Id="Description Code 2" Expanded="false">
               <Attributes>
                 <Attribute Id="Description Code 2" />
               </Attributes>
-              <Position x="323" y="68" />
+              <Position x="323" y="284" />
             </Shape>
             <Shape Id="Description Code 1" Expanded="false">
               <Attributes>
                 <Attribute Id="Description Code 1" />
               </Attributes>
-              <Position x="627" y="68" />
+              <Position x="627" y="284" />
             </Shape>
             <Shape Id="Code Description" Expanded="false">
               <Attributes>
                 <Attribute Id="Code Description" />
               </Attributes>
-              <Position x="323" y="116" />
+              <Position x="323" y="332" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -300,6 +393,25 @@
           <AttributeID>ID 2</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Delivery Points Surrogate Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="29dbd1bb-b96c-4ef7-8384-324e0993b774">
+          <AttributeID>Actual Number</AttributeID>
+          <Name>Фактическое количество точек</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7753b14c-d599-4136-a117-8ace3f232a22">
+          <AttributeID>Additional Attribute1</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Additional Attribute1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="02abaa76-dde2-4a96-9bf2-5dd74ec46431">
+          <AttributeID>Additional Attribute2</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Additional Attribute2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d7156a51-d38f-4dfd-9442-27f243f234ca">
+          <AttributeID>Additional Attribute3</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Additional Attribute3</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
@@ -550,6 +662,183 @@
       </KeyColumns>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c8dadc99-0a89-4e8f-a98a-1dd18a4dc2ed">
+      <ID>Actual Number</ID>
+      <Name>Фактическое количество точек</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0f87b7b7-6d1c-47b1-a87b-07f62b46bd9a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3e5d0d66-d691-4503-8638-91eda4f8d6b7">
+            <TableID>dbo_t_DeliveryPoints</TableID>
+            <ColumnID>ActualNumber</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6a212a70-509c-4925-8c03-7b224fbe89ea">
+      <ID>Value</ID>
+      <Name>Дополнительный реквизит 1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="514612b2-3117-4ff9-bfdd-bd4f4a74b663">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="29c3775c-e7c6-4ccf-bee0-07f477e28c92">
+            <TableID>dbo_t_AdditionalAttributes</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="4b360578-714f-40e8-b239-930819e659b0">
+        <DataType>WChar</DataType>
+        <DataSize>256</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d8355229-49f6-4275-a0e9-1c7d64dd4b9b">
+          <TableID>dbo_t_AdditionalAttributes</TableID>
+          <ColumnID>Value</ColumnID>
+        </Source>
+      </NameColumn>
+      <ValueColumn dwd:design-time-name="24b126bb-729b-4e99-adb3-ebaa045a3216">
+        <DataType>WChar</DataType>
+        <DataSize>256</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ef1508de-0e72-45c1-90d8-7ab9388a75f1">
+          <TableID>dbo_t_AdditionalAttributes</TableID>
+          <ColumnID>Value</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a8cfd589-c6ba-4828-9a13-17b6a7fd5bbf">
+      <ID>Additional Attribute1</ID>
+      <Name>Additional Attribute1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6af002c9-3602-4ba7-a48e-a09eacc24ad8">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9a54de5d-cada-43bf-ad21-0362112f3e67">
+            <TableID>dbo_t_DeliveryPoints</TableID>
+            <ColumnID>AdditionalAttribute1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="36d0cd05-58d9-413b-815f-3b1163875959">
+          <AttributeID>Value</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Дополнительный реквизит 1</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="080ddf57-d7c8-4c7e-9f28-5916d2f44c18">
+      <ID>Additional Attribute2</ID>
+      <Name>Additional Attribute2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1f6e6a51-e757-4868-b585-6244322d8d2a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6479df78-7b52-4375-9386-97a793ab0b07">
+            <TableID>dbo_t_DeliveryPoints</TableID>
+            <ColumnID>AdditionalAttribute2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="58320f0e-fca1-476d-a5ac-62acdfd06ffb">
+          <AttributeID>Value 1</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Дополнительный реквизит 2</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e68b64d4-e892-43f1-a2e1-d2721b09444c">
+      <ID>Additional Attribute3</ID>
+      <Name>Additional Attribute3</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8150d3ad-b743-4505-8f89-1897b82db232">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="abeef8bb-86d5-4317-938e-e657ce945e5e">
+            <TableID>dbo_t_DeliveryPoints</TableID>
+            <ColumnID>AdditionalAttribute3</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1d23592e-8085-411a-87b0-0e53278c12b0">
+          <AttributeID>Value 2</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Дополнительный реквизит 3</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="670dcbf3-508a-4b85-92f5-f9959357b467">
+      <ID>Value 1</ID>
+      <Name>Дополнительный реквизит 2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d219c616-c85b-4a04-ad6c-ac5c286f8543">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4bab7560-f4d8-4c90-b0f9-ab52a9d0464a">
+            <TableID>dbo_t_AdditionalAttributes</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="78ef2ddc-998b-49ae-bdbe-ff00dd5b5a82">
+        <DataType>WChar</DataType>
+        <DataSize>256</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="cb912b85-8acd-4065-8939-d5fc7702a534">
+          <TableID>dbo_t_AdditionalAttributes</TableID>
+          <ColumnID>Value</ColumnID>
+        </Source>
+      </NameColumn>
+      <ValueColumn dwd:design-time-name="a8bd2afc-c763-433e-b208-0275f646b025">
+        <DataType>WChar</DataType>
+        <DataSize>256</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="497bbbd2-d8a2-4d8b-9d58-a53534489b1c">
+          <TableID>dbo_t_AdditionalAttributes</TableID>
+          <ColumnID>Value</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5e5e895e-9c0f-4d0e-9bd9-c59d7b54a75e">
+      <ID>Value 2</ID>
+      <Name>Дополнительный реквизит 3</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c8dc1e88-7760-43a3-a810-96e1a74eb69e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="563be9c0-920c-40a3-82dc-6ddbc5875ed4">
+            <TableID>dbo_t_AdditionalAttributes</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="325299a8-920b-4672-9f5e-3158146d4744">
+        <DataType>WChar</DataType>
+        <DataSize>256</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c837dce6-3122-464e-a18a-a18e1f2bef67">
+          <TableID>dbo_t_AdditionalAttributes</TableID>
+          <ColumnID>Value</ColumnID>
+        </Source>
+      </NameColumn>
+      <ValueColumn dwd:design-time-name="25bf7c4b-cc4b-44f2-b13c-f55f629e7f63">
+        <DataType>WChar</DataType>
+        <DataSize>256</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="24261c64-543f-4355-b477-e7b88dd6fe88">
+          <TableID>dbo_t_AdditionalAttributes</TableID>
+          <ColumnID>Value</ColumnID>
+        </Source>
+      </ValueColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
